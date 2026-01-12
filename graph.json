@@ -1,1 +1,1 @@
-{"homeAlias":"/","nodes":{},"links":[]}
+{"homeAlias":"/","nodes":{"/linux/ssh/":{"id":0,"title":"ssh","url":"/linux/ssh/","group":"none","home":false,"outBound":["tag>netzwerk mysql linux"],"neighbors":[],"backLinks":[],"hide":false,"size":0}},"links":[]}
