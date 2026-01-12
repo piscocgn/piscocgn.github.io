@@ -3,17 +3,22 @@
     
         <url>
             <loc>/404.html</loc>
-            <lastmod>2026-01-12T21:55:15.304Z</lastmod>
+            <lastmod>2026-01-12T21:57:13.679Z</lastmod>
         </url>
     
         <url>
             <loc>/linux/ssh/</loc>
-            <lastmod>2026-01-12T21:55:15.307Z</lastmod>
+            <lastmod>2026-01-12T21:57:13.682Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/index/</loc>
+            <lastmod>2026-01-12T21:57:13.682Z</lastmod>
         </url>
     
         <url>
             <loc>/start/</loc>
-            <lastmod>2026-01-12T21:55:15.307Z</lastmod>
+            <lastmod>2026-01-12T21:57:13.682Z</lastmod>
         </url>
     
 </urlset>
