@@ -1,7 +1,7 @@
 [
 {
 		"title": "ssh",
-		"date":"Mon Jan 12 2026 21:41:52 GMT+0000 (Coordinated Universal Time)",
+		"date":"Mon Jan 12 2026 21:45:39 GMT+0000 (Coordinated Universal Time)",
 		"url":"/linux/ssh/",
 		"content": "SSH-Tunnel\nBeispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner host.example.com Port 3306 (MySql Server) erstellen:\nssh -fN -L 3307:localhost:3306 host.example.com\nAnschließend die Verbindung aufbauen mit:\nmysql -u user -p -P3307 -h 127.0.0.1\nlocalhost kann auch ein Host im Netz hinter host.example.com sein, also kann entsprechend die IP-Adresse oder der Hostname aus dem entfernten Netz angegeben werden. Natürlich kann auch ein abweichender Benutzername mit user@host.example.com angegeben werden.\nRemote-Forward\nBeispiel für eine VNC-Verbindung: den lokalen Port 5900 auf den entfernten Rechner host.example.com Port 12345 legen.\nssh -fN -R 12345:localhost:5900 host.example.com\nAnschließend kann die Verbindung von host.example.com aus aufgebaut werden\nvncviewer localhost:12345\nNatürlich kann sich die Gegenstelle auch den Port 12345 von host.example.com lokal tunneln; siehe oben.\nrsync über ssh mit abweichendem Port\nWenn der SSH-Dienst auf einem anderen Port als 22 läuft muss es bei rsync entsprechend mit angegeben werden.\nrsync -auvH -e 'ssh -p 22123' [Quelle] [Ziel]\n!<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">tag&gt;netzwerk mysql linux</a>",
 		"tags": [ "note"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "start",
-		"date":"Mon Jan 12 2026 21:41:52 GMT+0000 (Coordinated Universal Time)",
+		"date":"Mon Jan 12 2026 21:45:39 GMT+0000 (Coordinated Universal Time)",
 		"url":"/start/",
 		"content": "wiki polyformal\n!<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\"> 300</a>\nWelcome to the documentation site of polyformal.\n\nOverview\n\nCloud\nTAGCLOUD\nCLOUD\nfrom the web",
 		"tags": [ "note"]
