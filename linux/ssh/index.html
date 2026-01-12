@@ -67,21 +67,21 @@
 </div>
 </header>
 <h2 id="ssh-tunnel" tabindex="-1">SSH-Tunnel</h2>
-<p>Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> Port 3306 (MySql Server) erstellen:<br>
-ssh -fN -L 3307:localhost:3306 <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a><br>
-Anschließend die Verbindung aufbauen mit:<br>
-mysql -u user -p -P3307 -h 127.0.0.1<br>
-<em>localhost</em> kann auch ein Host im Netz hinter <em><a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a></em> sein, also kann entsprechend die IP-Adresse oder der Hostname aus dem entfernten Netz angegeben werden. Natürlich kann auch ein abweichender Benutzername mit <em><a href="mailto:user@host.example.com" target="_blank" class="external-link">user@host.example.com</a></em> angegeben werden.</p>
+<p>Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> Port 3306 (MySql Server) erstellen:</p>
+<p><code>ssh -fN -L 3307:localhost:3306 host.example.com</code></p>
+<p>Anschließend die Verbindung aufbauen mit:<br>
+<code>mysql -u user -p -P3307 -h 127.0.0.1</code></p>
+<p><em>localhost</em> kann auch ein Host im Netz hinter <em><a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a></em> sein, also kann entsprechend die IP-Adresse oder der Hostname aus dem entfernten Netz angegeben werden. Natürlich kann auch ein abweichender Benutzername mit <em><a href="mailto:user@host.example.com" target="_blank" class="external-link">user@host.example.com</a></em> angegeben werden.</p>
 <h3 id="remote-forward" tabindex="-1">Remote-Forward</h3>
-<p>Beispiel für eine VNC-Verbindung: den lokalen Port 5900 auf den entfernten Rechner <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> Port 12345 legen.<br>
-ssh -fN -R 12345:localhost:5900 <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a><br>
-Anschließend kann die Verbindung von <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> aus aufgebaut werden<br>
+<p>Beispiel für eine VNC-Verbindung: den lokalen Port 5900 auf den entfernten Rechner <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> Port 12345 legen.</p>
+<p><code>ssh -fN -R 12345:localhost:5900 host.example.com</code></p>
+<p>Anschließend kann die Verbindung von <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> aus aufgebaut werden<br>
 vncviewer localhost:12345<br>
 Natürlich kann sich die Gegenstelle auch den Port 12345 von <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> lokal tunneln; siehe oben.</p>
 <h2 id="rsync-ueber-ssh-mit-abweichendem-port" tabindex="-1">rsync über ssh mit abweichendem Port</h2>
-<p>Wenn der SSH-Dienst auf einem anderen Port als 22 läuft muss es bei rsync entsprechend mit angegeben werden.<br>
-rsync -auvH -e 'ssh -p 22123' [Quelle] [Ziel]<br>
-!<a class="internal-link is-unresolved" href="/404" target="">tag&gt;netzwerk mysql linux</a></p>
+<p>Wenn der SSH-Dienst auf einem anderen Port als 22 läuft muss es bei rsync entsprechend mit angegeben werden.</p>
+<p><code>rsync -auvH -e 'ssh -p 22123' [Quelle] [Ziel]</code></p>
+<p>!<a class="internal-link is-unresolved" href="/404" target="">tag&gt;netzwerk mysql linux</a></p>
 </main>
 <script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
 <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
