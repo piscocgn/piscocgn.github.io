@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/linux/ssh/"}
+{"dg-publish":true,"permalink":"/linux/ssh/","noteIcon":""}
 ---
 
 ##  SSH-Tunnel 

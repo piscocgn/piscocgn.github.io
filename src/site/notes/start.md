@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/start/"}
+{"dg-publish":true,"permalink":"/start/","noteIcon":""}
 ---
 
 ##  wiki polyformal 
