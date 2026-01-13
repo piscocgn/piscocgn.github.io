@@ -5,13 +5,6 @@
 [[En/Linux/rosetta_stone\|En/Linux/rosetta_stone]]
 ## Rosetta Stone Linux (oder Inter-Linux)
 Folgende Übersicht soll eine Gegenüberstellung von Befehlen der einzelnen Distributionen zu diversen Aufgaben darstellen, um Unterschiede aufzuzeigen oder Hilfestellung bei einem Umstieg zu bieten.
-<flattr>
-title=Rosetta Stone Linux (oder Inter-Linux)
-uid=30553
-description=Eine Tabelle für Distributions-Hopper
-category=software
-align=left
-</flattr>
 
 ##  Paketmanagement 
 
