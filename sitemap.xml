@@ -3,17 +3,27 @@
     
         <url>
             <loc>/404.html</loc>
-            <lastmod>2026-01-13T19:41:42.248Z</lastmod>
+            <lastmod>2026-01-13T19:43:49.008Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/en/linux/rosetta-stone/</loc>
+            <lastmod>2026-01-13T19:43:49.009Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/linux/rosetta-stone/</loc>
+            <lastmod>2026-01-13T19:43:49.009Z</lastmod>
         </url>
     
         <url>
             <loc>/linux/ssh/</loc>
-            <lastmod>2026-01-13T19:41:42.250Z</lastmod>
+            <lastmod>2026-01-13T19:43:49.009Z</lastmod>
         </url>
     
         <url>
             <loc>/</loc>
-            <lastmod>2026-01-13T19:41:42.250Z</lastmod>
+            <lastmod>2026-01-13T19:43:49.009Z</lastmod>
         </url>
     
 </urlset>

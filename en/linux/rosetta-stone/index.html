@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>rosetta_stone</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">wiki.polyformal.de</h1>
+</a>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">wiki.polyformal.de</h1>
+</a>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('En')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">En</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('En/Linux')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Linux</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/en/linux/rosetta-stone/">rosetta_stone </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Linux')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Linux</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/rosetta-stone/">rosetta_stone </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/ssh/">ssh </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">start </a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h2 id="rosetta-stone-linux-or-inter-linux" tabindex="-1">Rosetta Stone Linux (or Inter-Linux)</h2>
+<p>The following scheme compares some commands and tasks by some distributions, to face differences and similarities. Maybe it's usefull when switching to an other Linux-Distributon.<br>
+<flattr><br>
+title=Rosetta Stone Linux (or Inter-Linux)<br>
+uid=30553<br>
+description=A cheat sheet for Distribution-hoppers<br>
+category=software, linux<br>
+align=left<br>
+</flattr></p>
+<h2 id="package-management" tabindex="-1">package management</h2>
+<thead>
+<tr>
+<th>Action</th>
+<th>Debian((<a href="http://www.us.debian.org/doc/manuals/reference/ch-package.en.html#s-apt-install" target="_blank" class="external-link">http://www.us.debian.org/doc/manuals/reference/ch-package.en.html#s-apt-install</a>))</th>
+<th>Red Hat/CentOS/Fedora((<a href="http://docs.fedoraproject.org/yum/en/" target="_blank" class="external-link">http://docs.fedoraproject.org/yum/en/</a>))</th>
+<th>openSUSE((<a href="http://en.opensuse.org/Zypper" target="_blank" class="external-link">Zypper</a> since 10.2 since Beta1. It uses libzypp.))</th>
+<th>Gentoo((<a href="http://www.gentoo.de/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=1" target="_blank" class="external-link">http://www.gentoo.de/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=1</a>))</th>
+</tr>
+</thead>
+<tr>
+<td>update repositories</td>
+<td>aptitude update</td>
+<td>--</td>
+<td>zypper refresh</td>
+<td>emerge --sync</td>
+</tr>
+<tr>
+<td>install upgrades</td>
+<td>aptitude safe-upgrade</td>
+<td>yum update</td>
+<td>zypper update</td>
+<td>emerge -u[p]D world</td>
+</tr>
+<tr>
+<td>search package by name</td>
+<td>aptitude search [package]</td>
+<td>yum list [package]</td>
+<td>zypper search [package]</td>
+<td>emerge -s [package]</td>
+</tr>
+<tr>
+<td>show package description</td>
+<td>aptitude show [package]</td>
+<td>yum info [package]</td>
+<td>zypper info [package]</td>
+<td>emerge -s [package]</td>
+</tr>
+<tr>
+<td>install package</td>
+<td>aptitude install [package]</td>
+<td>yum install [package]</td>
+<td>yast2 install / -i [package] zypper install</td>
+<td>emerge [package]</td>
+</tr>
+<tr>
+<td>show the package to wehre a specified file belongs</td>
+<td>dpkg -S [filename]</td>
+<td>rpm -qf [filename]</td>
+<td></td>
+<td>equery((The command <em>equery</em> shipped by the package <em>app-portage/gentoolkit</em>)) belongs [filename]</td>
+</tr>
+<tr>
+<td>which of the not installed packages ships a specified file</td>
+<td>apt-file find [filename] ((you have to run apt-file update the first time to build the cache))</td>
+<td>yum whatprovides [filename]</td>
+<td></td>
+<td>-((Gentoo compiles packages/software from source. So usualy it's not possible to query files against non-installed packages.))</td>
+</tr>
+<tr>
+<td>show content of a non-installed package available in the repositories</td>
+<td>apt-file -F list [package] ((you have to run apt-file update the first time to build the cache))</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>show content of a local available package file</td>
+<td>dpkg -c [package.deb]((-c or --contents))</td>
+<td>rpm -qpl [package.rpm]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>show information of a local available package file</td>
+<td>dpkg -I [package.deb]((-I or --info))</td>
+<td>rpm -qpi [package.rpm]</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>verify installed packages</td>
+<td>debsums [package]((The MD5-databes must be initialized before with <em>debsums_init</em>.)) debsums -as</td>
+<td>rpm -V [package] rpm -Va</td>
+<td></td>
+<td>-</td>
+</tr>
+<td>extract package without installation</td>
+<td>1. ar xv [package].deb 2. tar -xzvf data.tar.gz</td>
+<html>rpm2cpio [package].rpm
+<td>cpio -idmv</td>
+<td></td>
+<tr>
+<td>build package from source</td>
+<td>apt-build install --rebuild [package]((maybe you have to run apt-get build-dep [package] before to install required libraries.))</td>
+<td>rpm -i [package].src.rpm cd /usr/src/packages/SPEC rpmbuild -ba [package].spec</td>
+<td></td>
+<td>this is done by default in gentoo</td>
+</tr>
+<tr>
+<td>compile kernel</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>install required tools</td>
+<td>aptitude install build-essential</td>
+<td></td>
+<td>zypper install -t pattern devel_kernel</td>
+<td></td>
+</tr>
+<tr>
+<td>compile kernel an build package</td>
+<td>sudo fakeroot make-kpkg --revision $REVISION --initrd kernel_image modules_image</td>
+<td>make oldconfig maybe ''rm *.spec''((when doing a new revision)) make binrpm-pkg rpm -i /usr/src/packages/RPMS/i386 .. mkinitrd -k /boot/Kernel-file -i /boot/initrdfile</td>
+<td></td>
+<td></td>
+</tr>
+<h2 id="management-of-users-and-groups" tabindex="-1">management of users and groups</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Debian((<a href="http://www.us.debian.org/doc/manuals/reference/ch-tutorial.en.html#s-newuser" target="_blank" class="external-link">http://www.us.debian.org/doc/manuals/reference/ch-tutorial.en.html#s-newuser</a>))</th>
+<th>Red Hat/CentOS/Fedora((<a href="http://www.centos.org/docs/5/html/Deployment_Guide-en-US/ch-users-groups.html" target="_blank" class="external-link">Documentation CentOS</a>))</th>
+<th>openSUSE</th>
+<th>Gentoo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add user</td>
+<td>useradd [-m][-g primary group((The primary group also called<em>initial group</em> or <em>login group</em>))] user</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>change users primary group((The primary group also called<em>initial group</em> or <em>login group</em>))</td>
+<td>usermod -g group user</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>delete user</td>
+<td>userdel [-r] user</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>add group</td>
+<td>groupadd group</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>add user user to a group</td>
+<td>adduser user group((Debian-specific)) gpasswd -a user group</td>
+<td>usermod -aG group[,group] user gpasswd -a user group</td>
+<td>groupmod -A user group</td>
+<td>usermod -aG group[,group] user gpasswd -a user group</td>
+</tr>
+<tr>
+<td>remove a user from a specified group</td>
+<td>deluser user group((Debian-specific)) gpasswd -d user group</td>
+<td>gpasswd -d user group</td>
+<td>groupmod -R user group</td>
+<td>gpasswd -d user group</td>
+</tr>
+<tr>
+<td>declare a user to a groups administrator</td>
+<td>gpasswd -A user,... group</td>
+<td></td>
+<td>no more impelemted (since 10.x?) ((over LDAP))</td>
+<td>gpasswd -A user,... group</td>
+</tr>
+<tr>
+<td>add a list of users to a specified group ((replace all existing memberships))</td>
+<td>gpasswd -M user,... group</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="system-settings" tabindex="-1">system settings</h2>
+<table>
+<thead>
+<tr>
+<th>action</th>
+<th>Debian</th>
+<th>Red Hat/CentOS/Fedora</th>
+<th>openSUSE</th>
+<th>Gentoo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>change umask system-wide</td>
+<td>/etc/profile</td>
+<td></td>
+<td>/etc/login.defs</td>
+<td></td>
+</tr>
+<tr>
+<td>activate services for (Default-) Runlevel</td>
+<td>update-rc.d [name] defaults</td>
+<td>insserv [name] ''</td>
+<td>'' chkconfig -a name((<a href="http://susefaq.sourceforge.net/faq/services.html" target="_blank" class="external-link">Unofficial SUSEFAQ - Starting and Stoping Services: insserv</a>))</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+</div></div>
+<p>!<a class="internal-link is-unresolved" href="/404" target="">tag&gt;linux unvollständig</a></p>
+<aside>
+<div class="sidebar">
+<div class="sidebar-container">
+<div class="backlinks">
+<div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
+<div class="backlink-list"><div class="backlink-card"><i icon-name="link"></i><a href="/linux/rosetta-stone/" data-note-icon="" class="backlink">rosetta_stone</a>
+</div></div>
+</div>
+</div>
+</div>
+</aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</html>
+</html>
