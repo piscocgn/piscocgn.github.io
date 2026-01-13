@@ -54,12 +54,4 @@ align=left
 |activate services for (Default-) Runlevel | update-rc.d [name] defaults |  insserv [name] ''|'' chkconfig -a name(([Unofficial SUSEFAQ - Starting and Stoping Services: insserv](http://susefaq.sourceforge.net/faq/services.html))) || |
 
 
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
-
-
-
-</div></div>
-
-![[tag>linux unvollständig\|tag>linux unvollständig]]
+#linux #unvollständig 

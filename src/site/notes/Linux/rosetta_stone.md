@@ -56,4 +56,4 @@ align=left
 |Dienste für (Default-) Runlevel aktivieren | update-rc.d [name] defaults |  insserv [name] ''|'' chkconfig -a name(([Unofficial SUSEFAQ - Starting and Stoping Services: insserv](http://susefaq.sourceforge.net/faq/services.html))) || |
 
 
-![[tag>linux unvollständig\|tag>linux unvollständig]]
+#linux #unvollständig 
