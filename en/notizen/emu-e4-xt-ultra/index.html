@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>ssh</title>
+<title>Emu E4XT Ultra</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,7 +69,7 @@
 <span class="foldername">Notizen</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/en/notizen/emu-e4-xt-ultra/">Emu E4XT Ultra </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/en/notizen/emu-e4-xt-ultra/">Emu E4XT Ultra </a>
 </div>
 </div>
 </div>
@@ -88,7 +88,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/ssh/">ssh </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/ssh/">ssh </a>
 </div>
 </div>
 </div>
@@ -105,22 +105,17 @@
 <div class="header-meta">
 </div>
 </header>
-<h2 id="ssh-tunnel" tabindex="-1">SSH-Tunnel</h2>
-<p>Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> Port 3306 (MySql Server) erstellen:</p>
-<p><code>ssh -fN -L 3307:localhost:3306 host.example.com</code></p>
-<p>Anschließend die Verbindung aufbauen mit:<br>
-<code>mysql -u user -p -P3307 -h 127.0.0.1</code></p>
-<p><em>localhost</em> kann auch ein Host im Netz hinter <em><a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a></em> sein, also kann entsprechend die IP-Adresse oder der Hostname aus dem entfernten Netz angegeben werden. Natürlich kann auch ein abweichender Benutzername mit <em><a href="mailto:user@host.example.com" target="_blank" class="external-link">user@host.example.com</a></em> angegeben werden.</p>
-<h3 id="remote-forward" tabindex="-1">Remote-Forward</h3>
-<p>Beispiel für eine VNC-Verbindung: den lokalen Port 5900 auf den entfernten Rechner <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> Port 12345 legen.</p>
-<p><code>ssh -fN -R 12345:localhost:5900 host.example.com</code></p>
-<p>Anschließend kann die Verbindung von <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> aus aufgebaut werden<br>
-vncviewer localhost:12345<br>
-Natürlich kann sich die Gegenstelle auch den Port 12345 von <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> lokal tunneln; siehe oben.</p>
-<h2 id="rsync-ueber-ssh-mit-abweichendem-port" tabindex="-1">rsync über ssh mit abweichendem Port</h2>
-<p>Wenn der SSH-Dienst auf einem anderen Port als 22 läuft muss es bei rsync entsprechend mit angegeben werden.</p>
-<p><code>rsync -auvH -e 'ssh -p 22123' [Quelle] [Ziel]</code></p>
-<p>!<a class="internal-link is-unresolved" href="/404" target="">tag&gt;netzwerk mysql linux</a></p>
+<h2 id="internal-ssd" tabindex="-1">Internal SSD</h2>
+<p>Bases on a tip in a forum ((<a href="http://www.sequencer.de/synthesizer/viewtopic.php?f=3&amp;t=79915#p866249" target="_blank" class="external-link">http://www.sequencer.de/synthesizer/viewtopic.php?f=3&amp;t=79915#p866249</a>)), it is possible to replace the internal noisy 3,5&quot; HD with a silent SSD.</p>
+<h2 id="shopping-list" tabindex="-1">Shopping List</h2>
+<ul>
+<li><a href="http://www.wintech-computer.de/wt_de_product_detail.php?anr=81319" target="_blank" class="external-link">Wintech SAK-65</a></li>
+<li><a href="http://www.raidsonic.de/de/products/mobile-racks.php?we_objectID=7700" target="_blank" class="external-link">Raidsonic IB-2216StS 2.5&quot; Mobile Rack</a></li>
+<li><a href="https://duckduckgo.com/?q=Samsung%20MZ-7TE120BW%20Serie%20840" target="_blank" class="external-link">Samsung MZ-7TE120BW Serie 840</a></li>
+</ul>
+<h2 id="replacement" tabindex="-1">Replacement</h2>
+<p>The replacement is straight forward. Just remove cable and unmount the old drive. Mount the mobile rack with the two screws towards backside within the original holes, for the two screws towards fron you need selfthreading screws. On the SAK-65 Adapter a missing hole has to be drilled, see image:</p>
+<p><a href="https://www.flickr.com/photos/pisco_cgn/13494599864/in/photostream/" target="_blank" class="external-link">https://www.flickr.com/photos/pisco_cgn/13494599864/in/photostream/</a></p>
 </main>
 <aside>
 <div class="sidebar">
