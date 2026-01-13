@@ -90,116 +90,109 @@
 <div class="header-meta">
 </div>
 </header>
-<h2 id="rosetta-stone-linux-or-inter-linux" tabindex="-1">Rosetta Stone Linux (or Inter-Linux)</h2>
-<p>The following scheme compares some commands and tasks by some distributions, to face differences and similarities. Maybe it's usefull when switching to an other Linux-Distributon.<br>
-<flattr><br>
-title=Rosetta Stone Linux (or Inter-Linux)<br>
-uid=30553<br>
-description=A cheat sheet for Distribution-hoppers<br>
-category=software, linux<br>
-align=left<br>
-</flattr></p>
-<h2 id="package-management" tabindex="-1">package management</h2>
+<h2 id="rosetta-stone-linux-oder-inter-linux" tabindex="-1">Rosetta Stone Linux (oder Inter-Linux)=</h2>
+<p>Folgende Übersicht soll eine Gegenüberstellung von Befehlen der einzelnen Distributionen zu diversen Aufgaben darstellen, um Unterschiede aufzuzeigen oder Hilfestellung bei einem Umstieg zu bieten.</p>
+<h2 id="paketmanagement" tabindex="-1">Paketmanagement</h2>
 <thead>
 <tr>
-<th>Action</th>
-<th>Debian((<a href="http://www.us.debian.org/doc/manuals/reference/ch-package.en.html#s-apt-install" target="_blank" class="external-link">http://www.us.debian.org/doc/manuals/reference/ch-package.en.html#s-apt-install</a>))</th>
-<th>Red Hat/CentOS/Fedora((<a href="http://docs.fedoraproject.org/yum/en/" target="_blank" class="external-link">http://docs.fedoraproject.org/yum/en/</a>))</th>
-<th>openSUSE((<a href="http://en.opensuse.org/Zypper" target="_blank" class="external-link">Zypper</a> since 10.2 since Beta1. It uses libzypp.))</th>
-<th>Gentoo((<a href="http://www.gentoo.de/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=1" target="_blank" class="external-link">http://www.gentoo.de/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=1</a>))</th>
+<th>Aktion</th>
+<th>Debian((http:*<a href="http://debiananwenderhandbuch.de/aptitude.html" target="_blank" class="external-link">debiananwenderhandbuch.de/aptitude.html</a>))</th>
+<th>Red Hat/CentOS/Fedora((http:*<a href="http://docs.fedoraproject.org/yum/en/" target="_blank" class="external-link">docs.fedoraproject.org/yum/en/</a>))</th>
+<th>openSUSE((<a href="http:*en.opensuse.org/Zypper" target="_blank" class="external-link">Zypper</a> seit 10.2 Beta1, basiert auf libzypp))</th>
+<th>Gentoo((http:*<a href="http://www.gentoo.de/doc/de/handbook/handbook-x86.xml?part=2&amp;chap=1" target="_blank" class="external-link">www.gentoo.de/doc/de/handbook/handbook-x86.xml?part=2&amp;chap=1</a>))</th>
 </tr>
 </thead>
 <tr>
-<td>update repositories</td>
+<td>Quellen aktualisieren</td>
 <td>aptitude update</td>
 <td>--</td>
 <td>zypper refresh</td>
 <td>emerge --sync</td>
 </tr>
 <tr>
-<td>install upgrades</td>
+<td>vorhandene Updates einspielen</td>
 <td>aptitude safe-upgrade</td>
 <td>yum update</td>
 <td>zypper update</td>
 <td>emerge -u[p]D world</td>
 </tr>
 <tr>
-<td>search package by name</td>
-<td>aptitude search [package]</td>
-<td>yum list [package]</td>
-<td>zypper search [package]</td>
-<td>emerge -s [package]</td>
+<td>Paket suchen</td>
+<td>aptitude search [Paketname]</td>
+<td>yum list [Paketname]</td>
+<td>zypper search [Paketname]</td>
+<td>emerge -s [Paketname]</td>
 </tr>
 <tr>
-<td>show package description</td>
-<td>aptitude show [package]</td>
-<td>yum info [package]</td>
-<td>zypper info [package]</td>
-<td>emerge -s [package]</td>
+<td>Paketbeschreibung anzeigen</td>
+<td>aptitude show [Paketname]</td>
+<td>yum info [paketname]</td>
+<td>zypper info [Paketname]</td>
+<td>emerge -s [Paketname]</td>
 </tr>
 <tr>
-<td>install package</td>
-<td>aptitude install [package]</td>
-<td>yum install [package]</td>
-<td>yast2 install / -i [package] zypper install</td>
-<td>emerge [package]</td>
+<td>Paket installieren</td>
+<td>aptitude install [Paketname]</td>
+<td>yum install [Paketname]</td>
+<td>yast2 install / -i [Paketname] \ zypper install</td>
+<td>emerge [Paketname]</td>
 </tr>
 <tr>
-<td>show the package to wehre a specified file belongs</td>
-<td>dpkg -S [filename]</td>
-<td>rpm -qf [filename]</td>
+<td>Die Zugehörigkeit einer Datei zu einem \ installierten Paket anzeigen</td>
+<td>dpkg -S [Dateiname] (( ein spezielles Kommando kann über $(which [command]) abgefragt werden ))</td>
+<td>rpm -qf [Dateiname] (( ein spezielles Kommando kann über $(which [command]) abgefragt werden ))</td>
 <td></td>
-<td>equery((The command <em>equery</em> shipped by the package <em>app-portage/gentoolkit</em>)) belongs [filename]</td>
+<td>equery (( Der Befehl <em>equery</em> stammt aus dem Paket <em>app-portage/gentoolkit</em> )) belongs [Dateiname] (( ein spezielles Kommando kann über $(which [command]) abgefragt werden ))</td>
 </tr>
 <tr>
-<td>which of the not installed packages ships a specified file</td>
-<td>apt-file find [filename] ((you have to run apt-file update the first time to build the cache))</td>
-<td>yum whatprovides [filename]</td>
+<td>Die Zugehörigkeit einer Datei zu einem \ nicht-installierten Paket anzeigen</td>
+<td>apt-file find [Dateiname] ((Bei dem ersten Einsatz muss apt-file update ausgeführt werden, um den Cache aufzubauen))</td>
+<td>yum whatprovides [Dateiname]</td>
 <td></td>
-<td>-((Gentoo compiles packages/software from source. So usualy it's not possible to query files against non-installed packages.))</td>
+<td>--((Gentoo wird direkt aus dem Quellcode der einzelnen Projekte kompiliert. Daher ist eine Zuordnung von Dateien bei nicht installiertem Paket nicht möglich.))</td>
 </tr>
 <tr>
-<td>show content of a non-installed package available in the repositories</td>
-<td>apt-file -F list [package] ((you have to run apt-file update the first time to build the cache))</td>
+<td>Den Inhalt eines nicht-installierten \ Paketes aus den Repositorien anzeigen</td>
+<td>apt-file -F list [Paketname] ((Bei dem ersten Einsatz muss apt-file update ausgeführt werden, um den Cache aufzubauen))</td>
 <td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>show content of a local available package file</td>
-<td>dpkg -c [package.deb]((-c or --contents))</td>
-<td>rpm -qpl [package.rpm]</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>show information of a local available package file</td>
-<td>dpkg -I [package.deb]((-I or --info))</td>
-<td>rpm -qpi [package.rpm]</td>
+<td>Informationen eines vorliegenden \ Paketarchives anzeigen</td>
+<td>dpkg -I [Paketname.deb]((-I oder --info))</td>
+<td>rpm -qpi [Paketname.rpm]</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>verify installed packages</td>
-<td>debsums [package]((The MD5-databes must be initialized before with <em>debsums_init</em>.)) debsums -as</td>
-<td>rpm -V [package] rpm -Va</td>
+<td>Den Inhalt eines vorliegenden \ Paketarchives anzeigen</td>
+<td>dpkg -c [Paketname.deb]((-c oder --contents))</td>
+<td>rpm -qpl [Paketname.rpm]</td>
 <td></td>
-<td>-</td>
+<td></td>
 </tr>
-<td>extract package without installation</td>
-<td>1. ar xv [package].deb 2. tar -xzvf data.tar.gz</td>
-<html>rpm2cpio [package].rpm
+<tr>
+<td>Den Zustand installierter \ Pakete abfragen und anzeigen</td>
+<td>debsums [Paketname]((Die MD5-Datenbank muss vorher mit <em>debsums_init</em> initialisert werden.)) \ debsums -as</td>
+<td>rpm -V [Paketname] \ rpm -Va</td>
+<td></td>
+<td>equery((Der Befehl <em>equery</em> stammt aus dem Paket <em>app-portage/gentoolkit</em>)) check [Dateiname]</td>
+</tr>
+<td>Paketinhalt ohne Installation \ entpacken</td>
+<td>dpkg -x [Paketname.deb] [Zielverzeichnis]((-x oder --extract, verbose mit -X oder --vextract)) \ oder \ 1. ar xv [Paketname].deb \ 2. tar -xzvf data.tar.gz</td>
+<html>rpm2cpio [Paketname].rpm
 <td>cpio -idmv</td>
 <td></td>
 <tr>
-<td>build package from source</td>
-<td>apt-build install --rebuild [package]((maybe you have to run apt-get build-dep [package] before to install required libraries.))</td>
-<td>rpm -i [package].src.rpm cd /usr/src/packages/SPEC rpmbuild -ba [package].spec</td>
+<td>Paket aus den Quellen bauen</td>
+<td>apt-build install --rebuild [Paketname]((ggf. vorher apt-get build-dep [Paketname] um vorher nötige Bibliotheken zu installieren))</td>
+<td>rpm -i [Paketname].src.rpm \ cd /usr/src/packages/SPEC \ rpmbuild -ba [Paketname].spec</td>
 <td></td>
-<td>this is done by default in gentoo</td>
+<td>ist bei Gentoo die Standard-Vorgehensweise</td>
 </tr>
 <tr>
-<td>compile kernel</td>
+<td>Kernel komplilieren</td>
 <td></td>
 <td></td>
 <td></td>
@@ -213,94 +206,94 @@ align=left<br>
 <td>---</td>
 </tr>
 <tr>
-<td>install required tools</td>
-<td>aptitude install build-essential</td>
+<td>notwendige Tools installieren</td>
+<td>aptitude install build-essential kernel-package</td>
 <td></td>
 <td>zypper install -t pattern devel_kernel</td>
 <td></td>
 </tr>
 <tr>
-<td>compile kernel an build package</td>
-<td>sudo fakeroot make-kpkg --revision $REVISION --initrd kernel_image modules_image</td>
-<td>make oldconfig maybe ''rm *.spec''((when doing a new revision)) make binrpm-pkg rpm -i /usr/src/packages/RPMS/i386 .. mkinitrd -k /boot/Kernel-file -i /boot/initrdfile</td>
+<td>Kernel kompilieren und \ als Paket erstellen</td>
+<td>sudo fakeroot make-kpkg \ \ --revision $REVISION --initrd \ \ kernel_image modules_image</td>
+<td>make oldconfig \ ggf. vorher <code>rm *.spec</code>((bei neuen Revisionen)) \ make binrpm-pkg \ rpm -i /usr/src/packages/RPMS/i386 .. \ mkinitrd -k /boot/Kernel-file -i /boot/initrdfile</td>
 <td></td>
 <td></td>
 </tr>
-<h2 id="management-of-users-and-groups" tabindex="-1">management of users and groups</h2>
+<h2 id="benutzer-und-gruppenverwaltung" tabindex="-1">Benutzer- und Gruppenverwaltung</h2>
 <table>
 <thead>
 <tr>
-<th>Action</th>
-<th>Debian((<a href="http://www.us.debian.org/doc/manuals/reference/ch-tutorial.en.html#s-newuser" target="_blank" class="external-link">http://www.us.debian.org/doc/manuals/reference/ch-tutorial.en.html#s-newuser</a>))</th>
-<th>Red Hat/CentOS/Fedora((<a href="http://www.centos.org/docs/5/html/Deployment_Guide-en-US/ch-users-groups.html" target="_blank" class="external-link">Documentation CentOS</a>))</th>
+<th>Aktion</th>
+<th>Debian((http:*<a href="http://debiananwenderhandbuch.de/benutzerverw.html" target="_blank" class="external-link">debiananwenderhandbuch.de/benutzerverw.html</a>))</th>
+<th>Red Hat/CentOS/Fedora((<a href="http:*www.centos.org/docs/5/html/Deployment_Guide-en-US/ch-users-groups.html" target="_blank" class="external-link">Dokumentation CentOS</a>))</th>
 <th>openSUSE</th>
 <th>Gentoo</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>add user</td>
-<td>useradd [-m][-g primary group((The primary group also called<em>initial group</em> or <em>login group</em>))] user</td>
+<td>Benutzer anlegen</td>
+<td>useradd [-m][-g Primäre Gruppe((Die primäre Gruppe wird auch <em>initial group</em> oder <em>login group</em> genannt))] Benutzer</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>change users primary group((The primary group also called<em>initial group</em> or <em>login group</em>))</td>
-<td>usermod -g group user</td>
+<td>Primäre Gruppe((Die primäre Gruppe wird auch <em>initial group</em> oder <em>login group</em> genannt)) eines Benutzers ändern</td>
+<td>usermod -g Gruppe Benutzer</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>delete user</td>
-<td>userdel [-r] user</td>
+<td>Benutzer löschen</td>
+<td>userdel [-r] Benutzer</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>add group</td>
-<td>groupadd group</td>
+<td>Gruppe anlegen</td>
+<td>groupadd Gruppe</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>add user user to a group</td>
-<td>adduser user group((Debian-specific)) gpasswd -a user group</td>
-<td>usermod -aG group[,group] user gpasswd -a user group</td>
-<td>groupmod -A user group</td>
-<td>usermod -aG group[,group] user gpasswd -a user group</td>
+<td>Benutzer zu einer Gruppe hinzufügen</td>
+<td>adduser Benutzer Gruppe((Debian-spezifisch)) \ gpasswd -a Benutzer Gruppe</td>
+<td>usermod -aG Gruppe[,Gruppe] Benutzer \ gpasswd -a Benutzer Gruppe</td>
+<td>groupmod -A Benutzer Gruppe</td>
+<td>usermod -aG Gruppe[,Gruppe] Benutzer \ gpasswd -a Benutzer Gruppe</td>
 </tr>
 <tr>
-<td>remove a user from a specified group</td>
-<td>deluser user group((Debian-specific)) gpasswd -d user group</td>
-<td>gpasswd -d user group</td>
-<td>groupmod -R user group</td>
-<td>gpasswd -d user group</td>
+<td>Benutzer von einer Gruppe entfernen</td>
+<td>deluser Benutzer Gruppe((Debian-spezifisch)) \ gpasswd -d Benutzer Gruppe</td>
+<td>gpasswd -d Benutzer Gruppe</td>
+<td>groupmod -R Benutzer Gruppe</td>
+<td>gpasswd -d Benutzer Gruppe</td>
 </tr>
 <tr>
-<td>declare a user to a groups administrator</td>
-<td>gpasswd -A user,... group</td>
+<td>Gruppenadministrator ernennen</td>
+<td>gpasswd -A Benutzer,... Gruppe</td>
 <td></td>
-<td>no more impelemted (since 10.x?) ((over LDAP))</td>
-<td>gpasswd -A user,... group</td>
+<td>(seit 10.x?) nicht mehr implementiert((über LDAP))</td>
+<td>gpasswd -A Benutzer,... Gruppe</td>
 </tr>
 <tr>
-<td>add a list of users to a specified group ((replace all existing memberships))</td>
-<td>gpasswd -M user,... group</td>
+<td>eine Liste von Benutzern \ einer Gruppe hinzufügen((bestehende Mitgliedschaften werden ersetzt))</td>
+<td>gpasswd -M Benutzer,... Gruppe</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="system-settings" tabindex="-1">system settings</h2>
+<h2 id="einstellungen" tabindex="-1">Einstellungen</h2>
 <table>
 <thead>
 <tr>
-<th>action</th>
+<th>Aktion</th>
 <th>Debian</th>
 <th>Red Hat/CentOS/Fedora</th>
 <th>openSUSE</th>
@@ -309,22 +302,30 @@ align=left<br>
 </thead>
 <tbody>
 <tr>
-<td>change umask system-wide</td>
+<td>umask System-weit ändern</td>
 <td>/etc/profile</td>
 <td></td>
 <td>/etc/login.defs</td>
 <td></td>
 </tr>
 <tr>
-<td>activate services for (Default-) Runlevel</td>
+<td>Proxy, systemweit</td>
+<td>/etc/profiles: \ <code>export http_proxy=http://user:password@proxy[port]</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Dienste für (Default-) Runlevel aktivieren</td>
 <td>update-rc.d [name] defaults</td>
-<td>insserv [name] ''</td>
-<td>'' chkconfig -a name((<a href="http://susefaq.sourceforge.net/faq/services.html" target="_blank" class="external-link">Unofficial SUSEFAQ - Starting and Stoping Services: insserv</a>))</td>
+<td>insserv [name] `</td>
+<td>` chkconfig -a name((<a href="http://susefaq.sourceforge.net/faq/services.html" target="_blank" class="external-link">Unofficial SUSEFAQ - Starting and Stoping Services: insserv</a>))</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#unvollständig">#unvollständig</a></p>
+<p><img src="page%3Evcards:stefan_pampel&amp;nofooter" alt=""><br>
+![](tag&gt;linux unvollständig)</p>
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
