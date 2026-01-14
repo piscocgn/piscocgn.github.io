@@ -3,7 +3,7 @@
 ---
 
 ##  Internal SSD 
-Bases on a tip in a forum ((http://www.sequencer.de/synthesizer/viewtopic.php?f=3&t=79915#p866249)), it is possible to replace the internal noisy 3,5" HD with a silent SSD.
+Bases on a tip in a [forum](http://www.sequencer.de/synthesizer/viewtopic.php?f=3&t=79915#p866249), it is possible to replace the internal noisy 3,5" HD with a silent SSD.
 
 ## Shopping List
 * [Wintech SAK-65](http://www.wintech-computer.de/wt_de_product_detail.php?anr=81319)
