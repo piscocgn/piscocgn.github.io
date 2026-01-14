@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"dg-path":"linux/referenzkarte_netzwerk","permalink":"/linux/referenzkarte-netzwerk/"}
+{"dg-publish":true,"dg-permalink":"linux/referenzkarte_netzwerk","permalink":"/linux/referenzkarte_netzwerk/"}
 ---
 
+#linux #lpi #netzwerk #unvollständig 
 
-![[under_construction&nofooter\|under_construction&nofooter]]
 ##  Abstract 
 Eine Schnellreferenz-Karte für tägliche Netzwerkaufgaben.  Syntax 
   cmd notwendiger_Parameter [optionaler Parameter]
@@ -148,13 +148,3 @@ oder mit dem Programm *multitail*. Die Option -A zeigt de Inhalt von Paketen an.
 ###  OpenVPN 
 TODO
 
-
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
-
-
-
-</div></div>
-
-![[tag>linux lpi netzwerk unvollständig\|tag>linux lpi netzwerk unvollständig]]
