@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/linux/ssh/"}
 ---
 
+#netzwerk #mysql #linux
 ##  SSH-Tunnel 
 Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner host.example.com Port 3306 (MySql Server) erstellen:
 
@@ -26,4 +27,3 @@ Wenn der SSH-Dienst auf einem anderen Port als 22 läuft muss es bei rsync entsp
 
   `rsync -auvH -e 'ssh -p 22123' [Quelle] [Ziel]`
   
-![[tag>netzwerk mysql linux\|tag>netzwerk mysql linux]]

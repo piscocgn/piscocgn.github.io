@@ -2,6 +2,7 @@
 {"dg-publish":true,"dg-permalink":"en/notizen/e4xt_ultra","permalink":"/en/notizen/e4xt_ultra/"}
 ---
 
+#music #sampler #emulator
 ##  Internal SSD 
 Bases on a tip in a [forum](http://www.sequencer.de/synthesizer/viewtopic.php?f=3&t=79915#p866249), it is possible to replace the internal noisy 3,5" HD with a silent SSD.
 
