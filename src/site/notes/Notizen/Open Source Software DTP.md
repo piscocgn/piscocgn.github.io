@@ -62,7 +62,7 @@ Die Verwendung von GIMPshop ist insofern problematisch, dass man hier durch die 
 * http://potracegui.sourceforge.net/ für potrace und autotrace (QT)
 
 #### = SVG 
-* [[Software/Impress#Sonstiges \| OpenOffice.org SVG Support]]
+* [[Impress#Sonstiges \| OpenOffice.org SVG Support]]
 
 ##  Layout / Druck 
 
