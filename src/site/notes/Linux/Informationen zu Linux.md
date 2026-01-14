@@ -2,7 +2,7 @@
 {"dg-publish":true,"dg-permalink":"linux/informationen","permalink":"/linux/informationen/"}
 ---
 
-
+#linux #unix
 ##  Geschichte 
 * Unix Stammbaum, 1969 bis heute http://www.levenez.com/unix/
 * Linux Stammbaum http://linuxhelp.blogspot.com/2006/04/mind-map-of-linux-distributions.html
@@ -15,7 +15,6 @@
 * [O`Reilly: Linux - Wegweiser zur Installation & Konfiguration](http://www.oreilly.de/german/freebooks/rlinux3ger/linux_wegIVZ.html)
 * [wikibooks: Linux-Kompendium](http://de.wikibooks.org/wiki/Linux-Kompendium)
 * http://www.selflinux.org/
-![[tag>linux\|tag>linux]]
 
 ##  Sonsiges 
 * [IBM developerWorks](http://www.ibm.com/developerworks/): [Virtual Linux](http://www.ibm.com/developerworks/library/l-linuxvirt/index.html?ca=drs-), eine Übersicht von Virtualisierungstechniken für Linux

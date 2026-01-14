@@ -45,8 +45,8 @@ Außerhalb des Internets
 
 ##  Interfaces 
 
-  ifconfig [interface] [adresse] [[optionen\|optionen]]
-  ip link [show|list|ls] [device]
+  `ifconfig [interface] [adresse] [[optionen]]`
+  `ip link [show|list|ls] [device]`
 
 ###  Beispiele 
 * Rosetta Stone ifconfig / ip
@@ -67,25 +67,36 @@ Außerhalb des Internets
 
 ###  LowLevel 
 Cache der ARP Tabelle ausgeben, die Option -n verhindert die Namensauflösung.
-  cat /proc/net/arp
-  arp -n
+```bash
+cat /proc/net/arp
+arp -n
+```
+  
 Einträge bearbeiten:
-  arp -d IP
-  arp -s IP MAC
+```bash
+arp -d IP
+arp -s IP MAC
+```
 
 ###  Geschwindigkeit prüfen und einstellen 
-  mii-tool eth0
-  ethtool eth0
 
-  mii-tool -F 100baseTx-FD
-  mii-tool -F 10baseT-HD
+```bash
+mii-tool eth0
+ethtool eth0
 
-  ethtool -s eth0 speed 100 duplex full
-  ethtool -s eth0 speed 10 duplex half
+mii-tool -F 100baseTx-FD
+mii-tool -F 10baseT-HD
+
+ethtool -s eth0 speed 100 duplex full
+ethtool -s eth0 speed 10 duplex half
+```
 
 ##  Wireles LAN 
-  wlanconfig
-  watch -n1 'cat /proc/net/wireless'
+
+```bash
+wlanconfig
+watch -n1 'cat /proc/net/wireless'
+```
 
 ##  DNS 
 * Abfrage Hostname zu IP
@@ -104,8 +115,10 @@ Einträge bearbeiten:
 
 ##  Bridging 
 * [Dokumentation](http://www.linuxfoundation.org/en/Net%3ABridge), siehe auch ''/usr/share/doc/bridge-utils''
-  brctl addbr br0
-  brctl addif br0 eth0
+```bash
+brctl addbr br0
+brctl addif br0 eth0
+```
 
 Anschließend die IP-Adresse von eth0 auf br0 übertragen, eth0 auf 0.0.0.0 promisc setzen.
 
@@ -119,30 +132,34 @@ aktiviert das Weiterleiten von IP-Verkehr. Feste Einstellung ist über /etc/sysc
 </note>
 
 ##  Monitoring 
+
 Alle lokalen TCP- und UDP-Dienste des Hosts anzeigen, *-c* für aktualisierende Anzeige (continuous, 1sec), *n* zeigt numerische Werte statt Namen
-  netstat -ltu[c][n]
+`netstat -ltu[c][n]`
+  
 oder eine schönere Ausgabe
-  watch -n0,5 'netstat -ltu[n]'
+`watch -n0,5 'netstat -ltu[n]`
+  
 Aktuele Verbindungen und die zugehörigen Programme anzeigen((root-Rechte erforderlich))
-  watch -n0,5 'netstat -ptu[n]'
+`watch -n0,5 'netstat -ptu[n]`
+  
 Geöffnete Dateien von Netzwerkverbindungen anzeigen (IPv4 und IPv6) ((zeigt nur eigene Verbindungen an, sonst mit root-Rechten aufrufen))
-  lsof -i
+`lsof -i`
 
 Netzwerkverkehr ansehen, optional Einfärben mit ccze
-  tcpdump -vvv [| ccze]
+`tcpdump -vvv [| ccze]`
 oder mit dem Programm *multitail*. Die Option -A zeigt de Inhalt von Paketen an.
 
 ##  Testen 
 ###  Simple Chat 
-* ''netcat -l -p 1234''
-* auf der anderen Seite ''netcat [ip|hostname] 1234''
+* `netcat -l -p 1234`
+* auf der anderen Seite `netcat [ip|hostname] 1234`
 ###  Dateiübertragung 
-* ''cat [file] | netcat -l -p 1234''
-* auf der anderen Seite ''netcat [ip|hostname] 1234 > [file]''
+* `cat [file] | netcat -l -p 1234`
+* auf der anderen Seite `netcat [ip|hostname] 1234 > [file]`
 
 ##  Sicherheit 
 Überwachung der Kombination IP- und MAC-Adresse.
-  aprwatch
+`aprwatch`
 ###  SSH 
 * [[Linux/ssh\|ssh]]
 ###  OpenVPN 
