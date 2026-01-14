@@ -15,15 +15,7 @@
 * [O`Reilly: Linux - Wegweiser zur Installation & Konfiguration](http://www.oreilly.de/german/freebooks/rlinux3ger/linux_wegIVZ.html)
 * [wikibooks: Linux-Kompendium](http://de.wikibooks.org/wiki/Linux-Kompendium)
 * http://www.selflinux.org/
-
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
-
-
-
-</div></div>
-
+![[tag>linux\|tag>linux]]
 
 ##  Sonsiges 
 * [IBM developerWorks](http://www.ibm.com/developerworks/): [Virtual Linux](http://www.ibm.com/developerworks/library/l-linuxvirt/index.html?ca=drs-), eine Übersicht von Virtualisierungstechniken für Linux

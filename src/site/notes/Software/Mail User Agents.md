@@ -36,11 +36,4 @@ Hier eine Auflistung von persönlichen Erfahrungen mit E-Mailprogrammen.
 * Ettiketieren von E-Mails nur nach Farbe
 * Kalender
 * zähe Handhabung bei Synchronisation großer Postfacher (IMAP) oder Newsgroups
-
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
-
-
-
-</div></div>
+![[tag>mua linux thunderbird evolution\|tag>mua linux thunderbird evolution]]
