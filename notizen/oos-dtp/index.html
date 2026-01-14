@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>ssh</title>
+<title>Open Source Software DTP</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -103,7 +103,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/ssh/">ssh </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/ssh/">ssh </a>
 </div>
 </div>
 </div>
@@ -116,7 +116,7 @@ CTRL + K
 <span class="foldername">Notizen</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notizen/oos-dtp/">Open Source Software DTP </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notizen/oos-dtp/">Open Source Software DTP </a>
 </div>
 </div>
 </div>
@@ -186,22 +186,152 @@ CTRL + K
 </div>
 </div>
 </header>
-<h2 id="ssh-tunnel" tabindex="-1">SSH-Tunnel</h2>
-<p>Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> Port 3306 (MySql Server) erstellen:</p>
-<p><code>ssh -fN -L 3307:localhost:3306 host.example.com</code></p>
-<p>Anschließend die Verbindung aufbauen mit:<br>
-<code>mysql -u user -p -P3307 -h 127.0.0.1</code></p>
-<p><em>localhost</em> kann auch ein Host im Netz hinter <em><a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a></em> sein, also kann entsprechend die IP-Adresse oder der Hostname aus dem entfernten Netz angegeben werden. Natürlich kann auch ein abweichender Benutzername mit <em><a href="mailto:user@host.example.com" target="_blank" class="external-link">user@host.example.com</a></em> angegeben werden.</p>
-<h3 id="remote-forward" tabindex="-1">Remote-Forward</h3>
-<p>Beispiel für eine VNC-Verbindung: den lokalen Port 5900 auf den entfernten Rechner <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> Port 12345 legen.</p>
-<p><code>ssh -fN -R 12345:localhost:5900 host.example.com</code></p>
-<p>Anschließend kann die Verbindung von <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> aus aufgebaut werden<br>
-vncviewer localhost:12345<br>
-Natürlich kann sich die Gegenstelle auch den Port 12345 von <a href="http://host.example.com" target="_blank" class="external-link">host.example.com</a> lokal tunneln; siehe oben.</p>
-<h2 id="rsync-ueber-ssh-mit-abweichendem-port" tabindex="-1">rsync über ssh mit abweichendem Port</h2>
-<p>Wenn der SSH-Dienst auf einem anderen Port als 22 läuft muss es bei rsync entsprechend mit angegeben werden.</p>
-<p><code>rsync -auvH -e 'ssh -p 22123' [Quelle] [Ziel]</code></p>
-<p>!<a class="internal-link is-unresolved" href="/404" target="">tag&gt;netzwerk mysql linux</a></p>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#dtp">#dtp</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></p>
+<h2 id="bildbearbeitung-raster" tabindex="-1">Bildbearbeitung (Raster)</h2>
+<h3 id="gimp" tabindex="-1">Gimp</h3>
+<ul>
+<li><a href="http://www.gimp.org" target="_blank" class="external-link">http://www.gimp.org</a> , <a class="internal-link is-unresolved" href="/404" target="">wpde&gt;GIMP</a></li>
+<li><a href="http://docs.gimp.org/de/" target="_blank" class="external-link">Dokumentation</a></li>
+<li><a href="http://www.gimp.org/~tml/gimp/win32/pspi.html" target="_blank" class="external-link">Photoshop-Plugins unter GIMP</a> - auch für Linux</li>
+<li>CMYK in GIMP
+<ul>
+<li><a href="http://www.blackfiveservices.co.uk/separate.shtml" target="_blank" class="external-link">separate</a></li>
+<li><a href="http://cue.yellowmagic.info/softwares/separate.html" target="_blank" class="external-link">separate+</a>, Weiterentwicklung von separate</li>
+</ul>
+</li>
+<li><a href="http://liquidrescale.wikidot.com/" target="_blank" class="external-link">Liquid Rescale Plugin</a></li>
+<li>RAW Format
+<ul>
+<li><a href="http://ufraw.sourceforge.net/" target="_blank" class="external-link">gimp-ufraw</a> (Nikon)</li>
+<li><a href="http://www.lebsanft.org/blog/index.php?cat=9" target="_blank" class="external-link">gimp-dcraw</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="sonderformen-forks" tabindex="-1">Sonderformen / Forks</h4>
+<ul>
+<li><a href="http://www.gimpshop.com/" target="_blank" class="external-link">GIMPshop</a> - GIMP im Photoshop 'Look &amp; Feel' (Debian-Pakete verfügbar)
+<ul>
+<li>Im wesentlichen sieht GIMPShop auf dem ersten Blick kaum anders aus. Die Terminologie und die Anordnung der Menüs und deren Punkte entspricht denen in Photoshop, und macht es Umsteigern etwas leichter.<br>
+<note warning><br>
+Die Verwendung von GIMPshop ist insofern problematisch, dass man hier durch die abweichende Terminologie schwer in der Lage ist GIMP-Tutorials zu folgen und Support durch die Community zu bekommen.<br>
+</note></li>
+</ul>
+</li>
+<li><a class="internal-link is-unresolved" href="/404" target="">wpde&gt;Cinepaint</a></li>
+</ul>
+<h3 id="panorama-tools" tabindex="-1">Panorama-Tools</h3>
+<ul>
+<li><a href="http://hugin.sourceforge.net/" target="_blank" class="external-link">Hugin</a> - ein Meta-Tool für
+<ul>
+<li><a href="http://user.cs.tu-berlin.de/~nowozin/autopano-sift/" target="_blank" class="external-link">autopano-sift</a> für die automatische Suche von Kontrollpunkten in Bildern</li>
+<li><a href="http://enblend.sourceforge.net/" target="_blank" class="external-link">enblend</a> zum Ausgleichen unterschiedlicher Belichtungsverhältnisse (Blending)</li>
+</ul>
+</li>
+<li><s><a href="http://exolucere.ca/articles/create-panorama" target="_blank" class="external-link">HOWTO</a> für hugin, autopanosift und enblend</s>((Link ist leider ungültig))</li>
+<li><a href="http://www.panoclub.de/hugin_tut/index.html" target="_blank" class="external-link">HOWTO</a> für Hugin in Deutsch</li>
+</ul>
+<h2 id="gestaltung-illustration" tabindex="-1">Gestaltung / Illustration</h2>
+<h3 id="inkscape" tabindex="-1">Inkscape</h3>
+<h4 id="informationen" tabindex="-1">Informationen</h4>
+<ul>
+<li>Freehand</li>
+<li>Guide to Inkscape <a href="http://tavmjong.free.fr/INKSCAPE/" target="_blank" class="external-link">http://tavmjong.free.fr/INKSCAPE/</a></li>
+<li>Mouse and Keys <a href="http://www.inkscape.org/doc/keys.html" target="_blank" class="external-link">http://www.inkscape.org/doc/keys.html</a></li>
+<li>inoffizielles Handbuch <a href="http://wiki.inkscape-forum.de/" target="_blank" class="external-link">http://wiki.inkscape-forum.de/</a></li>
+<li>Tips and Tricks <a href="http://www.inkscape.org/doc/tips/tutorial-tips.html" target="_blank" class="external-link">http://www.inkscape.org/doc/tips/tutorial-tips.html</a></li>
+<li>Manual <a href="http://tavmjong.free.fr/INKSCAPE/MANUAL/html/index.html" target="_blank" class="external-link">http://tavmjong.free.fr/INKSCAPE/MANUAL/html/index.html</a>
+<ul>
+<li>Import <a href="http://tavmjong.free.fr/INKSCAPE/MANUAL/html/ch03s02.html" target="_blank" class="external-link">http://tavmjong.free.fr/INKSCAPE/MANUAL/html/ch03s02.html</a></li>
+</ul>
+</li>
+<li>Feautre Screenshots <a href="http://inkscape.org/screenshots/index.php?version=0.44" target="_blank" class="external-link">http://inkscape.org/screenshots/index.php?version=0.44</a></li>
+<li>PDF Präsentationen <a href="http://volition.wustl.edu/slides/" target="_blank" class="external-link">http://volition.wustl.edu/slides/</a></li>
+<li>Animation
+<ul>
+<li><a href="http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Web-Animation.html" target="_blank" class="external-link">http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Web-Animation.html</a></li>
+<li>Beispiel <a href="http://tavmjong.free.fr/INKSCAPE/DRAWINGS/clock_plain.svg" target="_blank" class="external-link">http://tavmjong.free.fr/INKSCAPE/DRAWINGS/clock_plain.svg</a></li>
+</ul>
+</li>
+<li>Präsentationen (mit Animationen)
+<ul>
+<li>sozi <a href="http://sozi.baierouge.fr/wiki/" target="_blank" class="external-link">http://sozi.baierouge.fr/wiki/</a></li>
+<li>JessyInk <a href="http://code.google.com/p/jessyink/" target="_blank" class="external-link">http://code.google.com/p/jessyink/</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/charts/" target="_blank" class="external-link">http://www.unicode.org/charts/</a></li>
+<li>Beispiele <a href="http://inkscape.svn.sourceforge.net/viewvc/inkscape/inkscape/trunk/share/examples/" target="_blank" class="external-link">http://inkscape.svn.sourceforge.net/viewvc/inkscape/inkscape/trunk/share/examples/</a></li>
+<li>Inkscape to TikZ exporter (SVG2LaTeX) <a href="http://code.google.com/p/inkscape2tikz/" target="_blank" class="external-link">http://code.google.com/p/inkscape2tikz/</a></li>
+</ul>
+<h3 id="vektorisieren" tabindex="-1">Vektorisieren</h3>
+<p>* <a href="http://potrace.sf.net/" target="_blank" class="external-link">potrace</a><br>
+* <a href="http://autotrace.sf.net/" target="_blank" class="external-link">autotrace</a><br>
+* <a href="http://vectormagic.stanford.edu/" target="_blank" class="external-link">Vector Magigc</a> - The Online Tool for Precision Vectorization (Stanford University)</p>
+<h4 id="gui" tabindex="-1">GUI</h4>
+<ul>
+<li>~~<a href="http://delineate.sourceforge.net/~~" target="_blank" class="external-link">http://delineate.sourceforge.net/~~</a>((Entwicklung steht still, Probleme mit Java aktueller als J2SE 1.4.1 oder 1.4.2)) autotrace, potrace</li>
+<li><a href="http://potracegui.sourceforge.net/" target="_blank" class="external-link">http://potracegui.sourceforge.net/</a> für potrace und autotrace (QT)</li>
+</ul>
+<h4 id="svg" tabindex="-1">= SVG</h4>
+<ul>
+<li><a class="internal-link is-unresolved" href="/404" target=""> <a href="http://OpenOffice.org" target="_blank" class="external-link">OpenOffice.org</a> SVG Support</a></li>
+</ul>
+<h2 id="layout-druck" tabindex="-1">Layout / Druck</h2>
+<h3 id="scribus" tabindex="-1">Scribus</h3>
+<ul>
+<li><a href="http://www.scribus.net/" target="_blank" class="external-link">http://www.scribus.net/</a> , <a class="internal-link is-unresolved" href="/404" target="">wpde&gt;Scribus</a></li>
+<li>Debian <a href="http://debian.scribus.net" target="_blank" class="external-link">http://debian.scribus.net</a></li>
+<li><a href="http://www.scribus.net/index.php?name=Downloads&amp;req=viewdownload&amp;cid=16" target="_blank" class="external-link">Farbprofile</a></li>
+<li><a href="http://docs.scribus.net/" target="_blank" class="external-link">Dokumentation</a> (englisch)</li>
+<li><a href="http://wiki.scribus.net/index.php/Main_Page" target="_blank" class="external-link">Wiki</a></li>
+</ul>
+<h3 id="color-management-system" tabindex="-1">Color Management System</h3>
+<ul>
+<li>Monitor einstellen, Beleuchtung <a href="http://www.normankoren.com/makingfineprints1A.html" target="_blank" class="external-link">http://www.normankoren.com/makingfineprints1A.html</a></li>
+<li>Little Color Management System Profiler <a href="http://lprof.sourceforge.net/" target="_blank" class="external-link">LPROF</a></li>
+<li><a href="http://quickgamma.de/" target="_blank" class="external-link">QuickGamma</a> (Windows), für Linux <a href="http://www.pcbypaul.com/software/GAMMApage.html" target="_blank" class="external-link">GAMMApage</a> (Python/Gtk) oder <a href="http://www.pcbypaul.com/software/monica.html" target="_blank" class="external-link">Monica</a></li>
+<li><a href="http://www.heise.de/ct/ctscreen/#CTSCREEN" target="_blank" class="external-link">Heise c't Screen</a> (Java Applet)</li>
+<li><a href="http://www.pantone.de/pages/pantone/pantone.aspx?ca=2" target="_blank" class="external-link">PANTONE: Kalibrierung</a></li>
+</ul>
+<h2 id="schriften-fonts" tabindex="-1">Schriften / Fonts</h2>
+<ul>
+<li>Wissenswertes über den <a href="http://www.blog.druckerey.de/index.php?id=40" target="_blank" class="external-link">Drucker-Jargon</a> aus dem Blog von Martin Z. Schröder</li>
+<li><a class="internal-link is-unresolved" href="/404" target="">wpde&gt;TrueType</a> Datiendung .TTF, <a class="internal-link is-unresolved" href="/404" target="">wpde&gt;Type1-Font</a> Dateiendung .PFB ist die Schrift und .PFM enthält Informationen zur <a class="internal-link is-unresolved" href="/404" target=""> Unterschneidung</a> (Kerning)</li>
+<li>als Einzelbenutzer ~/.fonts/, systemweit /usr/share/fonts/[truetype|type1]/<br>
+<note tip><br>
+Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemweit installiert worden muss ggf. fc-cache ausgeführt werden, bzw. sudo fc-cache für systemweite Installation.<br>
+</note></li>
+<li>Inkscape: <a href="http://wiki.inkscape.org/wiki/index.php/Installing_Fonts_as_a_User" target="_blank" class="external-link">Installing Fonts as a User</a></li>
+<li>Scribus: <a href="http://wiki.scribus.net/index.php/Installing_additional_fonts" target="_blank" class="external-link">Installing additional fonts</a></li>
+</ul>
+<h3 id="installation" tabindex="-1">Installation</h3>
+<ul>
+<li>TrueType &amp; Type 1 <a href="http://wiki.ubuntuusers.de/Schriften" target="_blank" class="external-link">http://wiki.ubuntuusers.de/Schriften</a></li>
+</ul>
+<h3 id="management" tabindex="-1">Management</h3>
+<ul>
+<li><a href="http://gfontview.sourceforge.net/" target="_blank" class="external-link">gfontview</a></li>
+<li><a href="https://savannah.nongnu.org/projects/fontypython" target="_blank" class="external-link">Fonty Python</a>, verteilte Fonts zu 'pogs' sichten, zusammenfassen, installieren und entfernen (truetype)</li>
+<li><a href="http://www.pcbypaul.com/software/FONTpage.html" target="_blank" class="external-link">FONTPage</a></li>
+</ul>
+<h2 id="pdf" tabindex="-1">PDF</h2>
+<ul>
+<li>pdftk</li>
+<li><a href="http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam/" target="_blank" class="external-link">pdfjam</a></li>
+<li><a href="http://multivalent.sourceforge.net/index.html" target="_blank" class="external-link">Multivalent Tools &amp; Browser</a> (Java) - erstellen von Notizen zu PDF-Dokumenten (werden zusätzlich in einem XML-Format gespeichert.</li>
+</ul>
+<h2 id="werkzeuge" tabindex="-1">Werkzeuge</h2>
+<ul>
+<li><a href="http://www.pstoedit.net/" target="_blank" class="external-link">pstoedit</a>: PostScript und PDF's zu editierbaren Formaten umwandeln (SVG, WMF, Adobe Illustrator)</li>
+<li>eps2svg <a href="http://www.montefiore.ulg.ac.be/~piater/personal/software/" target="_blank" class="external-link">http://www.montefiore.ulg.ac.be/~piater/personal/software/</a></li>
+<li><a href="http://sk1project.org/modules.php?name=Products&amp;product=uniconvertor" target="_blank" class="external-link">uniconvertor</a>((in Debian <a href="http://packages.debian.org/search?suite=default&amp;section=all&amp;arch=any&amp;searchon=names&amp;keywords=python-uniconvertor" target="_blank" class="external-link">python-uniconvertor</a>)): wandelt diverse, unter anderem proprietäre Vektor-Formate wie Corel .cdr oder Adobe Illustrator .ai bis 9.x und Windiws Meta File .wmf, in gängige Freie Formate wie SVG um.</li>
+</ul>
+<h2 id="3-d" tabindex="-1">3D</h2>
+<ul>
+<li>Blender((<a href="http://orange.blender.org/" target="_blank" class="external-link">http://orange.blender.org/</a>))</li>
+<li>Material Editor für Lightflow: MATSpider ((nur für Windows, mit wine nicht getestet)) <a href="http://homepage3.nifty.com/escargot/DownLoadFrm.html" target="_blank" class="external-link">http://homepage3.nifty.com/escargot/DownLoadFrm.html</a></li>
+<li>Lightflow <a href="http://www.lightflowtech.com/" target="_blank" class="external-link">http://www.lightflowtech.com/</a></li>
+<li>YafRay <a href="http://www.yafray.org/" target="_blank" class="external-link">http://www.yafray.org/</a></li>
+</ul>
 </main>
 <aside>
 <div class="sidebar">
@@ -243,13 +373,57 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#ssh-tunnel">SSH-Tunnel</a>
+<li><a href="#bildbearbeitung-raster">Bildbearbeitung (Raster)</a>
 <ol>
-<li><a href="#remote-forward">Remote-Forward</a>
+<li><a href="#gimp">Gimp</a>
+<ol>
+<li><a href="#sonderformen-forks">Sonderformen / Forks</a>
 </li>
 </ol>
 </li>
-<li><a href="#rsync-ueber-ssh-mit-abweichendem-port">rsync über ssh mit abweichendem Port</a>
+<li><a href="#panorama-tools">Panorama-Tools</a>
+</li>
+</ol>
+</li>
+<li><a href="#gestaltung-illustration">Gestaltung / Illustration</a>
+<ol>
+<li><a href="#inkscape">Inkscape</a>
+<ol>
+<li><a href="#informationen">Informationen</a>
+</li>
+</ol>
+</li>
+<li><a href="#vektorisieren">Vektorisieren</a>
+<ol>
+<li><a href="#gui">GUI</a>
+</li>
+<li><a href="#svg">= SVG</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#layout-druck">Layout / Druck</a>
+<ol>
+<li><a href="#scribus">Scribus</a>
+</li>
+<li><a href="#color-management-system">Color Management System</a>
+</li>
+</ol>
+</li>
+<li><a href="#schriften-fonts">Schriften / Fonts</a>
+<ol>
+<li><a href="#installation">Installation</a>
+</li>
+<li><a href="#management">Management</a>
+</li>
+</ol>
+</li>
+<li><a href="#pdf">PDF</a>
+</li>
+<li><a href="#werkzeuge">Werkzeuge</a>
+</li>
+<li><a href="#3-d">3D</a>
 </li>
 </ol>
 </nav>
