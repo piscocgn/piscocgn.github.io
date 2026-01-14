@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>start</title>
+<title>Impressum</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -122,11 +122,11 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/impressum/">Impressum </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/impressum/">Impressum </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">start </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">start </a>
 </div>
 </div>
 </div>
@@ -160,17 +160,21 @@ CTRL + K
 </div>
 </div>
 </header>
-<h2 id="wiki-polyformal" tabindex="-1">wiki polyformal</h2>
-<p>!<a class="internal-link is-unresolved" href="/404" target=""> 300</a></p>
-<p>Welcome to the documentation site of <a href="http://www.polyformal.de" target="_blank" class="external-link">polyformal</a>.</p>
 <ul>
-<li><a href="http://wiki.polyformal.de/start?do=index" target="_blank" class="external-link">Overview</a></li>
+<li>polyformal System- &amp; Formarbeit</li>
+<li>Inhaber Stefan Pampel</li>
+<li>Lichpfad 6</li>
+<li>51145 Köln, NRW</li>
+<li>Deutschland</li>
+<li>Phone: +49 221 2919 9069</li>
+<li>Email: formbureau-[ät]-polyformal.de</li>
+<li>Internet: <a href="http://www.polyformal.de" target="_blank" class="external-link">www.polyformal.de</a></li>
 </ul>
-<h2 id="cloud" tabindex="-1">Cloud</h2>
-<p><s>TAGCLOUD</s><br>
-<s>CLOUD</s></p>
-<h2 id="from-the-web" tabindex="-1">from the web</h2>
-<p><img src="url%3Ehttp://kaecgn.dyndns.org:8080/tt-rss/backend.php" alt="Image | 400" width=" 400px"></p>
+<p>Steuernummer 218/5185/2603</p>
+<p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE236718756</p>
+<p>IANA PEN: 34466</p>
+<p>Inhaltlich Verantwortlicher gemäß § 10 Absatz 3 MDStV: Stefan Pampel (Anschrift wie oben)</p>
+<p>Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernimmt polyformal keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -203,28 +207,12 @@ CTRL + K
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
 </div>
 </div>
-<div class="toc">
-<div class="toc-title-container">
-<div class="toc-title">
-On this page
-</div>
-</div>
-<div class="toc-container">
-<nav class="toc">
-<ol>
-<li><a href="#wiki-polyformal">wiki polyformal</a>
-</li>
-<li><a href="#cloud">Cloud</a>
-</li>
-<li><a href="#from-the-web">from the web</a>
-</li>
-</ol>
-</nav>
-</div>
-</div>
 </div>
 </div>
 </aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
 <script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
 </body>
 </html>
