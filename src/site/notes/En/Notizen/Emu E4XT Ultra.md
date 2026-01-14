@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/en/notizen/emu-e4-xt-ultra/"}
+{"dg-publish":true,"dg-path":"en/notizen/e4xt_ultra","permalink":"/en/notizen/e4xt-ultra/"}
 ---
 
 ##  Internal SSD 
