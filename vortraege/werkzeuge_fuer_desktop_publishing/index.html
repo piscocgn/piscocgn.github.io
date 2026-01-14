@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>Referenzkarte Netzwerk</title>
+<title>Werkzeuge für Desktop Publishing</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -99,7 +99,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/referenzkarte_netzwerk/">Referenzkarte Netzwerk </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/referenzkarte_netzwerk/">Referenzkarte Netzwerk </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -129,7 +129,7 @@ CTRL + K
 <span class="foldername">Vorträge</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/vortraege/werkzeuge_fuer_desktop_publishing/">Werkzeuge für Desktop Publishing </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/vortraege/werkzeuge_fuer_desktop_publishing/">Werkzeuge für Desktop Publishing </a>
 </div>
 </div>
 </div>
@@ -173,215 +173,14 @@ CTRL + K
 </div>
 </div>
 </header>
-<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#lpi">#lpi</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#netzwerk">#netzwerk</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#unvollständig">#unvollständig</a></p>
-<h2 id="abstract" tabindex="-1">Abstract</h2>
-<p>Eine Schnellreferenz-Karte für tägliche Netzwerkaufgaben. Syntax<br>
-cmd notwendiger_Parameter [optionaler Parameter]</p>
-<h2 id="grundlagen" tabindex="-1">Grundlagen</h2>
-<h3 id="cidr" tabindex="-1">CIDR</h3>
-<pre><code>00000000.00000000.00000000.00000000 = 32
-|-------|--------|--------|--------|
-    8       8        8          8      
-&lt;- Leseweise 128 64 32 16 8 4 2 1 . 128 64 ...
-</code></pre>
-<ul>
-<li>255.255.255.0 /24 253 IP Adresse (255 - Netzwerkadresse .0 - Broadcast .255 = 253</li>
-<li>zum Umrechnen kann <a href="http://jodies.de/ipcalc" target="_blank" class="external-link">ipcalc</a> hinzugezogen werden</li>
-</ul>
-<h3 id="klasse-a" tabindex="-1">Klasse A</h3>
-<ul>
-<li>255.0.0.0 /8, also 8 Netzwerk-Bits und 24 Host-Bits (32 - 8 = 24)</li>
-<li>128 Netzwerke, 2 sind reseviert (0.0.0.0 Default-Route, 127.0.0.1 Loop-Device mit 127.0.0.1 Localhost)</li>
-<li>2hoch 24 - 2 (netzwerkadresse und Broadcast) Host möglich.</li>
-</ul>
-<h3 id="klasse-b" tabindex="-1">Klasse B</h3>
-<ul>
-<li>begint binaer mit 10 ( == 128 siehe oben))</li>
-<li>Adressbereich von 128.0.0.0 bis 191.255.255.255</li>
-</ul>
-<h3 id="klasse-c" tabindex="-1">Klasse C</h3>
-<ul>
-<li>beginnt mit 110 ( 128 + 64 = 192, siehe oben)</li>
-<li>Adressbereich von 192.0.0.0 bis 223.255.255.255</li>
-</ul>
-<h3 id="klasse-d-und-e" tabindex="-1">Klasse D und E</h3>
-<ul>
-<li>sehr selten, experimentell, reserviert als Multicast für Rechnergruppen und haben keinen Netzwerkanteil</li>
-<li>beginnt mit 1110 ( 128 + 64 + 32 = 224, siehe oben)</li>
-<li>Adressbereich 224.0.0.0 bis 238.255.255.255.0</li>
-</ul>
-<h3 id="private-adressbereiche" tabindex="-1">Private Adressbereiche</h3>
-<p>Außerhalb des Internets</p>
-<ul>
-<li>Klasse A 10.0.0.0, Netzwerkmaske /8 bzw. 255.0.0.0
-<ul>
-<li>nur ein netz</li>
-</ul>
-</li>
-<li>Klasse B 172.16.0.0 bis 172.31.255.255, Netzwerkmaske /16 bzw. 255.255.0.0
-<ul>
-<li>insgesamt 16 Netze</li>
-</ul>
-</li>
-<li>Klasse C 192.168.0.0 bis 192.168.255.255, Netzwerkmaske /8 bzw. 255.255.255.0
-<ul>
-<li>insgesamt 256 Netze ( 2 * 128 = 256)</li>
-</ul>
-</li>
-</ul>
-<h2 id="interfaces" tabindex="-1">Interfaces</h2>
-<p>ifconfig [interface] [adresse] <a class="internal-link is-unresolved" href="/404" target="">optionen</a><br>
-ip link [show|list|ls] [device]</p>
-<h3 id="beispiele" tabindex="-1">Beispiele</h3>
-<ul>
-<li>Rosetta Stone ifconfig / ip</li>
-</ul>
-<div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>Aktion</th>
-<th>ip</th>
-<th>ifconfig / traditionell</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Interface ein- oder ausschalten</td>
-<td>ifconfig [device] up''</td>
-<td>''down</td>
-</tr>
-<tr>
-<td>Setzen einer IP-Adresse 192.168.3.1 Netzmaske 255.255.255.0 und Boadcast (wird in beiden Fällen automatisch zugewiesen) für das Interface eth0</td>
-<td>ip addr add 192.168.3.1/24 dev eth0 brd +</td>
-<td>ifconfig eth0 192.168.3.1 netmask 255.255.255.0</td>
-</tr>
-<tr>
-<td>Erzeugen eines virtuellen Interfaces</td>
-<td>ip addr add 192.168.3.1/24 dev eth0:0 brd + label eth0:1 ((die Anweisung <em>label</em> ist nur zur Kompatilität mit ifconfig))</td>
-<td>ifconfig eth0:0 192.168.3.1 netmask 255.255.255.0</td>
-</tr>
-<tr>
-<td>Löschen eines virtuellen Interfaces</td>
-<td>ip addr del 192.168.3.1/24 dev eth0:0</td>
-<td>ifconfig eth0:0 del 192.168.3.1</td>
-</tr>
-<tr>
-<td>Routing</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-<td>---</td>
-</tr>
-<tr>
-<td>Routing-Tabelle anzeigen</td>
-<td>ip route</td>
-<td>route -n ''</td>
-</tr>
-<tr>
-<td>ein Standard-Gateway hinzufügen</td>
-<td>ip route add default via [host IP''</td>
-<td>''name]</td>
-</tr>
-<tr>
-<td>eine Standard-Gateway löschen</td>
-<td>ip route del default</td>
-<td>route del default</td>
-</tr>
-<tr>
-<td>eine Route in ein Netz hinzufügen</td>
-<td>ip route add [network]/[CIDR] via [gateway]</td>
-<td>route add -net [network IP] [netmask] [device]</td>
-</tr>
-<tr>
-<td>eine Route in ein Netz löschen</td>
-<td>ip route del [network]/[CIDR] via [gateway]</td>
-<td>route del -net [network IP] [netmask] [device]</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="low-level" tabindex="-1">LowLevel</h3>
-<p>Cache der ARP Tabelle ausgeben, die Option -n verhindert die Namensauflösung.<br>
-cat /proc/net/arp<br>
-arp -n<br>
-Einträge bearbeiten:<br>
-arp -d IP<br>
-arp -s IP MAC</p>
-<h3 id="geschwindigkeit-pruefen-und-einstellen" tabindex="-1">Geschwindigkeit prüfen und einstellen</h3>
-<p>mii-tool eth0<br>
-ethtool eth0</p>
-<p>mii-tool -F 100baseTx-FD<br>
-mii-tool -F 10baseT-HD</p>
-<p>ethtool -s eth0 speed 100 duplex full<br>
-ethtool -s eth0 speed 10 duplex half</p>
-<h2 id="wireles-lan" tabindex="-1">Wireles LAN</h2>
-<p>wlanconfig<br>
-watch -n1 'cat /proc/net/wireless'</p>
-<h2 id="dns" tabindex="-1">DNS</h2>
+<p>Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.</p>
+<p>Beinhaltet: u.a. GIMP, Inkscape, Scribus, gThumb, Schriften allgemein, FontyPython, FONTPage</p>
 <ul>
 <li>
-<p>Abfrage Hostname zu IP</p>
-<p>host hostname [IP des Nameservers anstatt resolv.conf]<br>
-nslookup hostname [IP des Nameservers anstatt resolv.conf]<br>
-dig [@IP des Nameservers anstatt resolv.conf] [-t type] hostname</p>
-</li>
-<li>
-<p>Abfrage IP zu Hostname</p>
-<p>host IP [IP des Nameservers anstatt resolv.conf]<br>
-nslookup IP [IP des Nameservers anstatt resolv.conf]<br>
-nslookup [@IP des Nameservers anstatt resolv.conf] -x IP</p>
+<iframe src="/img/user/media/vortraege/polyformal_dtp-sig.pdf" width="100%" height="900px" title="polyformal_dtp-sig.pdf" style="border:1px solid #ccc"></iframe> für den [Vortrag](http://ubucon.de/index.php?option=com_content&task=view&id=41&Itemid=49) auf der [ubucon](http://www.ubucon.de/) 2007 * <a class="internal-link is-unresolved" href="/404" target=""> Zusatzinformationen</a>
 </li>
 </ul>
-<p>, whois <s>nsquery</s></p>
-<h2 id="bridging" tabindex="-1">Bridging</h2>
-<ul>
-<li><a href="http://www.linuxfoundation.org/en/Net%3ABridge" target="_blank" class="external-link">Dokumentation</a>, siehe auch ''/usr/share/doc/bridge-utils''<br>
-brctl addbr br0<br>
-brctl addif br0 eth0</li>
-</ul>
-<p>Anschließend die IP-Adresse von eth0 auf br0 übertragen, eth0 auf 0.0.0.0 promisc setzen.</p>
-<h2 id="ip-tables" tabindex="-1">IP-Tables</h2>
-<p>Eine einfache Regel für NAT<br>
-iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -o eth0 -j MASQUERADE<br>
-<note><br>
-Das Kommando<br>
-echo 1 &gt; /proc/sys/net/ipv4/ip_forward<br>
-aktiviert das Weiterleiten von IP-Verkehr. Feste Einstellung ist über /etc/sysctl.conf oder bei Debian <em>/etc/network/options</em> <em>ip_forward=yes</em> möglich<br>
-</note></p>
-<h2 id="monitoring" tabindex="-1">Monitoring</h2>
-<p>Alle lokalen TCP- und UDP-Dienste des Hosts anzeigen, <em>-c</em> für aktualisierende Anzeige (continuous, 1sec), <em>n</em> zeigt numerische Werte statt Namen<br>
-netstat -ltu[c][n]<br>
-oder eine schönere Ausgabe<br>
-watch -n0,5 'netstat -ltu[n]'<br>
-Aktuele Verbindungen und die zugehörigen Programme anzeigen((root-Rechte erforderlich))<br>
-watch -n0,5 'netstat -ptu[n]'<br>
-Geöffnete Dateien von Netzwerkverbindungen anzeigen (IPv4 und IPv6) ((zeigt nur eigene Verbindungen an, sonst mit root-Rechten aufrufen))<br>
-lsof -i</p>
-<p>Netzwerkverkehr ansehen, optional Einfärben mit ccze<br>
-tcpdump -vvv [| ccze]<br>
-oder mit dem Programm <em>multitail</em>. Die Option -A zeigt de Inhalt von Paketen an.</p>
-<h2 id="testen" tabindex="-1">Testen</h2>
-<h3 id="simple-chat" tabindex="-1">Simple Chat</h3>
-<ul>
-<li>''netcat -l -p 1234''</li>
-<li>auf der anderen Seite ''netcat [ip|hostname] 1234''</li>
-</ul>
-<h3 id="dateiuebertragung" tabindex="-1">Dateiübertragung</h3>
-<ul>
-<li>''cat [file] | netcat -l -p 1234''</li>
-<li>auf der anderen Seite ''netcat [ip|hostname] 1234 &gt; [file]''</li>
-</ul>
-<h2 id="sicherheit" tabindex="-1">Sicherheit</h2>
-<p>Überwachung der Kombination IP- und MAC-Adresse.<br>
-aprwatch</p>
-<h3 id="ssh" tabindex="-1">SSH</h3>
-<ul>
-<li><a class="internal-link" target="" data-note-icon="" href="/linux/ssh/">ssh</a></li>
-</ul>
-<h3 id="open-vpn" tabindex="-1">OpenVPN</h3>
-<p>TODO</p>
+<p>!<a class="internal-link is-unresolved" href="/404" target="">tag&gt;dtp</a></p>
 </main>
 <aside>
 <div class="sidebar">
@@ -412,73 +211,6 @@ aprwatch</p>
 <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
 <div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
-</div>
-</div>
-<div class="toc">
-<div class="toc-title-container">
-<div class="toc-title">
-On this page
-</div>
-</div>
-<div class="toc-container">
-<nav class="toc">
-<ol>
-<li><a href="#abstract">Abstract</a>
-</li>
-<li><a href="#grundlagen">Grundlagen</a>
-<ol>
-<li><a href="#cidr">CIDR</a>
-</li>
-<li><a href="#klasse-a">Klasse A</a>
-</li>
-<li><a href="#klasse-b">Klasse B</a>
-</li>
-<li><a href="#klasse-c">Klasse C</a>
-</li>
-<li><a href="#klasse-d-und-e">Klasse D und E</a>
-</li>
-<li><a href="#private-adressbereiche">Private Adressbereiche</a>
-</li>
-</ol>
-</li>
-<li><a href="#interfaces">Interfaces</a>
-<ol>
-<li><a href="#beispiele">Beispiele</a>
-</li>
-<li><a href="#low-level">LowLevel</a>
-</li>
-<li><a href="#geschwindigkeit-pruefen-und-einstellen">Geschwindigkeit prüfen und einstellen</a>
-</li>
-</ol>
-</li>
-<li><a href="#wireles-lan">Wireles LAN</a>
-</li>
-<li><a href="#dns">DNS</a>
-</li>
-<li><a href="#bridging">Bridging</a>
-</li>
-<li><a href="#ip-tables">IP-Tables</a>
-</li>
-<li><a href="#monitoring">Monitoring</a>
-</li>
-<li><a href="#testen">Testen</a>
-<ol>
-<li><a href="#simple-chat">Simple Chat</a>
-</li>
-<li><a href="#dateiuebertragung">Dateiübertragung</a>
-</li>
-</ol>
-</li>
-<li><a href="#sicherheit">Sicherheit</a>
-<ol>
-<li><a href="#ssh">SSH</a>
-</li>
-<li><a href="#open-vpn">OpenVPN</a>
-</li>
-</ol>
-</li>
-</ol>
-</nav>
 </div>
 </div>
 </div>
