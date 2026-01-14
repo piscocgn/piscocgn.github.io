@@ -27,4 +27,3 @@
 
 ##  Sonsiges 
 * [IBM developerWorks](http://www.ibm.com/developerworks/): [Virtual Linux](http://www.ibm.com/developerworks/library/l-linuxvirt/index.html?ca=drs-), eine Übersicht von Virtualisierungstechniken für Linux
-* [Interactive Linux Kernel Map](http://www.makelinux.net/kernel_map)
