@@ -2,16 +2,16 @@
 {"dg-publish":true,"dg-permalink":"os/repositories","permalink":"/os/repositories/"}
 ---
 
-```ad-warning
-This page is outdated.
-```
 
+
+> [!warning] 
+>  This page is outdated.
 
 ##  apt repositories debian / ubuntu 
 <html>
 </HTML>
 
-```text
+```
 # Nautilus Share, simple network share Ubuntu / Debian
 # http://gentoo.ovibes.net/nautilus-share/mediawiki-1.4.4/index.php/Accueil
 deb http://gentoo.ovibes.net/nautilus-share/ubuntu/breezy ./
