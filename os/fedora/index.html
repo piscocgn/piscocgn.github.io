@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>Werkzeuge für Desktop Publishing</title>
+<title>FreeBSD</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -137,7 +137,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/fedora/">FreeBSD </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/fedora/">FreeBSD </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -171,7 +171,7 @@ CTRL + K
 <span class="foldername">Vorträge</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/vortraege/werkzeuge_fuer_desktop_publishing/">Werkzeuge für Desktop Publishing </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/vortraege/werkzeuge_fuer_desktop_publishing/">Werkzeuge für Desktop Publishing </a>
 </div>
 </div>
 </div>
@@ -215,20 +215,75 @@ CTRL + K
 </div>
 </div>
 </header>
-<p>Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.</p>
-<p>Beinhaltet: u.a. GIMP, Inkscape, Scribus, gThumb, Schriften allgemein, FontyPython, FONTPage</p>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#gnome">#gnome</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#unix">#unix</a></p>
 <ul>
-<li>
-<iframe src="/img/user/media/vortraege/polyformal_dtp-sig.pdf" width="100%" height="900px" title="polyformal_dtp-sig.pdf" style="border:1px solid #ccc"></iframe>
-</li>
-<li>
-<p>für den <a href="http://ubucon.de/index.php?option=com_content&amp;task=view&amp;id=41&amp;Itemid=49" target="_blank" class="external-link">Vortrag</a> auf der <a href="http://www.ubucon.de/" target="_blank" class="external-link">ubucon</a> 2007</p>
+<li><a href="http://www.freebsd.org/doc/de_DE.ISO8859-1/books/handbook/index.html" target="_blank" class="external-link">Das FreeBSD Handbuch</a></li>
+</ul>
+<h2 id="administration" tabindex="-1">Administration</h2>
+<p>Für viele Administrative Aufgaben steht <em>root</em> das Programm ''sysinstall'' zur Verfügung.</p>
+<h3 id="softwareverwaltung" tabindex="-1">Softwareverwaltung</h3>
+<h4 id="pkg-add" tabindex="-1">pkg_add</h4>
+<h5 id="proxy" tabindex="-1">Proxy</h5>
+<p>FreeBSD benutzt im Auslieferungszustand die <em>csh</em>, hier muss ein Proxy wie folgt in der Umgebung definiert werden:</p>
+<p><code>setenv http_proxy http://ip.proxy[:port]</code></p>
+<h5 id="abweichenden-softwarespiegel-verwenden-z-b-nur-http" tabindex="-1">Abweichenden Softwarespiegel verwenden, z.B. nur HTTP</h5>
+<p>Wenn der Proxy kein FTP zulässt, dann muss ein Spiegel ausgewählt werden, der HTTP unterstützt. Das ist nicht bei allen Spiegeln der Fall. Eine <a href="http://www.freebsd.org/doc/de_DE.ISO8859-1/books/handbook/mirrors-ftp.html" target="_blank" class="external-link">Übersicht</a> der Spiegel ist im FreeBSD Handbuch zu finden.</p>
+<p><code>setenv PACKAGESITE http://ftp1.de.freebsd.org/freebsd/ports/i386/packages-8.1-release/Latest/ </code></p>
+<p>Dann wie gewohnt Pakete mit</p>
+<p><code>pkg_add -r foo</code></p>
+<p>instalieren.</p>
+<h5 id="eigener-partieller-spiegel" tabindex="-1">Eigener partieller Spiegel</h5>
+<p>Eine Liste mit rsync-Spiegeln ist im FreeBSD <a href="http://www.freebsd.org/doc/handbook/mirrors-rsync.html" target="_blank" class="external-link">Handbuch</a> zu finden.</p>
+<pre><code class="language-bash">MIRROR=ftp.nl.FreeBSD.org
+ARCH=i386
+RELEASE=x.x
+rsync -auv --delete --progress $MIRROR::FreeBSD/ports/$ARCH/packages-$RELEASE-release/ FreeBSD-$RELEASE-$ARCH
+</code></pre>
+<h3 id="su-ermoeglichen" tabindex="-1">su - ermöglichen =</h3>
+<p>Ein <em>normaler</em> Benutzer muss Mitglied der Gruppe <em>wheel</em> sein, um ''su -'' durchführen zu können:<br>
+pw user mod foo -G wheel</p>
+<h2 id="gnome" tabindex="-1">Gnome</h2>
 <ul>
-<li><a class="internal-link is-unresolved" href="/404" target=""> Zusatzinformationen</a></li>
+<li>gnome2, gdm und xorg installieren</li>
+<li>Falls im GDM keine Anmeldung möglich ist: /proc fehlt <a href="http://www.freebsd.org/gnome/docs/faq2.html#procfs" target="_blank" class="external-link">http://www.freebsd.org/gnome/docs/faq2.html#procfs</a></li>
 </ul>
-<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#dtp">#dtp</a></p>
+<p>/etc/fstab</p>
+<pre><code class="language-bash">proc           /proc       procfs  rw  0   0
+</code></pre>
+<ul>
+<li>gdm/Gnome beim Booten starten:</li>
+</ul>
+<pre><code class="language-bash">/etc/rc.conf: gnome_enable=&quot;YES&quot;
+</code></pre>
+<h3 id="cups" tabindex="-1">CUPS</h3>
+<p>Damit die in CUPS eingerichteten Drucker auch in den Druckdialogen von GNOME-Anwendungen angezeigt werden müssen die Pakete <em>libgnomeprint</em> und <em>gtk20</em> (Stand FreeBSD 8.1) erneut mit der Option ''WITH_CUPS=yes'' übersetzt werden, siehe <a href="http://www.freebsdwiki.net/index.php/CUPS#CUPS_and_Gnome_Warning" target="_blank" class="external-link">CUPS im FreeBSD Wiki</a>. Alternatik kann mittels des Paketes ''gtklp'' in den Druckdialogen gleichnamiger Befehl als Druck-Kommando verwendet werden.</p>
+<ul>
+<li>Probelm ''htmlview not found''
+<ul>
+<li>''cd /usr/ports/print/cups-base &amp;&amp; make config'' und XDG_OPEN wählen ((<a href="http://forums.freebsd.org/showthread.php?t=1291" target="_blank" class="external-link">http://forums.freebsd.org/showthread.php?t=1291</a>))</li>
+</ul>
 </li>
 </ul>
+<h3 id="gdm3" tabindex="-1">gdm3</h3>
+<h4 id="benutzerliste-deaktivieren" tabindex="-1">Benutzerliste deaktivieren</h4>
+<ul>
+<li>Hierzu muss dem System-Account <em>gdm</em> kurzfristig eine Login-Shell zugewiesen werden, und mit ''gconftool-2'' die entsprechenden Einstellungen vorgenommen werden.</li>
+</ul>
+<pre><code class="language-bash">chsh -s /bin/sh gdm
+su - gdm gconftool-2 --set --type boolean /apps/gdm/simple-greeter/disable_user_list true
+chsh -s /usr/sbin/nologin gdm
+</code></pre>
+<h4 id="gdm-anmeldedialog-standard-auf-deutsch" tabindex="-1">gdm Anmeldedialog Standard auf Deutsch</h4>
+<p>in der Datei ''/etc/rc.conf''</p>
+<pre><code class="language-bash">gdm_lang=&quot;de_DE.UTF-8&quot;
+</code></pre>
+<h2 id="cups-1" tabindex="-1">CUPS</h2>
+<h3 id="remote-administration" tabindex="-1">Remote Administration</h3>
+<p>Beim Zuschalten der Option <em>Allow remote administration</em> verweigert CUPS spätestens bei Authentifizierung das Upgrade auf https.</p>
+<p>var/log/cups/error_log</p>
+<pre><code class="language-bash">Unable to create SSL server key file &quot;/usr/local/etc/cups/ssl/server.key&quot; - no such file or directory
+</code></pre>
+<p>Wie die Fehlermeldung aussagt scheint der Pfad nicht in Ordnung zu sein. Beim Überprüfen stellt sich heraus, dass das Verzeichnis ''/usr/local/etc/cups/ssl/'' noch nicht existiert.</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -259,6 +314,59 @@ CTRL + K
 <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
 <div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+</div>
+</div>
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#administration">Administration</a>
+<ol>
+<li><a href="#softwareverwaltung">Softwareverwaltung</a>
+<ol>
+<li><a href="#pkg-add">pkg_add</a>
+<ol>
+<li><a href="#proxy">Proxy</a>
+</li>
+<li><a href="#abweichenden-softwarespiegel-verwenden-z-b-nur-http">Abweichenden Softwarespiegel verwenden, z.B. nur HTTP</a>
+</li>
+<li><a href="#eigener-partieller-spiegel">Eigener partieller Spiegel</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#su-ermoeglichen">su - ermöglichen =</a>
+</li>
+</ol>
+</li>
+<li><a href="#gnome">Gnome</a>
+<ol>
+<li><a href="#cups">CUPS</a>
+</li>
+<li><a href="#gdm3">gdm3</a>
+<ol>
+<li><a href="#benutzerliste-deaktivieren">Benutzerliste deaktivieren</a>
+</li>
+<li><a href="#gdm-anmeldedialog-standard-auf-deutsch">gdm Anmeldedialog Standard auf Deutsch</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#cups-1">CUPS</a>
+<ol>
+<li><a href="#remote-administration">Remote Administration</a>
+</li>
+</ol>
+</li>
+</ol>
+</nav>
 </div>
 </div>
 </div>

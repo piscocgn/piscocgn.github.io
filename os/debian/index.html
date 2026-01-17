@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>Werkzeuge für Desktop Publishing</title>
+<title>Debian GNU-Linux</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -133,7 +133,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/debian/">Debian GNU-Linux </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/debian/">Debian GNU-Linux </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -171,7 +171,7 @@ CTRL + K
 <span class="foldername">Vorträge</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/vortraege/werkzeuge_fuer_desktop_publishing/">Werkzeuge für Desktop Publishing </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/vortraege/werkzeuge_fuer_desktop_publishing/">Werkzeuge für Desktop Publishing </a>
 </div>
 </div>
 </div>
@@ -215,20 +215,55 @@ CTRL + K
 </div>
 </div>
 </header>
-<p>Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.</p>
-<p>Beinhaltet: u.a. GIMP, Inkscape, Scribus, gThumb, Schriften allgemein, FontyPython, FONTPage</p>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#debian">#debian</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></p>
+<h2 id="packaging-and-amp-repository" tabindex="-1">Packaging &amp; Repository</h2>
+<h3 id="backports-frische-software-fuer-stable" tabindex="-1">Backports: frische Software für stable</h3>
+<p>Aus den sogenannten Backports kann -- auf eigene Gefahr ™ -- aktuelle Software auf einen stable System installiert werden. Statt <em>squeeze</em> die entsprechende Version eintragen, und statt <em>package</em> das Paket verwenden. Ob das Paket überhaupt als Backport vorliegt kann mit <em>apt-cache</em> überprüft werden.</p>
+<pre><code class="language-bash">echo &quot;deb http://backports.debian.org/debian-backports squeeze-backports main&quot; &gt;&gt; /etc/apt/sources.list
+aptitude update # alternativ apt-get update
+apt-cache policy &quot;package&quot;
+aptitude -t squeeze-backports install &quot;package&quot; # alternativ apt-get -t squeeze-backports install &quot;package&quot;
+</code></pre>
+<ul>
+<li><a href="http://backports.debian.org/Instructions/" target="_blank" class="external-link">http://backports.debian.org/Instructions/</a></li>
+</ul>
+<h3 id="entwicklung" tabindex="-1">Entwicklung</h3>
+<ul>
+<li>Lucas Nussbaum: <a href="http://git.debian.org/?p=users/lucas/packaging-tutorial.git;a=blob_plain;f=packaging-tutorial.pdf;hb=refs/heads/pdf" target="_blank" class="external-link">An Introduction to Debian Packaging</a> (PDF Download)</li>
+<li>Debian Administration: <a href="http://www.debian-administration.org/articles/286" target="_blank" class="external-link">Setting up your own APT repository with upload support</a></li>
+<li>apt-get install debian-wizard (Raphaël Hertzog): <a href="http://raphaelhertzog.com/2010/12/15/howto-to-rebuild-debian-packages/" target="_blank" class="external-link">http://raphaelhertzog.com/2010/12/15/howto-to-rebuild-debian-packages/</a>
+<ul>
+<li>Bei lokalen Änderungen ''dch --local myname'' um einen Eintrag in debian/changelog zu setzten</li>
+</ul>
+</li>
+<li>schneller bauen mit cowpuilder <a href="http://wiki.debian.org/cowbuilder" target="_blank" class="external-link">http://wiki.debian.org/cowbuilder</a></li>
+</ul>
+<h2 id="debian-etch-lenny-treiber-fuer-ati-grafikkarten" tabindex="-1">Debian Etch/Lenny: Treiber für ATI Grafikkarten</h2>
+<ul>
+<li>Treiber von <a href="http://ati.amd.com/support/driver.html" target="_blank" class="external-link">ATI</a> auswählen und herunterladen, z.B. in /tmp</li>
+</ul>
+<pre><code class="language-bash">aptitude install module-assistant debhelper libstdc++5
+m-a prepare
+chmod +x ./ati-driver-installer-*
+./ati-driver-installer-* --buildpkg Debian/lenny
+dpkg -i *.deb
+aticonfig --intial --input /etc/X11/xorg.conf
+</code></pre>
+<ul>
+<li>m-a prepare zieht fast alles was benötigt wird (z.B. build-essential)</li>
+<li>libstdc++6 kommt automatisch mit libstdc++5</li>
+<li>gegebenenfalls den ati-driver-installer-* mit ''--listpkg'' abfragen, ob die jeweilige Version unterstützt wird und was einzutragen ist (Debian/lenny usw.)</li>
+</ul>
+<h2 id="langsame-netzwerkverbindung" tabindex="-1">Langsame Netzwerkverbindung</h2>
+<p>Gegebenenfalls IPv6 deaktivieren, siehe <a href="http://www.debian-administration.org/articles/409" target="_blank" class="external-link">hier</a></p>
+<h2 id="dropbox-fuer-debian-lenny-squeeze" tabindex="-1">Dropbox für Debian Lenny/Squeeze</h2>
 <ul>
 <li>
-<iframe src="/img/user/media/vortraege/polyformal_dtp-sig.pdf" width="100%" height="900px" title="polyformal_dtp-sig.pdf" style="border:1px solid #ccc"></iframe>
-</li>
-<li>
-<p>für den <a href="http://ubucon.de/index.php?option=com_content&amp;task=view&amp;id=41&amp;Itemid=49" target="_blank" class="external-link">Vortrag</a> auf der <a href="http://www.ubucon.de/" target="_blank" class="external-link">ubucon</a> 2007</p>
-<ul>
-<li><a class="internal-link is-unresolved" href="/404" target=""> Zusatzinformationen</a></li>
-</ul>
-<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#dtp">#dtp</a></p>
+<p>Auf der Homepage von Dropbox das Paket für Ubuntu 7.10 <a href="https://www.dropbox.com/downloading?os=lnx" target="_blank" class="external-link">herunterladen</a> und mit</p>
+<p><code>dpkg - i ...</code></p>
 </li>
 </ul>
+<p>installieren.</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -259,6 +294,33 @@ CTRL + K
 <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
 <div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+</div>
+</div>
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#packaging-and-amp-repository">Packaging & Repository</a>
+<ol>
+<li><a href="#backports-frische-software-fuer-stable">Backports: frische Software für stable</a>
+</li>
+<li><a href="#entwicklung">Entwicklung</a>
+</li>
+</ol>
+</li>
+<li><a href="#debian-etch-lenny-treiber-fuer-ati-grafikkarten">Debian Etch/Lenny: Treiber für ATI Grafikkarten</a>
+</li>
+<li><a href="#langsame-netzwerkverbindung">Langsame Netzwerkverbindung</a>
+</li>
+<li><a href="#dropbox-fuer-debian-lenny-squeeze">Dropbox für Debian Lenny/Squeeze</a>
+</li>
+</ol>
+</nav>
 </div>
 </div>
 </div>
