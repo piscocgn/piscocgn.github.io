@@ -3,7 +3,6 @@
 ---
 
 
-
 > [!warning] 
 >  This page is outdated.
 
@@ -11,7 +10,7 @@
 <html>
 </HTML>
 
-```
+```bash
 # Nautilus Share, simple network share Ubuntu / Debian
 # http://gentoo.ovibes.net/nautilus-share/mediawiki-1.4.4/index.php/Accueil
 deb http://gentoo.ovibes.net/nautilus-share/ubuntu/breezy ./
@@ -61,3 +60,4 @@ deb http://us1.samba.org/samba/ftp/Binary_Packages/Debian sarge samba
 deb http://www.bolzchristian.de/debian ./
 
 ```
+
