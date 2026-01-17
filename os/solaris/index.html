@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>notes</title>
+<title>Solaris</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -137,7 +137,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/solaris/">Solaris </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/solaris/">Solaris </a>
 </div>
 </div>
 </div>
@@ -173,7 +173,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">index </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">index </a>
 </div>
 </div>
 </div>
@@ -207,12 +207,70 @@ CTRL + K
 </div>
 </div>
 </header>
-<h2 id="wiki-polyformal" tabindex="-1">wiki polyformal</h2>
-<p><picture src="/img/user/media/wiki/logo_white_small.png" alt="logo_white_small.png"><source media="(max-width:480px)" srcset="/img/optimized/rvyuOif3xK-150.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/rvyuOif3xK-150.jpeg">
-<img class="" src="/img/user/media/wiki/logo_white_small.png" alt="logo_white_small.png" width=""></picture></p>
-<p>Welcome to the documentation site of <a href="http://www.polyformal.de" target="_blank" class="external-link">polyformal System- &amp; Formarbeit</a>.</p>
-<pre><code class="language-tagcloud"></code></pre>
+<h2 id="zusaetzliche-software" tabindex="-1">zusätzliche Software</h2>
+<p>Oracle (ehem. Sun) bietet eine CD mit Freeware an, welche einiges an Open Source Software enthält. Die Programme sind aber recht alt (Stand 02/2011)</p>
+<ul>
+<li><a href="http://www.sun.com/software/solaris/freeware/" target="_blank" class="external-link">http://www.sun.com/software/solaris/freeware/</a></li>
+</ul>
+<h3 id="repositories" tabindex="-1">Repositories</h3>
+<ul>
+<li><a href="http://www.blastwave.org/" target="_blank" class="external-link">http://www.blastwave.org/</a></li>
+<li><a href="http://www.opencsw.org/" target="_blank" class="external-link">http://www.opencsw.org/</a>
+<ul>
+<li><a href="http://www.opencsw.org/get-it/pkg-get/" target="_blank" class="external-link">http://www.opencsw.org/get-it/pkg-get/</a></li>
+</ul>
+</li>
+<li><a href="http://www.sunfreeware.com/" target="_blank" class="external-link">http://www.sunfreeware.com/</a></li>
+<li><a href="http://www.openpkg.org/" target="_blank" class="external-link">http://www.openpkg.org/</a></li>
+</ul>
+<h2 id="diverses" tabindex="-1">Diverses</h2>
+<h3 id="ein-iso-image-einbinden" tabindex="-1">Ein ISO-Image einbinden</h3>
+<pre><code class="language-bash">  lofiadm -a /path/to/iso_image.iso /dev/lofi/1
+  mount -F hsfs -o ro /dev/lofi/1 /mnt/iso
+</code></pre>
+<h3 id="drucker-einbinden" tabindex="-1">Drucker einbinden</h3>
+<ul>
+<li>das grafische Toll ''printmgr''</li>
+<li>PPD-Dateien einbinden mit ''ppdmgr''</li>
+<li>''lpadmin''</li>
+</ul>
+<h3 id="konsole" tabindex="-1">Konsole</h3>
+<ul>
+<li>''less'' als Pager für ''man''</li>
+</ul>
+<p>für Bourne-Shell: ''~/.profile''</p>
+<pre><code class="language-bash">PAGER=/usr/bin/less
+export PAGER
+</code></pre>
+<h3 id="dienste" tabindex="-1">Dienste</h3>
+<p>Solaris setzt ab Version 10 auf die <a class="internal-link is-unresolved" href="/404" target="">wpde&gt;Service Management Facility</a> (SMF) und ersetzt damit in weiten Teilen <a class="internal-link is-unresolved" href="/404" target="">wpde&gt;System V</a>. Einer der wenigen Dienste die sich auf traditionellem Wege starten und stoppen lassen ist <a class="internal-link is-unresolved" href="/404" target="">wpde&gt;sendmail</a>, ws auch nur ein Wrapper um SMF ist.</p>
+<h3 id="vim" tabindex="-1">VIM</h3>
+<p>Der weiterentwickelte Editor <a class="internal-link is-unresolved" href="/404" target=""> VIM</a> ist auf der <a class="internal-link is-unresolved" href="/404" target=""> Solaris Companion CD</a> oder Software [[]] wie <a href="http://opencsw.org" target="_blank" class="external-link">http://opencsw.org</a> zu finden. Um <em>Syntax Hilightning</em> zu nutzen muss die Variable TERM entsprechend gesetzt werden:</p>
+<p><code>TERM=sun-color</code></p>
+<h3 id="prozessverwaltung" tabindex="-1">Prozessverwaltung</h3>
+<ul>
+<li><a href="http://developers.sun.com/solaris/articles/prstat.html" target="_blank" class="external-link">http://developers.sun.com/solaris/articles/prstat.html</a></li>
+</ul>
+<h2 id="fehlermeldungen" tabindex="-1">Fehlermeldungen</h2>
+<h3 id="xscreensaver" tabindex="-1">xscreensaver</h3>
+<p>Und sowas von einem 'kommerzeiellen' Produkt in der Standard-Installation:</p>
+<p>Beim Starten des Bildschirmschoners ist ein Fehler aufgetreten:<br>
+Der untergeordnete Prozess &quot;xscreensaver&quot; (Datei oder Verzeichnis nicht gefunden) konnte nicht ausgeführt werden.<br>
+Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.</p>
+<p><picture src="/img/user/media/os/solaris10_xscreensaver.png.png" alt="solaris10_xscreensaver.png.png"><source media="(max-width:480px)" srcset="/img/optimized/VwAp5hOegi-433.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/VwAp5hOegi-433.jpeg">
+<img class="" src="/img/user/media/os/solaris10_xscreensaver.png.png" alt="solaris10_xscreensaver.png.png" width=""></picture></p>
+<h4 id="loesung" tabindex="-1">Lösung</h4>
+<p>Das Programm <em>xscreensaver</em> kann nicht aufgerufen werden, da das Programm in ''/usr/openwin/bin'' lokalisiert ist. Die Variable PATH muss in ''/etc/profile'' oder ''~/.profile'' um ''/usr/openwin/bin'' erweitert werden.</p>
+<h3 id="apropos-cmd" tabindex="-1">apropos cmd</h3>
+<p>Das Kommando ''apropos'' liefert keine Ergebnisse sondern folgende Meldung:</p>
+<pre><code class="language-bash">/usr/dt/man/windex: Datei oder Verzeichnis nicht gefunden
+/usr/man/windex: Datei oder Verzeichnis nicht gefunden
+/usr/openwin/share/man/windex: Datei oder Verzeichnis nicht gefunden
+</code></pre>
+<h4 id="loesung-1" tabindex="-1">Lösung</h4>
+<p>''man apropos'' verweist auf catman um die Indexes anzulegen. ''catman -w'' ausführen.<br>
+<a class="tag" onclick="toggleTagSearch(this)" data-content="#unix">#unix</a></p>
 </main>
 <aside>
 <div class="sidebar">
@@ -254,7 +312,43 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#wiki-polyformal">wiki polyformal</a>
+<li><a href="#zusaetzliche-software">zusätzliche Software</a>
+<ol>
+<li><a href="#repositories">Repositories</a>
+</li>
+</ol>
+</li>
+<li><a href="#diverses">Diverses</a>
+<ol>
+<li><a href="#ein-iso-image-einbinden">Ein ISO-Image einbinden</a>
+</li>
+<li><a href="#drucker-einbinden">Drucker einbinden</a>
+</li>
+<li><a href="#konsole">Konsole</a>
+</li>
+<li><a href="#dienste">Dienste</a>
+</li>
+<li><a href="#vim">VIM</a>
+</li>
+<li><a href="#prozessverwaltung">Prozessverwaltung</a>
+</li>
+</ol>
+</li>
+<li><a href="#fehlermeldungen">Fehlermeldungen</a>
+<ol>
+<li><a href="#xscreensaver">xscreensaver</a>
+<ol>
+<li><a href="#loesung">Lösung</a>
+</li>
+</ol>
+</li>
+<li><a href="#apropos-cmd">apropos cmd</a>
+<ol>
+<li><a href="#loesung-1">Lösung</a>
+</li>
+</ol>
+</li>
+</ol>
 </li>
 </ol>
 </nav>
@@ -263,6 +357,9 @@ On this page
 </div>
 </div>
 </aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="dd MMM, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
 <script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
 </body>
 </html>
