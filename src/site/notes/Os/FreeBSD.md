@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/os/fedora","permalink":"/os/fedora/"}
+{"dg-publish":true,"dg-permalink":"/os/freebsd","permalink":"/os/freebsd/"}
 ---
 
 #gnome #unix
