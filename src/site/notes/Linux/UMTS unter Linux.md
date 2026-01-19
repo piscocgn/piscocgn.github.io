@@ -5,22 +5,23 @@
 * [UMTS](https://de.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System)
 
 #linux 
-###  Abfrage der Netzabdeckung 
+### Abfrage der Netzabdeckung 
 * [T-Mobile](http://www.t-mobile.de/funkversorgung/inland)
 * [Vodafone](http://www.vodafone.de/hilfe-support/netz-uebertragung-netzabdeckung/108099.html)
 * [E-Plus](http://eis03sn1.eplus-online.de/evportal/portal/gsm)
 
-###  Übertragungsraten 
+### Übertragungsraten 
 Bis dato konnte ich eine Spitze von 290 KB/sec messen (Download eines DVD-Images via bittorrent).
 
-##  T-Mobile web'n'walk Stick III 
+## T-Mobile web'n'walk Stick III 
 * [Informationen](http://www.polyformal.de/de/systemarbeit/t_mobile_webnwalk_stick_iii_unter_linux.html) zum Gerät und Tarif
 * die für andere Karten [nozomi](http://www.pharscape.org/)-Teiber werden hier **nicht** benötigt
-{{linux:wen_n_walk_stick_3.jpg?300|}}
 
-###  Identifikation der Karte 
+![wen_n_walk_stick_3.jpg](/img/user/media/linux/wen_n_walk_stick_3.jpg)
+### Identifikation der Karte 
 Bei dem Stick handelt es sich um das [Model E17X](http://www.huawei.com/mobileweb/en/products/view.do?id=940) vom Hersteller [Huawei](http://www.huawei.com). Über minicom können Details zum Gerät abgefragt werden (die letzten 8 Ziffern der IMEI wurden durch X ersetzt).
-<box round 98% |minicom auf /dev/ttyUSB0, Ausgabe des Befehls ATI>
+
+minicom auf /dev/ttyUSB0, Ausgabe des Befehls ATI
 ```
 ATI
 Manufacturer: huawei
@@ -29,9 +30,7 @@ Revision: 11.306.07.01.55
 IMEI: 3592980XXXXXXXX
 +GCAP: +CGSM,+DS,+ES
 ```
-
 ###  Installation 
-
 
 > [!NOTE] 
 > Unter Debian Lenny ( a.k.a Testing, getestet mit 2.6.24-1-686-bigmem ) ist der unten genannte Umweg mit *huaweiAktBbo.c* und udev-Rules nicht mehr nötig. Die Devices */dev/ttyUSB0* und */dev/ttyUSB1* werden sofort verfügbar gemacht.

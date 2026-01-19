@@ -25,7 +25,7 @@ EndSection
 ##  Tomboy Default Browser 
 Wenn Tomoby mit dem *xfce4-xfapplet-plugin* unter *Xfce* betrieben wird, kann es vorkommen dass beim Klick auf eine URL mit http oder https zu einer Meldung kommt:
 
-{{ linux:xfce:tomboy_url_handler_msg.png|}}
+![tomboy_url_handler_msg.png](/img/user/media/linux/xfce/tomboy_url_handler_msg.png)
 <html>
 Der Ort kann nicht geöffnet werden
 ...
