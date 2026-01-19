@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>Emu E4XT Ultra</title>
+<title>Linux Professional Institute (LPI)</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -80,7 +80,7 @@ CTRL + K
 <span class="foldername">Notes</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/en/notizen/e4xt_ultra/">Emu E4XT Ultra </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/en/notizen/e4xt_ultra/">Emu E4XT Ultra </a>
 </div>
 </div>
 </div>
@@ -112,7 +112,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/zertifizierung/">Linux Professional Institute (LPI) </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/zertifizierung/">Linux Professional Institute (LPI) </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -240,18 +240,73 @@ CTRL + K
 </div>
 </div>
 </header>
-<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#music">#music</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#sampler">#sampler</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#emulator">#emulator</a></p>
-<h2 id="internal-ssd" tabindex="-1">Internal SSD</h2>
-<p>Bases on a tip in a <a href="http://www.sequencer.de/synthesizer/viewtopic.php?f=3&amp;t=79915#p866249" target="_blank" class="external-link">forum</a>, it is possible to replace the internal noisy 3,5&quot; HD with a silent SSD.</p>
-<h2 id="shopping-list" tabindex="-1">Shopping List</h2>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></p>
+<h2 id="vorbereitungsmoeglichkeiten" tabindex="-1">Vorbereitungsmöglichkeiten</h2>
 <ul>
-<li><a href="http://www.wintech-computer.de/wt_de_product_detail.php?anr=81319" target="_blank" class="external-link">Wintech SAK-65</a></li>
-<li><a href="http://www.raidsonic.de/de/products/mobile-racks.php?we_objectID=7700" target="_blank" class="external-link">Raidsonic IB-2216StS 2.5&quot; Mobile Rack</a></li>
-<li><a href="https://duckduckgo.com/?q=Samsung%20MZ-7TE120BW%20Serie%20840" target="_blank" class="external-link">Samsung MZ-7TE120BW Serie 840</a></li>
+<li>webbasierte Prüfungssimulation, Study Guides für die einzelnen Prüfungen und Themen
+<ul>
+<li><a href="http://www.lpi-test.de/" target="_blank" class="external-link">http://www.lpi-test.de/</a> ((derzeit keine Vorbereitungsmöglichkeiten für LPIC-2, Stand 05.09.2006))</li>
 </ul>
-<h2 id="replacement" tabindex="-1">Replacement</h2>
-<p>The replacement is straight forward. Just remove cable and unmount the old drive. Mount the mobile rack with the two screws towards backside within the original holes, for the two screws towards fron you need selfthreading screws. On the SAK-65 Adapter a missing hole has to be drilled, see image:</p>
-<p><a href="https://www.flickr.com/photos/pisco_cgn/13494599864/in/photostream/" target="_blank" class="external-link">https://www.flickr.com/photos/pisco_cgn/13494599864/in/photostream/</a></p>
+</li>
+<li>Prüfungssimulator lpisim, Handhabung mit tclkit ist recht umständlich, zumindest auf Debian oder Ubuntu. Die Fragen kommen auch bei <a href="http://www.lpi-test.de/" target="_blank" class="external-link">http://www.lpi-test.de/</a> zum Einsatz
+<ul>
+<li>lipsim <a href="http://lpi-buch.linupfront.de/simulator.html" target="_blank" class="external-link">http://lpi-buch.linupfront.de/simulator.html</a></li>
+</ul>
+</li>
+<li>Sehr gutes Schulungsmaterial von IBM ('Big Blue'), man merkt das die Jungs bei Unix zu Hause sind. Zu den Themen gibt es jeweils praxisnahe Übungen.
+<ul>
+<li><a href="http://www-128.ibm.com/developerworks/linux/lpi/index.html" target="_blank" class="external-link">http://www-128.ibm.com/developerworks/linux/lpi/index.html</a> ((Registrierung notwendig))</li>
+</ul>
+</li>
+<li>freie Online-Ausgabe von 'Wie werde ich UNIX-Guru?' von Arnold Willemer, vieles ist unmittelbar auf Linux anwendbar.
+<ul>
+<li><a href="http://www.galileocomputing.de/openbook/unix_guru/" target="_blank" class="external-link">http://www.galileocomputing.de/openbook/unix_guru/</a></li>
+</ul>
+</li>
+<li>SelfLinux eignet sich ebenso hervorragend um einzelne Themenbereiche zu festigen. Besonderes Augenmerk sollte auf die Herleitung Netzmaske zu IP-Adressenbereich gerichtet werden.
+<ul>
+<li><a href="http://www.selflinux.org/" target="_blank" class="external-link">http://www.selflinux.org/</a></li>
+</ul>
+</li>
+<li>verschiedene Links rund um das LPI
+<ul>
+<li><a href="http://linuxwiki.org/LPI" target="_blank" class="external-link">http://linuxwiki.org/LPI</a></li>
+</ul>
+</li>
+<li>LPI-Acadamy: Prüfungssimulation von Anselm Lingnau
+<ul>
+<li><a class="internal-link is-unresolved" href="/404" target="">http://www.lpi-academy.de/wiki/home/</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="empfehlung" tabindex="-1">Empfehlung</h3>
+<ul>
+<li>Bücher
+<ul>
+<li>Open Source Press Verlag <a href="http://www.amazon.de/gp/redirect.html?link_code=ur2&amp;tag=polyformal-21&amp;camp=1638&amp;creative=6742&amp;location=%2FLPIC-1-Vorbereitung-Pr%25fcfung-Professional-Institute%2Fdp%2F393751421X%2Fsr%3D8-1%2Fqid%3D1157457221%2Fref%3Dpd_ka_1%3Fie%3DUTF8%26s%3Dgateway" target="_blank" class="external-link">LPIC-1</a>, <a href="http://www.amazon.de/gp/redirect.html?link_code=ur2&amp;tag=polyformal-21&amp;camp=1638&amp;creative=6742&amp;location=%2FLPIC-2-Vorbereitung-Pr%25fcfung-Professional-Institute%2Fdp%2F3937514201%2Fsr%3D8-1%2Fqid%3D1157457315%2Fref%3Dpd_ka_1%3Fie%3DUTF8%26s%3Dgateway" target="_blank" class="external-link">LPIC-2</a></li>
+</ul>
+</li>
+<li>Wer Debian, Ubuntu oder andere 'Nicht-RPM'-Distributionen verwendet, für den ist es zum Vorbereiten recht hilfreich z.B. über <s>VMWare Player</s> VirtualBox ein OpenSUSE((wenn schon rpm Distribution dann besser CentOS, das nahezu 100% kompatibel zu Red Hat (lpisim nicht getestet) )) einzusetzen, zumal dort der lpisim recht unproblematisch funktioniert.
+<ul>
+<li><a href="http://www.vmware.com/products/player/" target="_blank" class="external-link">http://www.vmware.com/products/player/</a></li>
+<li>KDE on SUSE prebuild appliance for VMWare Player <a href="http://developer.kde.org/~binner/vmware/" target="_blank" class="external-link">http://developer.kde.org/~binner/vmware/</a></li>
+</ul>
+</li>
+<li>Moderne Distributionen setzten in der Regel auf <a href="http://X.org" target="_blank" class="external-link">X.org</a>, Prüfungsstoff ist jedoch XFree86. Zu empfehlen für 101 X-Windows ist Debian Sarge.</li>
+</ul>
+<h3 id="abnahme-der-pruefung" tabindex="-1">Abnahme der Prüfung</h3>
+<p>Die Prüfung kann in Köln zum Beispiel im <a href="http://www.com-training.com/de/zertifizierungen/linux.html" target="_blank" class="external-link">Com Center</a> abgelegt werden.</p>
+<h2 id="lpic-2" tabindex="-1">LPIC-2</h2>
+<h3 id="201" tabindex="-1">201</h3>
+<h4 id="213" tabindex="-1">213</h4>
+<h5 id="1-automating-tasks-using-scripts" tabindex="-1">1) Automating tasks using scripts</h5>
+<ul>
+<li>awk
+<ul>
+<li>IBM developers: <a href="http://www.ibm.com/developerworks/linux/library/l-awk1.html?ca=drs-" target="_blank" class="external-link">Awk by example, Part 1</a></li>
+</ul>
+</li>
+</ul>
 </main>
 <aside>
 <div class="sidebar">
@@ -293,11 +348,27 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#internal-ssd">Internal SSD</a>
+<li><a href="#vorbereitungsmoeglichkeiten">Vorbereitungsmöglichkeiten</a>
+<ol>
+<li><a href="#empfehlung">Empfehlung</a>
 </li>
-<li><a href="#shopping-list">Shopping List</a>
+<li><a href="#abnahme-der-pruefung">Abnahme der Prüfung</a>
 </li>
-<li><a href="#replacement">Replacement</a>
+</ol>
+</li>
+<li><a href="#lpic-2">LPIC-2</a>
+<ol>
+<li><a href="#201">201</a>
+<ol>
+<li><a href="#213">213</a>
+<ol>
+<li><a href="#1-automating-tasks-using-scripts">1) Automating tasks using scripts</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 </li>
 </ol>
 </nav>

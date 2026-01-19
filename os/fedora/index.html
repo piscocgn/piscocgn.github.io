@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>FreeBSD</title>
+<title>Fedora</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -85,6 +85,19 @@ CTRL + K
 </div>
 </div>
 </div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('En/Software')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Software</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
@@ -96,6 +109,10 @@ CTRL + K
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/informationen/">Informationen zu Linux </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/zertifizierung/">Linux Professional Institute (LPI) </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -137,7 +154,15 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/fedora/">FreeBSD </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/fedora/">Fedora </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/freebsd/">FreeBSD </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/openbsd/">OpenBSD </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -207,7 +232,7 @@ CTRL + K
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2026-01-17T14:01:56.347Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2026-01-17T14:01:56.347Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2026-01-17T14:01:56.347Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2026-01-19T17:02:32.740Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2026-01-19T17:02:32.740Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2026-01-19T17:02:32.740Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
 <div class="header-meta">
@@ -215,75 +240,67 @@ CTRL + K
 </div>
 </div>
 </header>
-<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#gnome">#gnome</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#unix">#unix</a></p>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#fedora">#fedora</a></p>
+<h2 id="informationen" tabindex="-1">Informationen</h2>
 <ul>
-<li><a href="http://www.freebsd.org/doc/de_DE.ISO8859-1/books/handbook/index.html" target="_blank" class="external-link">Das FreeBSD Handbuch</a></li>
+<li>Homepage</li>
+<li>Vergleich Red Hat &lt;-&gt; Fedora <a href="http://fedora.redhat.com/about/rhel.html" target="_blank" class="external-link">http://fedora.redhat.com/about/rhel.html</a></li>
+<li>Download, ältere Versionen unter core/ <a href="http://download.fedora.redhat.com/pub/fedora/linux/" target="_blank" class="external-link">http://download.fedora.redhat.com/pub/fedora/linux/</a></li>
+<li><a href="http://fedoraproject.org/wiki/EPEL" target="_blank" class="external-link">Extra Packages for Enterprise Linux (EPEL)</a></li>
 </ul>
-<h2 id="administration" tabindex="-1">Administration</h2>
-<p>Für viele Administrative Aufgaben steht <em>root</em> das Programm ''sysinstall'' zur Verfügung.</p>
-<h3 id="softwareverwaltung" tabindex="-1">Softwareverwaltung</h3>
-<h4 id="pkg-add" tabindex="-1">pkg_add</h4>
-<h5 id="proxy" tabindex="-1">Proxy</h5>
-<p>FreeBSD benutzt im Auslieferungszustand die <em>csh</em>, hier muss ein Proxy wie folgt in der Umgebung definiert werden:</p>
-<p><code>setenv http_proxy http://ip.proxy[:port]</code></p>
-<h5 id="abweichenden-softwarespiegel-verwenden-z-b-nur-http" tabindex="-1">Abweichenden Softwarespiegel verwenden, z.B. nur HTTP</h5>
-<p>Wenn der Proxy kein FTP zulässt, dann muss ein Spiegel ausgewählt werden, der HTTP unterstützt. Das ist nicht bei allen Spiegeln der Fall. Eine <a href="http://www.freebsd.org/doc/de_DE.ISO8859-1/books/handbook/mirrors-ftp.html" target="_blank" class="external-link">Übersicht</a> der Spiegel ist im FreeBSD Handbuch zu finden.</p>
-<p><code>setenv PACKAGESITE http://ftp1.de.freebsd.org/freebsd/ports/i386/packages-8.1-release/Latest/ </code></p>
-<p>Dann wie gewohnt Pakete mit</p>
-<p><code>pkg_add -r foo</code></p>
-<p>instalieren.</p>
-<h5 id="eigener-partieller-spiegel" tabindex="-1">Eigener partieller Spiegel</h5>
-<p>Eine Liste mit rsync-Spiegeln ist im FreeBSD <a href="http://www.freebsd.org/doc/handbook/mirrors-rsync.html" target="_blank" class="external-link">Handbuch</a> zu finden.</p>
-<pre><code class="language-bash">MIRROR=ftp.nl.FreeBSD.org
-ARCH=i386
-RELEASE=x.x
-rsync -auv --delete --progress $MIRROR::FreeBSD/ports/$ARCH/packages-$RELEASE-release/ FreeBSD-$RELEASE-$ARCH
-</code></pre>
-<h3 id="su-ermoeglichen" tabindex="-1">su - ermöglichen =</h3>
-<p>Ein <em>normaler</em> Benutzer muss Mitglied der Gruppe <em>wheel</em> sein, um ''su -'' durchführen zu können:<br>
-pw user mod foo -G wheel</p>
-<h2 id="gnome" tabindex="-1">Gnome</h2>
+<h2 id="dokumentation" tabindex="-1">Dokumentation</h2>
 <ul>
-<li>gnome2, gdm und xorg installieren</li>
-<li>Falls im GDM keine Anmeldung möglich ist: /proc fehlt <a href="http://www.freebsd.org/gnome/docs/faq2.html#procfs" target="_blank" class="external-link">http://www.freebsd.org/gnome/docs/faq2.html#procfs</a></li>
-</ul>
-<p>/etc/fstab</p>
-<pre><code class="language-bash">proc           /proc       procfs  rw  0   0
-</code></pre>
+<li><a href="http://fedoraproject.org/wiki/Docs" target="_blank" class="external-link">http://fedoraproject.org/wiki/Docs</a>
 <ul>
-<li>gdm/Gnome beim Booten starten:</li>
-</ul>
-<pre><code class="language-bash">/etc/rc.conf: gnome_enable=&quot;YES&quot;
-</code></pre>
-<h3 id="cups" tabindex="-1">CUPS</h3>
-<p>Damit die in CUPS eingerichteten Drucker auch in den Druckdialogen von GNOME-Anwendungen angezeigt werden müssen die Pakete <em>libgnomeprint</em> und <em>gtk20</em> (Stand FreeBSD 8.1) erneut mit der Option ''WITH_CUPS=yes'' übersetzt werden, siehe <a href="http://www.freebsdwiki.net/index.php/CUPS#CUPS_and_Gnome_Warning" target="_blank" class="external-link">CUPS im FreeBSD Wiki</a>. Alternatik kann mittels des Paketes ''gtklp'' in den Druckdialogen gleichnamiger Befehl als Druck-Kommando verwendet werden.</p>
-<ul>
-<li>Probelm ''htmlview not found''
-<ul>
-<li>''cd /usr/ports/print/cups-base &amp;&amp; make config'' und XDG_OPEN wählen ((<a href="http://forums.freebsd.org/showthread.php?t=1291" target="_blank" class="external-link">http://forums.freebsd.org/showthread.php?t=1291</a>))</li>
+<li><a href="http://fedoraproject.org/wiki/Docs/Drafts" target="_blank" class="external-link">http://fedoraproject.org/wiki/Docs/Drafts</a></li>
 </ul>
 </li>
+<li><a href="http://wikibooks.org" target="_blank" class="external-link">wikibooks.org</a> - <a href="http://en.wikibooks.org/wiki/Fedora_And_Red_Hat_System_Administration%3AWorking_with_repositories#_note-2" target="_blank" class="external-link">Fedora And Red Hat System Administration: Working with repositories</a></li>
 </ul>
-<h3 id="gdm3" tabindex="-1">gdm3</h3>
-<h4 id="benutzerliste-deaktivieren" tabindex="-1">Benutzerliste deaktivieren</h4>
+<h2 id="installation" tabindex="-1">Installation</h2>
 <ul>
-<li>Hierzu muss dem System-Account <em>gdm</em> kurzfristig eine Login-Shell zugewiesen werden, und mit ''gconftool-2'' die entsprechenden Einstellungen vorgenommen werden.</li>
+<li>Alternate method: at boot CD prompt: linux askmethod</li>
 </ul>
-<pre><code class="language-bash">chsh -s /bin/sh gdm
-su - gdm gconftool-2 --set --type boolean /apps/gdm/simple-greeter/disable_user_list true
-chsh -s /usr/sbin/nologin gdm
+<h2 id="kernel" tabindex="-1">Kernel</h2>
+<ul>
+<li><a href="http://www.brandonhutchinson.com/Recompiling_the_Fedora_Core_kernel.html" target="_blank" class="external-link">http://www.brandonhutchinson.com/Recompiling_the_Fedora_Core_kernel.html</a></li>
+</ul>
+<h3 id="netinstall-mirrors" tabindex="-1">Netinstall / Mirrors</h3>
+<ul>
+<li>Mirrors <a href="http://mirrors.fedoraproject.org/publiclist" target="_blank" class="external-link">http://mirrors.fedoraproject.org/publiclist</a></li>
+<li>Pfad .../fedora-core/5/i386/os/</li>
+<li><a href="http://news.softpedia.com/news/Creating-a-Local-Update-Repository-for-FC6-43559.shtml" target="_blank" class="external-link">Creating a Local Update Repository for FC6</a></li>
+<li><a href="http://www.phy.duke.edu/~rgb/General/yum_article/yum_article/node15.html" target="_blank" class="external-link">Mirroring a Repository</a></li>
+</ul>
+<pre><code class="language-bash">#!/bin/sh
+# select a rsync host close to your location from
+# http://mirrors.fedoraproject.org/publiclist
+MIRROR_PATH=./fedora
+MIRROR_HOST=ftp-stud.hs-esslingen.de
+SECTION=core
+VERSION=4
+ARCH=i386
+EXCLUDE=&quot;--exclude=debug/ --exclude=iso/ --exclude=repodata/ --exclude=*debuginfo*&quot;
+# append excludes below to exclode something more ...
+# --exclude=*i18* --exclude=*langpack*
+OPTIONS=&quot;-auvH --progress --delay-updates --numeric-ids --delete-after&quot;
+
+rsync rsync://$MIRROR_HOST/fedora/linux/$SECTION/$VERSION/$ARCH $OPTIONS $EXCLUDE $MIRROR_PATH
 </code></pre>
-<h4 id="gdm-anmeldedialog-standard-auf-deutsch" tabindex="-1">gdm Anmeldedialog Standard auf Deutsch</h4>
-<p>in der Datei ''/etc/rc.conf''</p>
-<pre><code class="language-bash">gdm_lang=&quot;de_DE.UTF-8&quot;
-</code></pre>
-<h2 id="cups-1" tabindex="-1">CUPS</h2>
-<h3 id="remote-administration" tabindex="-1">Remote Administration</h3>
-<p>Beim Zuschalten der Option <em>Allow remote administration</em> verweigert CUPS spätestens bei Authentifizierung das Upgrade auf https.</p>
-<p>var/log/cups/error_log</p>
-<pre><code class="language-bash">Unable to create SSL server key file &quot;/usr/local/etc/cups/ssl/server.key&quot; - no such file or directory
-</code></pre>
-<p>Wie die Fehlermeldung aussagt scheint der Pfad nicht in Ordnung zu sein. Beim Überprüfen stellt sich heraus, dass das Verzeichnis ''/usr/local/etc/cups/ssl/'' noch nicht existiert.</p>
+<h1 id="paketmanagement" tabindex="-1">Paketmanagement</h1>
+<h2 id="yum" tabindex="-1">yum</h2>
+<ul>
+<li><a href="http://fedoraproject.org/wiki/Docs/Drafts/SoftwareManagementGuide" target="_blank" class="external-link">http://fedoraproject.org/wiki/Docs/Drafts/SoftwareManagementGuide</a></li>
+<li><a href="http://en.wikibooks.org/wiki/Fedora_And_Red_Hat_System_Administration:Working_with_repositories" target="_blank" class="external-link">http://en.wikibooks.org/wiki/Fedora_And_Red_Hat_System_Administration:Working_with_repositories</a></li>
+<li><a href="http://www.fedorafaq.org/#yumconf" target="_blank" class="external-link">http://www.fedorafaq.org/#yumconf</a></li>
+<li><a href="http://linux.duke.edu/projects/yum/" target="_blank" class="external-link">http://linux.duke.edu/projects/yum/</a></li>
+<li><a href="http://www.phy.duke.edu/~rgb/General/yum_HOWTO/yum_HOWTO/" target="_blank" class="external-link">http://www.phy.duke.edu/~rgb/General/yum_HOWTO/yum_HOWTO/</a></li>
+<li>Lokale DVD</li>
+</ul>
+<html>
+name=Installations_DVD baseurl=file:///mnt/DVD/ enable=1
+</html>
+## Post-Installation (optional) * terminus-fonts(( /lib/kbd/consolefonts/ter* )) ```bash yum install terminus-font-console nano /etc/sysconfig/i18n SYSFONT "ter-i16n" setsysfonf ```
 </main>
 <aside>
 <div class="sidebar">
@@ -325,43 +342,21 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#administration">Administration</a>
-<ol>
-<li><a href="#softwareverwaltung">Softwareverwaltung</a>
-<ol>
-<li><a href="#pkg-add">pkg_add</a>
-<ol>
-<li><a href="#proxy">Proxy</a>
+<li><a href="#informationen">Informationen</a>
 </li>
-<li><a href="#abweichenden-softwarespiegel-verwenden-z-b-nur-http">Abweichenden Softwarespiegel verwenden, z.B. nur HTTP</a>
+<li><a href="#dokumentation">Dokumentation</a>
 </li>
-<li><a href="#eigener-partieller-spiegel">Eigener partieller Spiegel</a>
+<li><a href="#installation">Installation</a>
+</li>
+<li><a href="#kernel">Kernel</a>
+<ol>
+<li><a href="#netinstall-mirrors">Netinstall / Mirrors</a>
 </li>
 </ol>
 </li>
-</ol>
-</li>
-<li><a href="#su-ermoeglichen">su - ermöglichen =</a>
-</li>
-</ol>
-</li>
-<li><a href="#gnome">Gnome</a>
+<li><a href="#paketmanagement">Paketmanagement</a>
 <ol>
-<li><a href="#cups">CUPS</a>
-</li>
-<li><a href="#gdm3">gdm3</a>
-<ol>
-<li><a href="#benutzerliste-deaktivieren">Benutzerliste deaktivieren</a>
-</li>
-<li><a href="#gdm-anmeldedialog-standard-auf-deutsch">gdm Anmeldedialog Standard auf Deutsch</a>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li><a href="#cups-1">CUPS</a>
-<ol>
-<li><a href="#remote-administration">Remote Administration</a>
+<li><a href="#yum">yum</a>
 </li>
 </ol>
 </li>

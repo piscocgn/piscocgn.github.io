@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>Emu E4XT Ultra</title>
+<title>OpenBSD</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -80,7 +80,7 @@ CTRL + K
 <span class="foldername">Notes</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/en/notizen/e4xt_ultra/">Emu E4XT Ultra </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/en/notizen/e4xt_ultra/">Emu E4XT Ultra </a>
 </div>
 </div>
 </div>
@@ -162,7 +162,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/openbsd/">OpenBSD </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/openbsd/">OpenBSD </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -240,18 +240,49 @@ CTRL + K
 </div>
 </div>
 </header>
-<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#music">#music</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#sampler">#sampler</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#emulator">#emulator</a></p>
-<h2 id="internal-ssd" tabindex="-1">Internal SSD</h2>
-<p>Bases on a tip in a <a href="http://www.sequencer.de/synthesizer/viewtopic.php?f=3&amp;t=79915#p866249" target="_blank" class="external-link">forum</a>, it is possible to replace the internal noisy 3,5&quot; HD with a silent SSD.</p>
-<h2 id="shopping-list" tabindex="-1">Shopping List</h2>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#unix">#unix</a></p>
 <ul>
-<li><a href="http://www.wintech-computer.de/wt_de_product_detail.php?anr=81319" target="_blank" class="external-link">Wintech SAK-65</a></li>
-<li><a href="http://www.raidsonic.de/de/products/mobile-racks.php?we_objectID=7700" target="_blank" class="external-link">Raidsonic IB-2216StS 2.5&quot; Mobile Rack</a></li>
-<li><a href="https://duckduckgo.com/?q=Samsung%20MZ-7TE120BW%20Serie%20840" target="_blank" class="external-link">Samsung MZ-7TE120BW Serie 840</a></li>
+<li>Dienste neu starten</li>
 </ul>
-<h2 id="replacement" tabindex="-1">Replacement</h2>
-<p>The replacement is straight forward. Just remove cable and unmount the old drive. Mount the mobile rack with the two screws towards backside within the original holes, for the two screws towards fron you need selfthreading screws. On the SAK-65 Adapter a missing hole has to be drilled, see image:</p>
-<p><a href="https://www.flickr.com/photos/pisco_cgn/13494599864/in/photostream/" target="_blank" class="external-link">https://www.flickr.com/photos/pisco_cgn/13494599864/in/photostream/</a></p>
+<pre><code class="language-bash">  kill -HUP `cat /var/run/sshd.pid`
+</code></pre>
+<h2 id="gnome" tabindex="-1">GNOME</h2>
+<ul>
+<li><a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/x11/gnome/session/files/Attic/README.OpenBSD?rev=1.42;content-type=text%2Fplain" target="_blank" class="external-link">Gnome README</a></li>
+<li>gnome-session gnome-panel metacity</li>
+</ul>
+<h2 id="login-ueber-gdm" tabindex="-1">Login über GDM</h2>
+<p>Standardmäßig ist der XDM-Loginmanager aktiviert. Dieser kann in der Datei ''/etc/rc'' deaktiviert werden.</p>
+<p><code>/etc/rc</code></p>
+<pre><code class="language-diff">--- a/rc	Wed Jan 26 18:46:15 2011 +0100
++++ b/rc	Wed Jan 26 18:48:15 2011 +0100
+@@ -847,8 +847,8 @@
+ fi
+
+ # Alternatively, on some architectures, xdm may be started in /etc/ttys.
+-if [ X&quot;${xdm_flags}&quot; != X&quot;NO&quot; -a -x /usr/X11R6/bin/xdm ]; then
+-	echo 'starting xdm...';		/usr/X11R6/bin/xdm ${xdm_flags}
+-fi
++#if [ X&quot;${xdm_flags}&quot; != X&quot;NO&quot; -a -x /usr/X11R6/bin/xdm ]; then
++#	echo 'starting xdm...';		/usr/X11R6/bin/xdm ${xdm_flags}
++#fi
+
+ exit 0
+</code></pre>
+<p>Folgender Eintrag startet gdm beim Systemstart (info aus ''pkg_info gdm''):<br>
+<code>/etc/rc.local</code></p>
+<pre><code class="language-diff">--- a/rc.local	Wed Jan 26 18:49:31 2011 +0100
++++ b/rc.local	Wed Jan 26 18:50:05 2011 +0100
+@@ -9,6 +9,9 @@
+
+ # Add your local startup actions here.
+
++if [ -x /usr/local/sbin/gdm ]; then
++        echo -n ' gdm'; (sleep 5; /usr/local/sbin/gdm)&amp;
++fi
+
+ echo '.'
+</code></pre>
 </main>
 <aside>
 <div class="sidebar">
@@ -293,11 +324,9 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#internal-ssd">Internal SSD</a>
+<li><a href="#gnome">GNOME</a>
 </li>
-<li><a href="#shopping-list">Shopping List</a>
-</li>
-<li><a href="#replacement">Replacement</a>
+<li><a href="#login-ueber-gdm">Login über GDM</a>
 </li>
 </ol>
 </nav>
