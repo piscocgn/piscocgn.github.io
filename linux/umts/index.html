@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>asciidoc</title>
+<title>UMTS unter Linux</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -93,7 +93,7 @@ CTRL + K
 <span class="foldername">Software</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
 </div>
 </div>
 </div>
@@ -145,7 +145,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/umts/">UMTS unter Linux </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/umts/">UMTS unter Linux </a>
 </div>
 </div>
 </div>
@@ -269,31 +269,130 @@ CTRL + K
 </div>
 </div>
 </header>
-<h2 id="backends" tabindex="-1">backends</h2>
-<h3 id="slidy" tabindex="-1">slidy</h3>
-<p>Nice HTML presentations with slidy / slidy2</p>
 <ul>
-<li>slidy2 gives some advantages <a href="http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html" target="_blank" class="external-link">http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html</a></li>
-<li>ditaa - <a href="http://ditaa.sourceforge.net/#usage" target="_blank" class="external-link">DIagrams Through Ascii Art</a></li>
+<li><a href="https://de.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System" target="_blank" class="external-link">UMTS</a></li>
 </ul>
-<h4 id="deckjs" tabindex="-1">deckjs</h4>
-<p>Another backend for nice HTML presentations with <a href="http://houqp.github.com/asciidoc-deckjs/" target="_blank" class="external-link">deckjs</a> backend</p>
-<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner">Info</div></div>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a></p>
+<h3 id="abfrage-der-netzabdeckung" tabindex="-1">Abfrage der Netzabdeckung</h3>
+<ul>
+<li><a href="http://www.t-mobile.de/funkversorgung/inland" target="_blank" class="external-link">T-Mobile</a></li>
+<li><a href="http://www.vodafone.de/hilfe-support/netz-uebertragung-netzabdeckung/108099.html" target="_blank" class="external-link">Vodafone</a></li>
+<li><a href="http://eis03sn1.eplus-online.de/evportal/portal/gsm" target="_blank" class="external-link">E-Plus</a></li>
+</ul>
+<h3 id="uebertragungsraten" tabindex="-1">Übertragungsraten</h3>
+<p>Bis dato konnte ich eine Spitze von 290 KB/sec messen (Download eines DVD-Images via bittorrent).</p>
+<h2 id="t-mobile-web-n-walk-stick-iii" tabindex="-1">T-Mobile web'n'walk Stick III</h2>
+<ul {linux:wen_n_walk_stick_3.jpg?300|="">
+<li><a href="http://www.polyformal.de/de/systemarbeit/t_mobile_webnwalk_stick_iii_unter_linux.html" target="_blank" class="external-link">Informationen</a> zum Gerät und Tarif</li>
+<li>die für andere Karten <a href="http://www.pharscape.org/" target="_blank" class="external-link">nozomi</a>-Teiber werden hier <strong>nicht</strong> benötigt</li>
+</ul>
+<h3 id="identifikation-der-karte" tabindex="-1">Identifikation der Karte</h3>
+<p>Bei dem Stick handelt es sich um das <a href="http://www.huawei.com/mobileweb/en/products/view.do?id=940" target="_blank" class="external-link">Model E17X</a> vom Hersteller <a href="http://www.huawei.com" target="_blank" class="external-link">Huawei</a>. Über minicom können Details zum Gerät abgefragt werden (die letzten 8 Ziffern der IMEI wurden durch X ersetzt).<br>
+&lt;box round 98% |minicom auf /dev/ttyUSB0, Ausgabe des Befehls ATI&gt;</p>
+<pre><code>ATI
+Manufacturer: huawei
+Model: E17X
+Revision: 11.306.07.01.55
+IMEI: 3592980XXXXXXXX
++GCAP: +CGSM,+DS,+ES
+</code></pre>
+<h3 id="installation" tabindex="-1">Installation</h3>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner">Note</div></div>
 <div class="callout-content">
 <p>
-deckjs backend requires title attribute for images</p>
+Unter Debian Lenny ( a.k.a Testing, getestet mit 2.6.24-1-686-bigmem ) ist der unten genannte Umweg mit <em>huaweiAktBbo.c</em> und udev-Rules nicht mehr nötig. Die Devices <em>/dev/ttyUSB0</em> und <em>/dev/ttyUSB1</em> werden sofort verfügbar gemacht.</p>
 </div></div>
+<p>Leider werden abhängig von Distribution und Kernelversion die zur Kommunikation notwendigen seriellen Schnittstellen <em>/dev/ttyUSB0</em> und <em>/dev/ttyUSB1</em> nicht in jedem Fall automatisch erkannt. Statt dessen zeigt <em>dmesg</em> nur das CD-ROM Device mit den Windows-Treiber. Eine gute <a href="http://linux.frankenberger.at/Huawei_E220.html" target="_blank" class="external-link">Beschreibung der Problematik</a> bei Frankenberger, hauptsächlich geht es um das Helfer-Programm <a href="http://www.kanoistika.sk/bobovsky/archiv/umts/" target="_blank" class="external-link">huaweiAktBbo</a> von bobovsky und die entsprechenden Einträge in der Datei <em>/etc/udev/rules.d/50-huawei-e220.rules</em></p>
 <ul>
-<li>regular image
-<ul>
-<li><code>image::foo.img[title=&quot;mytitle&quot;]</code></li>
+<li>libusb-dev muss installiert sein (aptitude install libusb-dev)</li>
+<li>cd /usr/src</li>
+<li>mkdir umts &amp;&amp; cd umts</li>
+<li>wget <a href="http://www.kanoistika.sk/bobovsky/archiv/umts/huaweiAktBbo.c" target="_blank" class="external-link">http://www.kanoistika.sk/bobovsky/archiv/umts/huaweiAktBbo.c</a></li>
+<li>cc huaweiAktBbo.c -lusb -o huaweiAktBbo</li>
+<li>chown root:root huaweiAktBbo</li>
+<li>mv huaweiAktBbo /sbin<br>
+Anschließend muss folgende Datei angelegt werden (root-Rechte erfolderlich)<br>
+/etc/udev/rules.d/50-huawei-e220.rules</li>
 </ul>
-</li>
-<li>ditaa requires
+<pre><code class="language-bash">SUBSYSTEM==&quot;usb&quot;, SYSFS{idProduct}==&quot;1003&quot;, SYSFS{idVendor}==&quot;12d1&quot;, RUN+=&quot;/sbin/huaweiAktBbo&quot;
+SUBSYSTEM==&quot;usb&quot;, SYSFS{idProduct}==&quot;1003&quot;, SYSFS{idVendor}==&quot;12d1&quot;, RUN+=&quot;/bin/sleep 5&quot;
+SUBSYSTEM==&quot;usb&quot;, SYSFS{idProduct}==&quot;1003&quot;, SYSFS{idVendor}==&quot;12d1&quot;, RUN+=&quot;/sbin/modprobe usbserial vendor=0x12d1 product=0x1003&quot;
+</code></pre>
+<p>Jetzt kann der UMTS-Stick eingesteckt werden und <em>dmesg</em> müsste in etwa folgendes ausgeben:</p>
+<p>Ausgabe von dmesg</p>
+<pre><code class="language-bash">option 2-2.5:1.0: GSM modem (1-port) converter detected
+usb 2-2.5: GSM modem (1-port) converter now attached to ttyUSB0
+option 2-2.5:1.1: GSM modem (1-port) converter detected
+usb 2-2.5: GSM modem (1-port) converter now attached to ttyUSB1
+scsi20 : SCSI emulation for USB Mass Storage devices
+usb-storage: device found at 33
+usb-storage: waiting for device to settle before scanning
+usb-storage: device scan complete
+scsi 20:0:0:0: CD-ROM            HUAWEI   Mass Storage     2.31 PQ: 0 ANSI: 2
+sr1: scsi-1 drive
+sr 20:0:0:0: Attached scsi CD-ROM sr1
+sr 20:0:0:0: Attached scsi generic sg0 type 5
+</code></pre>
+<h2 id="aufbau-einer-verbindung" tabindex="-1">Aufbau einer Verbindung</h2>
 <ul>
-<li>.My Title above '[ditaa]' section</li>
+<li>pppd bringt alles mit um eine Verbindung aufzubauen</li>
+<li>auch wvdial kann verwendet werden (nicht getestet)</li>
+<li>gnome-ppp und auch umtsmon (siehe unten) können als GUI für den Desktop verwendet werden</li>
 </ul>
-</li>
+<h3 id="pin-code-eingeben" tabindex="-1">PIN-Code eingeben</h3>
+<p>Möchte man seinen PIN-code nicht in Skripten angeben kann man das auf de Kommandozeile mit<br>
+echo 'AT+CPIN=&quot;xxxx&quot;' &gt; /dev/ttyUSB0</p>
+<p>Besser ist es aber die PIN wie oben über über minicom einzugeben.</p>
+<h3 id="verbindung-mit-ppp" tabindex="-1">Verbindung mit ppp</h3>
+<p>/etc/ppp/peers/umts</p>
+<pre><code class="language-bash">hide-password
+noauth
+connect &quot;/usr/sbin/chat -v -f /etc/chatscripts/umts&quot;
+debug
+/dev/ttyUSB0
+115200
+defaultroute
+noipdefault
+user &quot;t-mobile&quot;
+password &quot;internet&quot;
+usepeerdns
+ipcp-accept-remote
+ipcp-accept-local
+lock
+</code></pre>
+<p>/etc/chatscripts/umts</p>
+<pre><code class="language-bash">'TIMEOUT' '10'
+<a class="tag" onclick="toggleTagSearch(this)" data-content="#abortstring">#abortstring</a>
+ABORT BUSY
+ABORT VOICE
+ABORT 'NO DIALTONE'
+ABORT 'NO DIAL TONE'
+ABORT 'NO ANSWER'
+ABORT '+CPIN: SIM PIN'
+ABORT DELAYED
+# modeminit
+'' 'ATZ'
+'OK' 'AT&amp;F'
+'OK' 'ATE1'
+SAY 'Checking pin lock
+'
+'OK' 'AT+CPIN?'
+SAY 'Check Quality 
+'
+'OK' 'AT+CSQ'
+SAY 'Setting APN
+'
+'OK' 'AT+CGDCONT=1,&quot;IP&quot;,&quot;internet.t-mobile&quot;'
+# ispnumber
+'OK' 'ATDT*99#'
+# ispconnect
+'CONNECT'
+</code></pre>
+<p>Nach dem die PIN eingegeben wurde, kann mittels <em>pon umts</em> eine Verbindung aufgebaut werden. Um die PIN-Abfrage dauerhaft zu deaktivieren kann eines der AT-Kommandos verwendet werden (siehe nächster Abschnitt).</p>
+<h2 id="weitere-informationen" tabindex="-1">weitere Informationen</h2>
+<ul>
+<li>Einige <a href="http://de.gentoo-wiki.com/GPRS/UMTS#Konfiguration_des_Modems" target="_blank" class="external-link">hilfreiche AT-Befehle</a> zum Anfragen von Daten des UMTS-Modems aus dem Gentoo-wiki</li>
+<li><a href="http://umtsmon.sourceforge.net/" target="_blank" class="external-link">umtsmon</a> - eine GUI((basiert auf Qt)) für UMTS-Verbindungen</li>
 </ul>
 </main>
 <aside>
@@ -336,15 +435,27 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#backends">backends</a>
+<li><a href="#abfrage-der-netzabdeckung">Abfrage der Netzabdeckung</a>
+</li>
+<li><a href="#uebertragungsraten">Übertragungsraten</a>
+</li>
+<li><a href="#t-mobile-web-n-walk-stick-iii">T-Mobile web'n'walk Stick III</a>
 <ol>
-<li><a href="#slidy">slidy</a>
-<ol>
-<li><a href="#deckjs">deckjs</a>
+<li><a href="#identifikation-der-karte">Identifikation der Karte</a>
+</li>
+<li><a href="#installation">Installation</a>
 </li>
 </ol>
 </li>
+<li><a href="#aufbau-einer-verbindung">Aufbau einer Verbindung</a>
+<ol>
+<li><a href="#pin-code-eingeben">PIN-Code eingeben</a>
+</li>
+<li><a href="#verbindung-mit-ppp">Verbindung mit ppp</a>
+</li>
 </ol>
+</li>
+<li><a href="#weitere-informationen">weitere Informationen</a>
 </li>
 </ol>
 </nav>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>asciidoc</title>
+<title>Apache2</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -93,7 +93,7 @@ CTRL + K
 <span class="foldername">Software</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
 </div>
 </div>
 </div>
@@ -208,7 +208,7 @@ CTRL + K
 <span class="foldername">Software</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/apache2/">Apache2 </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/apache2/">Apache2 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -269,32 +269,14 @@ CTRL + K
 </div>
 </div>
 </header>
-<h2 id="backends" tabindex="-1">backends</h2>
-<h3 id="slidy" tabindex="-1">slidy</h3>
-<p>Nice HTML presentations with slidy / slidy2</p>
 <ul>
-<li>slidy2 gives some advantages <a href="http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html" target="_blank" class="external-link">http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html</a></li>
-<li>ditaa - <a href="http://ditaa.sourceforge.net/#usage" target="_blank" class="external-link">DIagrams Through Ascii Art</a></li>
+<li><a href="http://vimeo.com/1076588" target="_blank" class="external-link">Entwicklungsgeschichte</a> des Apache Webservers dargestellt mit <a href="http://code.google.com/p/codeswarm/" target="_blank" class="external-link">codeswarm</a></li>
 </ul>
-<h4 id="deckjs" tabindex="-1">deckjs</h4>
-<p>Another backend for nice HTML presentations with <a href="http://houqp.github.com/asciidoc-deckjs/" target="_blank" class="external-link">deckjs</a> backend</p>
-<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner">Info</div></div>
-<div class="callout-content">
-<p>
-deckjs backend requires title attribute for images</p>
-</div></div>
-<ul>
-<li>regular image
-<ul>
-<li><code>image::foo.img[title=&quot;mytitle&quot;]</code></li>
-</ul>
-</li>
-<li>ditaa requires
-<ul>
-<li>.My Title above '[ditaa]' section</li>
-</ul>
-</li>
-</ul>
+<h2 id="rewrite" tabindex="-1">Rewrite</h2>
+<h3 id="via-htaccess" tabindex="-1">via .htaccess</h3>
+<pre><code>Options Indexes FollowSymLinks MultiViews
+AllowOverride FileInfo Limit
+</code></pre>
 </main>
 <aside>
 <div class="sidebar">
@@ -336,13 +318,9 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#backends">backends</a>
+<li><a href="#rewrite">Rewrite</a>
 <ol>
-<li><a href="#slidy">slidy</a>
-<ol>
-<li><a href="#deckjs">deckjs</a>
-</li>
-</ol>
+<li><a href="#via-htaccess">via .htaccess</a>
 </li>
 </ol>
 </li>

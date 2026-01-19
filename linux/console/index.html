@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>asciidoc</title>
+<title>Programme und Tipps für die Konsole</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -93,7 +93,7 @@ CTRL + K
 <span class="foldername">Software</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
 </div>
 </div>
 </div>
@@ -133,7 +133,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/console/">Programme und Tipps für die Konsole </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/console/">Programme und Tipps für die Konsole </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -269,32 +269,173 @@ CTRL + K
 </div>
 </div>
 </header>
-<h2 id="backends" tabindex="-1">backends</h2>
-<h3 id="slidy" tabindex="-1">slidy</h3>
-<p>Nice HTML presentations with slidy / slidy2</p>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#console">#console</a></p>
 <ul>
-<li>slidy2 gives some advantages <a href="http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html" target="_blank" class="external-link">http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html</a></li>
-<li>ditaa - <a href="http://ditaa.sourceforge.net/#usage" target="_blank" class="external-link">DIagrams Through Ascii Art</a></li>
+<li><a href="http://www.linux.com/feature/44366" target="_blank" class="external-link">linux.com: Top 10 Linux console applications</a></li>
 </ul>
-<h4 id="deckjs" tabindex="-1">deckjs</h4>
-<p>Another backend for nice HTML presentations with <a href="http://houqp.github.com/asciidoc-deckjs/" target="_blank" class="external-link">deckjs</a> backend</p>
-<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner">Info</div></div>
-<div class="callout-content">
-<p>
-deckjs backend requires title attribute for images</p>
-</div></div>
+<h2 id="z-shell-zsh" tabindex="-1">Z-Shell (zsh)</h2>
+<p>Die Z-Shell ist eine sehr leistungsfähige Alternative zur Standard-Shell vieler Distributionen, der Bash. Jedoch zeigt sich die <em>zsh</em> nach der Installation nicht sehr 'kooperativ'. Ein guter Anfang können die Konfigurationsdateien der Distribution <a class="internal-link is-unresolved" href="/404" target="">wpde&gt;Grml</a> sein ((Da grml eine Debian-basierte Distribution ist, sind einige Debian-spezifische Fuktionen enthalten. Die angesprochenen Fuktionen werdenauf anderen Systemen nicht weiter stören, da sie einfach nicht funktionieren werden.)):</p>
+<p>wget -O .zshrc <a href="http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc" target="_blank" class="external-link">http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc</a></p>
+<p>Die Fuktionen sind auf der <a href="http://grml.org/zsh/grml-zsh-refcard.pdf" target="_blank" class="external-link">grml-zsh-refcard (PDF)</a> gut dokumentiert, ausdrucken lohnt sich.</p>
 <ul>
-<li>regular image
+<li><a href="http://grml.org/zsh/" target="_blank" class="external-link">http://grml.org/zsh/</a></li>
+</ul>
+<p>Folgende Zeile - vorzugsweise in der ~/.zshrc.local - zeigt in der <em>killall [tab-completition]</em> alle Prozesse des Benutzers an, auch der X-Sitzung.<br>
+zstyle ':completion:*:processes-names' command 'ps c -u ${USER} -o command | uniq'</p>
+<h2 id="screen" tabindex="-1">Screen</h2>
+<p>Auf für <em>Screen</em> hält <em>grml</em> eine durchaus sinnvolle Konfiguration bereit:<br>
+wget -O ~/.screenrc '<a href="http://git.grml.org/?p=grml-etc-core.git;a=blob_plain;f=etc/grml/screenrc;hb=HEAD" target="_blank" class="external-link">http://git.grml.org/?p=grml-etc-core.git;a=blob_plain;f=etc/grml/screenrc;hb=HEAD</a>'<br>
+Allerdings sollte man folgende Zeilen auskommentieren, sofern man nicht die Programme <em>cpu-screen</em> und <em>ip-screen</em> aus von <em>grml</em> auf dem System hat((oder installieren via .deb Paket von <a class="internal-link is-unresolved" href="/404" target="">http://deb.grml.org/pool/main/g/grml-scripts/</a>)):<br>
+<a class="tag" onclick="toggleTagSearch(this)" data-content="#backtick">#backtick</a> 1 0 60 /usr/bin/cpu-screen<br>
+<a class="tag" onclick="toggleTagSearch(this)" data-content="#backtick">#backtick</a> 2 0 60 /usr/bin/ip-screen</p>
+<h2 id="diverses" tabindex="-1">Diverses</h2>
 <ul>
-<li><code>image::foo.img[title=&quot;mytitle&quot;]</code></li>
+<li>Calc <a href="http://home3.inet.tele.dk/frda/src/calc_tip.html" target="_blank" class="external-link">http://home3.inet.tele.dk/frda/src/calc_tip.html</a></li>
+<li><a href="http://www.pimpmyshell.de/" target="_blank" class="external-link">http://www.pimpmyshell.de/</a></li>
+</ul>
+<h4 id="kalender" tabindex="-1">Kalender</h4>
+<ul>
+<li><a href="http://www.eecs.umich.edu/~pelzlpj/wyrd/" target="_blank" class="external-link">Wyrd</a> - Ein grafisches Frontend für reminder
+<ul>
+<li><a href="http://wiki.43folders.com/index.php/ICal2Rem" target="_blank" class="external-link">iCal2rem</a> - Ein Tool zu konvertieren vom iCal- zum reminder-Format</li>
 </ul>
 </li>
-<li>ditaa requires
+</ul>
+<h2 id="kommunikation" tabindex="-1">Kommunikation</h2>
+<h3 id="mutt" tabindex="-1">Mutt</h3>
 <ul>
-<li>.My Title above '[ditaa]' section</li>
+<li>Mutt Info's und Hacks, auch nntp <a href="http://www.michael-prokop.at/computer/tools_mutt.html" target="_blank" class="external-link">http://www.michael-prokop.at/computer/tools_mutt.html</a>
+<ul>
+<li><a href="http://www.fefe.de/muttfaq/faq.html" target="_blank" class="external-link">http://www.fefe.de/muttfaq/faq.html</a></li>
+</ul>
+</li>
+<li><a href="http://wiki.mutt.org/index.cgi?MuttWiki" target="_blank" class="external-link">http://wiki.mutt.org/index.cgi?MuttWiki</a></li>
+<li><a href="http://www.muttrcbuilder.org/" target="_blank" class="external-link">http://www.muttrcbuilder.org/</a></li>
+<li><a href="http://www.footils.org/cms/show/59" target="_blank" class="external-link">GTD mit mutt</a></li>
+<li><a href="http://auriga.wearlab.de/~alb/other/mutt-labels/" target="_blank" class="external-link">E-Mails mit mutt 'Verschlagworten'</a></li>
+<li><a href="http://castrojo.wordpress.com/2009/01/28/gmail-contacts-with-mutt/" target="_blank" class="external-link">goobook: Google Kontakte in mutt</a></li>
+</ul>
+<h4 id="dokumentation" tabindex="-1">Dokumentation</h4>
+<ul>
+<li><a href="http://www.uni-koeln.de/rrzk/mail/software/mutt/doc/manual-de/manual-de.html#toc1" target="_blank" class="external-link">Dokumentation</a> vom RRZ der Uni Köln</li>
+<li>hilfreiche <a href="http://firmen-links.net/index.php/SSMTP" target="_blank" class="external-link">Hinweise</a> über die Konfiguration SSMTP((simple SMTP))</li>
+</ul>
+<h3 id="newsreader-and-amp-rss" tabindex="-1">Newsreader &amp; RSS</h3>
+<h4 id="newsreader" tabindex="-1">Newsreader</h4>
+<ul>
+<li>srln oder gepatchter mutt</li>
+</ul>
+<h5 id="slrn" tabindex="-1">slrn</h5>
+<ul>
+<li><a href="http://www.slrn.org/manual/slrn-manual.html" target="_blank" class="external-link">Offizielle Dokumentation</a></li>
+<li><a href="http://alfie.ist.org/projects/slrn/quick.de.html" target="_blank" class="external-link">Deutsche Einführung</a> von Alfie, auch mit weiteren Ressourcen((<a href="http://alfie.ist.org/projects/slrn/" target="_blank" class="external-link">http://alfie.ist.org/projects/slrn/</a>)).</li>
+<li>HOWTO kompakt <a href="http://ugweb.cs.ualberta.ca/howtos/slrn.html" target="_blank" class="external-link">http://ugweb.cs.ualberta.ca/howtos/slrn.html</a></li>
+<li><a href="http://www.michael-prokop.at/computer/tools_slrn.html" target="_blank" class="external-link">Ressourcen</a> von Michael Prokop (grml Projekt)</li>
+<li><a href="http://strcat.de/eigenes/slrnpull.html" target="_blank" class="external-link">slrnpull</a></li>
+<li><a href="http://alcor.concordia.ca/topics/netnews/slrn/intro/" target="_blank" class="external-link">Introduction to Usenet News and the slrn Newsreader</a></li>
+<li>slrn: Problem mit Umplauten, vim und UTF-8 / iso-8859-(1|15)
+<ul>
+<li>eine <a href="http://malison.org/archives/899-slrn-%2B-vim-%2B-utf-8.html" target="_blank" class="external-link">Lösung</a> von Carsten Müller (tut es bei mit nicht)</li>
+<li>über luit, siehe <a href="http://de.gentoo-wiki.com/Utf8" target="_blank" class="external-link">http://de.gentoo-wiki.com/Utf8</a></li>
 </ul>
 </li>
 </ul>
+<h4 id="rss" tabindex="-1">RSS</h4>
+<p>* <a href="http://kiza.kcore.de/software/snownews/" target="_blank" class="external-link">Snownews</a><br>
+* <a href="http://synflood.at/newsbeuter.html" target="_blank" class="external-link">Newsbeuter</a></p>
+<h3 id="instant-messaging" tabindex="-1">Instant Messaging</h3>
+<ul>
+<li>bitlbee Multi IM Gateway <a href="http://www.bitlbee.org/main.php/intro.html" target="_blank" class="external-link">http://www.bitlbee.org/main.php/intro.html</a></li>
+<li>Scripts für irssi und bitlbee <a href="http://the-timing.nl/stuff/irssi-bitlbee" target="_blank" class="external-link">http://the-timing.nl/stuff/irssi-bitlbee</a></li>
+</ul>
+<h3 id="ssh" tabindex="-1">SSH</h3>
+<ul>
+<li><a href="http://www.unixwiz.net/techtips/ssh-agent-forwarding.html" target="_blank" class="external-link">Steve Friedl: An Illustrated Guide to SSH Agent Forwarding</a></li>
+</ul>
+<h2 id="editoren" tabindex="-1">Editoren</h2>
+<ul>
+<li><a class="internal-link is-unresolved" href="/404" target="">VI-VIM</a></li>
+</ul>
+<h2 id="sys-admin-s-tools" tabindex="-1">Sys-Admin's Tools</h2>
+<ul>
+<li>multitail, ccze - Logfiles übersichtlich<br>
+<note tip><br>
+ccze &amp; less<br>
+[output cames from here] | ccze -A | less -R<br>
+</note></li>
+<li>colordiff - Unterschiede in Dateien farbig darstellen<br>
+&lt;box round 98%| aliases e.g. .profile &gt;</li>
+</ul>
+<pre><code># nice functions for VCS 
+# usage: (hg|svn|cvs)diff [file or dir]
+# or     diffless [file1] [file2]
+
+if [ -x &quot;$(which colordiff)&quot; ] ; then 
+        if [ -x &quot;$(which less)&quot; ] ; then
+                lessdiff () { diff -ruN $1 $2 | colordiff | less -R }
+        fi
+
+        if [ -x &quot;$(which cvs)&quot; ] ; then
+                cvsdiff () { cvs diff -uN &quot;${@}&quot; | colordiff | less -R }
+        fi
+
+        if [ -x &quot;$(which svn)&quot; ] ; then
+                svndiff () { svn diff &quot;${@}&quot; | colordiff | less -R }
+        fi
+
+        if [ -x &quot;$(which hg)&quot; ] ; then
+                hgdiff () { hg diff &quot;${@}&quot; | colordiff | less -R }
+        fi
+fi
+```&lt;/box&gt;
+* iftop - Monitoring von Netzwerktraffic
+* ncdu - 'grafische' Oberfläche für du (ab Debian lenny)
+* pwgen - sichere Passwörter, alternativ
+&lt;html&gt;head -c12 /dev/random | uuencode -m - | sed -n '2s/=*$//;2p'&lt;/html&gt;
+* [colored man pages](http://nion.modprobe.de/blog/archives/569-colored-manpages.html)
+* tree - Verzeichnissinhalte als Baum
+
+##  Grafik / PDF 
+* [fbi/fbgs](http://linux.bytesex.org/fbida/) - Pixelgrafiken und PDF auf der Konsole ansehen (nicht unter X-Terminals, nur echte tty's)
+    * [Debian Pakete](http://packages.debian.org/search?suite=default&amp;section=all&amp;arch=any&amp;searchon=names&amp;keywords=fbi)
+* für andere Terminals (X, SSH)
+
+  pdftotext pdf-file.pdf - | less
+  oder 
+  lesspipe
+
+##  Linux Logo 
+* http://www.linux-user.de/ausgabe/2007/08/086-zubefehl/index.html?print=y
+* http://www.deater.net/weave/vmwprod/linux_logo/USAGE
+Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen durchgeführt werden:
+&lt;box 98% round|Änderungen für Anzeige über MOTD&gt;
+</code></pre>
+<h1 id="index-etc-init-d-bootmisc-sh" tabindex="-1">Index: /etc/init.d/bootmisc.sh</h1>
+<p>--- /etc/init.d/bootmisc.sh (Revision 24)<br>
++++ /etc/init.d/bootmisc.sh (Arbeitskopie)<br>
+@@ -40,7 +40,7 @@<br>
+fi</p>
+<p># Update motd</p>
+<ul>
+<li>uname -snrvm &gt; /var/run/motd</li>
+</ul>
+<ul>
+<li>
+<p>/usr/bin/linux_logo &gt; /var/run/motd<br>
+[ -f /etc/motd.tail ] &amp;&amp; cat /etc/motd.tail &gt;&gt; /var/run/motd</p>
+<p># Save kernel messages in /var/log/dmesg</p>
+</li>
+</ul>
+<pre><code class="language-&lt;/box&gt;">##  Werkzeugkiste 
+* mit sed - Stream Editor rekursiv Suchen und ersetzen
+
+  find . -type f -exec sed -i 's/search/replace/g' {} +
+
+* Lange, umgebrochene dn's in einer langen Zeile darstellen ((http://www.computing.net/answers/linux/remove-leading-space-and-join-previous-line/31227.html))
+
+  sed -e :a -e '$!N;s/n //;ta' -e 'P;D' file.ldif
+
+</code></pre>
 </main>
 <aside>
 <div class="sidebar">
@@ -336,15 +477,47 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#backends">backends</a>
+<li><a href="#z-shell-zsh">Z-Shell (zsh)</a>
+</li>
+<li><a href="#screen">Screen</a>
+</li>
+<li><a href="#diverses">Diverses</a>
 <ol>
-<li><a href="#slidy">slidy</a>
-<ol>
-<li><a href="#deckjs">deckjs</a>
+<li><a href="#kalender">Kalender</a>
 </li>
 </ol>
 </li>
+<li><a href="#kommunikation">Kommunikation</a>
+<ol>
+<li><a href="#mutt">Mutt</a>
+<ol>
+<li><a href="#dokumentation">Dokumentation</a>
+</li>
 </ol>
+</li>
+<li><a href="#newsreader-and-amp-rss">Newsreader & RSS</a>
+<ol>
+<li><a href="#newsreader">Newsreader</a>
+<ol>
+<li><a href="#slrn">slrn</a>
+</li>
+</ol>
+</li>
+<li><a href="#rss">RSS</a>
+</li>
+</ol>
+</li>
+<li><a href="#instant-messaging">Instant Messaging</a>
+</li>
+<li><a href="#ssh">SSH</a>
+</li>
+</ol>
+</li>
+<li><a href="#editoren">Editoren</a>
+</li>
+<li><a href="#sys-admin-s-tools">Sys-Admin's Tools</a>
+</li>
+<li><a href="#index-etc-init-d-bootmisc-sh">Index: /etc/init.d/bootmisc.sh</a>
 </li>
 </ol>
 </nav>

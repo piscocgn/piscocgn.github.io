@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>asciidoc</title>
+<title>Diverse Tipps und Tricks zu Xfce</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -93,7 +93,7 @@ CTRL + K
 <span class="foldername">Software</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
 </div>
 </div>
 </div>
@@ -115,7 +115,7 @@ CTRL + K
 <span class="foldername">Xfce</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/xfce/notizen/">Diverse Tipps und Tricks zu Xfce </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/xfce/notizen/">Diverse Tipps und Tricks zu Xfce </a>
 </div>
 </div>
 </div>
@@ -269,32 +269,46 @@ CTRL + K
 </div>
 </div>
 </header>
-<h2 id="backends" tabindex="-1">backends</h2>
-<h3 id="slidy" tabindex="-1">slidy</h3>
-<p>Nice HTML presentations with slidy / slidy2</p>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#xfce">#xfce</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#desktop">#desktop</a></p>
+<h2 id="xorg-composite-effekte-fuer-xfce" tabindex="-1">Xorg - Composite-Effekte für Xfce</h2>
 <ul>
-<li>slidy2 gives some advantages <a href="http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html" target="_blank" class="external-link">http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html</a></li>
-<li>ditaa - <a href="http://ditaa.sourceforge.net/#usage" target="_blank" class="external-link">DIagrams Through Ascii Art</a></li>
+<li>siehe <a href="http://wiki.ubuntuusers.de/Xfce_Composite-Effekte" target="_blank" class="external-link">http://wiki.ubuntuusers.de/Xfce_Composite-Effekte</a></li>
 </ul>
-<h4 id="deckjs" tabindex="-1">deckjs</h4>
-<p>Another backend for nice HTML presentations with <a href="http://houqp.github.com/asciidoc-deckjs/" target="_blank" class="external-link">deckjs</a> backend</p>
-<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner">Info</div></div>
-<div class="callout-content">
-<p>
-deckjs backend requires title attribute for images</p>
-</div></div>
+<h3 id="xorg-conf" tabindex="-1">xorg.conf</h3>
+<pre><code class="language-bash">Section &quot;Device&quot;
+...
+        Option          &quot;RenderAccel&quot;           &quot;true&quot;
+        Option          &quot;AllowGLXWithComposite&quot; &quot;true&quot;
+EndSection
+
+...
+
+Section &quot;Extensions&quot;
+         Option  &quot;Composite&quot; &quot;Enable&quot;
+EndSection
+</code></pre>
+<h2 id="tomboy-default-browser" tabindex="-1">Tomboy Default Browser</h2>
+<p>Wenn Tomoby mit dem <em>xfce4-xfapplet-plugin</em> unter <em>Xfce</em> betrieben wird, kann es vorkommen dass beim Klick auf eine URL mit http oder https zu einer Meldung kommt:</p>
+<p>{{ linux:xfce:tomboy_url_handler_msg.png|}}</p>
+<html>
+Der Ort kann nicht geöffnet werden ... Die Vorgabeaktion unterstützt dieses Protokoll nicht
+</html>
+<p>Tomboy bezieht die Konfiguration aus den GNOME URL-Handlern, welche mit dem gconf-editor angepasst werden können:</p>
 <ul>
-<li>regular image
+<li>den gconf-editor öffnen</li>
+<li>den Zweig * /desktop/gnome/url-handlers/http/ * aufsuchen
 <ul>
-<li><code>image::foo.img[title=&quot;mytitle&quot;]</code></li>
+<li>den Eintrag &quot;command&quot; auf &quot;exo-open --launch WebBrowser %s&quot;((<em>exo-open --launch WebBrowser</em> öffnet den in <em>Einstellungen -&gt; Bevorzugte Anwendungen</em> voreingestellten Browser)) oder direkt ein Programmnamen wie &quot;firefox %s&quot; eingeben.</li>
+<li>den Eintrag &quot;enabled&quot; auf true setzen.</li>
 </ul>
 </li>
-<li>ditaa requires
-<ul>
-<li>.My Title above '[ditaa]' section</li>
+<li>gegebenenfalls die gleichen Einstellungen bei <em>https</em> vornemhen</li>
 </ul>
-</li>
-</ul>
+<h2 id="zuletzt-geoeffnete-dokumente-recent-files" tabindex="-1">Zuletzt geöffnete Dokumente / Recent Files</h2>
+<p>Oft ist ein Menü mit den zuletzt geöffneten Dokumenten recht nützlich. Auf der von <a href="http://www.thelightmaker.de/" target="_blank" class="external-link">Sven Müller</a> gibt es ein entsprechende <a href="http://www.thelightmaker.de/knowhow/xfce_recent_files" target="_blank" class="external-link">Anleitung</a>, basierend auf ein Skript welches die entsprechenden Informationen aus der Desktop-Suchmaschine <a class="internal-link is-unresolved" href="/404" target="">http://www.beagle-project.org/Beagle</a> herausholt.<br>
+<note tip><br>
+Für Debian muss das Paket <em>libgnomevfs2-bin</em> installiert sein, und naturlich <em>beagle</em> selbst.<br>
+</note></p>
 </main>
 <aside>
 <div class="sidebar">
@@ -336,15 +350,15 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#backends">backends</a>
+<li><a href="#xorg-composite-effekte-fuer-xfce">Xorg - Composite-Effekte für Xfce</a>
 <ol>
-<li><a href="#slidy">slidy</a>
-<ol>
-<li><a href="#deckjs">deckjs</a>
+<li><a href="#xorg-conf">xorg.conf</a>
 </li>
 </ol>
 </li>
-</ol>
+<li><a href="#tomboy-default-browser">Tomboy Default Browser</a>
+</li>
+<li><a href="#zuletzt-geoeffnete-dokumente-recent-files">Zuletzt geöffnete Dokumente / Recent Files</a>
 </li>
 </ol>
 </nav>

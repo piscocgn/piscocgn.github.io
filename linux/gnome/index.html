@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>asciidoc</title>
+<title>GNOME</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -93,7 +93,7 @@ CTRL + K
 <span class="foldername">Software</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/software/asciidoc/">asciidoc </a>
 </div>
 </div>
 </div>
@@ -121,7 +121,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/gnome/">GNOME </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/linux/gnome/">GNOME </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -269,32 +269,13 @@ CTRL + K
 </div>
 </div>
 </header>
-<h2 id="backends" tabindex="-1">backends</h2>
-<h3 id="slidy" tabindex="-1">slidy</h3>
-<p>Nice HTML presentations with slidy / slidy2</p>
-<ul>
-<li>slidy2 gives some advantages <a href="http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html" target="_blank" class="external-link">http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html</a></li>
-<li>ditaa - <a href="http://ditaa.sourceforge.net/#usage" target="_blank" class="external-link">DIagrams Through Ascii Art</a></li>
-</ul>
-<h4 id="deckjs" tabindex="-1">deckjs</h4>
-<p>Another backend for nice HTML presentations with <a href="http://houqp.github.com/asciidoc-deckjs/" target="_blank" class="external-link">deckjs</a> backend</p>
-<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner">Info</div></div>
-<div class="callout-content">
-<p>
-deckjs backend requires title attribute for images</p>
-</div></div>
-<ul>
-<li>regular image
-<ul>
-<li><code>image::foo.img[title=&quot;mytitle&quot;]</code></li>
-</ul>
-</li>
-<li>ditaa requires
-<ul>
-<li>.My Title above '[ditaa]' section</li>
-</ul>
-</li>
-</ul>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#gnome">#gnome</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#desktop">#desktop</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#laptop">#laptop</a></p>
+<h2 id="dual-head-setup" tabindex="-1">Dual Head Setup</h2>
+<p>Falls <a href="http://X.org" target="_blank" class="external-link">X.org</a> auf 2 Bildschirme konfiguriert ist, GNOME aber nur im Clone-Modus erscheint (auf beiden Bildschirmen das gleiche), dann könnte es an den gespeicherten Session Daten liegen. Abhilfe schafft das löschen folgender Dateien<br>
+rm -fr ~/.gconf/desktop/gnome/screen/</p>
+<h2 id="gnome-power-manager" tabindex="-1">gnome-power-manager</h2>
+<p>Für die korrekte Arbeitsweise unter Debian muss der Benutzer Mitglied der Gruppe <em>powedev</em> sein((siehe /usr/share/doc/gnome-power-manager/README.Debian])).</p>
+<p>Der gnome-power-manager ist unter anderem für das Abdunkeln des Bildschirms im Batteriebetrieb, sowie das Konfigurieren von Aktionen beim schließen des Deckels bei Laptops zuständig.</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -336,15 +317,9 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#backends">backends</a>
-<ol>
-<li><a href="#slidy">slidy</a>
-<ol>
-<li><a href="#deckjs">deckjs</a>
+<li><a href="#dual-head-setup">Dual Head Setup</a>
 </li>
-</ol>
-</li>
-</ol>
+<li><a href="#gnome-power-manager">gnome-power-manager</a>
 </li>
 </ol>
 </nav>
