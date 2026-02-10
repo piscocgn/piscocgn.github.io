@@ -54,14 +54,14 @@ Die Verwendung von GIMPshop ist insofern problematisch, dass man hier durch die 
 * Inkscape to TikZ exporter (SVG2LaTeX) http://code.google.com/p/inkscape2tikz/
 
 ###  Vektorisieren 
-    * [potrace](http://potrace.sf.net/)
-    * [autotrace](http://autotrace.sf.net/)
-    * [Vector Magigc](http://vectormagic.stanford.edu/) - The Online Tool for Precision Vectorization (Stanford University)
+* [potrace](http://potrace.sf.net/)
+* [autotrace](http://autotrace.sf.net/)
+* [Vector Magigc](http://vectormagic.stanford.edu/) - The Online Tool for Precision Vectorization (Stanford University)
 ####  GUI 
 * ~~http://delineate.sourceforge.net/~~((Entwicklung steht still, Probleme mit Java aktueller als J2SE 1.4.1 oder 1.4.2)) autotrace, potrace
 * http://potracegui.sourceforge.net/ für potrace und autotrace (QT)
 
-#### = SVG 
+####  SVG 
 * [[Impress#Sonstiges \| OpenOffice.org SVG Support]]
 
 ##  Layout / Druck 
