@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-<title>Plan 9</title>
+<title>Samba</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -195,7 +195,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/plan9/">Plan 9 </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/os/plan9/">Plan 9 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -260,7 +260,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/samba/">Samba </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/samba/">Samba </a>
 </div>
 </div>
 </div>
@@ -294,36 +294,8 @@ CTRL + K
 </div>
 </div>
 </header>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs" target="_blank" class="external-link">Plan 9 from Bell Labs</a>, <a href="https://de.wikipedia.org/wiki/Plan_9_(Betriebssystem)" target="_blank" class="external-link">Plan 9 (Betriebssystem)</a></li>
-<li>Doc1 <a href="http://plan9.bell-labs.com/sys/man/index.html" target="_blank" class="external-link">http://plan9.bell-labs.com/sys/man/index.html</a></li>
-<li>Doc2 <a href="http://www.cs.bell-labs.com/sys/doc/index.html" target="_blank" class="external-link">http://www.cs.bell-labs.com/sys/doc/index.html</a></li>
-<li>Plan 9 <a href="http://www.magma.com.ni/moin/Plan9Tutorial" target="_blank" class="external-link">Tutorial</a> von Magma Soft</li>
-</ul>
-<h2 id="short-notes" tabindex="-1">short notes</h2>
-<ul>
-<li>default user is <em>glenda</em></li>
-</ul>
-<h2 id="installation" tabindex="-1">Installation</h2>
-<h3 id="qemu" tabindex="-1">Qemu</h3>
-<ul>
-<li><a href="http://plan9.bell-labs.com/wiki/plan9/Installing_Plan_9_on_Qemu/index.html" target="_blank" class="external-link">http://plan9.bell-labs.com/wiki/plan9/Installing_Plan_9_on_Qemu/index.html</a></li>
-</ul>
-<h2 id="ui" tabindex="-1">UI</h2>
-<ul>
-<li>antialiased fonts in Plan 9
-<ul>
-<li><a href="http://mirtchovski.com/p9/freetype/" target="_blank" class="external-link">http://mirtchovski.com/p9/freetype/</a> (mit hget z.B. in /tmp/)</li>
-</ul>
-</li>
-<li>customize keyboard layout
-<ul>
-<li>cat /sys/lib/kbmap/[lang] &gt; /dev/kbmap</li>
-<li>make default for user in /usr/[username]/lib/profile</li>
-</ul>
-</li>
-<li><a href="http://thenewsh.blogspot.com/2010/01/acme-environment-in-plan9.html" target="_blank" class="external-link">The Acme environment in Plan9</a></li>
-</ul>
+<h2 id="time-machine" tabindex="-1">TimeMachine</h2>
+<p><a href="https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view" target="_blank" class="external-link">https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view</a></p>
 </main>
 <aside>
 <div class="sidebar">
@@ -337,15 +309,7 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#short-notes">short notes</a>
-</li>
-<li><a href="#installation">Installation</a>
-<ol>
-<li><a href="#qemu">Qemu</a>
-</li>
-</ol>
-</li>
-<li><a href="#ui">UI</a>
+<li><a href="#time-machine">TimeMachine</a>
 </li>
 </ol>
 </nav>
