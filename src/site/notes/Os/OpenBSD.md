@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/os/openbsd","permalink":"/os/openbsd/"}
+{"dg-publish":true,"dg-permalink":"/os/openbsd","permalink":"/os/openbsd/","dg-note-properties":{}}
 ---
 
 #unix 

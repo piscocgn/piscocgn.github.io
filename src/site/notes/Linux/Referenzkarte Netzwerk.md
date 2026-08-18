@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"linux/referenzkarte_netzwerk","permalink":"/linux/referenzkarte_netzwerk/"}
+{"dg-publish":true,"dg-permalink":"linux/referenzkarte_netzwerk","permalink":"/linux/referenzkarte_netzwerk/","dg-note-properties":{}}
 ---
 
 #linux #lpi #netzwerk #unvollständig 

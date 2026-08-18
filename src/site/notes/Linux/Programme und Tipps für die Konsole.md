@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"linux/console","permalink":"/linux/console/"}
+{"dg-publish":true,"dg-permalink":"linux/console","permalink":"/linux/console/","dg-note-properties":{}}
 ---
 
 #linux #console

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"linux/informationen","permalink":"/linux/informationen/"}
+{"dg-publish":true,"dg-permalink":"linux/informationen","permalink":"/linux/informationen/","dg-note-properties":{"publish":true,"permalink":"linux/informationen"}}
 ---
 
 ##  Geschichte 

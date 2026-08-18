@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"linux/zertifizierung","permalink":"/linux/zertifizierung/"}
+{"dg-publish":true,"dg-permalink":"linux/zertifizierung","permalink":"/linux/zertifizierung/","dg-note-properties":{}}
 ---
 
 #linux

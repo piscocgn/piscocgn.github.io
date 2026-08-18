@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"software/mua","permalink":"/software/mua/"}
+{"dg-publish":true,"dg-permalink":"software/mua","permalink":"/software/mua/","dg-note-properties":{}}
 ---
 
 #mua #linux #thunderbird #evolution

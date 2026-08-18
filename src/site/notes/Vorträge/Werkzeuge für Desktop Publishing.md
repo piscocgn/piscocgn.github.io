@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"vortraege/werkzeuge_fuer_desktop_publishing","permalink":"/vortraege/werkzeuge_fuer_desktop_publishing/"}
+{"dg-publish":true,"dg-permalink":"vortraege/werkzeuge_fuer_desktop_publishing","permalink":"/vortraege/werkzeuge_fuer_desktop_publishing/","dg-note-properties":{"publish":true,"permalink":"vortraege/werkzeuge_fuer_desktop_publishing"}}
 ---
 
 Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.

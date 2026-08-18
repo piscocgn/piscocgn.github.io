@@ -6,3 +6,5 @@
 How to store Image Control / Bildsteuerung
 
 https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/
+
+- https://ricohrecipes.com/the-bw-collection/

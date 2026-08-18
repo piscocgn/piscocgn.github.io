@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"linux/umts","permalink":"/linux/umts/"}
+{"dg-publish":true,"dg-permalink":"linux/umts","permalink":"/linux/umts/","dg-note-properties":{}}
 ---
 
 * [UMTS](https://de.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System)

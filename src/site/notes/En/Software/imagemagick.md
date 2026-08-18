@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"en/software/imagemagick","permalink":"/en/software/imagemagick/"}
+{"dg-publish":true,"dg-permalink":"en/software/imagemagick","permalink":"/en/software/imagemagick/","dg-note-properties":{}}
 ---
 
 #dtp #console #linux

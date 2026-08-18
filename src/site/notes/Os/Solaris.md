@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"os/solaris","permalink":"/os/solaris/"}
+{"dg-publish":true,"dg-permalink":"os/solaris","permalink":"/os/solaris/","dg-note-properties":{}}
 ---
 
 ##  zusätzliche Software

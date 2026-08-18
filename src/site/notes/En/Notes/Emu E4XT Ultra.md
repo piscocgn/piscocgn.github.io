@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"en/notizen/e4xt_ultra","permalink":"/en/notizen/e4xt_ultra/"}
+{"dg-publish":true,"dg-permalink":"en/notizen/e4xt_ultra","permalink":"/en/notizen/e4xt_ultra/","dg-note-properties":{"permalink":"en/notizen/e4xt_ultra","publish":true}}
 ---
 
 #music #sampler #emulator

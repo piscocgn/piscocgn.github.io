@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"linux/gnome","permalink":"/linux/gnome/"}
+{"dg-publish":true,"dg-permalink":"linux/gnome","permalink":"/linux/gnome/","dg-note-properties":{}}
 ---
 
 #gnome #desktop #laptop

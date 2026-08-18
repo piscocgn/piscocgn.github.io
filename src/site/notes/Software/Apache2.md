@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"software/apache2","permalink":"/software/apache2/"}
+{"dg-publish":true,"dg-permalink":"software/apache2","permalink":"/software/apache2/","dg-note-properties":{}}
 ---
 
 * [Entwicklungsgeschichte](http://vimeo.com/1076588) des Apache Webservers dargestellt mit [codeswarm](http://code.google.com/p/codeswarm/)

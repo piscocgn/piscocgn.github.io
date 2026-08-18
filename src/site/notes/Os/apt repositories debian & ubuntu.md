@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"os/repositories","permalink":"/os/repositories/"}
+{"dg-publish":true,"dg-permalink":"os/repositories","permalink":"/os/repositories/","dg-note-properties":{"permalink":"os/repositories","publish":true}}
 ---
 
 

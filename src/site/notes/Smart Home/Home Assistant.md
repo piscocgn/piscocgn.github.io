@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/smart-home/home-assistant/"}
+{"dg-publish":true,"permalink":"/smart-home/home-assistant/","dg-note-properties":{}}
 ---
 
 

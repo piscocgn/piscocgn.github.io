@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"software/asciidoc","permalink":"/software/asciidoc/"}
+{"dg-publish":true,"dg-permalink":"software/asciidoc","permalink":"/software/asciidoc/","dg-note-properties":{}}
 ---
 
 ## backends 

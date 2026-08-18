@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"linux/xfce/notizen","permalink":"/linux/xfce/notizen/"}
+{"dg-publish":true,"dg-permalink":"linux/xfce/notizen","permalink":"/linux/xfce/notizen/","dg-note-properties":{}}
 ---
 
 #xfce #desktop

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/os/freebsd","permalink":"/os/freebsd/"}
+{"dg-publish":true,"dg-permalink":"/os/freebsd","permalink":"/os/freebsd/","dg-note-properties":{}}
 ---
 
 #gnome #unix

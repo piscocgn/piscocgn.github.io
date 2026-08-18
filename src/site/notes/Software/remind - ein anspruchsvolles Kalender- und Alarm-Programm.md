@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"software/remind","permalink":"/software/remind/"}
+{"dg-publish":true,"dg-permalink":"software/remind","permalink":"/software/remind/","dg-note-properties":{}}
 ---
 
 * [Homepage](http://www.roaringpenguin.com/products/remind)

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"os/plan9","permalink":"/os/plan9/"}
+{"dg-publish":true,"dg-permalink":"os/plan9","permalink":"/os/plan9/","dg-note-properties":{}}
 ---
 
 * [Plan 9 from Bell Labs](https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs), [Plan 9 (Betriebssystem)](https://de.wikipedia.org/wiki/Plan_9_(Betriebssystem))

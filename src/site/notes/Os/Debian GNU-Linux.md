@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"os/debian","permalink":"/os/debian/"}
+{"dg-publish":true,"dg-permalink":"os/debian","permalink":"/os/debian/","dg-note-properties":{}}
 ---
 
 

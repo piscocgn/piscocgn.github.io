@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/notizen/oos-dtp","permalink":"/notizen/oos-dtp/"}
+{"dg-publish":true,"dg-permalink":"/notizen/oos-dtp","permalink":"/notizen/oos-dtp/","dg-note-properties":{}}
 ---
 
 #dtp #linux 

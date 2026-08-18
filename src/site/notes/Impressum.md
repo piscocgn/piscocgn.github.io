@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/impressum/"}
+{"dg-publish":true,"permalink":"/impressum/","dg-note-properties":{"publish":true}}
 ---
 
 - polyformal System- & Formarbeit
