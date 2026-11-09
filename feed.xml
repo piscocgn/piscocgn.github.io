@@ -3,10 +3,10 @@
   <title>polyformal wiki</title>
   <link href="https://wiki.polyformal.de/feed.xml" rel="self"/>
   <link href="https://wiki.polyformal.de"/>
-  <updated>2026-11-09T19:52:10Z</updated>
+  <updated>2026-11-09T20:59:12Z</updated>
   <id>https://wiki.polyformal.de</id><entry>
     <title>Werkzeuge für Desktop Publishing</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/</id>
     <content type="html">&lt;p&gt;Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.&lt;/p&gt;
 &lt;p&gt;Beinhaltet: u.a. GIMP, Inkscape, Scribus, gThumb, Schriften allgemein, FontyPython, FONTPage&lt;/p&gt;
@@ -19,14 +19,14 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt; Zusatzinformationen&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
     <link href="https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/"/>
   </entry><entry>
     <title>remind - ein anspruchsvolles Kalender- und Alarm-Programm</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/software/remind/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.roaringpenguin.com/products/remind&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Homepage&lt;/a&gt;&lt;/li&gt;
@@ -74,14 +74,14 @@ OMIT  	 Oct  3		MSG %&amp;quot;Tag der Deutschen Einheit%&amp;quot;%
 REM 	Oct	31	MSG %&amp;quot;Reformationstag (regionaler Feiertag)%&amp;quot;%
 REM	Nov	1	MSG %&amp;quot;Allerheiligen (regionaler Feiertag)%&amp;quot;%
 REM	Wed Nov 23 --7	MSG %&amp;quot;Buß- und Bettag (regionaler Feiertag)%&amp;quot;%
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#TotenSonntag&quot;&gt;#TotenSonntag&lt;/a&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#TotenSonntag&quot;&gt;#TotenSonntag&lt;/a&gt;
 REM	Sun Dec 24 --35 MSG %&amp;quot;Totensonntag%&amp;quot;%
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Advent&quot;&gt;#Advent&lt;/a&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#Advent&quot;&gt;#Advent&lt;/a&gt;
 REM	Sun Dec 24 --28 MSG %&amp;quot;1.Advent%&amp;quot;%
 REM	Sun Dec 24 --21 MSG %&amp;quot;2.Advent%&amp;quot;%
 REM	Sun Dec 24 --14 MSG %&amp;quot;3.Advent%&amp;quot;%
 REM	Sun Dec 24 --7 	MSG %&amp;quot;4.Advent%&amp;quot;%
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Weihnachten&quot;&gt;#Weihnachten&lt;/a&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#Weihnachten&quot;&gt;#Weihnachten&lt;/a&gt;
 REM	Dec  6		MSG %&amp;quot;Nikolaus%&amp;quot;%
 OMIT	Dec  24		MSG %&amp;quot;Heiliger Abend%&amp;quot;%
 OMIT	Dec  25		MSG %&amp;quot;1. Weihnachtstag%&amp;quot;%
@@ -124,9 +124,9 @@ wget -qO $TMP_FILE RTM_URL &amp;amp;&amp;amp; ical2rem.pl $TMP_FILE  &amp;gt; ~/
     <link href="https://wiki.polyformal.de/software/remind/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 auf 1.0</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/software/stalwart-migration/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Erfahrungsbericht: Migration eines kleinen Stalwart-Mailservers von 0.15.5 auf 1.0.3. Das Setup: Docker Compose, RocksDB, OpenLDAP als Verzeichnis, Reverse Proxy davor, weniger als 10 Konten, rund 13 GB Daten.&lt;/p&gt;
 &lt;p&gt;Die Migration erfolgte im November 2026 mit &lt;code&gt;stalwart:v0.16.27&lt;/code&gt;, &lt;code&gt;stalwart-migrate:1.0.6&lt;/code&gt;, &lt;code&gt;stalwart:v1.0.3&lt;/code&gt; und &lt;code&gt;stalwart-cli&lt;/code&gt; 1.0.14. Objekt- und Feldnamen können sich in neueren Versionen ändern. Alle Namen sind Platzhalter (&lt;code&gt;example.com&lt;/code&gt;, &lt;code&gt;&amp;lt;...&amp;gt;&lt;/code&gt;). Die offizielle Upgrade-Dokumentation hat Vorrang vor dieser Seite.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/software/stalwart-migration/&quot;&gt;Stalwart Migration 0.15 to 1.0&lt;/a&gt;&lt;/p&gt;
@@ -195,7 +195,7 @@ python migrate_v016.py convert --settings settings.json --principals principals.
   --patch-paths /opt/stalwart=/var/lib/stalwart --unmigrated-output unmigrated.txt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;code&gt;unmigrated.txt&lt;/code&gt; ansehen. Bei uns wurde der Großteil der Keys nicht übernommen, darunter die vielen automatisch angelegten IP-Sperren. Das ist normal, aber die Liste lohnt einen Blick.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;export.json&lt;/code&gt; ist NDJSON. Veraltete Domains, DKIM-Schlüssel oder Aliase lassen sich vor dem Import herausfiltern. Danach prüfen, dass keine Referenzen wie &lt;code&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#create-N&quot;&gt;#create-N&lt;/a&gt;&lt;/code&gt; ins Leere zeigen.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;export.json&lt;/code&gt; ist NDJSON. Veraltete Domains, DKIM-Schlüssel oder Aliase lassen sich vor dem Import herausfiltern. Danach prüfen, dass keine Referenzen wie &lt;code&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#create-N&quot;&gt;#create-N&lt;/a&gt;&lt;/code&gt; ins Leere zeigen.&lt;/p&gt;
 &lt;h3 id=&quot;2-stoppen-und-kopieren&quot; tabindex=&quot;-1&quot;&gt;2. Stoppen und kopieren&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;docker stop -t 60 mailserver
 cp -a &amp;lt;0.15-daten&amp;gt; &amp;lt;work016&amp;gt;
@@ -337,7 +337,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/stalwart-migration/"/>
   </entry><entry>
     <title>Samba</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/software/samba/</id>
     <content type="html">&lt;h2 id=&quot;time-machine&quot; tabindex=&quot;-1&quot;&gt;TimeMachine&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&lt;/a&gt;&lt;/p&gt;
@@ -345,9 +345,9 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/samba/"/>
   </entry><entry>
     <title>Mail User Agents</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/software/mua/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mua&quot;&gt;#mua&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#thunderbird&quot;&gt;#thunderbird&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#evolution&quot;&gt;#evolution&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#mua&quot;&gt;#mua&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#thunderbird&quot;&gt;#thunderbird&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#evolution&quot;&gt;#evolution&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hier eine Auflistung von persönlichen Erfahrungen mit E-Mailprogrammen.&lt;/p&gt;
 &lt;h2 id=&quot;evolution&quot; tabindex=&quot;-1&quot;&gt;Evolution&lt;/h2&gt;
 &lt;h3 id=&quot;pro&quot; tabindex=&quot;-1&quot;&gt;Pro&lt;/h3&gt;
@@ -391,7 +391,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/mua/"/>
   </entry><entry>
     <title>Apache2</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/software/apache2/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://vimeo.com/1076588&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Entwicklungsgeschichte&lt;/a&gt; des Apache Webservers dargestellt mit &lt;a href=&quot;http://code.google.com/p/codeswarm/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;codeswarm&lt;/a&gt;&lt;/li&gt;
@@ -405,7 +405,7 @@ AllowOverride FileInfo Limit
     <link href="https://wiki.polyformal.de/software/apache2/"/>
   </entry><entry>
     <title>Home Assistant</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/smart-home/home-assistant/</id>
     <content type="html">&lt;h2 id=&quot;data-retention&quot; tabindex=&quot;-1&quot;&gt;Data Retention&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&lt;/a&gt;&lt;/p&gt;
@@ -413,7 +413,7 @@ AllowOverride FileInfo Limit
     <link href="https://wiki.polyformal.de/smart-home/home-assistant/"/>
   </entry><entry>
     <title>apt repositories debian &amp; ubuntu</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/os/repositories/</id>
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;[!warning]&lt;br /&gt;
@@ -426,48 +426,48 @@ This page is outdated.&lt;/p&gt;
 # http://gentoo.ovibes.net/nautilus-share/mediawiki-1.4.4/index.php/Accueil
 deb http://gentoo.ovibes.net/nautilus-share/ubuntu/breezy ./
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Gammu&quot;&gt;#Gammu&lt;/a&gt; phonebook/sms editor for various mobile phones
+&lt;a class=&quot;tag&quot; data-content=&quot;#Gammu&quot;&gt;#Gammu&lt;/a&gt; phonebook/sms editor for various mobile phones
 deb http://debian.cihar.com/ unstable gammu
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Scribus&quot;&gt;#Scribus&lt;/a&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#Scribus&quot;&gt;#Scribus&lt;/a&gt;
 ##Ubuntu 
 deb http://debian.scribus.net/debian/ breezy main restricted
 ##Debian
 deb http://debian.scribus.net/debian/ stable main non-free contrib
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Gnucash&quot;&gt;#Gnucash&lt;/a&gt; (with HBCI, only debian)
+&lt;a class=&quot;tag&quot; data-content=&quot;#Gnucash&quot;&gt;#Gnucash&lt;/a&gt; (with HBCI, only debian)
 deb http://www.stud.uni-karlsruhe.de/~uinx/debian/stable ./
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#wine&quot;&gt;#wine&lt;/a&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#wine&quot;&gt;#wine&lt;/a&gt;
 deb http://wine.sourceforge.net/apt/ binary/
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Marillat&quot;&gt;#Marillat&lt;/a&gt;, Acrobat Reader, mplayer, ... deb(-src)
+&lt;a class=&quot;tag&quot; data-content=&quot;#Marillat&quot;&gt;#Marillat&lt;/a&gt;, Acrobat Reader, mplayer, ... deb(-src)
 deb ftp://ftp.nerim.net/debian-marillat sarge main
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#jEdit&quot;&gt;#jEdit&lt;/a&gt;, small powerfull editor, converting lage files iso - uft-8
+&lt;a class=&quot;tag&quot; data-content=&quot;#jEdit&quot;&gt;#jEdit&lt;/a&gt;, small powerfull editor, converting lage files iso - uft-8
 deb http://dl.sourceforge.net/sourceforge/jedit ./
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#OpenOffice&quot;&gt;#OpenOffice&lt;/a&gt;.org2 packages for ubuntu
+&lt;a class=&quot;tag&quot; data-content=&quot;#OpenOffice&quot;&gt;#OpenOffice&lt;/a&gt;.org2 packages for ubuntu
 deb http://people.ubuntu.com/~doko/OOo2 ./
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#additional&quot;&gt;#additional&lt;/a&gt; ubuntu repositories 
+&lt;a class=&quot;tag&quot; data-content=&quot;#additional&quot;&gt;#additional&lt;/a&gt; ubuntu repositories 
 deb http://ftp.inf.tu-dresden.de/os/linux/dists/ubuntu breezy multiverse
 deb http://ftp.inf.tu-dresden.de/os/linux/dists/ubuntu breezy-security main restricted universe multiverse
 deb http://ftp.inf.tu-dresden.de/os/linux/dists/ubuntu breezy-updates main restricted universe multiverse
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tomcat&quot;&gt;#tomcat&lt;/a&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#tomcat&quot;&gt;#tomcat&lt;/a&gt;
 deb http://apt.leapster.org/tomcat ./
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; clamav, etc.
+&lt;a class=&quot;tag&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; clamav, etc.
 deb http://ftp2.de.debian.org/debian-volatile sarge/volatile main
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#libapache-mod-clamav&quot;&gt;#libapache-mod-clamav&lt;/a&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#libapache-mod-clamav&quot;&gt;#libapache-mod-clamav&lt;/a&gt;
 deb http://debian.gallet.info/debian sarge main
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#samba&quot;&gt;#samba&lt;/a&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#samba&quot;&gt;#samba&lt;/a&gt;
 deb http://us1.samba.org/samba/ftp/Binary_Packages/Debian sarge samba
 
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#squidvir&quot;&gt;#squidvir&lt;/a&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#squidvir&quot;&gt;#squidvir&lt;/a&gt;
 deb http://www.bolzchristian.de/debian ./
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -475,7 +475,7 @@ deb http://www.bolzchristian.de/debian ./
     <link href="https://wiki.polyformal.de/os/repositories/"/>
   </entry><entry>
     <title>Solaris</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/os/solaris/</id>
     <content type="html">&lt;h2 id=&quot;zusaetzliche-software&quot; tabindex=&quot;-1&quot;&gt;zusätzliche Software&lt;/h2&gt;
 &lt;p&gt;Oracle (ehem. Sun) bietet eine CD mit Freeware an, welche einiges an Open Source Software enthält. Die Programme sind aber recht alt (Stand 02/2011)&lt;/p&gt;
@@ -538,12 +538,12 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&quot;loesung-1&quot; tabindex=&quot;-1&quot;&gt;Lösung&lt;/h4&gt;
 &lt;p&gt;&#39;&#39;man apropos&#39;&#39; verweist auf catman um die Indexes anzulegen. &#39;&#39;catman -w&#39;&#39; ausführen.&lt;br /&gt;
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 </content>
     <link href="https://wiki.polyformal.de/os/solaris/"/>
   </entry><entry>
     <title>Plan 9</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/os/plan9/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 from Bell Labs&lt;/a&gt;, &lt;a href=&quot;https://de.wikipedia.org/wiki/Plan_9_(Betriebssystem)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 (Betriebssystem)&lt;/a&gt;&lt;/li&gt;
@@ -579,9 +579,9 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/plan9/"/>
   </entry><entry>
     <title>OpenBSD</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/os/openbsd/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Dienste neu starten&lt;/li&gt;
 &lt;/ul&gt;
@@ -628,9 +628,9 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/openbsd/"/>
   </entry><entry>
     <title>FreeBSD</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/os/freebsd/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.freebsd.org/doc/de_DE.ISO8859-1/books/handbook/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Das FreeBSD Handbuch&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -703,9 +703,9 @@ chsh -s /usr/sbin/nologin gdm
     <link href="https://wiki.polyformal.de/os/freebsd/"/>
   </entry><entry>
     <title>Fedora</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/os/fedora/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#fedora&quot;&gt;#fedora&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#fedora&quot;&gt;#fedora&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;informationen&quot; tabindex=&quot;-1&quot;&gt;Informationen&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Homepage&lt;/li&gt;
@@ -778,9 +778,9 @@ setsysfonf
     <link href="https://wiki.polyformal.de/os/fedora/"/>
   </entry><entry>
     <title>Debian GNU-Linux</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/os/debian/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;packaging-and-amp-repository&quot; tabindex=&quot;-1&quot;&gt;Packaging &amp;amp; Repository&lt;/h2&gt;
 &lt;h3 id=&quot;backports-frische-software-fuer-stable&quot; tabindex=&quot;-1&quot;&gt;Backports: frische Software für stable&lt;/h3&gt;
 &lt;p&gt;Aus den sogenannten Backports kann -- auf eigene Gefahr ™ -- aktuelle Software auf einen stable System installiert werden. Statt &lt;em&gt;squeeze&lt;/em&gt; die entsprechende Version eintragen, und statt &lt;em&gt;package&lt;/em&gt; das Paket verwenden. Ob das Paket überhaupt als Backport vorliegt kann mit &lt;em&gt;apt-cache&lt;/em&gt; überprüft werden.&lt;/p&gt;
@@ -833,7 +833,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/os/debian/"/>
   </entry><entry>
     <title>Ricoh GR IV Tips</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/</id>
     <content type="html">&lt;p&gt;How to store Image Control / Bildsteuerung&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&lt;/a&gt;&lt;/p&gt;
@@ -844,7 +844,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/"/>
   </entry><entry>
     <title>Phillipinen</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/notizen/reisen/phillipinen/</id>
     <content type="html">&lt;h2 id=&quot;zahlung&quot; tabindex=&quot;-1&quot;&gt;Zahlung&lt;/h2&gt;
 &lt;p&gt;Als Nicht-US Ausländer sind GCash oder Maya wegen der Verifizierung nicht möglich gewesen (Stand 08/2026).&lt;br /&gt;
@@ -865,9 +865,9 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/notizen/reisen/phillipinen/"/>
   </entry><entry>
     <title>Open Source Software DTP</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/notizen/oos-dtp/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;bildbearbeitung-raster&quot; tabindex=&quot;-1&quot;&gt;Bildbearbeitung (Raster)&lt;/h2&gt;
 &lt;h3 id=&quot;gimp&quot; tabindex=&quot;-1&quot;&gt;Gimp&lt;/h3&gt;
 &lt;ul&gt;
@@ -1019,7 +1019,7 @@ Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemw
     <link href="https://wiki.polyformal.de/notizen/oos-dtp/"/>
   </entry><entry>
     <title>KI Infos</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/notizen/ki/ki-infos/</id>
     <content type="html">&lt;h1 id=&quot;hermes&quot; tabindex=&quot;-1&quot;&gt;Hermes&lt;/h1&gt;
 &lt;ul&gt;
@@ -1043,7 +1043,7 @@ Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemw
     <link href="https://wiki.polyformal.de/notizen/ki/ki-infos/"/>
   </entry><entry>
     <title>ChatGPT über agent-os</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/notizen/ki/chat-gpt-ueber-agent-os/</id>
     <content type="html">&lt;table&gt;
 &lt;thead&gt;
@@ -1250,7 +1250,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/notizen/ki/chat-gpt-ueber-agent-os/"/>
   </entry><entry>
     <title>ssh</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/linux/ssh/</id>
     <content type="html">&lt;h2 id=&quot;ssh-tunnel&quot; tabindex=&quot;-1&quot;&gt;SSH-Tunnel&lt;/h2&gt;
 &lt;p&gt;Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner &lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt; Port 3306 (MySql Server) erstellen:&lt;/p&gt;
@@ -1267,14 +1267,14 @@ Natürlich kann sich die Gegenstelle auch den Port 12345 von &lt;a href=&quot;ht
 &lt;h2 id=&quot;rsync-ueber-ssh-mit-abweichendem-port&quot; tabindex=&quot;-1&quot;&gt;rsync über ssh mit abweichendem Port&lt;/h2&gt;
 &lt;p&gt;Wenn der SSH-Dienst auf einem anderen Port als 22 läuft muss es bei rsync entsprechend mit angegeben werden.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;rsync -auvH -e &#39;ssh -p 22123&#39; [Quelle] [Ziel]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mysql&quot;&gt;#mysql&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mysql&quot;&gt;#mysql&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 </content>
     <link href="https://wiki.polyformal.de/linux/ssh/"/>
   </entry><entry>
     <title>Diverse Tipps und Tricks zu Xfce</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/linux/xfce/notizen/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#xfce&quot;&gt;#xfce&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#xfce&quot;&gt;#xfce&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;xorg-composite-effekte-fuer-xfce&quot; tabindex=&quot;-1&quot;&gt;Xorg - Composite-Effekte für Xfce&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;siehe &lt;a href=&quot;http://wiki.ubuntuusers.de/Xfce_Composite-Effekte&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://wiki.ubuntuusers.de/Xfce_Composite-Effekte&lt;/a&gt;&lt;/li&gt;
@@ -1320,12 +1320,12 @@ Für Debian muss das Paket &lt;em&gt;libgnomevfs2-bin&lt;/em&gt; installiert sei
     <link href="https://wiki.polyformal.de/linux/xfce/notizen/"/>
   </entry><entry>
     <title>UMTS unter Linux</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/linux/umts/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://de.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;UMTS&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;abfrage-der-netzabdeckung&quot; tabindex=&quot;-1&quot;&gt;Abfrage der Netzabdeckung&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.t-mobile.de/funkversorgung/inland&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;T-Mobile&lt;/a&gt;&lt;/li&gt;
@@ -1415,7 +1415,7 @@ lock
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;/etc/chatscripts/umts&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;&#39;TIMEOUT&#39; &#39;10&#39;
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#abortstring&quot;&gt;#abortstring&lt;/a&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#abortstring&quot;&gt;#abortstring&lt;/a&gt;
 ABORT BUSY
 ABORT VOICE
 ABORT &#39;NO DIALTONE&#39;
@@ -1451,9 +1451,9 @@ SAY &#39;Setting APN
     <link href="https://wiki.polyformal.de/linux/umts/"/>
   </entry><entry>
     <title>Referenzkarte Netzwerk</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/linux/referenzkarte_netzwerk/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#lpi&quot;&gt;#lpi&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unvollständig&quot;&gt;#unvollständig&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#lpi&quot;&gt;#lpi&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unvollständig&quot;&gt;#unvollständig&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;abstract&quot; tabindex=&quot;-1&quot;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Eine Schnellreferenz-Karte für tägliche Netzwerkaufgaben.  Syntax&lt;br /&gt;
 cmd notwendiger_Parameter [optionaler Parameter]&lt;/p&gt;
@@ -1673,9 +1673,9 @@ oder mit dem Programm &lt;em&gt;multitail&lt;/em&gt;. Die Option -A zeigt de Inh
     <link href="https://wiki.polyformal.de/linux/referenzkarte_netzwerk/"/>
   </entry><entry>
     <title>Programme und Tipps für die Konsole</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/linux/console/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.linux.com/feature/44366&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;linux.com: Top 10 Linux console applications&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1692,8 +1692,8 @@ zstyle &#39;:completion:*:processes-names&#39; command &#39;ps c -u ${USER} -o c
 &lt;p&gt;Auf für &lt;em&gt;Screen&lt;/em&gt; hält &lt;em&gt;grml&lt;/em&gt; eine durchaus sinnvolle Konfiguration bereit:&lt;br /&gt;
 wget -O ~/.screenrc     &#39;&lt;a href=&quot;http://git.grml.org/?p=grml-etc-core.git;a=blob_plain;f=etc/grml/screenrc;hb=HEAD&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://git.grml.org/?p=grml-etc-core.git;a=blob_plain;f=etc/grml/screenrc;hb=HEAD&lt;/a&gt;&#39;&lt;br /&gt;
 Allerdings sollte man folgende Zeilen auskommentieren, sofern man nicht die Programme &lt;em&gt;cpu-screen&lt;/em&gt; und &lt;em&gt;ip-screen&lt;/em&gt; aus von &lt;em&gt;grml&lt;/em&gt; auf dem System hat((oder installieren via .deb Paket von &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;http://deb.grml.org/pool/main/g/grml-scripts/&lt;/a&gt;)):&lt;br /&gt;
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#backtick&quot;&gt;#backtick&lt;/a&gt; 1 0 60   /usr/bin/cpu-screen&lt;br /&gt;
-&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#backtick&quot;&gt;#backtick&lt;/a&gt; 2 0 60   /usr/bin/ip-screen&lt;/p&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#backtick&quot;&gt;#backtick&lt;/a&gt; 1 0 60   /usr/bin/cpu-screen&lt;br /&gt;
+&lt;a class=&quot;tag&quot; data-content=&quot;#backtick&quot;&gt;#backtick&lt;/a&gt; 2 0 60   /usr/bin/ip-screen&lt;/p&gt;
 &lt;h2 id=&quot;diverses&quot; tabindex=&quot;-1&quot;&gt;Diverses&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Calc &lt;a href=&quot;http://home3.inet.tele.dk/frda/src/calc_tip.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://home3.inet.tele.dk/frda/src/calc_tip.html&lt;/a&gt;&lt;/li&gt;
@@ -1846,9 +1846,9 @@ fi&lt;/p&gt;
     <link href="https://wiki.polyformal.de/linux/console/"/>
   </entry><entry>
     <title>Linux Professional Institute (LPI)</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/linux/zertifizierung/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;vorbereitungsmoeglichkeiten&quot; tabindex=&quot;-1&quot;&gt;Vorbereitungsmöglichkeiten&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;webbasierte Prüfungssimulation, Study Guides für die einzelnen Prüfungen und Themen
@@ -1919,7 +1919,7 @@ fi&lt;/p&gt;
     <link href="https://wiki.polyformal.de/linux/zertifizierung/"/>
   </entry><entry>
     <title>Informationen zu Linux</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/linux/informationen/</id>
     <content type="html">&lt;h2 id=&quot;geschichte&quot; tabindex=&quot;-1&quot;&gt;Geschichte&lt;/h2&gt;
 &lt;ul&gt;
@@ -1943,14 +1943,14 @@ fi&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;IBM developerWorks&lt;/a&gt;: &lt;a href=&quot;http://www.ibm.com/developerworks/library/l-linuxvirt/index.html?ca=drs-&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Virtual Linux&lt;/a&gt;, eine Übersicht von Virtualisierungstechniken für Linux&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 </content>
     <link href="https://wiki.polyformal.de/linux/informationen/"/>
   </entry><entry>
     <title>GNOME</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/linux/gnome/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#laptop&quot;&gt;#laptop&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#laptop&quot;&gt;#laptop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;dual-head-setup&quot; tabindex=&quot;-1&quot;&gt;Dual Head Setup&lt;/h2&gt;
 &lt;p&gt;Falls &lt;a href=&quot;http://x.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;X.org&lt;/a&gt; auf 2 Bildschirme konfiguriert ist, GNOME aber nur im Clone-Modus erscheint (auf beiden Bildschirmen das gleiche), dann könnte es an den gespeicherten Session Daten liegen. Abhilfe schafft das löschen folgender Dateien&lt;br /&gt;
 rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
@@ -1961,7 +1961,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/linux/gnome/"/>
   </entry><entry>
     <title>Impressum</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/impressum/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;polyformal System- &amp;amp; Formarbeit&lt;/li&gt;
@@ -1983,7 +1983,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/impressum/"/>
   </entry><entry>
     <title>wiki driven by Obsidian</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;Obsidian Digital Graden
@@ -1996,9 +1996,9 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/"/>
   </entry><entry>
     <title>imagemagick</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/en/software/imagemagick/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;tiff&quot; tabindex=&quot;-1&quot;&gt;TIFF&lt;/h3&gt;
 &lt;p&gt;Convert a multipage TIFF-file into single TIFF-files:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;convert multipage-file.tiff singlepage-split-%d.tiff&lt;/code&gt;&lt;/p&gt;
@@ -2008,7 +2008,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/en/software/imagemagick/"/>
   </entry><entry>
     <title>asciidoc</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/software/asciidoc/</id>
     <content type="html">&lt;h2 id=&quot;backends&quot; tabindex=&quot;-1&quot;&gt;backends&lt;/h2&gt;
 &lt;h3 id=&quot;slidy&quot; tabindex=&quot;-1&quot;&gt;slidy&lt;/h3&gt;
@@ -2039,9 +2039,9 @@ deckjs backend requires title attribute for images&lt;/p&gt;
     <link href="https://wiki.polyformal.de/software/asciidoc/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 to 1.0</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/en/software/stalwart-migration/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Field report: migrating a small Stalwart mail server from 0.15.5 to 1.0.3. The setup: Docker Compose, RocksDB, OpenLDAP as the directory, a reverse proxy in front, fewer than 10 accounts, about 13 GB of data.&lt;/p&gt;
 &lt;p&gt;The migration took place in November 2026 using &lt;code&gt;stalwart:v0.16.27&lt;/code&gt;, &lt;code&gt;stalwart-migrate:1.0.6&lt;/code&gt;, &lt;code&gt;stalwart:v1.0.3&lt;/code&gt; and &lt;code&gt;stalwart-cli&lt;/code&gt; 1.0.14. Object and field names may change in later versions. All names are placeholders (&lt;code&gt;example.com&lt;/code&gt;, &lt;code&gt;&amp;lt;...&amp;gt;&lt;/code&gt;). The official upgrade documentation takes precedence over this page.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/software/stalwart-migration/&quot;&gt;Stalwart Migration 0.15 auf 1.0&lt;/a&gt;&lt;/p&gt;
@@ -2110,7 +2110,7 @@ python migrate_v016.py convert --settings settings.json --principals principals.
   --patch-paths /opt/stalwart=/var/lib/stalwart --unmigrated-output unmigrated.txt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Review &lt;code&gt;unmigrated.txt&lt;/code&gt;. In our case most keys were not carried over, including the many automatically created IP bans. That is normal, but the list is worth a look.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;export.json&lt;/code&gt; is NDJSON. Obsolete domains, DKIM keys or aliases can be filtered out before the import. Afterwards, make sure no references such as &lt;code&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#create-N&quot;&gt;#create-N&lt;/a&gt;&lt;/code&gt; are left dangling.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;export.json&lt;/code&gt; is NDJSON. Obsolete domains, DKIM keys or aliases can be filtered out before the import. Afterwards, make sure no references such as &lt;code&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#create-N&quot;&gt;#create-N&lt;/a&gt;&lt;/code&gt; are left dangling.&lt;/p&gt;
 &lt;h3 id=&quot;2-stop-and-copy&quot; tabindex=&quot;-1&quot;&gt;2. Stop and copy&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;docker stop -t 60 mailserver
 cp -a &amp;lt;0.15-data&amp;gt; &amp;lt;work016&amp;gt;
@@ -2252,7 +2252,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/en/software/stalwart-migration/"/>
   </entry><entry>
     <title>Privacy Policy</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/en/privacy/</id>
     <content type="html">&lt;h1 id=&quot;privacy-policy&quot; tabindex=&quot;-1&quot;&gt;Privacy Policy&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt;&lt;/p&gt;
@@ -2278,9 +2278,9 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
     <link href="https://wiki.polyformal.de/en/privacy/"/>
   </entry><entry>
     <title>Emu E4XT Ultra</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/en/notizen/e4xt_ultra/</id>
-    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#music&quot;&gt;#music&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#sampler&quot;&gt;#sampler&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#emulator&quot;&gt;#emulator&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#music&quot;&gt;#music&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#sampler&quot;&gt;#sampler&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#emulator&quot;&gt;#emulator&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;internal-ssd&quot; tabindex=&quot;-1&quot;&gt;Internal SSD&lt;/h2&gt;
 &lt;p&gt;Bases on a tip in a &lt;a href=&quot;http://www.sequencer.de/synthesizer/viewtopic.php?f=3&amp;amp;t=79915#p866249&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;forum&lt;/a&gt;, it is possible to replace the internal noisy 3,5&amp;quot; HD with a silent SSD.&lt;/p&gt;
 &lt;h2 id=&quot;shopping-list&quot; tabindex=&quot;-1&quot;&gt;Shopping List&lt;/h2&gt;
@@ -2296,7 +2296,7 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
     <link href="https://wiki.polyformal.de/en/notizen/e4xt_ultra/"/>
   </entry><entry>
     <title>ollama</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/en/ai/ollama/</id>
     <content type="html">&lt;p&gt;load a Hugging Face model into ollama&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ollama run hf.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF:latest
@@ -2307,7 +2307,7 @@ ollama run hf.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF:latest
     <link href="https://wiki.polyformal.de/en/ai/ollama/"/>
   </entry><entry>
     <title>Datenschutz</title>
-    <updated>2026-11-09T19:51:59Z</updated>
+    <updated>2026-11-09T20:58:57Z</updated>
     <id>https://wiki.polyformal.de/datenschutz/</id>
     <content type="html">&lt;h1 id=&quot;datenschutzerklaerung&quot; tabindex=&quot;-1&quot;&gt;Datenschutzerklärung&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/privacy/&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
