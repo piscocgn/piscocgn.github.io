@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"linux/console","permalink":"/linux/console/","dg-note-properties":{}}
+{"dg-publish":true,"dg-permalink":"linux/console","permalink":"/linux/console/","title":"Programme und Tipps für die Linux-Konsole","metatags":{"description":"Werkzeuge und Tipps für die Linux-Konsole: zsh mit grml-Konfiguration, screen, mutt und nützliche Admin-Programme."},"dg-note-properties":{"title":"Programme und Tipps für die Linux-Konsole"}}
 ---
 
 #linux #console

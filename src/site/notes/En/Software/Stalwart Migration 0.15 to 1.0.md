@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"en/software/stalwart-migration","permalink":"/en/software/stalwart-migration/","dg-note-properties":{}}
+{"dg-publish":true,"dg-permalink":"en/software/stalwart-migration","permalink":"/en/software/stalwart-migration/","title":"Stalwart mail server: migrating from 0.15 to 1.0","metatags":{"description":"Field report: migrating a Stalwart mail server with Docker and OpenLDAP from 0.15.5 via 0.16 to 1.0.3. Procedure, pitfalls and checklist."},"dg-note-properties":{"title":"Stalwart mail server: migrating from 0.15 to 1.0"}}
 ---
 
 #stalwart #mail #migration #docker #ldap

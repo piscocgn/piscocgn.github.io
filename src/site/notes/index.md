@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"dg-note-properties":{"publish":true}}
+{"dg-publish":true,"permalink":"/index/","title":"polyformal wiki","metatags":{"description":"Notizen und Anleitungen von polyformal System- & Formarbeit: Linux, Mailserver, Netzwerk, Smart Home und Werkzeuge aus der Praxis."},"tags":["gardenEntry"],"dg-note-properties":{"publish":true,"title":"polyformal wiki"}}
 ---
 
 ##  wiki polyformal 

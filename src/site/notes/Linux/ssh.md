@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/linux/ssh/","dg-note-properties":{"publish":true}}
+{"dg-publish":true,"permalink":"/linux/ssh/","title":"SSH-Tunnel, Remote-Forward und rsync über SSH","metatags":{"description":"SSH-Tunnel und Port-Weiterleitung mit Beispielen für MySQL und VNC, dazu rsync über SSH mit abweichendem Port."},"dg-note-properties":{"publish":true,"title":"SSH-Tunnel, Remote-Forward und rsync über SSH"}}
 ---
 
 ##  SSH-Tunnel 

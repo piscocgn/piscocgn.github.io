@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/notizen/oos-dtp","permalink":"/notizen/oos-dtp/","dg-note-properties":{}}
+{"dg-publish":true,"dg-permalink":"/notizen/oos-dtp","permalink":"/notizen/oos-dtp/","title":"Open-Source-Software für Desktop Publishing","metatags":{"description":"Freie Programme für Bildbearbeitung, Grafik und Satz unter Linux: GIMP, CMYK-Workflows und weitere DTP-Werkzeuge."},"dg-note-properties":{"title":"Open-Source-Software für Desktop Publishing"}}
 ---
 
 #dtp #linux 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"linux/referenzkarte_netzwerk","permalink":"/linux/referenzkarte_netzwerk/","dg-note-properties":{}}
+{"dg-publish":true,"dg-permalink":"linux/referenzkarte_netzwerk","permalink":"/linux/referenzkarte_netzwerk/","title":"Referenzkarte Netzwerk für Linux","metatags":{"description":"Schnellreferenz für tägliche Netzwerkaufgaben unter Linux: CIDR, Subnetze und die wichtigsten Befehle."},"dg-note-properties":{"title":"Referenzkarte Netzwerk für Linux"}}
 ---
 
 #linux #lpi #netzwerk #unvollständig 

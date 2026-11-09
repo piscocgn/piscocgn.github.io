@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"software/remind","permalink":"/software/remind/","dg-note-properties":{}}
+{"dg-publish":true,"dg-permalink":"software/remind","permalink":"/software/remind/","title":"remind: Kalender und Erinnerungen auf der Konsole","metatags":{"description":"remind, das Kalender- und Alarmprogramm für die Konsole: Links, deutsche Feiertage und Export nach ICS."},"dg-note-properties":{"title":"remind: Kalender und Erinnerungen auf der Konsole"}}
 ---
 
 * [Homepage](http://www.roaringpenguin.com/products/remind)
