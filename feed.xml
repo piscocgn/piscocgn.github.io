@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://www.">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://wiki.polyformal.de">
   <title>polyformal wiki</title>
-  <link href="https://www./feed.xml" rel="self"/>
-  <link href="https://www."/>
-  <updated>2026-11-09T19:51:46Z</updated>
-  <id>https://www.</id><entry>
+  <link href="https://wiki.polyformal.de/feed.xml" rel="self"/>
+  <link href="https://wiki.polyformal.de"/>
+  <updated>2026-11-09T19:52:10Z</updated>
+  <id>https://wiki.polyformal.de</id><entry>
     <title>Werkzeuge für Desktop Publishing</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./vortraege/werkzeuge_fuer_desktop_publishing/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/</id>
     <content type="html">&lt;p&gt;Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.&lt;/p&gt;
 &lt;p&gt;Beinhaltet: u.a. GIMP, Inkscape, Scribus, gThumb, Schriften allgemein, FontyPython, FONTPage&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;iframe src=&quot;https://www./img/user/media/vortraege/polyformal_dtp-sig.pdf&quot; width=&quot;100%&quot; height=&quot;900px&quot; title=&quot;polyformal_dtp-sig.pdf&quot; style=&quot;border:1px solid #ccc;&quot;&gt;&lt;/iframe&gt; 
+&lt;iframe src=&quot;https://wiki.polyformal.de/img/user/media/vortraege/polyformal_dtp-sig.pdf&quot; width=&quot;100%&quot; height=&quot;900px&quot; title=&quot;polyformal_dtp-sig.pdf&quot; style=&quot;border:1px solid #ccc;&quot;&gt;&lt;/iframe&gt; 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;für den &lt;a href=&quot;http://ubucon.de/index.php?option=com_content&amp;amp;task=view&amp;amp;id=41&amp;amp;Itemid=49&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vortrag&lt;/a&gt; auf der &lt;a href=&quot;http://www.ubucon.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ubucon&lt;/a&gt; 2007&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt; Zusatzinformationen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt; Zusatzinformationen&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./vortraege/werkzeuge_fuer_desktop_publishing/"/>
+    <link href="https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/"/>
   </entry><entry>
     <title>remind - ein anspruchsvolles Kalender- und Alarm-Programm</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./software/remind/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/software/remind/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.roaringpenguin.com/products/remind&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Homepage&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;zahlreiche Informationen im wiki von &lt;a href=&quot;http://wiki.43folders.com/index.php/Remind&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;43folders.com&lt;/a&gt;&lt;/li&gt;
@@ -96,7 +96,7 @@ OMIT	Dec  26		MSG %&amp;quot;2. Weihnachtstag%&amp;quot;%
 &lt;h3 id=&quot;wyrd-ncurses&quot; tabindex=&quot;-1&quot;&gt;wyrd (ncurses)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://pessimization.com/software/wyrd/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Projekt-Seite&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://wiki.43folders.com/index.php/Wyrd&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Wyrd&lt;/a&gt; bei &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;http://www.43folders.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.43folders.com/index.php/Wyrd&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Wyrd&lt;/a&gt; bei &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;http://www.43folders.com/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;{{software:wyrd-1.4.4_german.patch.gz|}}&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;remember-the-milk-zu-remind&quot; tabindex=&quot;-1&quot;&gt;Remember The Milk zu remind&lt;/h2&gt;
@@ -121,15 +121,15 @@ RTM_URL=&amp;quot;https://www.rememberthemilk.com/icalendar/$RTM_USER/events/&am
 wget -qO $TMP_FILE RTM_URL &amp;amp;&amp;amp; ical2rem.pl $TMP_FILE  &amp;gt; ~/.remind/.reminders_rtm &amp;amp;&amp;amp; rm $TMP_FILE
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-    <link href="https://www./software/remind/"/>
+    <link href="https://wiki.polyformal.de/software/remind/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 auf 1.0</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./software/stalwart-migration/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/software/stalwart-migration/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Erfahrungsbericht: Migration eines kleinen Stalwart-Mailservers von 0.15.5 auf 1.0.3. Das Setup: Docker Compose, RocksDB, OpenLDAP als Verzeichnis, Reverse Proxy davor, weniger als 10 Konten, rund 13 GB Daten.&lt;/p&gt;
 &lt;p&gt;Die Migration erfolgte im November 2026 mit &lt;code&gt;stalwart:v0.16.27&lt;/code&gt;, &lt;code&gt;stalwart-migrate:1.0.6&lt;/code&gt;, &lt;code&gt;stalwart:v1.0.3&lt;/code&gt; und &lt;code&gt;stalwart-cli&lt;/code&gt; 1.0.14. Objekt- und Feldnamen können sich in neueren Versionen ändern. Alle Namen sind Platzhalter (&lt;code&gt;example.com&lt;/code&gt;, &lt;code&gt;&amp;lt;...&amp;gt;&lt;/code&gt;). Die offizielle Upgrade-Dokumentation hat Vorrang vor dieser Seite.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./en/software/stalwart-migration/&quot;&gt;Stalwart Migration 0.15 to 1.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/software/stalwart-migration/&quot;&gt;Stalwart Migration 0.15 to 1.0&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;das-wichtigste-vorab&quot; tabindex=&quot;-1&quot;&gt;Das Wichtigste vorab&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Es gibt keinen direkten Weg: 0.15 → 0.16 → &lt;code&gt;stalwart-migrate&lt;/code&gt; → 1.0.&lt;/li&gt;
@@ -334,19 +334,19 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
 &lt;li&gt;Account-Objekte niemals löschen, sie tragen die Zuordnung zu den Postfächern.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./software/stalwart-migration/"/>
+    <link href="https://wiki.polyformal.de/software/stalwart-migration/"/>
   </entry><entry>
     <title>Samba</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./software/samba/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/software/samba/</id>
     <content type="html">&lt;h2 id=&quot;time-machine&quot; tabindex=&quot;-1&quot;&gt;TimeMachine&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&lt;/a&gt;&lt;/p&gt;
 </content>
-    <link href="https://www./software/samba/"/>
+    <link href="https://wiki.polyformal.de/software/samba/"/>
   </entry><entry>
     <title>Mail User Agents</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./software/mua/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/software/mua/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mua&quot;&gt;#mua&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#thunderbird&quot;&gt;#thunderbird&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#evolution&quot;&gt;#evolution&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hier eine Auflistung von persönlichen Erfahrungen mit E-Mailprogrammen.&lt;/p&gt;
 &lt;h2 id=&quot;evolution&quot; tabindex=&quot;-1&quot;&gt;Evolution&lt;/h2&gt;
@@ -388,11 +388,11 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
 &lt;li&gt;zähe Handhabung bei Synchronisation großer Postfacher (IMAP) oder Newsgroups&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./software/mua/"/>
+    <link href="https://wiki.polyformal.de/software/mua/"/>
   </entry><entry>
     <title>Apache2</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./software/apache2/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/software/apache2/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://vimeo.com/1076588&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Entwicklungsgeschichte&lt;/a&gt; des Apache Webservers dargestellt mit &lt;a href=&quot;http://code.google.com/p/codeswarm/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;codeswarm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -402,19 +402,19 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
 AllowOverride FileInfo Limit
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-    <link href="https://www./software/apache2/"/>
+    <link href="https://wiki.polyformal.de/software/apache2/"/>
   </entry><entry>
     <title>Home Assistant</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./smart-home/home-assistant/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/smart-home/home-assistant/</id>
     <content type="html">&lt;h2 id=&quot;data-retention&quot; tabindex=&quot;-1&quot;&gt;Data Retention&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&lt;/a&gt;&lt;/p&gt;
 </content>
-    <link href="https://www./smart-home/home-assistant/"/>
+    <link href="https://wiki.polyformal.de/smart-home/home-assistant/"/>
   </entry><entry>
     <title>apt repositories debian &amp; ubuntu</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./os/repositories/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/os/repositories/</id>
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;[!warning]&lt;br /&gt;
 This page is outdated.&lt;/p&gt;
@@ -472,11 +472,11 @@ deb http://www.bolzchristian.de/debian ./
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/html&gt;</content>
-    <link href="https://www./os/repositories/"/>
+    <link href="https://wiki.polyformal.de/os/repositories/"/>
   </entry><entry>
     <title>Solaris</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./os/solaris/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/os/solaris/</id>
     <content type="html">&lt;h2 id=&quot;zusaetzliche-software&quot; tabindex=&quot;-1&quot;&gt;zusätzliche Software&lt;/h2&gt;
 &lt;p&gt;Oracle (ehem. Sun) bietet eine CD mit Freeware an, welche einiges an Open Source Software enthält. Die Programme sind aber recht alt (Stand 02/2011)&lt;/p&gt;
 &lt;ul&gt;
@@ -513,9 +513,9 @@ deb http://www.bolzchristian.de/debian ./
 export PAGER
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;dienste&quot; tabindex=&quot;-1&quot;&gt;Dienste&lt;/h3&gt;
-&lt;p&gt;Solaris setzt ab Version 10 auf die &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Service Management Facility&lt;/a&gt; (SMF) und ersetzt damit in weiten Teilen &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;System V&lt;/a&gt;. Einer der wenigen Dienste die sich auf traditionellem Wege starten und stoppen lassen ist &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;sendmail&lt;/a&gt;, ws auch nur ein Wrapper um SMF ist.&lt;/p&gt;
+&lt;p&gt;Solaris setzt ab Version 10 auf die &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Service Management Facility&lt;/a&gt; (SMF) und ersetzt damit in weiten Teilen &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;System V&lt;/a&gt;. Einer der wenigen Dienste die sich auf traditionellem Wege starten und stoppen lassen ist &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;sendmail&lt;/a&gt;, ws auch nur ein Wrapper um SMF ist.&lt;/p&gt;
 &lt;h3 id=&quot;vim&quot; tabindex=&quot;-1&quot;&gt;VIM&lt;/h3&gt;
-&lt;p&gt;Der weiterentwickelte Editor &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt; VIM&lt;/a&gt; ist auf der &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt; Solaris Companion CD&lt;/a&gt; oder Software [[]] wie &lt;a href=&quot;http://opencsw.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://opencsw.org&lt;/a&gt; zu finden. Um &lt;em&gt;Syntax Hilightning&lt;/em&gt; zu nutzen muss die Variable TERM entsprechend gesetzt werden:&lt;/p&gt;
+&lt;p&gt;Der weiterentwickelte Editor &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt; VIM&lt;/a&gt; ist auf der &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt; Solaris Companion CD&lt;/a&gt; oder Software [[]] wie &lt;a href=&quot;http://opencsw.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://opencsw.org&lt;/a&gt; zu finden. Um &lt;em&gt;Syntax Hilightning&lt;/em&gt; zu nutzen muss die Variable TERM entsprechend gesetzt werden:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;TERM=sun-color&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&quot;prozessverwaltung&quot; tabindex=&quot;-1&quot;&gt;Prozessverwaltung&lt;/h3&gt;
 &lt;ul&gt;
@@ -527,7 +527,7 @@ export PAGER
 &lt;p&gt;Beim Starten des Bildschirmschoners ist ein Fehler aufgetreten:&lt;br /&gt;
 Der untergeordnete Prozess &amp;quot;xscreensaver&amp;quot; (Datei oder Verzeichnis nicht gefunden) konnte nicht ausgeführt werden.&lt;br /&gt;
 Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www./img/user/media/os/solaris10_xscreensaver.png.png&quot; alt=&quot;solaris10_xscreensaver.png.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wiki.polyformal.de/img/user/media/os/solaris10_xscreensaver.png.png&quot; alt=&quot;solaris10_xscreensaver.png.png&quot; /&gt;&lt;/p&gt;
 &lt;h4 id=&quot;loesung&quot; tabindex=&quot;-1&quot;&gt;Lösung&lt;/h4&gt;
 &lt;p&gt;Das Programm &lt;em&gt;xscreensaver&lt;/em&gt; kann nicht aufgerufen werden, da das Programm in &#39;&#39;/usr/openwin/bin&#39;&#39; lokalisiert ist. Die Variable PATH muss in &#39;&#39;/etc/profile&#39;&#39; oder &#39;&#39;~/.profile&#39;&#39; um &#39;&#39;/usr/openwin/bin&#39;&#39; erweitert werden.&lt;/p&gt;
 &lt;h3 id=&quot;apropos-cmd&quot; tabindex=&quot;-1&quot;&gt;apropos cmd&lt;/h3&gt;
@@ -540,11 +540,11 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
 &lt;p&gt;&#39;&#39;man apropos&#39;&#39; verweist auf catman um die Indexes anzulegen. &#39;&#39;catman -w&#39;&#39; ausführen.&lt;br /&gt;
 &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 </content>
-    <link href="https://www./os/solaris/"/>
+    <link href="https://wiki.polyformal.de/os/solaris/"/>
   </entry><entry>
     <title>Plan 9</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./os/plan9/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/os/plan9/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 from Bell Labs&lt;/a&gt;, &lt;a href=&quot;https://de.wikipedia.org/wiki/Plan_9_(Betriebssystem)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 (Betriebssystem)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Doc1 &lt;a href=&quot;http://plan9.bell-labs.com/sys/man/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://plan9.bell-labs.com/sys/man/index.html&lt;/a&gt;&lt;/li&gt;
@@ -576,11 +576,11 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&quot;http://thenewsh.blogspot.com/2010/01/acme-environment-in-plan9.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;The Acme environment in Plan9&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./os/plan9/"/>
+    <link href="https://wiki.polyformal.de/os/plan9/"/>
   </entry><entry>
     <title>OpenBSD</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./os/openbsd/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/os/openbsd/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Dienste neu starten&lt;/li&gt;
@@ -625,11 +625,11 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
  echo &#39;.&#39;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-    <link href="https://www./os/openbsd/"/>
+    <link href="https://wiki.polyformal.de/os/openbsd/"/>
   </entry><entry>
     <title>FreeBSD</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./os/freebsd/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/os/freebsd/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.freebsd.org/doc/de_DE.ISO8859-1/books/handbook/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Das FreeBSD Handbuch&lt;/a&gt;&lt;/li&gt;
@@ -700,11 +700,11 @@ chsh -s /usr/sbin/nologin gdm
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Wie die Fehlermeldung aussagt scheint der Pfad nicht in Ordnung zu sein. Beim Überprüfen stellt sich heraus, dass das Verzeichnis &#39;&#39;/usr/local/etc/cups/ssl/&#39;&#39; noch nicht existiert.&lt;/p&gt;
 </content>
-    <link href="https://www./os/freebsd/"/>
+    <link href="https://wiki.polyformal.de/os/freebsd/"/>
   </entry><entry>
     <title>Fedora</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./os/fedora/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/os/fedora/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#fedora&quot;&gt;#fedora&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;informationen&quot; tabindex=&quot;-1&quot;&gt;Informationen&lt;/h2&gt;
 &lt;ul&gt;
@@ -775,11 +775,11 @@ nano /etc/sysconfig/i18n
   SYSFONT &quot;ter-i16n&quot;
 setsysfonf
 ```</content>
-    <link href="https://www./os/fedora/"/>
+    <link href="https://wiki.polyformal.de/os/fedora/"/>
   </entry><entry>
     <title>Debian GNU-Linux</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./os/debian/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/os/debian/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;packaging-and-amp-repository&quot; tabindex=&quot;-1&quot;&gt;Packaging &amp;amp; Repository&lt;/h2&gt;
 &lt;h3 id=&quot;backports-frische-software-fuer-stable&quot; tabindex=&quot;-1&quot;&gt;Backports: frische Software für stable&lt;/h3&gt;
@@ -830,22 +830,22 @@ aticonfig --intial --input /etc/X11/xorg.conf
 &lt;/ul&gt;
 &lt;p&gt;installieren.&lt;/p&gt;
 </content>
-    <link href="https://www./os/debian/"/>
+    <link href="https://wiki.polyformal.de/os/debian/"/>
   </entry><entry>
     <title>Ricoh GR IV Tips</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./notizen/ricoh-gr-iv-tips/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/</id>
     <content type="html">&lt;p&gt;How to store Image Control / Bildsteuerung&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://ricohrecipes.com/the-bw-collection/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://ricohrecipes.com/the-bw-collection/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./notizen/ricoh-gr-iv-tips/"/>
+    <link href="https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/"/>
   </entry><entry>
     <title>Phillipinen</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./notizen/reisen/phillipinen/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/notizen/reisen/phillipinen/</id>
     <content type="html">&lt;h2 id=&quot;zahlung&quot; tabindex=&quot;-1&quot;&gt;Zahlung&lt;/h2&gt;
 &lt;p&gt;Als Nicht-US Ausländer sind GCash oder Maya wegen der Verifizierung nicht möglich gewesen (Stand 08/2026).&lt;br /&gt;
 Überwiegend Bargeld, vereinzelt Wise, je nach Geschäft Visa.&lt;/p&gt;
@@ -862,16 +862,16 @@ aticonfig --intial --input /etc/X11/xorg.conf
 &lt;li&gt;Jeepney - günstig, haltet bei Bedarf an der Route und kann daher etwas mehr Zeit in Anspruch nehmen&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./notizen/reisen/phillipinen/"/>
+    <link href="https://wiki.polyformal.de/notizen/reisen/phillipinen/"/>
   </entry><entry>
     <title>Open Source Software DTP</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./notizen/oos-dtp/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/notizen/oos-dtp/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;bildbearbeitung-raster&quot; tabindex=&quot;-1&quot;&gt;Bildbearbeitung (Raster)&lt;/h2&gt;
 &lt;h3 id=&quot;gimp&quot; tabindex=&quot;-1&quot;&gt;Gimp&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.gimp.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.gimp.org&lt;/a&gt; , &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;GIMP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.gimp.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.gimp.org&lt;/a&gt; , &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;GIMP&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://docs.gimp.org/de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Dokumentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.gimp.org/~tml/gimp/win32/pspi.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Photoshop-Plugins unter GIMP&lt;/a&gt; - auch für Linux&lt;/li&gt;
 &lt;li&gt;CMYK in GIMP
@@ -898,7 +898,7 @@ Die Verwendung von GIMPshop ist insofern problematisch, dass man hier durch die 
 &lt;/note&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Cinepaint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Cinepaint&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;panorama-tools&quot; tabindex=&quot;-1&quot;&gt;Panorama-Tools&lt;/h3&gt;
 &lt;ul&gt;
@@ -956,12 +956,12 @@ Die Verwendung von GIMPshop ist insofern problematisch, dass man hier durch die 
 &lt;/ul&gt;
 &lt;h4 id=&quot;svg&quot; tabindex=&quot;-1&quot;&gt;SVG&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt; &lt;a href=&quot;http://openoffice.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;OpenOffice.org&lt;/a&gt; SVG Support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt; &lt;a href=&quot;http://openoffice.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;OpenOffice.org&lt;/a&gt; SVG Support&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;layout-druck&quot; tabindex=&quot;-1&quot;&gt;Layout / Druck&lt;/h2&gt;
 &lt;h3 id=&quot;scribus&quot; tabindex=&quot;-1&quot;&gt;Scribus&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.scribus.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.scribus.net/&lt;/a&gt; , &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Scribus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.scribus.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.scribus.net/&lt;/a&gt; , &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Scribus&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Debian &lt;a href=&quot;http://debian.scribus.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://debian.scribus.net&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.scribus.net/index.php?name=Downloads&amp;amp;req=viewdownload&amp;amp;cid=16&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Farbprofile&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://docs.scribus.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Dokumentation&lt;/a&gt; (englisch)&lt;/li&gt;
@@ -978,7 +978,7 @@ Die Verwendung von GIMPshop ist insofern problematisch, dass man hier durch die 
 &lt;h2 id=&quot;schriften-fonts&quot; tabindex=&quot;-1&quot;&gt;Schriften / Fonts&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Wissenswertes über den &lt;a href=&quot;http://www.blog.druckerey.de/index.php?id=40&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Drucker-Jargon&lt;/a&gt; aus dem Blog von Martin Z. Schröder&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;TrueType&lt;/a&gt; Datiendung .TTF, &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Type1-Font&lt;/a&gt; Dateiendung .PFB ist die Schrift und .PFM enthält Informationen zur &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt; Unterschneidung&lt;/a&gt; (Kerning)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;TrueType&lt;/a&gt; Datiendung .TTF, &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Type1-Font&lt;/a&gt; Dateiendung .PFB ist die Schrift und .PFM enthält Informationen zur &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt; Unterschneidung&lt;/a&gt; (Kerning)&lt;/li&gt;
 &lt;li&gt;als Einzelbenutzer ~/.fonts/, systemweit /usr/share/fonts/[truetype|type1]/&lt;br /&gt;
 &lt;note tip=&quot;&quot;&gt;&lt;br /&gt;
 Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemweit installiert worden muss ggf. fc-cache ausgeführt werden, bzw. sudo fc-cache für systemweite Installation.&lt;br /&gt;
@@ -1016,15 +1016,15 @@ Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemw
 &lt;li&gt;YafRay &lt;a href=&quot;http://www.yafray.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.yafray.org/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./notizen/oos-dtp/"/>
+    <link href="https://wiki.polyformal.de/notizen/oos-dtp/"/>
   </entry><entry>
     <title>KI Infos</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./notizen/ki/ki-infos/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/notizen/ki/ki-infos/</id>
     <content type="html">&lt;h1 id=&quot;hermes&quot; tabindex=&quot;-1&quot;&gt;Hermes&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://agentos.guide/free-models-hermes&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://agentos.guide/free-models-hermes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./notizen/ki/chat-gpt-ueber-agent-os/&quot;&gt;ChatGPT über agent-os&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/notizen/ki/chat-gpt-ueber-agent-os/&quot;&gt;ChatGPT über agent-os&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;install&quot; tabindex=&quot;-1&quot;&gt;Install&lt;/h2&gt;
 &lt;ul&gt;
@@ -1040,11 +1040,11 @@ Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemw
 &lt;li&gt;&lt;a href=&quot;https://github.com/adnw-vinc/hermes-nextcloud&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nextcloud&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./notizen/ki/ki-infos/"/>
+    <link href="https://wiki.polyformal.de/notizen/ki/ki-infos/"/>
   </entry><entry>
     <title>ChatGPT über agent-os</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./notizen/ki/chat-gpt-ueber-agent-os/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/notizen/ki/chat-gpt-ueber-agent-os/</id>
     <content type="html">&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1247,11 +1247,11 @@ LLM ─────────────┼── Earthwalker Agent OS
 &lt;p&gt;Und &lt;strong&gt;Earthwalker Agent OS ist eine ganz andere Idee&lt;/strong&gt;: dort steht das Coding von Softwareprojekten im Mittelpunkt. &lt;a href=&quot;https://github.com/earthwalker17/agent-os/blob/main/BLUEPRINT.md?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Für deinen konkreten Fall – M3 Mac, 24 GB RAM, Ollama/Qwen und Programmierhilfe – würde ich deshalb vor allem &lt;code&gt;Hermes&lt;/code&gt; vs. &lt;code&gt;use-agent-os/agent-os&lt;/code&gt; vs. &lt;code&gt;earthwalker17/agent-os&lt;/code&gt; vergleichen.&lt;/strong&gt; Das wäre deutlich aussagekräftiger als die drei unter dem gemeinsamen Namen „AgentOS“ zu betrachten.&lt;/p&gt;
 </content>
-    <link href="https://www./notizen/ki/chat-gpt-ueber-agent-os/"/>
+    <link href="https://wiki.polyformal.de/notizen/ki/chat-gpt-ueber-agent-os/"/>
   </entry><entry>
     <title>ssh</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./linux/ssh/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/linux/ssh/</id>
     <content type="html">&lt;h2 id=&quot;ssh-tunnel&quot; tabindex=&quot;-1&quot;&gt;SSH-Tunnel&lt;/h2&gt;
 &lt;p&gt;Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner &lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt; Port 3306 (MySql Server) erstellen:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ssh -fN -L 3307:localhost:3306 host.example.com&lt;/code&gt;&lt;/p&gt;
@@ -1269,11 +1269,11 @@ Natürlich kann sich die Gegenstelle auch den Port 12345 von &lt;a href=&quot;ht
 &lt;p&gt;&lt;code&gt;rsync -auvH -e &#39;ssh -p 22123&#39; [Quelle] [Ziel]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mysql&quot;&gt;#mysql&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 </content>
-    <link href="https://www./linux/ssh/"/>
+    <link href="https://wiki.polyformal.de/linux/ssh/"/>
   </entry><entry>
     <title>Diverse Tipps und Tricks zu Xfce</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./linux/xfce/notizen/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/linux/xfce/notizen/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#xfce&quot;&gt;#xfce&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;xorg-composite-effekte-fuer-xfce&quot; tabindex=&quot;-1&quot;&gt;Xorg - Composite-Effekte für Xfce&lt;/h2&gt;
 &lt;ul&gt;
@@ -1294,7 +1294,7 @@ EndSection
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;tomboy-default-browser&quot; tabindex=&quot;-1&quot;&gt;Tomboy Default Browser&lt;/h2&gt;
 &lt;p&gt;Wenn Tomoby mit dem &lt;em&gt;xfce4-xfapplet-plugin&lt;/em&gt; unter &lt;em&gt;Xfce&lt;/em&gt; betrieben wird, kann es vorkommen dass beim Klick auf eine URL mit http oder https zu einer Meldung kommt:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www./img/user/media/linux/xfce/tomboy_url_handler_msg.png&quot; alt=&quot;tomboy_url_handler_msg.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wiki.polyformal.de/img/user/media/linux/xfce/tomboy_url_handler_msg.png&quot; alt=&quot;tomboy_url_handler_msg.png&quot; /&gt;&lt;/p&gt;
 &lt;html&gt;
 Der Ort kann nicht geöffnet werden
 ...
@@ -1312,16 +1312,16 @@ Die Vorgabeaktion unterstützt dieses Protokoll nicht
 &lt;li&gt;gegebenenfalls die gleichen Einstellungen bei &lt;em&gt;https&lt;/em&gt; vornemhen&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;zuletzt-geoeffnete-dokumente-recent-files&quot; tabindex=&quot;-1&quot;&gt;Zuletzt geöffnete Dokumente / Recent Files&lt;/h2&gt;
-&lt;p&gt;Oft ist ein Menü mit den zuletzt geöffneten Dokumenten recht nützlich. Auf der  von &lt;a href=&quot;http://www.thelightmaker.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Sven Müller&lt;/a&gt; gibt es ein entsprechende &lt;a href=&quot;http://www.thelightmaker.de/knowhow/xfce_recent_files&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Anleitung&lt;/a&gt;, basierend auf ein Skript welches die entsprechenden Informationen aus der Desktop-Suchmaschine &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;http://www.beagle-project.org/Beagle&lt;/a&gt; herausholt.&lt;br /&gt;
+&lt;p&gt;Oft ist ein Menü mit den zuletzt geöffneten Dokumenten recht nützlich. Auf der  von &lt;a href=&quot;http://www.thelightmaker.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Sven Müller&lt;/a&gt; gibt es ein entsprechende &lt;a href=&quot;http://www.thelightmaker.de/knowhow/xfce_recent_files&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Anleitung&lt;/a&gt;, basierend auf ein Skript welches die entsprechenden Informationen aus der Desktop-Suchmaschine &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;http://www.beagle-project.org/Beagle&lt;/a&gt; herausholt.&lt;br /&gt;
 &lt;note tip=&quot;&quot;&gt;&lt;br /&gt;
 Für Debian muss das Paket &lt;em&gt;libgnomevfs2-bin&lt;/em&gt; installiert sein, und naturlich &lt;em&gt;beagle&lt;/em&gt; selbst.&lt;br /&gt;
 &lt;/note&gt;&lt;/p&gt;
 </content>
-    <link href="https://www./linux/xfce/notizen/"/>
+    <link href="https://wiki.polyformal.de/linux/xfce/notizen/"/>
   </entry><entry>
     <title>UMTS unter Linux</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./linux/umts/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/linux/umts/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://de.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;UMTS&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1339,7 +1339,7 @@ Für Debian muss das Paket &lt;em&gt;libgnomevfs2-bin&lt;/em&gt; installiert sei
 &lt;li&gt;&lt;a href=&quot;http://www.polyformal.de/de/systemarbeit/t_mobile_webnwalk_stick_iii_unter_linux.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Informationen&lt;/a&gt; zum Gerät und Tarif&lt;/li&gt;
 &lt;li&gt;die für andere Karten &lt;a href=&quot;http://www.pharscape.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nozomi&lt;/a&gt;-Teiber werden hier &lt;strong&gt;nicht&lt;/strong&gt; benötigt&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://www./img/user/media/linux/wen_n_walk_stick_3.jpg&quot; alt=&quot;wen_n_walk_stick_3.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wiki.polyformal.de/img/user/media/linux/wen_n_walk_stick_3.jpg&quot; alt=&quot;wen_n_walk_stick_3.jpg&quot; /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;identifikation-der-karte&quot; tabindex=&quot;-1&quot;&gt;Identifikation der Karte&lt;/h3&gt;
 &lt;p&gt;Bei dem Stick handelt es sich um das &lt;a href=&quot;http://www.huawei.com/mobileweb/en/products/view.do?id=940&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Model E17X&lt;/a&gt; vom Hersteller &lt;a href=&quot;http://www.huawei.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Huawei&lt;/a&gt;. Über minicom können Details zum Gerät abgefragt werden (die letzten 8 Ziffern der IMEI wurden durch X ersetzt).&lt;/p&gt;
 &lt;p&gt;minicom auf /dev/ttyUSB0, Ausgabe des Befehls ATI&lt;/p&gt;
@@ -1448,11 +1448,11 @@ SAY &#39;Setting APN
 &lt;li&gt;&lt;a href=&quot;http://umtsmon.sourceforge.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;umtsmon&lt;/a&gt; - eine GUI((basiert auf Qt)) für UMTS-Verbindungen&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./linux/umts/"/>
+    <link href="https://wiki.polyformal.de/linux/umts/"/>
   </entry><entry>
     <title>Referenzkarte Netzwerk</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./linux/referenzkarte_netzwerk/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/linux/referenzkarte_netzwerk/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#lpi&quot;&gt;#lpi&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unvollständig&quot;&gt;#unvollständig&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;abstract&quot; tabindex=&quot;-1&quot;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Eine Schnellreferenz-Karte für tägliche Netzwerkaufgaben.  Syntax&lt;br /&gt;
@@ -1665,22 +1665,22 @@ oder mit dem Programm &lt;em&gt;multitail&lt;/em&gt;. Die Option -A zeigt de Inh
 &lt;code&gt;aprwatch&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&quot;ssh&quot; tabindex=&quot;-1&quot;&gt;SSH&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./linux/ssh/&quot;&gt;ssh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/linux/ssh/&quot;&gt;ssh&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;open-vpn&quot; tabindex=&quot;-1&quot;&gt;OpenVPN&lt;/h3&gt;
 &lt;p&gt;TODO&lt;/p&gt;
 </content>
-    <link href="https://www./linux/referenzkarte_netzwerk/"/>
+    <link href="https://wiki.polyformal.de/linux/referenzkarte_netzwerk/"/>
   </entry><entry>
     <title>Programme und Tipps für die Konsole</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./linux/console/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/linux/console/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.linux.com/feature/44366&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;linux.com: Top 10 Linux console applications&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;z-shell-zsh&quot; tabindex=&quot;-1&quot;&gt;Z-Shell (zsh)&lt;/h2&gt;
-&lt;p&gt;Die Z-Shell ist eine sehr leistungsfähige Alternative zur Standard-Shell vieler Distributionen, der Bash. Jedoch zeigt sich die &lt;em&gt;zsh&lt;/em&gt; nach der Installation nicht sehr &#39;kooperativ&#39;. Ein guter Anfang können die Konfigurationsdateien der Distribution &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Grml&lt;/a&gt; sein ((Da grml eine Debian-basierte Distribution ist, sind einige Debian-spezifische Fuktionen enthalten. Die angesprochenen Fuktionen werdenauf anderen Systemen nicht weiter stören, da sie einfach nicht funktionieren werden.)):&lt;/p&gt;
+&lt;p&gt;Die Z-Shell ist eine sehr leistungsfähige Alternative zur Standard-Shell vieler Distributionen, der Bash. Jedoch zeigt sich die &lt;em&gt;zsh&lt;/em&gt; nach der Installation nicht sehr &#39;kooperativ&#39;. Ein guter Anfang können die Konfigurationsdateien der Distribution &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Grml&lt;/a&gt; sein ((Da grml eine Debian-basierte Distribution ist, sind einige Debian-spezifische Fuktionen enthalten. Die angesprochenen Fuktionen werdenauf anderen Systemen nicht weiter stören, da sie einfach nicht funktionieren werden.)):&lt;/p&gt;
 &lt;p&gt;wget -O .zshrc &lt;a href=&quot;http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Die Fuktionen sind auf der &lt;a href=&quot;http://grml.org/zsh/grml-zsh-refcard.pdf&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;grml-zsh-refcard (PDF)&lt;/a&gt; gut dokumentiert, ausdrucken lohnt sich.&lt;/p&gt;
 &lt;ul&gt;
@@ -1691,7 +1691,7 @@ zstyle &#39;:completion:*:processes-names&#39; command &#39;ps c -u ${USER} -o c
 &lt;h2 id=&quot;screen&quot; tabindex=&quot;-1&quot;&gt;Screen&lt;/h2&gt;
 &lt;p&gt;Auf für &lt;em&gt;Screen&lt;/em&gt; hält &lt;em&gt;grml&lt;/em&gt; eine durchaus sinnvolle Konfiguration bereit:&lt;br /&gt;
 wget -O ~/.screenrc     &#39;&lt;a href=&quot;http://git.grml.org/?p=grml-etc-core.git;a=blob_plain;f=etc/grml/screenrc;hb=HEAD&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://git.grml.org/?p=grml-etc-core.git;a=blob_plain;f=etc/grml/screenrc;hb=HEAD&lt;/a&gt;&#39;&lt;br /&gt;
-Allerdings sollte man folgende Zeilen auskommentieren, sofern man nicht die Programme &lt;em&gt;cpu-screen&lt;/em&gt; und &lt;em&gt;ip-screen&lt;/em&gt; aus von &lt;em&gt;grml&lt;/em&gt; auf dem System hat((oder installieren via .deb Paket von &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;http://deb.grml.org/pool/main/g/grml-scripts/&lt;/a&gt;)):&lt;br /&gt;
+Allerdings sollte man folgende Zeilen auskommentieren, sofern man nicht die Programme &lt;em&gt;cpu-screen&lt;/em&gt; und &lt;em&gt;ip-screen&lt;/em&gt; aus von &lt;em&gt;grml&lt;/em&gt; auf dem System hat((oder installieren via .deb Paket von &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;http://deb.grml.org/pool/main/g/grml-scripts/&lt;/a&gt;)):&lt;br /&gt;
 &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#backtick&quot;&gt;#backtick&lt;/a&gt; 1 0 60   /usr/bin/cpu-screen&lt;br /&gt;
 &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#backtick&quot;&gt;#backtick&lt;/a&gt; 2 0 60   /usr/bin/ip-screen&lt;/p&gt;
 &lt;h2 id=&quot;diverses&quot; tabindex=&quot;-1&quot;&gt;Diverses&lt;/h2&gt;
@@ -1760,7 +1760,7 @@ Allerdings sollte man folgende Zeilen auskommentieren, sofern man nicht die Prog
 &lt;/ul&gt;
 &lt;h2 id=&quot;editoren&quot; tabindex=&quot;-1&quot;&gt;Editoren&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;VI-VIM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;VI-VIM&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;sys-admin-s-tools&quot; tabindex=&quot;-1&quot;&gt;Sys-Admin&#39;s Tools&lt;/h2&gt;
 &lt;ul&gt;
@@ -1843,11 +1843,11 @@ fi&lt;/p&gt;
 
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-    <link href="https://www./linux/console/"/>
+    <link href="https://wiki.polyformal.de/linux/console/"/>
   </entry><entry>
     <title>Linux Professional Institute (LPI)</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./linux/zertifizierung/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/linux/zertifizierung/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;vorbereitungsmoeglichkeiten&quot; tabindex=&quot;-1&quot;&gt;Vorbereitungsmöglichkeiten&lt;/h2&gt;
 &lt;ul&gt;
@@ -1883,7 +1883,7 @@ fi&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;LPI-Acadamy: Prüfungssimulation von Anselm Lingnau
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;http://www.lpi-academy.de/wiki/home/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;http://www.lpi-academy.de/wiki/home/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1916,17 +1916,17 @@ fi&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./linux/zertifizierung/"/>
+    <link href="https://wiki.polyformal.de/linux/zertifizierung/"/>
   </entry><entry>
     <title>Informationen zu Linux</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./linux/informationen/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/linux/informationen/</id>
     <content type="html">&lt;h2 id=&quot;geschichte&quot; tabindex=&quot;-1&quot;&gt;Geschichte&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Unix Stammbaum, 1969 bis heute &lt;a href=&quot;http://www.levenez.com/unix/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.levenez.com/unix/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Linux Stammbaum &lt;a href=&quot;http://linuxhelp.blogspot.com/2006/04/mind-map-of-linux-distributions.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://linuxhelp.blogspot.com/2006/04/mind-map-of-linux-distributions.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Kurz und prägnant auf deutsch von &lt;a href=&quot;http://www.selflinux.org/selflinux/html/linux_geschichte.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Self Linux&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Wikipedia über &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;LINUX&lt;/a&gt; und &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;UNIX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wikipedia über &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;LINUX&lt;/a&gt; und &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wiki.polyformal.de/404&quot; target=&quot;&quot;&gt;wpde&amp;gt;UNIX&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Rosetta Stone for Unix, Vergleichsmatrix für Befehle von Unix(e), Linux(e), MacOsX, Solaris, BSD, etc.
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://bhami.com/rosetta.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://bhami.com/rosetta.html&lt;/a&gt;&lt;/li&gt;
@@ -1945,11 +1945,11 @@ fi&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 </content>
-    <link href="https://www./linux/informationen/"/>
+    <link href="https://wiki.polyformal.de/linux/informationen/"/>
   </entry><entry>
     <title>GNOME</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./linux/gnome/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/linux/gnome/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#laptop&quot;&gt;#laptop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;dual-head-setup&quot; tabindex=&quot;-1&quot;&gt;Dual Head Setup&lt;/h2&gt;
 &lt;p&gt;Falls &lt;a href=&quot;http://x.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;X.org&lt;/a&gt; auf 2 Bildschirme konfiguriert ist, GNOME aber nur im Clone-Modus erscheint (auf beiden Bildschirmen das gleiche), dann könnte es an den gespeicherten Session Daten liegen. Abhilfe schafft das löschen folgender Dateien&lt;br /&gt;
@@ -1958,11 +1958,11 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
 &lt;p&gt;Für die korrekte Arbeitsweise unter Debian muss der Benutzer Mitglied der Gruppe &lt;em&gt;powedev&lt;/em&gt; sein((siehe /usr/share/doc/gnome-power-manager/README.Debian])).&lt;/p&gt;
 &lt;p&gt;Der gnome-power-manager ist unter anderem für das Abdunkeln des Bildschirms im Batteriebetrieb, sowie das Konfigurieren von Aktionen beim schließen des Deckels bei Laptops zuständig.&lt;/p&gt;
 </content>
-    <link href="https://www./linux/gnome/"/>
+    <link href="https://wiki.polyformal.de/linux/gnome/"/>
   </entry><entry>
     <title>Impressum</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./impressum/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/impressum/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;polyformal System- &amp;amp; Formarbeit&lt;/li&gt;
 &lt;li&gt;Inhaber Stefan Pampel&lt;/li&gt;
@@ -1978,13 +1978,13 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
 &lt;p&gt;IANA PEN: 34466&lt;/p&gt;
 &lt;p&gt;Inhaltlich Verantwortlicher gemäß § 18 Abs. 2 MStV: Stefan Pampel (Anschrift wie oben)&lt;/p&gt;
 &lt;p&gt;Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernimmt polyformal keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt; · &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./en/privacy/&quot;&gt;Privacy Policy (English)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt; · &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/privacy/&quot;&gt;Privacy Policy (English)&lt;/a&gt;&lt;/p&gt;
 </content>
-    <link href="https://www./impressum/"/>
+    <link href="https://wiki.polyformal.de/impressum/"/>
   </entry><entry>
     <title>wiki driven by Obsidian</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./en/software/wiki-driven-by-obsidian/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;Obsidian Digital Graden
 &lt;ul&gt;
@@ -1993,11 +1993,11 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./en/software/wiki-driven-by-obsidian/"/>
+    <link href="https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/"/>
   </entry><entry>
     <title>imagemagick</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./en/software/imagemagick/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/en/software/imagemagick/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;tiff&quot; tabindex=&quot;-1&quot;&gt;TIFF&lt;/h3&gt;
 &lt;p&gt;Convert a multipage TIFF-file into single TIFF-files:&lt;/p&gt;
@@ -2005,11 +2005,11 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
 &lt;p&gt;Convert single TIFF-files into a multipage TIFF-file:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;convert singlepage-split-*.tiff -adjoin multipage-file.tiff&lt;/code&gt;&lt;/p&gt;
 </content>
-    <link href="https://www./en/software/imagemagick/"/>
+    <link href="https://wiki.polyformal.de/en/software/imagemagick/"/>
   </entry><entry>
     <title>asciidoc</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./software/asciidoc/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/software/asciidoc/</id>
     <content type="html">&lt;h2 id=&quot;backends&quot; tabindex=&quot;-1&quot;&gt;backends&lt;/h2&gt;
 &lt;h3 id=&quot;slidy&quot; tabindex=&quot;-1&quot;&gt;slidy&lt;/h3&gt;
 &lt;p&gt;Nice HTML presentations with slidy / slidy2&lt;/p&gt;
@@ -2036,15 +2036,15 @@ deckjs backend requires title attribute for images&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./software/asciidoc/"/>
+    <link href="https://wiki.polyformal.de/software/asciidoc/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 to 1.0</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./en/software/stalwart-migration/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/en/software/stalwart-migration/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Field report: migrating a small Stalwart mail server from 0.15.5 to 1.0.3. The setup: Docker Compose, RocksDB, OpenLDAP as the directory, a reverse proxy in front, fewer than 10 accounts, about 13 GB of data.&lt;/p&gt;
 &lt;p&gt;The migration took place in November 2026 using &lt;code&gt;stalwart:v0.16.27&lt;/code&gt;, &lt;code&gt;stalwart-migrate:1.0.6&lt;/code&gt;, &lt;code&gt;stalwart:v1.0.3&lt;/code&gt; and &lt;code&gt;stalwart-cli&lt;/code&gt; 1.0.14. Object and field names may change in later versions. All names are placeholders (&lt;code&gt;example.com&lt;/code&gt;, &lt;code&gt;&amp;lt;...&amp;gt;&lt;/code&gt;). The official upgrade documentation takes precedence over this page.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./software/stalwart-migration/&quot;&gt;Stalwart Migration 0.15 auf 1.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/software/stalwart-migration/&quot;&gt;Stalwart Migration 0.15 auf 1.0&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;key-points&quot; tabindex=&quot;-1&quot;&gt;Key points&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;There is no direct path: 0.15 → 0.16 → &lt;code&gt;stalwart-migrate&lt;/code&gt; → 1.0.&lt;/li&gt;
@@ -2249,18 +2249,18 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
 &lt;li&gt;Never delete Account objects, they hold the link to the mailboxes.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <link href="https://www./en/software/stalwart-migration/"/>
+    <link href="https://wiki.polyformal.de/en/software/stalwart-migration/"/>
   </entry><entry>
     <title>Privacy Policy</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./en/privacy/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/en/privacy/</id>
     <content type="html">&lt;h1 id=&quot;privacy-policy&quot; tabindex=&quot;-1&quot;&gt;Privacy Policy&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This is a translation for convenience. In case of doubt, the German version applies.&lt;/p&gt;
 &lt;h2 id=&quot;controller&quot; tabindex=&quot;-1&quot;&gt;Controller&lt;/h2&gt;
 &lt;p&gt;Stefan Pampel, polyformal System- &amp;amp; Formarbeit, Lichpfad 6, 51145 Köln (Cologne), Germany&lt;br /&gt;
 Email: formbureau-[at]-polyformal.de, phone: +49 221 2919 9069&lt;br /&gt;
-For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./impressum/&quot;&gt;Impressum&lt;/a&gt; (legal notice).&lt;/p&gt;
+For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/impressum/&quot;&gt;Impressum&lt;/a&gt; (legal notice).&lt;/p&gt;
 &lt;h2 id=&quot;hosting-via-git-hub-pages&quot; tabindex=&quot;-1&quot;&gt;Hosting via GitHub Pages&lt;/h2&gt;
 &lt;p&gt;This wiki is served via GitHub Pages, a service of GitHub Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA. When you access the pages, GitHub processes technically necessary data, in particular your IP address, date and time of access, the page requested and your browser&#39;s user agent, in order to deliver the pages and keep the service secure. This may involve a transfer to the USA. GitHub is certified under the EU-US Data Privacy Framework. The legal basis is our legitimate interest in reliably providing this website (Art. 6(1)(f) GDPR). More information: &lt;a href=&quot;https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;external-scripts-and-libraries&quot; tabindex=&quot;-1&quot;&gt;External scripts and libraries&lt;/h2&gt;
@@ -2275,11 +2275,11 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
 &lt;p&gt;You also have the right to lodge a complaint with a data protection supervisory authority. The competent authority is the State Commissioner for Data Protection and Freedom of Information of North Rhine-Westphalia (LDI NRW), &lt;a href=&quot;https://www.ldi.nrw.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ldi.nrw.de&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Last updated: November 2026&lt;/p&gt;
 </content>
-    <link href="https://www./en/privacy/"/>
+    <link href="https://wiki.polyformal.de/en/privacy/"/>
   </entry><entry>
     <title>Emu E4XT Ultra</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./en/notizen/e4xt_ultra/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/en/notizen/e4xt_ultra/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#music&quot;&gt;#music&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#sampler&quot;&gt;#sampler&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#emulator&quot;&gt;#emulator&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;internal-ssd&quot; tabindex=&quot;-1&quot;&gt;Internal SSD&lt;/h2&gt;
 &lt;p&gt;Bases on a tip in a &lt;a href=&quot;http://www.sequencer.de/synthesizer/viewtopic.php?f=3&amp;amp;t=79915#p866249&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;forum&lt;/a&gt;, it is possible to replace the internal noisy 3,5&amp;quot; HD with a silent SSD.&lt;/p&gt;
@@ -2293,28 +2293,28 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
 &lt;p&gt;The replacement is straight forward. Just remove cable and unmount the old drive. Mount the mobile rack with the two screws towards backside within the original holes, for the two screws towards fron you need selfthreading screws. On the SAK-65 Adapter a missing hole has to be drilled, see image:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/pisco_cgn/13494599864/in/photostream/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.flickr.com/photos/pisco_cgn/13494599864/in/photostream/&lt;/a&gt;&lt;/p&gt;
 </content>
-    <link href="https://www./en/notizen/e4xt_ultra/"/>
+    <link href="https://wiki.polyformal.de/en/notizen/e4xt_ultra/"/>
   </entry><entry>
     <title>ollama</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./en/ai/ollama/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/en/ai/ollama/</id>
     <content type="html">&lt;p&gt;load a Hugging Face model into ollama&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ollama run hf.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF:latest
 # or M3 24GB
 ollama run hf.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF:latest
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-    <link href="https://www./en/ai/ollama/"/>
+    <link href="https://wiki.polyformal.de/en/ai/ollama/"/>
   </entry><entry>
     <title>Datenschutz</title>
-    <updated>2026-11-09T19:51:34Z</updated>
-    <id>https://www./datenschutz/</id>
+    <updated>2026-11-09T19:51:59Z</updated>
+    <id>https://wiki.polyformal.de/datenschutz/</id>
     <content type="html">&lt;h1 id=&quot;datenschutzerklaerung&quot; tabindex=&quot;-1&quot;&gt;Datenschutzerklärung&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./en/privacy/&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/privacy/&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;verantwortlicher&quot; tabindex=&quot;-1&quot;&gt;Verantwortlicher&lt;/h2&gt;
 &lt;p&gt;Stefan Pampel, polyformal System- &amp;amp; Formarbeit, Lichpfad 6, 51145 Köln, Deutschland&lt;br /&gt;
 E-Mail: formbureau-[ät]-polyformal.de, Telefon: +49 221 2919 9069&lt;br /&gt;
-Weitere Angaben siehe &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./impressum/&quot;&gt;Impressum&lt;/a&gt;.&lt;/p&gt;
+Weitere Angaben siehe &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/impressum/&quot;&gt;Impressum&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;hosting-ueber-git-hub-pages&quot; tabindex=&quot;-1&quot;&gt;Hosting über GitHub Pages&lt;/h2&gt;
 &lt;p&gt;Dieses Wiki wird über GitHub Pages bereitgestellt, einen Dienst der GitHub Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA. Beim Aufruf der Seiten verarbeitet GitHub technisch notwendige Daten, insbesondere Ihre IP-Adresse, Datum und Uhrzeit des Abrufs, die aufgerufene Seite und die Browserkennung, um die Seiten auszuliefern und die Sicherheit des Dienstes zu gewährleisten. Dabei kann eine Übermittlung in die USA stattfinden. GitHub ist unter dem EU-US Data Privacy Framework zertifiziert. Rechtsgrundlage ist unser berechtigtes Interesse an einer zuverlässigen Bereitstellung dieser Website (Art. 6 Abs. 1 lit. f DSGVO). Weitere Informationen: &lt;a href=&quot;https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;externe-skripte-und-bibliotheken&quot; tabindex=&quot;-1&quot;&gt;Externe Skripte und Bibliotheken&lt;/h2&gt;
@@ -2329,6 +2329,6 @@ Weitere Angaben siehe &lt;a class=&quot;internal-link&quot; target=&quot;&quot; 
 &lt;p&gt;Sie haben außerdem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, &lt;a href=&quot;https://www.ldi.nrw.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ldi.nrw.de&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Stand: November 2026&lt;/p&gt;
 </content>
-    <link href="https://www./datenschutz/"/>
+    <link href="https://wiki.polyformal.de/datenschutz/"/>
   </entry></feed>
 
