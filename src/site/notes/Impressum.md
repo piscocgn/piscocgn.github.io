@@ -18,6 +18,8 @@ Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE2367187
 
 IANA PEN: 34466
 
-Inhaltlich Verantwortlicher gemäß § 10 Absatz 3 MDStV: Stefan Pampel (Anschrift wie oben)
+Inhaltlich Verantwortlicher gemäß § 18 Abs. 2 MStV: Stefan Pampel (Anschrift wie oben)
 
 Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernimmt polyformal keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+
+[[Datenschutz\|Datenschutzerklärung]] · [[En/Privacy Policy\|Privacy Policy (English)]]
