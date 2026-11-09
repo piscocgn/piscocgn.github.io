@@ -60,7 +60,12 @@ body.theme-dark {
   --pf-petrol: #0298b2;
 }
 
-body.theme-light {
+/* Modus: "light", "dark" oder "auto" (folgt BASE_THEME aus dem Plugin).
+   Das Plugin schreibt BASE_THEME beim Default-Theme nicht ins Repo (Stand 2.103.0),
+   deshalb wird der Modus hier festgelegt. */
+$pf-mode: "light";
+
+@mixin pf-light {
   color-scheme: light;
   --background-primary: #f5f6f6;
   --background-primary-alt: #eceff0;
@@ -114,7 +119,7 @@ body.theme-light {
   background-color: var(--color-base-00);
 }
 
-body.theme-dark {
+@mixin pf-dark {
   --color-base-00: #0c3640;
   --color-base-05: #0b323b;
   --color-base-10: #0a2e37;
@@ -146,6 +151,15 @@ body.theme-dark {
   --blockquote-border-color: var(--pf-orange);
   --hr-color: var(--color-base-30);
   background-color: var(--color-base-00);
+}
+
+@if $pf-mode == "auto" {
+  body.theme-light { @include pf-light; }
+  body.theme-dark { @include pf-dark; }
+} @else if $pf-mode == "dark" {
+  body.theme-light, body.theme-dark { @include pf-dark; }
+} @else {
+  body.theme-light, body.theme-dark { @include pf-light; }
 }
 
 body {
