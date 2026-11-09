@@ -1,1 +1,2334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://www.">
+  <title>polyformal wiki</title>
+  <link href="https://www./feed.xml" rel="self"/>
+  <link href="https://www."/>
+  <updated>2026-11-09T19:51:46Z</updated>
+  <id>https://www.</id><entry>
+    <title>Werkzeuge für Desktop Publishing</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./vortraege/werkzeuge_fuer_desktop_publishing/</id>
+    <content type="html">&lt;p&gt;Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.&lt;/p&gt;
+&lt;p&gt;Beinhaltet: u.a. GIMP, Inkscape, Scribus, gThumb, Schriften allgemein, FontyPython, FONTPage&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;iframe src=&quot;https://www./img/user/media/vortraege/polyformal_dtp-sig.pdf&quot; width=&quot;100%&quot; height=&quot;900px&quot; title=&quot;polyformal_dtp-sig.pdf&quot; style=&quot;border:1px solid #ccc;&quot;&gt;&lt;/iframe&gt; 
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;für den &lt;a href=&quot;http://ubucon.de/index.php?option=com_content&amp;amp;task=view&amp;amp;id=41&amp;amp;Itemid=49&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vortrag&lt;/a&gt; auf der &lt;a href=&quot;http://www.ubucon.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ubucon&lt;/a&gt; 2007&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt; Zusatzinformationen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./vortraege/werkzeuge_fuer_desktop_publishing/"/>
+  </entry><entry>
+    <title>remind - ein anspruchsvolles Kalender- und Alarm-Programm</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./software/remind/</id>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.roaringpenguin.com/products/remind&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Homepage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;zahlreiche Informationen im wiki von &lt;a href=&quot;http://wiki.43folders.com/index.php/Remind&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;43folders.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://launchpad.net/rem2ics&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;rem2ics&lt;/a&gt; - Konvertierung von Remind zu ICS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;feiertage&quot; tabindex=&quot;-1&quot;&gt;Feiertage&lt;/h2&gt;
+&lt;p&gt;Deutsche Feiertage für remind&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# you have to include .reminders_setting
+
+MSG Feiertage:%&amp;quot;%&amp;quot;%
+## Feiertage
+OMIT     Jan  1         MSG %&amp;quot;Neujahr%&amp;quot;%
+REM	 Jan  6		MSG %&amp;quot;Heilige Drei Könige (regionaler Feiertag)%&amp;quot;%
+REM      Feb 14         MSG %&amp;quot;Valentinsitag%&amp;quot;%
+OMIT     Dec 31         MSG %&amp;quot;Silvester%&amp;quot;%
+REM      Mar  8         MSG %&amp;quot;Internationaler Frauentag%&amp;quot;%
+
+# Ostern
+SET SaveTrig $NumTrig
+SET easter EASTERDATE(YEAR(TODAY()))
+REM  [TRIGGER(easter-48)] MSG %&amp;quot;Rosenmontag%&amp;quot;%
+REM  [TRIGGER(easter-46)] MSG %&amp;quot;Aschermittwoch%&amp;quot;%
+OMIT [TRIGGER(easter-2)]  MSG %&amp;quot;Karfreitag%&amp;quot;%
+OMIT [TRIGGER(easter)]    MSG %&amp;quot;Ostersonntag%&amp;quot;%
+OMIT [TRIGGER(easter+1)]    MSG %&amp;quot;Ostermontag%&amp;quot;%
+OMIT [TRIGGER(easter+39)] MSG %&amp;quot;Christi Himmelfahrt%&amp;quot;%
+OMIT [TRIGGER(easter+49)] MSG %&amp;quot;Pfingsten%&amp;quot;%
+OMIT [TRIGGER(easter+50)] MSG %&amp;quot;Pfingstmontag%&amp;quot;%
+REM [TRIGGER(easter+60)]  MSG %&amp;quot;Fronleichnam (regionaler Feiertag)%&amp;quot;%
+
+REM      Apr  1         MSG %&amp;quot;1. April :)%&amp;quot;%
+OMIT  	 May  1		MSG %&amp;quot;1. Mai, Tag der Arbeit%&amp;quot;%
+REM Sun  May 8 MSG %&amp;quot;Muttertag%&amp;quot;%
+REM	 Aug  8 	MSG %&amp;quot;Augsburger Friedensfest%&amp;quot;%
+REM 	 Aug 15		MSG %&amp;quot;Mariä Himmelfahrt (regionaler Feiertag)%&amp;quot;%
+
+# The DST rules are accurate for most locations in
+# North America
+REM Sun [_last(Mar)] 	MSG %&amp;quot;Umstellung auf Sommerzeit%&amp;quot;%
+REM Sun [_last(Oct)] 	MSG %&amp;quot;Umstellung auf Winterzeit%&amp;quot;%
+
+OMIT  	 Oct  3		MSG %&amp;quot;Tag der Deutschen Einheit%&amp;quot;%
+
+REM 	Oct	31	MSG %&amp;quot;Reformationstag (regionaler Feiertag)%&amp;quot;%
+REM	Nov	1	MSG %&amp;quot;Allerheiligen (regionaler Feiertag)%&amp;quot;%
+REM	Wed Nov 23 --7	MSG %&amp;quot;Buß- und Bettag (regionaler Feiertag)%&amp;quot;%
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#TotenSonntag&quot;&gt;#TotenSonntag&lt;/a&gt;
+REM	Sun Dec 24 --35 MSG %&amp;quot;Totensonntag%&amp;quot;%
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Advent&quot;&gt;#Advent&lt;/a&gt;
+REM	Sun Dec 24 --28 MSG %&amp;quot;1.Advent%&amp;quot;%
+REM	Sun Dec 24 --21 MSG %&amp;quot;2.Advent%&amp;quot;%
+REM	Sun Dec 24 --14 MSG %&amp;quot;3.Advent%&amp;quot;%
+REM	Sun Dec 24 --7 	MSG %&amp;quot;4.Advent%&amp;quot;%
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Weihnachten&quot;&gt;#Weihnachten&lt;/a&gt;
+REM	Dec  6		MSG %&amp;quot;Nikolaus%&amp;quot;%
+OMIT	Dec  24		MSG %&amp;quot;Heiliger Abend%&amp;quot;%
+OMIT	Dec  25		MSG %&amp;quot;1. Weihnachtstag%&amp;quot;%
+OMIT	Dec  26		MSG %&amp;quot;2. Weihnachtstag%&amp;quot;%
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;gu-is-fuer-remind&quot; tabindex=&quot;-1&quot;&gt;GUIs für remind&lt;/h3&gt;
+&lt;h3 id=&quot;wxremind-wxpython&quot; tabindex=&quot;-1&quot;&gt;wxremind (wxpython)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.duke.edu/~dgraham/wxRemind/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.duke.edu/~dgraham/wxRemind/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;benötigt &#39;&#39;python-wxgtk2.8 python-dateutil&#39;&#39; (Debian/Squeeze)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;wyrd-ncurses&quot; tabindex=&quot;-1&quot;&gt;wyrd (ncurses)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://pessimization.com/software/wyrd/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Projekt-Seite&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.43folders.com/index.php/Wyrd&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Wyrd&lt;/a&gt; bei &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;http://www.43folders.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;{{software:wyrd-1.4.4_german.patch.gz|}}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;remember-the-milk-zu-remind&quot; tabindex=&quot;-1&quot;&gt;Remember The Milk zu remind&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;basiert auf einem Tip aus dem &lt;a href=&quot;http://www.rememberthemilk.com/forums/tips/5178/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;RTM-Forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Voraussetzungen: &lt;a href=&quot;http://wiki.43folders.com/index.php/ICal2Rem&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ICal2Rem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;benötige Perl-Pakete Debian Squeeze
+&lt;ul&gt;
+&lt;li&gt;&#39;&#39;libical-parser-perl&#39;&#39;&lt;br /&gt;
+&lt;code&gt;rtm2ical.sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;#!/bin/bash
+TMP_FILE=$(mktemp)
+# Benutzername und Passwort müssen in der ~/.netrc hinterlegt sein:
+# machine www.rememberthemilk.com
+# login rtm_username
+# password rtm_password
+RTM_USER=[rtm_user]
+RTM_URL=&amp;quot;https://www.rememberthemilk.com/icalendar/$RTM_USER/events/&amp;quot;
+wget -qO $TMP_FILE RTM_URL &amp;amp;&amp;amp; ical2rem.pl $TMP_FILE  &amp;gt; ~/.remind/.reminders_rtm &amp;amp;&amp;amp; rm $TMP_FILE
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    <link href="https://www./software/remind/"/>
+  </entry><entry>
+    <title>Stalwart Migration 0.15 auf 1.0</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./software/stalwart-migration/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Erfahrungsbericht: Migration eines kleinen Stalwart-Mailservers von 0.15.5 auf 1.0.3. Das Setup: Docker Compose, RocksDB, OpenLDAP als Verzeichnis, Reverse Proxy davor, weniger als 10 Konten, rund 13 GB Daten.&lt;/p&gt;
+&lt;p&gt;Die Migration erfolgte im November 2026 mit &lt;code&gt;stalwart:v0.16.27&lt;/code&gt;, &lt;code&gt;stalwart-migrate:1.0.6&lt;/code&gt;, &lt;code&gt;stalwart:v1.0.3&lt;/code&gt; und &lt;code&gt;stalwart-cli&lt;/code&gt; 1.0.14. Objekt- und Feldnamen können sich in neueren Versionen ändern. Alle Namen sind Platzhalter (&lt;code&gt;example.com&lt;/code&gt;, &lt;code&gt;&amp;lt;...&amp;gt;&lt;/code&gt;). Die offizielle Upgrade-Dokumentation hat Vorrang vor dieser Seite.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./en/software/stalwart-migration/&quot;&gt;Stalwart Migration 0.15 to 1.0&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;das-wichtigste-vorab&quot; tabindex=&quot;-1&quot;&gt;Das Wichtigste vorab&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Es gibt keinen direkten Weg: 0.15 → 0.16 → &lt;code&gt;stalwart-migrate&lt;/code&gt; → 1.0.&lt;/li&gt;
+&lt;li&gt;Der erste Start von 0.16 verändert die Daten unumkehrbar. Einstellungen und Verzeichniseinträge werden dabei gelöscht. Deshalb nur auf einer Kopie arbeiten und vorher einen Dump ziehen.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:latest&lt;/code&gt; zeigt inzwischen auf 1.0. Das Image der alten Version vor dem Umstieg fest pinnen, sonst startet ein versehentliches Pull die falsche Version auf den alten Daten.&lt;/li&gt;
+&lt;li&gt;Die eigentliche Migration lief problemlos. Die Probleme kamen danach und betrafen Rollen, IP-Sperren, Logging und Zertifikate. Die Checkliste unten deckt sie ab.&lt;/li&gt;
+&lt;li&gt;Eine Generalprobe auf einer Kopie lohnt sich sehr, aber nur, wenn sie am Ende auch echte Logins prüft. Bei uns fehlte genau das, und der schwerste Fehler zeigte sich deshalb erst im Betrieb.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;ergebnis&quot; tabindex=&quot;-1&quot;&gt;Ergebnis&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Phase&lt;/th&gt;
+&lt;th&gt;Dauer&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Datenkopie 13 GB&lt;/td&gt;
+&lt;td&gt;2 Minuten&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0.16 starten, Konfiguration einspielen&lt;/td&gt;
+&lt;td&gt;1 Minute&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;stalwart-migrate&lt;/code&gt; inklusive vollständiger Prüfung&lt;/td&gt;
+&lt;td&gt;5 Minuten&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ausfall gesamt bis 1.0 öffentlich läuft&lt;/td&gt;
+&lt;td&gt;9 Minuten&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Logins danach gestört&lt;/td&gt;
+&lt;td&gt;rund 13 Minuten, ein Admin-Konto rund 25 Minuten&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;verify --full&lt;/code&gt; meldete alle Konten ohne Abweichung. Die Login-Störung wäre mit der Checkliste unten vermeidbar gewesen.&lt;/p&gt;
+&lt;h2 id=&quot;vorbereitung&quot; tabindex=&quot;-1&quot;&gt;Vorbereitung&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Image pinnen und &lt;code&gt;pull_policy: never&lt;/code&gt; setzen:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;image: stalwart-local:pre-upgrade-0.15.5   # lokaler Tag des laufenden Images
+pull_policy: never
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Generalprobe auf einer Kopie der Daten durchführen. Die Kopie isoliert betreiben (&lt;code&gt;docker network create --internal&lt;/code&gt;), damit sie keine Mail zustellt.&lt;/li&gt;
+&lt;li&gt;Prüfen, welche Dienste den Mailserver intern nutzen. Webmail kann Ports erreichen, die nach außen gar nicht veröffentlicht sind, zum Beispiel 465 und 4190.&lt;/li&gt;
+&lt;li&gt;Inhalte vergleichen: Anzahl Mails und Summe der Größen je Konto per JMAP. Der Quota-Zähler taugt dafür nicht. In 0.15 war er bei uns um mehr als den Faktor 2 zu niedrig, die echte Summe stimmte nach der Migration auf das Byte.&lt;/li&gt;
+&lt;li&gt;Klären, wer Admin wird. Mit aktivem LDAP können lokale Konten keine Zugangsdaten haben. Ohne LDAP bleibt nur &lt;code&gt;STALWART_RECOVERY_ADMIN&lt;/code&gt; als Notzugang.&lt;/li&gt;
+&lt;li&gt;Benutzer informieren. OAuth-Clients müssen sich neu anmelden, CalDAV, CardDAV und WebDAV laden ihre Daten neu.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;ablauf&quot; tabindex=&quot;-1&quot;&gt;Ablauf&lt;/h2&gt;
+&lt;h3 id=&quot;1-dump-aus-0-15&quot; tabindex=&quot;-1&quot;&gt;1. Dump aus 0.15&lt;/h3&gt;
+&lt;p&gt;Das Skript &lt;code&gt;migrate_v016.py&lt;/code&gt; aus der Upgrade-Dokumentation exportiert Einstellungen und Principals über die API. Das geht im laufenden Betrieb:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;python migrate_v016.py dump --url https://mail.example.com --username admin &#92;
+  --settings settings.json --principals principals.json
+
+python migrate_v016.py convert --settings settings.json --principals principals.json &#92;
+  --config config.json --output export.json &#92;
+  --patch-paths /opt/stalwart=/var/lib/stalwart --unmigrated-output unmigrated.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;unmigrated.txt&lt;/code&gt; ansehen. Bei uns wurde der Großteil der Keys nicht übernommen, darunter die vielen automatisch angelegten IP-Sperren. Das ist normal, aber die Liste lohnt einen Blick.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;export.json&lt;/code&gt; ist NDJSON. Veraltete Domains, DKIM-Schlüssel oder Aliase lassen sich vor dem Import herausfiltern. Danach prüfen, dass keine Referenzen wie &lt;code&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#create-N&quot;&gt;#create-N&lt;/a&gt;&lt;/code&gt; ins Leere zeigen.&lt;/p&gt;
+&lt;h3 id=&quot;2-stoppen-und-kopieren&quot; tabindex=&quot;-1&quot;&gt;2. Stoppen und kopieren&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;docker stop -t 60 mailserver
+cp -a &amp;lt;0.15-daten&amp;gt; &amp;lt;work016&amp;gt;
+chown -R 2000:2000 &amp;lt;work016&amp;gt;     # neue Images laufen als UID 2000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Die Originaldaten bleiben unangetastet und sind der Rollback.&lt;/p&gt;
+&lt;h3 id=&quot;3-0-16-im-recovery-modus&quot; tabindex=&quot;-1&quot;&gt;3. 0.16 im Recovery-Modus&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;config.json&lt;/code&gt; für 0.16:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{ &amp;quot;@type&amp;quot;: &amp;quot;RocksDb&amp;quot;, &amp;quot;path&amp;quot;: &amp;quot;/var/lib/stalwart/data&amp;quot; }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;docker run -d --name stalwart-016 --network &amp;lt;internes-netz&amp;gt; &#92;
+  -e STALWART_RECOVERY_ADMIN=admin:&amp;lt;passwort&amp;gt; -e STALWART_RECOVERY_MODE=1 &#92;
+  -v &amp;lt;c016&amp;gt;:/etc/stalwart -v &amp;lt;work016&amp;gt;:/var/lib/stalwart/data &#92;
+  stalwartlabs/stalwart:v0.16.27
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Die CLI läuft im Netz-Namensraum des Containers:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;docker run --rm --network container:stalwart-016 &#92;
+  -e STALWART_URL=http://127.0.0.1:8080 -e STALWART_USER=admin -e STALWART_PASSWORD=&amp;lt;passwort&amp;gt; &#92;
+  -v &amp;lt;ordner&amp;gt;:/d:ro ghcr.io/stalwartlabs/cli:latest apply --file /d/export.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;4-ldap-verzeichnis-anlegen&quot; tabindex=&quot;-1&quot;&gt;4. LDAP-Verzeichnis anlegen&lt;/h3&gt;
+&lt;p&gt;Set-Felder sind Objekte, keine Listen, also &lt;code&gt;{&amp;quot;mail&amp;quot;: true}&lt;/code&gt; statt &lt;code&gt;[&amp;quot;mail&amp;quot;]&lt;/code&gt;. Listen enden in &lt;code&gt;invalidPatch&lt;/code&gt; beziehungsweise &lt;code&gt;invalid value object&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+  &amp;quot;description&amp;quot;: &amp;quot;LDAP&amp;quot;,
+  &amp;quot;url&amp;quot;: &amp;quot;ldap://ldap.example.internal:1389&amp;quot;,
+  &amp;quot;baseDn&amp;quot;: &amp;quot;dc=example,dc=com&amp;quot;,
+  &amp;quot;bindDn&amp;quot;: &amp;quot;cn=admin,dc=example,dc=com&amp;quot;,
+  &amp;quot;bindSecret&amp;quot;: &amp;quot;&amp;lt;geheim&amp;gt;&amp;quot;,
+  &amp;quot;bindAuthentication&amp;quot;: false,
+  &amp;quot;filterLogin&amp;quot;: &amp;quot;(&amp;amp;(objectClass=inetOrgPerson)(|(mail=?)(uid=?)))&amp;quot;,
+  &amp;quot;filterMailbox&amp;quot;: &amp;quot;(&amp;amp;(objectClass=inetOrgPerson)(|(mail=?)(mailLocalAddress=?)))&amp;quot;,
+  &amp;quot;attrClass&amp;quot;: {&amp;quot;objectClass&amp;quot;: true},
+  &amp;quot;attrEmail&amp;quot;: {&amp;quot;mail&amp;quot;: true},
+  &amp;quot;attrEmailAlias&amp;quot;: {&amp;quot;mailLocalAddress&amp;quot;: true}
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli create Directory/Ldap --stdin &amp;lt; directory.json
+stalwart-cli update Authentication singleton --field directoryId=&amp;lt;id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bindAuthentication: false&lt;/code&gt; bedeutet Hash-Vergleich, das funktionierte mit &lt;code&gt;{SSHA}&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Weder 0.16.27 noch 1.0.3 ergänzen bei LDAP-Logins die Standard-Domain. Damit Logins ohne Domain weiter gehen, muss &lt;code&gt;filterLogin&lt;/code&gt; auch &lt;code&gt;uid&lt;/code&gt; abdecken.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filterMailbox&lt;/code&gt; aus 0.16 heißt in 1.0 &lt;code&gt;filterRecipient&lt;/code&gt;, &lt;code&gt;stalwart-migrate&lt;/code&gt; wandelt das um.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;5-stalwart-migrate&quot; tabindex=&quot;-1&quot;&gt;5. stalwart-migrate&lt;/h3&gt;
+&lt;p&gt;0.16 stoppen. Zielkonfiguration für 1.0:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{ &amp;quot;@type&amp;quot;: &amp;quot;RocksDb&amp;quot;, &amp;quot;path&amp;quot;: &amp;quot;/var/lib/stalwart-v1/&amp;quot; }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;A=&amp;quot;--source /etc/stalwart/config.json --target /etc/stalwart-v1/config.json --state /var/lib/stalwart-migrate&amp;quot;
+migrate prepare --non-interactive --source /etc/stalwart/config.json --state /var/lib/stalwart-migrate
+migrate run $A
+migrate run $A --final --yes
+migrate verify --full $A
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;migrate&lt;/code&gt; steht hier für &lt;code&gt;docker run --rm -it --ulimit nofile=65536:65536 --network none&lt;/code&gt; mit den passenden Volumes und &lt;code&gt;stalwartlabs/stalwart-migrate:1.0.6&lt;/code&gt;. Das Tool braucht ein TTY, deshalb die Kette in &lt;code&gt;screen&lt;/code&gt; laufen lassen. Für &lt;code&gt;--non-interactive&lt;/code&gt; muss &lt;code&gt;answers.toml&lt;/code&gt; im State-Ordner liegen. Die Datei schreibt &lt;code&gt;prepare&lt;/code&gt; selbst, sie lässt sich also aus der Generalprobe übernehmen.&lt;/p&gt;
+&lt;h3 id=&quot;6-1-0-erst-isoliert-einrichten&quot; tabindex=&quot;-1&quot;&gt;6. 1.0 erst isoliert einrichten&lt;/h3&gt;
+&lt;p&gt;Dieser Schritt ist die wichtigste Abweichung vom naheliegenden Weg. 1.0 zuerst ohne veröffentlichte Ports starten, alles einrichten und erst dann öffentlich machen. So läuft der Server nie halb konfiguriert im Netz.&lt;/p&gt;
+&lt;p&gt;Den ersten Start einmal mit &lt;code&gt;STALWART_UPDATE_ROLE_PERMISSIONS=true&lt;/code&gt;, danach die Variable wieder entfernen. Die Einstellungen im Einzelnen stehen in der Checkliste.&lt;/p&gt;
+&lt;h3 id=&quot;7-umschalten&quot; tabindex=&quot;-1&quot;&gt;7. Umschalten&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;mailserver:
+  image: stalwartlabs/stalwart:v1.0.3
+  environment:
+    - STALWART_PUBLIC_URL=https://mail.example.com
+  volumes:
+    - ./v1/config:/etc/stalwart:ro
+    - ./v1/data:/var/lib/stalwart-v1
+    - ./v1/logs:/var/log/stalwart
+    - ./certs:/data/certs:ro
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;checkliste-vor-dem-oeffentlichen-start&quot; tabindex=&quot;-1&quot;&gt;Checkliste vor dem öffentlichen Start&lt;/h2&gt;
+&lt;p&gt;Diese Punkte haben bei uns alle gefehlt oder Probleme gemacht.&lt;/p&gt;
+&lt;h3 id=&quot;default-rollen-setzen&quot; tabindex=&quot;-1&quot;&gt;Default-Rollen setzen&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Das war der schwerste Fehler.&lt;/strong&gt; Nach der Migration waren alle &lt;code&gt;Default Roles&lt;/code&gt; leer. Konten mit &lt;code&gt;{&amp;quot;@type&amp;quot;:&amp;quot;User&amp;quot;}&lt;/code&gt; hatten damit keinerlei Rechte.&lt;/p&gt;
+&lt;p&gt;Symptom: Das Log zeigt &lt;code&gt;Authentication successful&lt;/code&gt; und direkt danach &lt;code&gt;Unauthorized access&lt;/code&gt; mit &lt;code&gt;reason = &amp;quot;authenticate&amp;quot;&lt;/code&gt;. Clients melden nur einen fehlgeschlagenen Login. Das sieht nach einem Passwort- oder LDAP-Problem aus, ist aber keines.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli query Role --fields id,description
+stalwart-cli update Authentication singleton &#92;
+  --field &#39;defaultUserRoleIds={&amp;quot;&amp;lt;user&amp;gt;&amp;quot;:true}&#39; &#92;
+  --field &#39;defaultGroupRoleIds={&amp;quot;&amp;lt;group&amp;gt;&amp;quot;:true}&#39; &#92;
+  --field &#39;defaultTenantRoleIds={&amp;quot;&amp;lt;tenant&amp;gt;&amp;quot;:true}&#39; &#92;
+  --field &#39;defaultAdminRoleIds={&amp;quot;&amp;lt;admin&amp;gt;&amp;quot;:true,&amp;quot;&amp;lt;user&amp;gt;&amp;quot;:true}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Die Rollen-IDs unterscheiden sich je nach Installation. Warum die Felder leer waren, haben wir nicht geklärt. Unbedingt vor dem öffentlichen Start prüfen, denn ohne Rollen fehlt auch das Recht &lt;code&gt;emailReceive&lt;/code&gt;. Port 25 nahm Mails zwar an, ob sie in dieser Zeit zugestellt wurden, ließ sich wegen des fehlenden Logs nicht mehr klären.&lt;/p&gt;
+&lt;h3 id=&quot;admin-braucht-zwei-rollen&quot; tabindex=&quot;-1&quot;&gt;Admin braucht zwei Rollen&lt;/h3&gt;
+&lt;p&gt;Die Rolle &lt;code&gt;System Administrator&lt;/code&gt; enthält keine IMAP-Rechte. Ein Admin-Konto kommt damit in die Verwaltung, aber nicht ins Postfach. Das Log zeigt &lt;code&gt;Unauthorized access&lt;/code&gt; mit &lt;code&gt;imapAuthenticate&lt;/code&gt;. Deshalb trägt &lt;code&gt;defaultAdminRoleIds&lt;/code&gt; oben beide Rollen. Danach bekommt das Konto die Rolle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli update Account &amp;lt;id&amp;gt; --field &#39;roles={&amp;quot;@type&amp;quot;:&amp;quot;Admin&amp;quot;}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;reverse-proxy-von-der-automatischen-sperre-ausnehmen&quot; tabindex=&quot;-1&quot;&gt;Reverse Proxy von der automatischen Sperre ausnehmen&lt;/h3&gt;
+&lt;p&gt;Der Webzugriff antwortete plötzlich mit HTTP 502. Direkt am Container kam korrekt 401. Ursache: Bots rufen Pfade wie &lt;code&gt;*.php&lt;/code&gt; oder &lt;code&gt;*/wp-*&lt;/code&gt; auf, die Scan-Erkennung sieht als Quelle nur den Proxy und sperrt ihn, und zwar unbefristet. Die Regel griff bei uns wenige Minuten nach dem Start.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli query BlockedIp --fields id,address,reason
+stalwart-cli create AllowedIp --json &#39;{&amp;quot;address&amp;quot;:&amp;quot;&amp;lt;internes-subnetz&amp;gt;&amp;quot;,&amp;quot;reason&amp;quot;:&amp;quot;Reverse Proxy&amp;quot;}&#39;
+stalwart-cli delete BlockedIp --ids &amp;lt;id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Danach neu starten, die Sperre blieb sonst im Cache aktiv. Ein Subnetz ist robuster als eine einzelne IP, weil sich Container-IPs beim Neuanlegen ändern können.&lt;/p&gt;
+&lt;h3 id=&quot;listener-pruefen&quot; tabindex=&quot;-1&quot;&gt;Listener prüfen&lt;/h3&gt;
+&lt;p&gt;Bei uns fehlten nach der Migration &lt;code&gt;imap&lt;/code&gt; (143) und &lt;code&gt;submission&lt;/code&gt; (587), die übrigen waren da:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli query NetworkListener --fields id,name,bind,protocol
+stalwart-cli create NetworkListener --json &#39;{&amp;quot;name&amp;quot;:&amp;quot;imap&amp;quot;,&amp;quot;bind&amp;quot;:{&amp;quot;[::]:143&amp;quot;:true},&amp;quot;protocol&amp;quot;:&amp;quot;imap&amp;quot;}&#39;
+stalwart-cli create NetworkListener --json &#39;{&amp;quot;name&amp;quot;:&amp;quot;submission&amp;quot;,&amp;quot;bind&amp;quot;:{&amp;quot;[::]:587&amp;quot;:true},&amp;quot;protocol&amp;quot;:&amp;quot;smtp&amp;quot;}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;zertifikat&quot; tabindex=&quot;-1&quot;&gt;Zertifikat&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli create Certificate --json &#39;{&amp;quot;certificate&amp;quot;:{&amp;quot;@type&amp;quot;:&amp;quot;File&amp;quot;,&amp;quot;filePath&amp;quot;:&amp;quot;/data/certs/mail.example.com/cert.pem&amp;quot;},&amp;quot;privateKey&amp;quot;:{&amp;quot;@type&amp;quot;:&amp;quot;File&amp;quot;,&amp;quot;filePath&amp;quot;:&amp;quot;/data/certs/mail.example.com/key.pem&amp;quot;}}&#39;
+stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;lt;id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Das neue Image läuft als UID 2000. Ein &lt;code&gt;key.pem&lt;/code&gt; mit &lt;code&gt;root:root 600&lt;/code&gt; ist nicht lesbar, und TLS fällt aus.&lt;/li&gt;
+&lt;li&gt;Wer &lt;code&gt;traefik-certs-dumper&lt;/code&gt; nutzt: &lt;code&gt;OVERRIDE_UID=2000&lt;/code&gt; und &lt;code&gt;OVERRIDE_GID=2000&lt;/code&gt; wirken nicht auf vorhandene, unveränderte Dateien. Die Besitzrechte also einmalig selbst setzen und nach der nächsten Erneuerung prüfen. Letzteres steht bei uns noch aus.&lt;/li&gt;
+&lt;li&gt;Zertifikatsdateien werden nur beim Start oder per &lt;code&gt;stalwart-cli create Action/ReloadTlsCertificates&lt;/code&gt; neu gelesen. Wir starten den Container einmal pro Woche per Cron neu, dafür muss kein Passwort auf dem Server liegen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;logging-pruefen&quot; tabindex=&quot;-1&quot;&gt;Logging prüfen&lt;/h3&gt;
+&lt;p&gt;Nach der Migration blieb &lt;code&gt;docker logs&lt;/code&gt; komplett leer, und der migrierte Tracer schrieb nach &lt;code&gt;/var/log/stalwart&lt;/code&gt;, das im Container nicht existiert. Ein leeres Log bedeutet also nicht, dass es keine Fehler gibt. Abhilfe: den Ordner als Volume einhängen, Besitzer UID 2000.&lt;/p&gt;
+&lt;p&gt;Für die Fehlersuche hilft ein temporärer Tracer auf der Konsole. Er wird nach einem Neustart aktiv:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli create Tracer/Stdout --json &#39;{&amp;quot;enable&amp;quot;:true,&amp;quot;level&amp;quot;:&amp;quot;debug&amp;quot;,&amp;quot;eventsPolicy&amp;quot;:&amp;quot;exclude&amp;quot;,&amp;quot;events&amp;quot;:{}}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;cli-aktuell-halten&quot; tabindex=&quot;-1&quot;&gt;CLI aktuell halten&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;stalwart-cli&lt;/code&gt; 1.0.13 konnte das Schema von 1.0.3 nicht lesen, erst 1.0.14 funktionierte. Vor dem Fenster das CLI-Image neu ziehen.&lt;/p&gt;
+&lt;h2 id=&quot;tests-nach-dem-start&quot; tabindex=&quot;-1&quot;&gt;Tests nach dem Start&lt;/h2&gt;
+&lt;p&gt;Von außen testen, nicht nur am Container:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ports 25, 143, 465, 587, 993, je nach Setup auch 4190&lt;/li&gt;
+&lt;li&gt;Login mit Kurzname und mit voller Adresse, über IMAP und SMTP&lt;/li&gt;
+&lt;li&gt;Webmail, auch nach jedem weiteren Neustart oder jeder Rollenänderung&lt;/li&gt;
+&lt;li&gt;Admin-Oberfläche, ebenso die Postfächer des Admin-Kontos&lt;/li&gt;
+&lt;li&gt;Mail in beide Richtungen, DKIM-Prüfung beim Empfänger&lt;/li&gt;
+&lt;li&gt;Unbekannte Adresse und entfernte Domains müssen abgelehnt werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ein Test mit absichtlich falschem Passwort zeigt schnell, ob der Web-Pfad stimmt: Korrekt ist 401, nicht 502.&lt;/p&gt;
+&lt;h2 id=&quot;rollback&quot; tabindex=&quot;-1&quot;&gt;Rollback&lt;/h2&gt;
+&lt;p&gt;Solange 1.0 keine neue Mail angenommen hat: Compose zurück auf das gepinnte Image und die alten Volumes. Die 0.15-Daten bleiben dafür unverändert liegen. Später angekommene Mail müsste man von Hand übernehmen. Daher bei Problemen früh entscheiden.&lt;/p&gt;
+&lt;p&gt;Die Arbeitskopie von 0.16 kann weg, sobald 1.0 bestätigt läuft. Die 0.15-Daten haben wir noch etwa eine Woche aufgehoben.&lt;/p&gt;
+&lt;h2 id=&quot;sonstige-beobachtungen&quot; tabindex=&quot;-1&quot;&gt;Sonstige Beobachtungen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Die Spam-Trainingsdaten waren nach 0.16 weg, das war zu erwarten. 1.0 lud beim Start ein Spam-Modell. Ob es dem alten entspricht, haben wir nicht geprüft.&lt;/li&gt;
+&lt;li&gt;Die &lt;code&gt;answers.toml&lt;/code&gt; enthält Geheimnisse im Klartext, wenn welche abgefragt wurden. Auch Dumps und &lt;code&gt;export.json&lt;/code&gt; enthalten Hashes und DKIM-Schlüssel. Solche Dateien mit Rechten &lt;code&gt;600&lt;/code&gt; ablegen und nach dem Umstieg löschen.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;STALWART_RECOVERY_ADMIN&lt;/code&gt; funktioniert auch im Normalbetrieb bei ausgefallenem LDAP. Nach Gebrauch wieder entfernen.&lt;/li&gt;
+&lt;li&gt;In Shell-Skripten verschluckt &lt;code&gt;docker run -i&lt;/code&gt; den Rest des Skripts, wenn es über stdin läuft. &lt;code&gt;&amp;lt;/dev/null&lt;/code&gt; anhängen.&lt;/li&gt;
+&lt;li&gt;Account-Objekte niemals löschen, sie tragen die Zuordnung zu den Postfächern.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./software/stalwart-migration/"/>
+  </entry><entry>
+    <title>Samba</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./software/samba/</id>
+    <content type="html">&lt;h2 id=&quot;time-machine&quot; tabindex=&quot;-1&quot;&gt;TimeMachine&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&lt;/a&gt;&lt;/p&gt;
+</content>
+    <link href="https://www./software/samba/"/>
+  </entry><entry>
+    <title>Mail User Agents</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./software/mua/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mua&quot;&gt;#mua&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#thunderbird&quot;&gt;#thunderbird&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#evolution&quot;&gt;#evolution&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hier eine Auflistung von persönlichen Erfahrungen mit E-Mailprogrammen.&lt;/p&gt;
+&lt;h2 id=&quot;evolution&quot; tabindex=&quot;-1&quot;&gt;Evolution&lt;/h2&gt;
+&lt;h3 id=&quot;pro&quot; tabindex=&quot;-1&quot;&gt;Pro&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Rundumlösung für E-Mail, Adressen, Termine, Aufgaben und Notizen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;kontra&quot; tabindex=&quot;-1&quot;&gt;Kontra&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ettiketierung von E-Mails ist auf fünf Optionen beschränkt, keine Mehrfachettikettierung möglich&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;thunderbird&quot; tabindex=&quot;-1&quot;&gt;Thunderbird&lt;/h2&gt;
+&lt;h3 id=&quot;pro-1&quot; tabindex=&quot;-1&quot;&gt;Pro&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Flexibles Ettiketieren von E-Mails (Tagging), auch mit eigenen Tags, &lt;strong&gt;mehrere Tags möglich&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Synchronisationsmöglichkeiten mit Funambol SyncML Server&lt;/li&gt;
+&lt;li&gt;Kalender, Adressbuch, RSS-Reader, Unterstützung für Newsgroups&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;kontra-1&quot; tabindex=&quot;-1&quot;&gt;Kontra&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;sylpheed-claws&quot; tabindex=&quot;-1&quot;&gt;Sylpheed-Claws&lt;/h2&gt;
+&lt;h3 id=&quot;pro-2&quot; tabindex=&quot;-1&quot;&gt;Pro&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Schlank&lt;/li&gt;
+&lt;li&gt;über Plugins flexibel erweiterbar&lt;/li&gt;
+&lt;li&gt;neben E-Mails auch Funktionalitäten für Newsgroups, RSS, Kalender (über Plugins)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;kontra-2&quot; tabindex=&quot;-1&quot;&gt;Kontra&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Adressbuch
+&lt;ul&gt;
+&lt;li&gt;zu wenig Informationsfelder (Telefon etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ettiketieren von E-Mails nur nach Farbe&lt;/li&gt;
+&lt;li&gt;Kalender&lt;/li&gt;
+&lt;li&gt;zähe Handhabung bei Synchronisation großer Postfacher (IMAP) oder Newsgroups&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./software/mua/"/>
+  </entry><entry>
+    <title>Apache2</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./software/apache2/</id>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://vimeo.com/1076588&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Entwicklungsgeschichte&lt;/a&gt; des Apache Webservers dargestellt mit &lt;a href=&quot;http://code.google.com/p/codeswarm/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;codeswarm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;rewrite&quot; tabindex=&quot;-1&quot;&gt;Rewrite&lt;/h2&gt;
+&lt;h3 id=&quot;via-htaccess&quot; tabindex=&quot;-1&quot;&gt;via .htaccess&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;Options Indexes FollowSymLinks MultiViews
+AllowOverride FileInfo Limit
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    <link href="https://www./software/apache2/"/>
+  </entry><entry>
+    <title>Home Assistant</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./smart-home/home-assistant/</id>
+    <content type="html">&lt;h2 id=&quot;data-retention&quot; tabindex=&quot;-1&quot;&gt;Data Retention&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&lt;/a&gt;&lt;/p&gt;
+</content>
+    <link href="https://www./smart-home/home-assistant/"/>
+  </entry><entry>
+    <title>apt repositories debian &amp; ubuntu</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./os/repositories/</id>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;[!warning]&lt;br /&gt;
+This page is outdated.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;apt-repositories-debian-ubuntu&quot; tabindex=&quot;-1&quot;&gt;apt repositories debian / ubuntu&lt;/h2&gt;
+&lt;html&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# Nautilus Share, simple network share Ubuntu / Debian
+# http://gentoo.ovibes.net/nautilus-share/mediawiki-1.4.4/index.php/Accueil
+deb http://gentoo.ovibes.net/nautilus-share/ubuntu/breezy ./
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Gammu&quot;&gt;#Gammu&lt;/a&gt; phonebook/sms editor for various mobile phones
+deb http://debian.cihar.com/ unstable gammu
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Scribus&quot;&gt;#Scribus&lt;/a&gt;
+##Ubuntu 
+deb http://debian.scribus.net/debian/ breezy main restricted
+##Debian
+deb http://debian.scribus.net/debian/ stable main non-free contrib
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Gnucash&quot;&gt;#Gnucash&lt;/a&gt; (with HBCI, only debian)
+deb http://www.stud.uni-karlsruhe.de/~uinx/debian/stable ./
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#wine&quot;&gt;#wine&lt;/a&gt;
+deb http://wine.sourceforge.net/apt/ binary/
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Marillat&quot;&gt;#Marillat&lt;/a&gt;, Acrobat Reader, mplayer, ... deb(-src)
+deb ftp://ftp.nerim.net/debian-marillat sarge main
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#jEdit&quot;&gt;#jEdit&lt;/a&gt;, small powerfull editor, converting lage files iso - uft-8
+deb http://dl.sourceforge.net/sourceforge/jedit ./
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#OpenOffice&quot;&gt;#OpenOffice&lt;/a&gt;.org2 packages for ubuntu
+deb http://people.ubuntu.com/~doko/OOo2 ./
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#additional&quot;&gt;#additional&lt;/a&gt; ubuntu repositories 
+deb http://ftp.inf.tu-dresden.de/os/linux/dists/ubuntu breezy multiverse
+deb http://ftp.inf.tu-dresden.de/os/linux/dists/ubuntu breezy-security main restricted universe multiverse
+deb http://ftp.inf.tu-dresden.de/os/linux/dists/ubuntu breezy-updates main restricted universe multiverse
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tomcat&quot;&gt;#tomcat&lt;/a&gt;
+deb http://apt.leapster.org/tomcat ./
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; clamav, etc.
+deb http://ftp2.de.debian.org/debian-volatile sarge/volatile main
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#libapache-mod-clamav&quot;&gt;#libapache-mod-clamav&lt;/a&gt;
+deb http://debian.gallet.info/debian sarge main
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#samba&quot;&gt;#samba&lt;/a&gt;
+deb http://us1.samba.org/samba/ftp/Binary_Packages/Debian sarge samba
+
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#squidvir&quot;&gt;#squidvir&lt;/a&gt;
+deb http://www.bolzchristian.de/debian ./
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/html&gt;</content>
+    <link href="https://www./os/repositories/"/>
+  </entry><entry>
+    <title>Solaris</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./os/solaris/</id>
+    <content type="html">&lt;h2 id=&quot;zusaetzliche-software&quot; tabindex=&quot;-1&quot;&gt;zusätzliche Software&lt;/h2&gt;
+&lt;p&gt;Oracle (ehem. Sun) bietet eine CD mit Freeware an, welche einiges an Open Source Software enthält. Die Programme sind aber recht alt (Stand 02/2011)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.sun.com/software/solaris/freeware/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.sun.com/software/solaris/freeware/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;repositories&quot; tabindex=&quot;-1&quot;&gt;Repositories&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blastwave.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.blastwave.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.opencsw.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.opencsw.org/&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.opencsw.org/get-it/pkg-get/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.opencsw.org/get-it/pkg-get/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.sunfreeware.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.sunfreeware.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openpkg.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.openpkg.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;diverses&quot; tabindex=&quot;-1&quot;&gt;Diverses&lt;/h2&gt;
+&lt;h3 id=&quot;ein-iso-image-einbinden&quot; tabindex=&quot;-1&quot;&gt;Ein ISO-Image einbinden&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  lofiadm -a /path/to/iso_image.iso /dev/lofi/1
+  mount -F hsfs -o ro /dev/lofi/1 /mnt/iso
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;drucker-einbinden&quot; tabindex=&quot;-1&quot;&gt;Drucker einbinden&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;das grafische Toll &#39;&#39;printmgr&#39;&#39;&lt;/li&gt;
+&lt;li&gt;PPD-Dateien einbinden mit &#39;&#39;ppdmgr&#39;&#39;&lt;/li&gt;
+&lt;li&gt;&#39;&#39;lpadmin&#39;&#39;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;konsole&quot; tabindex=&quot;-1&quot;&gt;Konsole&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&#39;&#39;less&#39;&#39; als Pager für &#39;&#39;man&#39;&#39;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;für Bourne-Shell: &#39;&#39;~/.profile&#39;&#39;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;PAGER=/usr/bin/less
+export PAGER
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;dienste&quot; tabindex=&quot;-1&quot;&gt;Dienste&lt;/h3&gt;
+&lt;p&gt;Solaris setzt ab Version 10 auf die &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Service Management Facility&lt;/a&gt; (SMF) und ersetzt damit in weiten Teilen &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;System V&lt;/a&gt;. Einer der wenigen Dienste die sich auf traditionellem Wege starten und stoppen lassen ist &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;sendmail&lt;/a&gt;, ws auch nur ein Wrapper um SMF ist.&lt;/p&gt;
+&lt;h3 id=&quot;vim&quot; tabindex=&quot;-1&quot;&gt;VIM&lt;/h3&gt;
+&lt;p&gt;Der weiterentwickelte Editor &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt; VIM&lt;/a&gt; ist auf der &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt; Solaris Companion CD&lt;/a&gt; oder Software [[]] wie &lt;a href=&quot;http://opencsw.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://opencsw.org&lt;/a&gt; zu finden. Um &lt;em&gt;Syntax Hilightning&lt;/em&gt; zu nutzen muss die Variable TERM entsprechend gesetzt werden:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;TERM=sun-color&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;prozessverwaltung&quot; tabindex=&quot;-1&quot;&gt;Prozessverwaltung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://developers.sun.com/solaris/articles/prstat.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://developers.sun.com/solaris/articles/prstat.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;fehlermeldungen&quot; tabindex=&quot;-1&quot;&gt;Fehlermeldungen&lt;/h2&gt;
+&lt;h3 id=&quot;xscreensaver&quot; tabindex=&quot;-1&quot;&gt;xscreensaver&lt;/h3&gt;
+&lt;p&gt;Und sowas von einem &#39;kommerzeiellen&#39; Produkt in der Standard-Installation:&lt;/p&gt;
+&lt;p&gt;Beim Starten des Bildschirmschoners ist ein Fehler aufgetreten:&lt;br /&gt;
+Der untergeordnete Prozess &amp;quot;xscreensaver&amp;quot; (Datei oder Verzeichnis nicht gefunden) konnte nicht ausgeführt werden.&lt;br /&gt;
+Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www./img/user/media/os/solaris10_xscreensaver.png.png&quot; alt=&quot;solaris10_xscreensaver.png.png&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;loesung&quot; tabindex=&quot;-1&quot;&gt;Lösung&lt;/h4&gt;
+&lt;p&gt;Das Programm &lt;em&gt;xscreensaver&lt;/em&gt; kann nicht aufgerufen werden, da das Programm in &#39;&#39;/usr/openwin/bin&#39;&#39; lokalisiert ist. Die Variable PATH muss in &#39;&#39;/etc/profile&#39;&#39; oder &#39;&#39;~/.profile&#39;&#39; um &#39;&#39;/usr/openwin/bin&#39;&#39; erweitert werden.&lt;/p&gt;
+&lt;h3 id=&quot;apropos-cmd&quot; tabindex=&quot;-1&quot;&gt;apropos cmd&lt;/h3&gt;
+&lt;p&gt;Das Kommando &#39;&#39;apropos&#39;&#39; liefert keine Ergebnisse sondern folgende Meldung:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;/usr/dt/man/windex: Datei oder Verzeichnis nicht gefunden
+/usr/man/windex: Datei oder Verzeichnis nicht gefunden
+/usr/openwin/share/man/windex: Datei oder Verzeichnis nicht gefunden
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;loesung-1&quot; tabindex=&quot;-1&quot;&gt;Lösung&lt;/h4&gt;
+&lt;p&gt;&#39;&#39;man apropos&#39;&#39; verweist auf catman um die Indexes anzulegen. &#39;&#39;catman -w&#39;&#39; ausführen.&lt;br /&gt;
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
+</content>
+    <link href="https://www./os/solaris/"/>
+  </entry><entry>
+    <title>Plan 9</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./os/plan9/</id>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 from Bell Labs&lt;/a&gt;, &lt;a href=&quot;https://de.wikipedia.org/wiki/Plan_9_(Betriebssystem)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 (Betriebssystem)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Doc1 &lt;a href=&quot;http://plan9.bell-labs.com/sys/man/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://plan9.bell-labs.com/sys/man/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Doc2 &lt;a href=&quot;http://www.cs.bell-labs.com/sys/doc/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.cs.bell-labs.com/sys/doc/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Plan 9 &lt;a href=&quot;http://www.magma.com.ni/moin/Plan9Tutorial&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tutorial&lt;/a&gt; von Magma Soft&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;short-notes&quot; tabindex=&quot;-1&quot;&gt;short notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;default user is &lt;em&gt;glenda&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h2&gt;
+&lt;h3 id=&quot;qemu&quot; tabindex=&quot;-1&quot;&gt;Qemu&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://plan9.bell-labs.com/wiki/plan9/Installing_Plan_9_on_Qemu/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://plan9.bell-labs.com/wiki/plan9/Installing_Plan_9_on_Qemu/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;ui&quot; tabindex=&quot;-1&quot;&gt;UI&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;antialiased fonts in Plan 9
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://mirtchovski.com/p9/freetype/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://mirtchovski.com/p9/freetype/&lt;/a&gt; (mit hget z.B. in /tmp/)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;customize keyboard layout
+&lt;ul&gt;
+&lt;li&gt;cat /sys/lib/kbmap/[lang] &amp;gt; /dev/kbmap&lt;/li&gt;
+&lt;li&gt;make default for user in /usr/[username]/lib/profile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://thenewsh.blogspot.com/2010/01/acme-environment-in-plan9.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;The Acme environment in Plan9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./os/plan9/"/>
+  </entry><entry>
+    <title>OpenBSD</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./os/openbsd/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dienste neu starten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  kill -HUP `cat /var/run/sshd.pid`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;gnome&quot; tabindex=&quot;-1&quot;&gt;GNOME&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openbsd.org/cgi-bin/cvsweb/ports/x11/gnome/session/files/Attic/README.OpenBSD?rev=1.42;content-type=text%2Fplain&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Gnome README&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;gnome-session gnome-panel metacity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;login-ueber-gdm&quot; tabindex=&quot;-1&quot;&gt;Login über GDM&lt;/h2&gt;
+&lt;p&gt;Standardmäßig ist der XDM-Loginmanager aktiviert. Dieser kann in der Datei &#39;&#39;/etc/rc&#39;&#39; deaktiviert werden.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/etc/rc&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-diff&quot;&gt;--- a/rc	Wed Jan 26 18:46:15 2011 +0100
++++ b/rc	Wed Jan 26 18:48:15 2011 +0100
+@@ -847,8 +847,8 @@
+ fi
+
+ # Alternatively, on some architectures, xdm may be started in /etc/ttys.
+-if [ X&amp;quot;${xdm_flags}&amp;quot; != X&amp;quot;NO&amp;quot; -a -x /usr/X11R6/bin/xdm ]; then
+-	echo &#39;starting xdm...&#39;;		/usr/X11R6/bin/xdm ${xdm_flags}
+-fi
++#if [ X&amp;quot;${xdm_flags}&amp;quot; != X&amp;quot;NO&amp;quot; -a -x /usr/X11R6/bin/xdm ]; then
++#	echo &#39;starting xdm...&#39;;		/usr/X11R6/bin/xdm ${xdm_flags}
++#fi
+
+ exit 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Folgender Eintrag startet gdm beim Systemstart (info aus  &#39;&#39;pkg_info gdm&#39;&#39;):&lt;br /&gt;
+&lt;code&gt;/etc/rc.local&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-diff&quot;&gt;--- a/rc.local	Wed Jan 26 18:49:31 2011 +0100
++++ b/rc.local	Wed Jan 26 18:50:05 2011 +0100
+@@ -9,6 +9,9 @@
+
+ # Add your local startup actions here.
+
++if [ -x /usr/local/sbin/gdm ]; then
++        echo -n &#39; gdm&#39;; (sleep 5; /usr/local/sbin/gdm)&amp;amp;
++fi
+
+ echo &#39;.&#39;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    <link href="https://www./os/openbsd/"/>
+  </entry><entry>
+    <title>FreeBSD</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./os/freebsd/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.freebsd.org/doc/de_DE.ISO8859-1/books/handbook/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Das FreeBSD Handbuch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;administration&quot; tabindex=&quot;-1&quot;&gt;Administration&lt;/h2&gt;
+&lt;p&gt;Für viele Administrative Aufgaben steht &lt;em&gt;root&lt;/em&gt; das Programm &#39;&#39;sysinstall&#39;&#39; zur Verfügung.&lt;/p&gt;
+&lt;h3 id=&quot;softwareverwaltung&quot; tabindex=&quot;-1&quot;&gt;Softwareverwaltung&lt;/h3&gt;
+&lt;h4 id=&quot;pkg-add&quot; tabindex=&quot;-1&quot;&gt;pkg_add&lt;/h4&gt;
+&lt;h5 id=&quot;proxy&quot; tabindex=&quot;-1&quot;&gt;Proxy&lt;/h5&gt;
+&lt;p&gt;FreeBSD benutzt im Auslieferungszustand die &lt;em&gt;csh&lt;/em&gt;, hier muss ein Proxy wie folgt in der Umgebung definiert werden:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;setenv http_proxy http://ip.proxy[:port]&lt;/code&gt;&lt;/p&gt;
+&lt;h5 id=&quot;abweichenden-softwarespiegel-verwenden-z-b-nur-http&quot; tabindex=&quot;-1&quot;&gt;Abweichenden Softwarespiegel verwenden, z.B. nur HTTP&lt;/h5&gt;
+&lt;p&gt;Wenn der Proxy kein FTP zulässt, dann muss ein Spiegel ausgewählt werden, der HTTP unterstützt. Das ist nicht bei allen Spiegeln der Fall. Eine &lt;a href=&quot;http://www.freebsd.org/doc/de_DE.ISO8859-1/books/handbook/mirrors-ftp.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Übersicht&lt;/a&gt; der Spiegel ist im FreeBSD Handbuch zu finden.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;setenv PACKAGESITE http://ftp1.de.freebsd.org/freebsd/ports/i386/packages-8.1-release/Latest/ &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Dann wie gewohnt Pakete mit&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pkg_add -r foo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;instalieren.&lt;/p&gt;
+&lt;h5 id=&quot;eigener-partieller-spiegel&quot; tabindex=&quot;-1&quot;&gt;Eigener partieller Spiegel&lt;/h5&gt;
+&lt;p&gt;Eine Liste mit rsync-Spiegeln ist im FreeBSD &lt;a href=&quot;http://www.freebsd.org/doc/handbook/mirrors-rsync.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Handbuch&lt;/a&gt; zu finden.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;MIRROR=ftp.nl.FreeBSD.org
+ARCH=i386
+RELEASE=x.x
+rsync -auv --delete --progress $MIRROR::FreeBSD/ports/$ARCH/packages-$RELEASE-release/ FreeBSD-$RELEASE-$ARCH
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;su-ermoeglichen&quot; tabindex=&quot;-1&quot;&gt;su - ermöglichen =&lt;/h3&gt;
+&lt;p&gt;Ein &lt;em&gt;normaler&lt;/em&gt; Benutzer muss Mitglied der Gruppe &lt;em&gt;wheel&lt;/em&gt; sein, um &#39;&#39;su -&#39;&#39; durchführen zu können:&lt;br /&gt;
+pw user mod foo -G wheel&lt;/p&gt;
+&lt;h2 id=&quot;gnome&quot; tabindex=&quot;-1&quot;&gt;Gnome&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;gnome2, gdm und xorg installieren&lt;/li&gt;
+&lt;li&gt;Falls im GDM keine Anmeldung möglich ist: /proc fehlt &lt;a href=&quot;http://www.freebsd.org/gnome/docs/faq2.html#procfs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.freebsd.org/gnome/docs/faq2.html#procfs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;/etc/fstab&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;proc           /proc       procfs  rw  0   0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;gdm/Gnome beim Booten starten:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;/etc/rc.conf: gnome_enable=&amp;quot;YES&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;cups&quot; tabindex=&quot;-1&quot;&gt;CUPS&lt;/h3&gt;
+&lt;p&gt;Damit die in CUPS eingerichteten Drucker auch in den Druckdialogen von GNOME-Anwendungen angezeigt werden müssen die Pakete &lt;em&gt;libgnomeprint&lt;/em&gt; und &lt;em&gt;gtk20&lt;/em&gt; (Stand FreeBSD 8.1) erneut mit der Option &#39;&#39;WITH_CUPS=yes&#39;&#39; übersetzt werden, siehe &lt;a href=&quot;http://www.freebsdwiki.net/index.php/CUPS#CUPS_and_Gnome_Warning&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;CUPS im FreeBSD Wiki&lt;/a&gt;. Alternatik kann mittels des Paketes &#39;&#39;gtklp&#39;&#39; in den Druckdialogen gleichnamiger Befehl als Druck-Kommando verwendet werden.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Probelm &#39;&#39;htmlview not found&#39;&#39;
+&lt;ul&gt;
+&lt;li&gt;&#39;&#39;cd /usr/ports/print/cups-base &amp;amp;&amp;amp; make config&#39;&#39; und XDG_OPEN wählen ((&lt;a href=&quot;http://forums.freebsd.org/showthread.php?t=1291&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://forums.freebsd.org/showthread.php?t=1291&lt;/a&gt;))&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;gdm3&quot; tabindex=&quot;-1&quot;&gt;gdm3&lt;/h3&gt;
+&lt;h4 id=&quot;benutzerliste-deaktivieren&quot; tabindex=&quot;-1&quot;&gt;Benutzerliste deaktivieren&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Hierzu muss dem System-Account &lt;em&gt;gdm&lt;/em&gt; kurzfristig eine Login-Shell zugewiesen werden, und mit &#39;&#39;gconftool-2&#39;&#39; die entsprechenden Einstellungen vorgenommen werden.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;chsh -s /bin/sh gdm
+su - gdm gconftool-2 --set --type boolean /apps/gdm/simple-greeter/disable_user_list true
+chsh -s /usr/sbin/nologin gdm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;gdm-anmeldedialog-standard-auf-deutsch&quot; tabindex=&quot;-1&quot;&gt;gdm Anmeldedialog Standard auf Deutsch&lt;/h4&gt;
+&lt;p&gt;in der Datei &#39;&#39;/etc/rc.conf&#39;&#39;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;gdm_lang=&amp;quot;de_DE.UTF-8&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;cups-1&quot; tabindex=&quot;-1&quot;&gt;CUPS&lt;/h2&gt;
+&lt;h3 id=&quot;remote-administration&quot; tabindex=&quot;-1&quot;&gt;Remote Administration&lt;/h3&gt;
+&lt;p&gt;Beim Zuschalten der Option &lt;em&gt;Allow remote administration&lt;/em&gt; verweigert CUPS spätestens bei Authentifizierung das Upgrade auf https.&lt;/p&gt;
+&lt;p&gt;var/log/cups/error_log&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;Unable to create SSL server key file &amp;quot;/usr/local/etc/cups/ssl/server.key&amp;quot; - no such file or directory
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Wie die Fehlermeldung aussagt scheint der Pfad nicht in Ordnung zu sein. Beim Überprüfen stellt sich heraus, dass das Verzeichnis &#39;&#39;/usr/local/etc/cups/ssl/&#39;&#39; noch nicht existiert.&lt;/p&gt;
+</content>
+    <link href="https://www./os/freebsd/"/>
+  </entry><entry>
+    <title>Fedora</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./os/fedora/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#fedora&quot;&gt;#fedora&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;informationen&quot; tabindex=&quot;-1&quot;&gt;Informationen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Homepage&lt;/li&gt;
+&lt;li&gt;Vergleich Red Hat &amp;lt;-&amp;gt; Fedora &lt;a href=&quot;http://fedora.redhat.com/about/rhel.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://fedora.redhat.com/about/rhel.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download, ältere Versionen unter core/ &lt;a href=&quot;http://download.fedora.redhat.com/pub/fedora/linux/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://download.fedora.redhat.com/pub/fedora/linux/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://fedoraproject.org/wiki/EPEL&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Extra Packages for Enterprise Linux (EPEL)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;dokumentation&quot; tabindex=&quot;-1&quot;&gt;Dokumentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://fedoraproject.org/wiki/Docs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://fedoraproject.org/wiki/Docs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://fedoraproject.org/wiki/Docs/Drafts&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://fedoraproject.org/wiki/Docs/Drafts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wikibooks.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;wikibooks.org&lt;/a&gt; - &lt;a href=&quot;http://en.wikibooks.org/wiki/Fedora_And_Red_Hat_System_Administration%3AWorking_with_repositories#_note-2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Fedora And Red Hat System Administration: Working with repositories&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Alternate method: at boot CD prompt: linux askmethod&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;kernel&quot; tabindex=&quot;-1&quot;&gt;Kernel&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.brandonhutchinson.com/Recompiling_the_Fedora_Core_kernel.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.brandonhutchinson.com/Recompiling_the_Fedora_Core_kernel.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;netinstall-mirrors&quot; tabindex=&quot;-1&quot;&gt;Netinstall / Mirrors&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mirrors &lt;a href=&quot;http://mirrors.fedoraproject.org/publiclist&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://mirrors.fedoraproject.org/publiclist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pfad .../fedora-core/5/i386/os/&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://news.softpedia.com/news/Creating-a-Local-Update-Repository-for-FC6-43559.shtml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Creating a Local Update Repository for FC6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.phy.duke.edu/~rgb/General/yum_article/yum_article/node15.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mirroring a Repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;#!/bin/sh
+# select a rsync host close to your location from
+# http://mirrors.fedoraproject.org/publiclist
+MIRROR_PATH=./fedora
+MIRROR_HOST=ftp-stud.hs-esslingen.de
+SECTION=core
+VERSION=4
+ARCH=i386
+EXCLUDE=&amp;quot;--exclude=debug/ --exclude=iso/ --exclude=repodata/ --exclude=*debuginfo*&amp;quot;
+# append excludes below to exclode something more ...
+# --exclude=*i18* --exclude=*langpack*
+OPTIONS=&amp;quot;-auvH --progress --delay-updates --numeric-ids --delete-after&amp;quot;
+
+rsync rsync://$MIRROR_HOST/fedora/linux/$SECTION/$VERSION/$ARCH $OPTIONS $EXCLUDE $MIRROR_PATH
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;paketmanagement&quot; tabindex=&quot;-1&quot;&gt;Paketmanagement&lt;/h1&gt;
+&lt;h2 id=&quot;yum&quot; tabindex=&quot;-1&quot;&gt;yum&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://fedoraproject.org/wiki/Docs/Drafts/SoftwareManagementGuide&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://fedoraproject.org/wiki/Docs/Drafts/SoftwareManagementGuide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikibooks.org/wiki/Fedora_And_Red_Hat_System_Administration:Working_with_repositories&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://en.wikibooks.org/wiki/Fedora_And_Red_Hat_System_Administration:Working_with_repositories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.fedorafaq.org/#yumconf&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.fedorafaq.org/#yumconf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://linux.duke.edu/projects/yum/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://linux.duke.edu/projects/yum/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.phy.duke.edu/~rgb/General/yum_HOWTO/yum_HOWTO/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.phy.duke.edu/~rgb/General/yum_HOWTO/yum_HOWTO/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lokale DVD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;html&gt;
+name=Installations_DVD
+baseurl=file:///mnt/DVD/
+enable=1 
+&lt;/html&gt;
+##  Post-Installation (optional)
+* terminus-fonts(( /lib/kbd/consolefonts/ter* ))
+```bash
+yum install terminus-font-console
+nano /etc/sysconfig/i18n
+  SYSFONT &quot;ter-i16n&quot;
+setsysfonf
+```</content>
+    <link href="https://www./os/fedora/"/>
+  </entry><entry>
+    <title>Debian GNU-Linux</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./os/debian/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;packaging-and-amp-repository&quot; tabindex=&quot;-1&quot;&gt;Packaging &amp;amp; Repository&lt;/h2&gt;
+&lt;h3 id=&quot;backports-frische-software-fuer-stable&quot; tabindex=&quot;-1&quot;&gt;Backports: frische Software für stable&lt;/h3&gt;
+&lt;p&gt;Aus den sogenannten Backports kann -- auf eigene Gefahr ™ -- aktuelle Software auf einen stable System installiert werden. Statt &lt;em&gt;squeeze&lt;/em&gt; die entsprechende Version eintragen, und statt &lt;em&gt;package&lt;/em&gt; das Paket verwenden. Ob das Paket überhaupt als Backport vorliegt kann mit &lt;em&gt;apt-cache&lt;/em&gt; überprüft werden.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;echo &amp;quot;deb http://backports.debian.org/debian-backports squeeze-backports main&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list
+aptitude update # alternativ apt-get update
+apt-cache policy &amp;quot;package&amp;quot;
+aptitude -t squeeze-backports install &amp;quot;package&amp;quot; # alternativ apt-get -t squeeze-backports install &amp;quot;package&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://backports.debian.org/Instructions/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://backports.debian.org/Instructions/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;entwicklung&quot; tabindex=&quot;-1&quot;&gt;Entwicklung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Lucas Nussbaum: &lt;a href=&quot;http://git.debian.org/?p=users/lucas/packaging-tutorial.git;a=blob_plain;f=packaging-tutorial.pdf;hb=refs/heads/pdf&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;An Introduction to Debian Packaging&lt;/a&gt; (PDF Download)&lt;/li&gt;
+&lt;li&gt;Debian Administration: &lt;a href=&quot;http://www.debian-administration.org/articles/286&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Setting up your own APT repository with upload support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;apt-get install debian-wizard (Raphaël Hertzog): &lt;a href=&quot;http://raphaelhertzog.com/2010/12/15/howto-to-rebuild-debian-packages/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://raphaelhertzog.com/2010/12/15/howto-to-rebuild-debian-packages/&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Bei lokalen Änderungen &#39;&#39;dch --local myname&#39;&#39; um einen Eintrag in debian/changelog zu setzten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;schneller bauen mit cowpuilder &lt;a href=&quot;http://wiki.debian.org/cowbuilder&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://wiki.debian.org/cowbuilder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;debian-etch-lenny-treiber-fuer-ati-grafikkarten&quot; tabindex=&quot;-1&quot;&gt;Debian Etch/Lenny: Treiber für ATI Grafikkarten&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Treiber von &lt;a href=&quot;http://ati.amd.com/support/driver.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ATI&lt;/a&gt; auswählen und herunterladen, z.B. in /tmp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;aptitude install module-assistant debhelper libstdc++5
+m-a prepare
+chmod +x ./ati-driver-installer-*
+./ati-driver-installer-* --buildpkg Debian/lenny
+dpkg -i *.deb
+aticonfig --intial --input /etc/X11/xorg.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;m-a prepare zieht fast alles was benötigt wird (z.B. build-essential)&lt;/li&gt;
+&lt;li&gt;libstdc++6 kommt automatisch mit libstdc++5&lt;/li&gt;
+&lt;li&gt;gegebenenfalls den ati-driver-installer-* mit &#39;&#39;--listpkg&#39;&#39; abfragen, ob die jeweilige Version unterstützt wird und was einzutragen ist (Debian/lenny usw.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;langsame-netzwerkverbindung&quot; tabindex=&quot;-1&quot;&gt;Langsame Netzwerkverbindung&lt;/h2&gt;
+&lt;p&gt;Gegebenenfalls IPv6 deaktivieren, siehe &lt;a href=&quot;http://www.debian-administration.org/articles/409&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;hier&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;dropbox-fuer-debian-lenny-squeeze&quot; tabindex=&quot;-1&quot;&gt;Dropbox für Debian Lenny/Squeeze&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Auf der Homepage von Dropbox das Paket für Ubuntu 7.10 &lt;a href=&quot;https://www.dropbox.com/downloading?os=lnx&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;herunterladen&lt;/a&gt; und mit&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dpkg - i ...&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;installieren.&lt;/p&gt;
+</content>
+    <link href="https://www./os/debian/"/>
+  </entry><entry>
+    <title>Ricoh GR IV Tips</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./notizen/ricoh-gr-iv-tips/</id>
+    <content type="html">&lt;p&gt;How to store Image Control / Bildsteuerung&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ricohrecipes.com/the-bw-collection/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://ricohrecipes.com/the-bw-collection/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./notizen/ricoh-gr-iv-tips/"/>
+  </entry><entry>
+    <title>Phillipinen</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./notizen/reisen/phillipinen/</id>
+    <content type="html">&lt;h2 id=&quot;zahlung&quot; tabindex=&quot;-1&quot;&gt;Zahlung&lt;/h2&gt;
+&lt;p&gt;Als Nicht-US Ausländer sind GCash oder Maya wegen der Verifizierung nicht möglich gewesen (Stand 08/2026).&lt;br /&gt;
+Überwiegend Bargeld, vereinzelt Wise, je nach Geschäft Visa.&lt;/p&gt;
+&lt;h2 id=&quot;mobile-daten&quot; tabindex=&quot;-1&quot;&gt;Mobile Daten&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;gute Erfahrungen mit Globe [Traveler eSim](&lt;a href=&quot;https://www.globe.com.ph/international/traveler-sim&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.globe.com.ph/international&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;mobilitaet&quot; tabindex=&quot;-1&quot;&gt;Mobilität&lt;/h2&gt;
+&lt;h3 id=&quot;manila&quot; tabindex=&quot;-1&quot;&gt;Manila&lt;/h3&gt;
+&lt;p&gt;Grab App mit Kreditkarte oder Cash. bezahlen&lt;/p&gt;
+&lt;h2 id=&quot;negros-cebu-bohol-siquijor&quot; tabindex=&quot;-1&quot;&gt;Negros, Cebu, Bohol, Siquijor&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tuk Tuk - Motorrad Kabinenroller kostet etwas mehr als Jeepney, jedoch individuell&lt;/li&gt;
+&lt;li&gt;Jeepney - günstig, haltet bei Bedarf an der Route und kann daher etwas mehr Zeit in Anspruch nehmen&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./notizen/reisen/phillipinen/"/>
+  </entry><entry>
+    <title>Open Source Software DTP</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./notizen/oos-dtp/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;bildbearbeitung-raster&quot; tabindex=&quot;-1&quot;&gt;Bildbearbeitung (Raster)&lt;/h2&gt;
+&lt;h3 id=&quot;gimp&quot; tabindex=&quot;-1&quot;&gt;Gimp&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.gimp.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.gimp.org&lt;/a&gt; , &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;GIMP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docs.gimp.org/de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Dokumentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.gimp.org/~tml/gimp/win32/pspi.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Photoshop-Plugins unter GIMP&lt;/a&gt; - auch für Linux&lt;/li&gt;
+&lt;li&gt;CMYK in GIMP
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blackfiveservices.co.uk/separate.shtml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;separate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://cue.yellowmagic.info/softwares/separate.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;separate+&lt;/a&gt;, Weiterentwicklung von separate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://liquidrescale.wikidot.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Liquid Rescale Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RAW Format
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://ufraw.sourceforge.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;gimp-ufraw&lt;/a&gt; (Nikon)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.lebsanft.org/blog/index.php?cat=9&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;gimp-dcraw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;sonderformen-forks&quot; tabindex=&quot;-1&quot;&gt;Sonderformen / Forks&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.gimpshop.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GIMPshop&lt;/a&gt; - GIMP im Photoshop &#39;Look &amp;amp; Feel&#39; (Debian-Pakete verfügbar)
+&lt;ul&gt;
+&lt;li&gt;Im wesentlichen sieht GIMPShop auf dem ersten Blick kaum anders aus. Die Terminologie und die Anordnung der Menüs und deren Punkte entspricht denen in Photoshop, und macht es Umsteigern etwas leichter.&lt;br /&gt;
+&lt;note warning=&quot;&quot;&gt;&lt;br /&gt;
+Die Verwendung von GIMPshop ist insofern problematisch, dass man hier durch die abweichende Terminologie schwer in der Lage ist GIMP-Tutorials zu folgen und Support durch die Community zu bekommen.&lt;br /&gt;
+&lt;/note&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Cinepaint&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;panorama-tools&quot; tabindex=&quot;-1&quot;&gt;Panorama-Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://hugin.sourceforge.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Hugin&lt;/a&gt; - ein Meta-Tool für
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://user.cs.tu-berlin.de/~nowozin/autopano-sift/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;autopano-sift&lt;/a&gt; für die automatische Suche von Kontrollpunkten in Bildern&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://enblend.sourceforge.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;enblend&lt;/a&gt; zum Ausgleichen unterschiedlicher Belichtungsverhältnisse (Blending)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;&lt;a href=&quot;http://exolucere.ca/articles/create-panorama&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;HOWTO&lt;/a&gt; für hugin, autopanosift und enblend&lt;/s&gt;((Link ist leider ungültig))&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.panoclub.de/hugin_tut/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;HOWTO&lt;/a&gt; für Hugin in Deutsch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;gestaltung-illustration&quot; tabindex=&quot;-1&quot;&gt;Gestaltung / Illustration&lt;/h2&gt;
+&lt;h3 id=&quot;inkscape&quot; tabindex=&quot;-1&quot;&gt;Inkscape&lt;/h3&gt;
+&lt;h4 id=&quot;informationen&quot; tabindex=&quot;-1&quot;&gt;Informationen&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Freehand&lt;/li&gt;
+&lt;li&gt;Guide to Inkscape &lt;a href=&quot;http://tavmjong.free.fr/INKSCAPE/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://tavmjong.free.fr/INKSCAPE/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mouse and Keys &lt;a href=&quot;http://www.inkscape.org/doc/keys.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.inkscape.org/doc/keys.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;inoffizielles Handbuch &lt;a href=&quot;http://wiki.inkscape-forum.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://wiki.inkscape-forum.de/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tips and Tricks &lt;a href=&quot;http://www.inkscape.org/doc/tips/tutorial-tips.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.inkscape.org/doc/tips/tutorial-tips.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Manual &lt;a href=&quot;http://tavmjong.free.fr/INKSCAPE/MANUAL/html/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://tavmjong.free.fr/INKSCAPE/MANUAL/html/index.html&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Import &lt;a href=&quot;http://tavmjong.free.fr/INKSCAPE/MANUAL/html/ch03s02.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://tavmjong.free.fr/INKSCAPE/MANUAL/html/ch03s02.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Feautre Screenshots &lt;a href=&quot;http://inkscape.org/screenshots/index.php?version=0.44&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://inkscape.org/screenshots/index.php?version=0.44&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PDF Präsentationen &lt;a href=&quot;http://volition.wustl.edu/slides/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://volition.wustl.edu/slides/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Animation
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Web-Animation.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Web-Animation.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Beispiel &lt;a href=&quot;http://tavmjong.free.fr/INKSCAPE/DRAWINGS/clock_plain.svg&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://tavmjong.free.fr/INKSCAPE/DRAWINGS/clock_plain.svg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Präsentationen (mit Animationen)
+&lt;ul&gt;
+&lt;li&gt;sozi &lt;a href=&quot;http://sozi.baierouge.fr/wiki/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://sozi.baierouge.fr/wiki/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;JessyInk &lt;a href=&quot;http://code.google.com/p/jessyink/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://code.google.com/p/jessyink/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.unicode.org/charts/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.unicode.org/charts/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Beispiele &lt;a href=&quot;http://inkscape.svn.sourceforge.net/viewvc/inkscape/inkscape/trunk/share/examples/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://inkscape.svn.sourceforge.net/viewvc/inkscape/inkscape/trunk/share/examples/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Inkscape to TikZ exporter (SVG2LaTeX) &lt;a href=&quot;http://code.google.com/p/inkscape2tikz/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://code.google.com/p/inkscape2tikz/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;vektorisieren&quot; tabindex=&quot;-1&quot;&gt;Vektorisieren&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://potrace.sf.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;potrace&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://autotrace.sf.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;autotrace&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vectormagic.stanford.edu/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vector Magigc&lt;/a&gt; - The Online Tool for Precision Vectorization (Stanford University)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;gui&quot; tabindex=&quot;-1&quot;&gt;GUI&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;~~&lt;a href=&quot;http://delineate.sourceforge.net/~~&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://delineate.sourceforge.net/~~&lt;/a&gt;((Entwicklung steht still, Probleme mit Java aktueller als J2SE 1.4.1 oder 1.4.2)) autotrace, potrace&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://potracegui.sourceforge.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://potracegui.sourceforge.net/&lt;/a&gt; für potrace und autotrace (QT)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;svg&quot; tabindex=&quot;-1&quot;&gt;SVG&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt; &lt;a href=&quot;http://openoffice.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;OpenOffice.org&lt;/a&gt; SVG Support&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;layout-druck&quot; tabindex=&quot;-1&quot;&gt;Layout / Druck&lt;/h2&gt;
+&lt;h3 id=&quot;scribus&quot; tabindex=&quot;-1&quot;&gt;Scribus&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.scribus.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.scribus.net/&lt;/a&gt; , &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Scribus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian &lt;a href=&quot;http://debian.scribus.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://debian.scribus.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.scribus.net/index.php?name=Downloads&amp;amp;req=viewdownload&amp;amp;cid=16&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Farbprofile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docs.scribus.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Dokumentation&lt;/a&gt; (englisch)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.scribus.net/index.php/Main_Page&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;color-management-system&quot; tabindex=&quot;-1&quot;&gt;Color Management System&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Monitor einstellen, Beleuchtung &lt;a href=&quot;http://www.normankoren.com/makingfineprints1A.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.normankoren.com/makingfineprints1A.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Little Color Management System Profiler &lt;a href=&quot;http://lprof.sourceforge.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;LPROF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://quickgamma.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;QuickGamma&lt;/a&gt; (Windows), für Linux &lt;a href=&quot;http://www.pcbypaul.com/software/GAMMApage.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GAMMApage&lt;/a&gt; (Python/Gtk) oder &lt;a href=&quot;http://www.pcbypaul.com/software/monica.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Monica&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.heise.de/ct/ctscreen/#CTSCREEN&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Heise c&#39;t Screen&lt;/a&gt; (Java Applet)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pantone.de/pages/pantone/pantone.aspx?ca=2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;PANTONE: Kalibrierung&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;schriften-fonts&quot; tabindex=&quot;-1&quot;&gt;Schriften / Fonts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Wissenswertes über den &lt;a href=&quot;http://www.blog.druckerey.de/index.php?id=40&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Drucker-Jargon&lt;/a&gt; aus dem Blog von Martin Z. Schröder&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;TrueType&lt;/a&gt; Datiendung .TTF, &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Type1-Font&lt;/a&gt; Dateiendung .PFB ist die Schrift und .PFM enthält Informationen zur &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt; Unterschneidung&lt;/a&gt; (Kerning)&lt;/li&gt;
+&lt;li&gt;als Einzelbenutzer ~/.fonts/, systemweit /usr/share/fonts/[truetype|type1]/&lt;br /&gt;
+&lt;note tip=&quot;&quot;&gt;&lt;br /&gt;
+Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemweit installiert worden muss ggf. fc-cache ausgeführt werden, bzw. sudo fc-cache für systemweite Installation.&lt;br /&gt;
+&lt;/note&gt;&lt;/li&gt;
+&lt;li&gt;Inkscape: &lt;a href=&quot;http://wiki.inkscape.org/wiki/index.php/Installing_Fonts_as_a_User&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Installing Fonts as a User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Scribus: &lt;a href=&quot;http://wiki.scribus.net/index.php/Installing_additional_fonts&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Installing additional fonts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;TrueType &amp;amp; Type 1 &lt;a href=&quot;http://wiki.ubuntuusers.de/Schriften&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://wiki.ubuntuusers.de/Schriften&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;management&quot; tabindex=&quot;-1&quot;&gt;Management&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://gfontview.sourceforge.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;gfontview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://savannah.nongnu.org/projects/fontypython&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Fonty Python&lt;/a&gt;, verteilte Fonts zu &#39;pogs&#39; sichten, zusammenfassen, installieren und entfernen (truetype)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pcbypaul.com/software/FONTpage.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;FONTPage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;pdf&quot; tabindex=&quot;-1&quot;&gt;PDF&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;pdftk&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;pdfjam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://multivalent.sourceforge.net/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Multivalent Tools &amp;amp; Browser&lt;/a&gt; (Java) - erstellen von Notizen zu PDF-Dokumenten (werden zusätzlich in einem XML-Format gespeichert.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;werkzeuge&quot; tabindex=&quot;-1&quot;&gt;Werkzeuge&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pstoedit.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;pstoedit&lt;/a&gt;: PostScript und PDF&#39;s zu editierbaren Formaten umwandeln (SVG, WMF, Adobe Illustrator)&lt;/li&gt;
+&lt;li&gt;eps2svg &lt;a href=&quot;http://www.montefiore.ulg.ac.be/~piater/personal/software/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.montefiore.ulg.ac.be/~piater/personal/software/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sk1project.org/modules.php?name=Products&amp;amp;product=uniconvertor&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;uniconvertor&lt;/a&gt;((in Debian &lt;a href=&quot;http://packages.debian.org/search?suite=default&amp;amp;section=all&amp;amp;arch=any&amp;amp;searchon=names&amp;amp;keywords=python-uniconvertor&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;python-uniconvertor&lt;/a&gt;)): wandelt diverse, unter anderem proprietäre Vektor-Formate wie Corel .cdr oder Adobe Illustrator .ai bis 9.x und Windiws Meta File .wmf, in gängige Freie Formate wie SVG um.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;3-d&quot; tabindex=&quot;-1&quot;&gt;3D&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Blender((&lt;a href=&quot;http://orange.blender.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://orange.blender.org/&lt;/a&gt;))&lt;/li&gt;
+&lt;li&gt;Material Editor für Lightflow: MATSpider ((nur für Windows, mit wine nicht getestet)) &lt;a href=&quot;http://homepage3.nifty.com/escargot/DownLoadFrm.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://homepage3.nifty.com/escargot/DownLoadFrm.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lightflow &lt;a href=&quot;http://www.lightflowtech.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.lightflowtech.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;YafRay &lt;a href=&quot;http://www.yafray.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.yafray.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./notizen/oos-dtp/"/>
+  </entry><entry>
+    <title>KI Infos</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./notizen/ki/ki-infos/</id>
+    <content type="html">&lt;h1 id=&quot;hermes&quot; tabindex=&quot;-1&quot;&gt;Hermes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://agentos.guide/free-models-hermes&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://agentos.guide/free-models-hermes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./notizen/ki/chat-gpt-ueber-agent-os/&quot;&gt;ChatGPT über agent-os&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;install&quot; tabindex=&quot;-1&quot;&gt;Install&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://hermes-agent.nousresearch.com/docs/user-guide/docker/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;plugins&quot; tabindex=&quot;-1&quot;&gt;plugins&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/GoSlowPoke168/hermes-openrouter-free-rotator&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;hermes-openrouter-free-rotator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/robertlmann02/nextcloud-talk-hermes-bridge&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nextcloud-talk-herms-bridgle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;skill&quot; tabindex=&quot;-1&quot;&gt;skill&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/adnw-vinc/hermes-nextcloud&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nextcloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./notizen/ki/ki-infos/"/>
+  </entry><entry>
+    <title>ChatGPT über agent-os</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./notizen/ki/chat-gpt-ueber-agent-os/</id>
+    <content type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;framerslab/agentos&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;earthwalker17/agent-os&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;use-agent-os/agent-os&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Fas ist der Unterschied zwischen &lt;a href=&quot;https://github.com/framerslab/agentos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/framerslab/agentos&lt;/a&gt; und &lt;a href=&quot;https://github.com/earthwalker17/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/earthwalker17/agent-os?utm_source=chatgpt.com&lt;/a&gt; und &lt;a href=&quot;https://github.com/use-agent-os/agent-os&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/use-agent-os/agent-os&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ja – jetzt lässt sich das sauber auseinanderhalten. &lt;strong&gt;Die drei Projekte sind eigenständige Projekte und nicht drei Varianten desselben AgentOS.&lt;/strong&gt; Der gemeinsame Name „AgentOS“ ist hier tatsächlich ziemlich verwirrend.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Projekt&lt;/th&gt;
+&lt;th&gt;Was ist es?&lt;/th&gt;
+&lt;th&gt;Schwerpunkt&lt;/th&gt;
+&lt;th&gt;Technik&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;framerslab/agentos&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;KI-Agent-Framework als Bibliothek&lt;/td&gt;
+&lt;td&gt;Memory, Tools, Multi-Agenten&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;TypeScript / Node.js&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;earthwalker17/agent-os&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;komplette Coding-Agent-Umgebung&lt;/td&gt;
+&lt;td&gt;Softwareprojekte planen → programmieren → testen → deployen&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Python + FastAPI + React&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;use-agent-os/agent-os&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;kompletter persönlicher Agent&lt;/td&gt;
+&lt;td&gt;Chat, Tools, Memory, Subagents, Scheduling, Provider-Routing, Trading&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Python&lt;/strong&gt;, Web/Desktop/CLI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;1-framers-lab-agent-os&quot; tabindex=&quot;-1&quot;&gt;1. FramersLab AgentOS&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/framerslab/agentos?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;framerslab/agentos auf GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Das ist am ehesten ein &lt;strong&gt;Framework für Entwickler&lt;/strong&gt;, aus dem man einen eigenen Agenten baut.&lt;/p&gt;
+&lt;p&gt;Das Besondere ist beispielsweise:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;persistentes „cognitive memory“&lt;/li&gt;
+&lt;li&gt;mehrere Agenten&lt;/li&gt;
+&lt;li&gt;11 LLM-Provider&lt;/li&gt;
+&lt;li&gt;Agenten können &lt;strong&gt;zur Laufzeit eigene Tools erzeugen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Tool-Ausführung in einer Sandbox&lt;/li&gt;
+&lt;li&gt;Sessions und langfristiger Kontext&lt;/li&gt;
+&lt;li&gt;optionale „Personality“ über HEXACO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Man benutzt es beispielsweise als Node/TypeScript-Bibliothek:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;deine Anwendung
+      │
+      ▼
+  AgentOS Framework
+      │
+ ┌────┼─────┐
+ ▼    ▼     ▼
+LLM  Memory Tools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Es ist &lt;strong&gt;nicht primär ein fertiges Programm&lt;/strong&gt;, das du installierst und dann wie Hermes benutzt. &lt;a href=&quot;https://github.com/framerslab/agentos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;2-earthwalker-agent-os&quot; tabindex=&quot;-1&quot;&gt;2. Earthwalker Agent OS&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/earthwalker17/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;earthwalker17/agent-os auf GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Das ist konzeptionell etwas völlig anderes.&lt;/p&gt;
+&lt;p&gt;Hier geht es speziell darum:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;„Ich möchte ein KI-Modell meine Softwareprojekte bauen lassen, aber mit einer kontrollierten Umgebung darum herum.“&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Die zentrale Idee ist tatsächlich:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;             LLM
+              │
+              ▼
+        ┌───────────┐
+        │ Agent OS  │
+        │  Harness  │
+        └─────┬─────┘
+              │
+      ┌───────┼────────┐
+      ▼       ▼        ▼
+    Plan    Code     Verify
+                       │
+                       ▼
+                    Deploy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Es gibt bewusst zwei Agenten:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Main Agent&lt;/strong&gt; = plant, verwaltet Memory und entscheidet&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coding Agent&lt;/strong&gt; = darf tatsächlich Dateien ändern und Shell-Kommandos ausführen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dazu kommen Sandbox, Git, Tests, Browser-Checks, Recovery usw. &lt;a href=&quot;https://github.com/earthwalker17/agent-os/blob/main/ARCHITECTURE.md?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Das ist daher eher ein &lt;strong&gt;„Claude Code/Codex/OpenCode mit Sicherheits- und Projektmanagement-Schicht“&lt;/strong&gt; als ein allgemeiner persönlicher Assistent.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;3-code-use-agent-os-agent-os-code&quot; tabindex=&quot;-1&quot;&gt;3. &lt;code&gt;use-agent-os/agent-os&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/use-agent-os/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;use-agent-os/agent-os auf GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Das ist dasjenige, das zu deiner vorherigen Hermes-Frage passt.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Es ist ein fertiger &lt;strong&gt;lokaler General-Purpose-Agent&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;                 AgentOS
+                    │
+      ┌─────────────┼─────────────┐
+      ▼             ▼             ▼
+    Web UI         CLI          Telegram
+      │             │             │
+      └─────────────┼─────────────┘
+                    ▼
+              Agent / Tools
+                    │
+        ┌───────────┼───────────┐
+        ▼           ▼           ▼
+      Memory     Sandbox       Web
+                    │
+             Pilot Router
+                    │
+       ┌────────────┼────────────┐
+       ▼            ▼            ▼
+    OpenRouter    Ollama       OpenAI
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Es kann unter anderem:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lokal laufen&lt;/li&gt;
+&lt;li&gt;Memory speichern&lt;/li&gt;
+&lt;li&gt;Tools verwenden&lt;/li&gt;
+&lt;li&gt;Subagents starten&lt;/li&gt;
+&lt;li&gt;Webzugriff verwenden&lt;/li&gt;
+&lt;li&gt;geplante Jobs ausführen&lt;/li&gt;
+&lt;li&gt;Telegram/Discord/Slack anbinden&lt;/li&gt;
+&lt;li&gt;verschiedene LLM-Provider benutzen&lt;/li&gt;
+&lt;li&gt;lokale Modelle über &lt;strong&gt;Ollama&lt;/strong&gt; verwenden&lt;/li&gt;
+&lt;li&gt;einen lokalen Router benutzen, der Aufgaben auf unterschiedliche Modelle verteilt. &lt;a href=&quot;https://github.com/use-agent-os/agent-os&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Und für deine ursprüngliche Frage besonders interessant:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Es kann Daten aus Hermes übernehmen.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Das Repository enthält ausdrücklich:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;agentos migrate hermes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;und auch eine Migration von OpenClaw. Das ist ein ziemlich deutlicher Hinweis darauf, dass dieses AgentOS als &lt;strong&gt;Nachfolger/Alternative für bestehende Hermes/OpenClaw-Installationen&lt;/strong&gt; gedacht ist. &lt;a href=&quot;https://github.com/use-agent-os/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;der-entscheidende-unterschied&quot; tabindex=&quot;-1&quot;&gt;Der entscheidende Unterschied&lt;/h2&gt;
+&lt;p&gt;Wenn ich die drei auf &lt;strong&gt;deine Anwendung&lt;/strong&gt; herunterbreche:&lt;/p&gt;
+&lt;h3 id=&quot;du-willst-selbst-einen-agenten-programmieren&quot; tabindex=&quot;-1&quot;&gt;Du willst selbst einen Agenten programmieren&lt;/h3&gt;
+&lt;p&gt;→ &lt;strong&gt;FramersLab AgentOS&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;TypeScript
+    ↓
+@framers/agentos
+    ↓
+dein eigener Agent
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;du-willst-hauptsaechlich-software-entwickeln-lassen&quot; tabindex=&quot;-1&quot;&gt;Du willst hauptsächlich Software entwickeln lassen&lt;/h3&gt;
+&lt;p&gt;→ &lt;strong&gt;earthwalker17/agent-os&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Chat
+ ↓
+Plan
+ ↓
+Coding Agent
+ ↓
+Test
+ ↓
+Review
+ ↓
+Git / Deploy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;du-willst-einen-fertigen-persoenlichen-lokalen-agenten&quot; tabindex=&quot;-1&quot;&gt;Du willst einen fertigen persönlichen lokalen Agenten&lt;/h3&gt;
+&lt;p&gt;→ &lt;strong&gt;use-agent-os/agent-os&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Telegram / Web / CLI
+          ↓
+       AgentOS
+          ↓
+   Memory + Tools
+          ↓
+  Ollama / OpenRouter /
+  Claude / GPT / usw.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;und-wo-steht-hermes-dabei&quot; tabindex=&quot;-1&quot;&gt;Und wo steht Hermes dabei?&lt;/h3&gt;
+&lt;p&gt;Das ist jetzt der interessante Teil:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;                 ┌── FramersLab AgentOS
+                 │      Framework
+                 │
+LLM ─────────────┼── Earthwalker Agent OS
+                 │      Coding-Harness
+                 │
+                 ├── use-agent-os AgentOS
+                 │      General-purpose Agent
+                 │
+                 └── Hermes
+                        General-purpose Agent
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Hermes und &lt;code&gt;use-agent-os/agent-os&lt;/code&gt; sind also tatsächlich die beiden, die du sinnvoll direkt vergleichen kannst.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Das &lt;code&gt;use-agent-os&lt;/code&gt;-Projekt bezeichnet sich selbst als von &lt;strong&gt;OpenClaw und Hermes Agent beeinflusst&lt;/strong&gt; und bietet sogar eine direkte Hermes-Migration an. &lt;a href=&quot;https://github.com/use-agent-os/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Und &lt;strong&gt;Earthwalker Agent OS ist eine ganz andere Idee&lt;/strong&gt;: dort steht das Coding von Softwareprojekten im Mittelpunkt. &lt;a href=&quot;https://github.com/earthwalker17/agent-os/blob/main/BLUEPRINT.md?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Für deinen konkreten Fall – M3 Mac, 24 GB RAM, Ollama/Qwen und Programmierhilfe – würde ich deshalb vor allem &lt;code&gt;Hermes&lt;/code&gt; vs. &lt;code&gt;use-agent-os/agent-os&lt;/code&gt; vs. &lt;code&gt;earthwalker17/agent-os&lt;/code&gt; vergleichen.&lt;/strong&gt; Das wäre deutlich aussagekräftiger als die drei unter dem gemeinsamen Namen „AgentOS“ zu betrachten.&lt;/p&gt;
+</content>
+    <link href="https://www./notizen/ki/chat-gpt-ueber-agent-os/"/>
+  </entry><entry>
+    <title>ssh</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./linux/ssh/</id>
+    <content type="html">&lt;h2 id=&quot;ssh-tunnel&quot; tabindex=&quot;-1&quot;&gt;SSH-Tunnel&lt;/h2&gt;
+&lt;p&gt;Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner &lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt; Port 3306 (MySql Server) erstellen:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh -fN -L 3307:localhost:3306 host.example.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Anschließend die Verbindung aufbauen mit:&lt;br /&gt;
+&lt;code&gt;mysql -u user -p -P3307 -h 127.0.0.1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;localhost&lt;/em&gt; kann auch ein Host im Netz hinter &lt;em&gt;&lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt;&lt;/em&gt; sein, also kann entsprechend die IP-Adresse oder der Hostname aus dem entfernten Netz angegeben werden. Natürlich kann auch ein abweichender Benutzername mit &lt;code&gt;user@host.example.com&lt;/code&gt; angegeben werden.&lt;/p&gt;
+&lt;h3 id=&quot;remote-forward&quot; tabindex=&quot;-1&quot;&gt;Remote-Forward&lt;/h3&gt;
+&lt;p&gt;Beispiel für eine VNC-Verbindung: den lokalen Port 5900 auf den entfernten Rechner &lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt; Port 12345 legen.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh -fN -R 12345:localhost:5900 host.example.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Anschließend kann die Verbindung von &lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt; aus aufgebaut werden&lt;br /&gt;
+&lt;code&gt;vncviewer localhost:12345&lt;/code&gt;&lt;br /&gt;
+Natürlich kann sich die Gegenstelle auch den Port 12345 von &lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt; lokal tunneln; siehe oben.&lt;/p&gt;
+&lt;h2 id=&quot;rsync-ueber-ssh-mit-abweichendem-port&quot; tabindex=&quot;-1&quot;&gt;rsync über ssh mit abweichendem Port&lt;/h2&gt;
+&lt;p&gt;Wenn der SSH-Dienst auf einem anderen Port als 22 läuft muss es bei rsync entsprechend mit angegeben werden.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rsync -auvH -e &#39;ssh -p 22123&#39; [Quelle] [Ziel]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mysql&quot;&gt;#mysql&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+</content>
+    <link href="https://www./linux/ssh/"/>
+  </entry><entry>
+    <title>Diverse Tipps und Tricks zu Xfce</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./linux/xfce/notizen/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#xfce&quot;&gt;#xfce&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;xorg-composite-effekte-fuer-xfce&quot; tabindex=&quot;-1&quot;&gt;Xorg - Composite-Effekte für Xfce&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;siehe &lt;a href=&quot;http://wiki.ubuntuusers.de/Xfce_Composite-Effekte&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://wiki.ubuntuusers.de/Xfce_Composite-Effekte&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;xorg-conf&quot; tabindex=&quot;-1&quot;&gt;xorg.conf&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;Section &amp;quot;Device&amp;quot;
+...
+        Option          &amp;quot;RenderAccel&amp;quot;           &amp;quot;true&amp;quot;
+        Option          &amp;quot;AllowGLXWithComposite&amp;quot; &amp;quot;true&amp;quot;
+EndSection
+
+...
+
+Section &amp;quot;Extensions&amp;quot;
+         Option  &amp;quot;Composite&amp;quot; &amp;quot;Enable&amp;quot;
+EndSection
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;tomboy-default-browser&quot; tabindex=&quot;-1&quot;&gt;Tomboy Default Browser&lt;/h2&gt;
+&lt;p&gt;Wenn Tomoby mit dem &lt;em&gt;xfce4-xfapplet-plugin&lt;/em&gt; unter &lt;em&gt;Xfce&lt;/em&gt; betrieben wird, kann es vorkommen dass beim Klick auf eine URL mit http oder https zu einer Meldung kommt:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www./img/user/media/linux/xfce/tomboy_url_handler_msg.png&quot; alt=&quot;tomboy_url_handler_msg.png&quot; /&gt;&lt;/p&gt;
+&lt;html&gt;
+Der Ort kann nicht geöffnet werden
+...
+Die Vorgabeaktion unterstützt dieses Protokoll nicht
+&lt;/html&gt;
+&lt;p&gt;Tomboy bezieht die Konfiguration aus den GNOME URL-Handlern, welche mit dem gconf-editor angepasst werden können:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;den gconf-editor öffnen&lt;/li&gt;
+&lt;li&gt;den Zweig * /desktop/gnome/url-handlers/http/ * aufsuchen
+&lt;ul&gt;
+&lt;li&gt;den Eintrag &amp;quot;command&amp;quot; auf &amp;quot;exo-open --launch WebBrowser %s&amp;quot;((&lt;em&gt;exo-open --launch WebBrowser&lt;/em&gt; öffnet den in &lt;em&gt;Einstellungen -&amp;gt; Bevorzugte Anwendungen&lt;/em&gt; voreingestellten Browser)) oder direkt ein Programmnamen wie &amp;quot;firefox %s&amp;quot; eingeben.&lt;/li&gt;
+&lt;li&gt;den Eintrag &amp;quot;enabled&amp;quot; auf true setzen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;gegebenenfalls die gleichen Einstellungen bei &lt;em&gt;https&lt;/em&gt; vornemhen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;zuletzt-geoeffnete-dokumente-recent-files&quot; tabindex=&quot;-1&quot;&gt;Zuletzt geöffnete Dokumente / Recent Files&lt;/h2&gt;
+&lt;p&gt;Oft ist ein Menü mit den zuletzt geöffneten Dokumenten recht nützlich. Auf der  von &lt;a href=&quot;http://www.thelightmaker.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Sven Müller&lt;/a&gt; gibt es ein entsprechende &lt;a href=&quot;http://www.thelightmaker.de/knowhow/xfce_recent_files&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Anleitung&lt;/a&gt;, basierend auf ein Skript welches die entsprechenden Informationen aus der Desktop-Suchmaschine &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;http://www.beagle-project.org/Beagle&lt;/a&gt; herausholt.&lt;br /&gt;
+&lt;note tip=&quot;&quot;&gt;&lt;br /&gt;
+Für Debian muss das Paket &lt;em&gt;libgnomevfs2-bin&lt;/em&gt; installiert sein, und naturlich &lt;em&gt;beagle&lt;/em&gt; selbst.&lt;br /&gt;
+&lt;/note&gt;&lt;/p&gt;
+</content>
+    <link href="https://www./linux/xfce/notizen/"/>
+  </entry><entry>
+    <title>UMTS unter Linux</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./linux/umts/</id>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://de.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;UMTS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;abfrage-der-netzabdeckung&quot; tabindex=&quot;-1&quot;&gt;Abfrage der Netzabdeckung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.t-mobile.de/funkversorgung/inland&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;T-Mobile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.vodafone.de/hilfe-support/netz-uebertragung-netzabdeckung/108099.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vodafone&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://eis03sn1.eplus-online.de/evportal/portal/gsm&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;E-Plus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;uebertragungsraten&quot; tabindex=&quot;-1&quot;&gt;Übertragungsraten&lt;/h3&gt;
+&lt;p&gt;Bis dato konnte ich eine Spitze von 290 KB/sec messen (Download eines DVD-Images via bittorrent).&lt;/p&gt;
+&lt;h2 id=&quot;t-mobile-web-n-walk-stick-iii&quot; tabindex=&quot;-1&quot;&gt;T-Mobile web&#39;n&#39;walk Stick III&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.polyformal.de/de/systemarbeit/t_mobile_webnwalk_stick_iii_unter_linux.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Informationen&lt;/a&gt; zum Gerät und Tarif&lt;/li&gt;
+&lt;li&gt;die für andere Karten &lt;a href=&quot;http://www.pharscape.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nozomi&lt;/a&gt;-Teiber werden hier &lt;strong&gt;nicht&lt;/strong&gt; benötigt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://www./img/user/media/linux/wen_n_walk_stick_3.jpg&quot; alt=&quot;wen_n_walk_stick_3.jpg&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;identifikation-der-karte&quot; tabindex=&quot;-1&quot;&gt;Identifikation der Karte&lt;/h3&gt;
+&lt;p&gt;Bei dem Stick handelt es sich um das &lt;a href=&quot;http://www.huawei.com/mobileweb/en/products/view.do?id=940&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Model E17X&lt;/a&gt; vom Hersteller &lt;a href=&quot;http://www.huawei.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Huawei&lt;/a&gt;. Über minicom können Details zum Gerät abgefragt werden (die letzten 8 Ziffern der IMEI wurden durch X ersetzt).&lt;/p&gt;
+&lt;p&gt;minicom auf /dev/ttyUSB0, Ausgabe des Befehls ATI&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ATI
+Manufacturer: huawei
+Model: E17X
+Revision: 11.306.07.01.55
+IMEI: 3592980XXXXXXXX
++GCAP: +CGSM,+DS,+ES
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+Unter Debian Lenny ( a.k.a Testing, getestet mit 2.6.24-1-686-bigmem ) ist der unten genannte Umweg mit &lt;em&gt;huaweiAktBbo.c&lt;/em&gt; und udev-Rules nicht mehr nötig. Die Devices &lt;em&gt;/dev/ttyUSB0&lt;/em&gt; und &lt;em&gt;/dev/ttyUSB1&lt;/em&gt; werden sofort verfügbar gemacht.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Leider werden abhängig von Distribution und Kernelversion die zur Kommunikation notwendigen seriellen Schnittstellen &lt;em&gt;/dev/ttyUSB0&lt;/em&gt; und &lt;em&gt;/dev/ttyUSB1&lt;/em&gt; nicht in jedem Fall automatisch erkannt. Statt dessen zeigt &lt;em&gt;dmesg&lt;/em&gt; nur das CD-ROM Device mit den Windows-Treiber. Eine gute &lt;a href=&quot;http://linux.frankenberger.at/Huawei_E220.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Beschreibung der Problematik&lt;/a&gt; bei Frankenberger, hauptsächlich geht es um das Helfer-Programm &lt;a href=&quot;http://www.kanoistika.sk/bobovsky/archiv/umts/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;huaweiAktBbo&lt;/a&gt; von  bobovsky und die entsprechenden Einträge in der Datei &lt;em&gt;/etc/udev/rules.d/50-huawei-e220.rules&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;libusb-dev muss installiert sein (aptitude install libusb-dev)&lt;/li&gt;
+&lt;li&gt;cd /usr/src&lt;/li&gt;
+&lt;li&gt;mkdir umts &amp;amp;&amp;amp; cd umts&lt;/li&gt;
+&lt;li&gt;wget &lt;a href=&quot;http://www.kanoistika.sk/bobovsky/archiv/umts/huaweiAktBbo.c&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.kanoistika.sk/bobovsky/archiv/umts/huaweiAktBbo.c&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cc huaweiAktBbo.c -lusb -o huaweiAktBbo&lt;/li&gt;
+&lt;li&gt;chown root:root huaweiAktBbo&lt;/li&gt;
+&lt;li&gt;mv huaweiAktBbo /sbin&lt;br /&gt;
+Anschließend muss folgende Datei angelegt werden (root-Rechte erfolderlich)&lt;br /&gt;
+/etc/udev/rules.d/50-huawei-e220.rules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;SUBSYSTEM==&amp;quot;usb&amp;quot;, SYSFS{idProduct}==&amp;quot;1003&amp;quot;, SYSFS{idVendor}==&amp;quot;12d1&amp;quot;, RUN+=&amp;quot;/sbin/huaweiAktBbo&amp;quot;
+SUBSYSTEM==&amp;quot;usb&amp;quot;, SYSFS{idProduct}==&amp;quot;1003&amp;quot;, SYSFS{idVendor}==&amp;quot;12d1&amp;quot;, RUN+=&amp;quot;/bin/sleep 5&amp;quot;
+SUBSYSTEM==&amp;quot;usb&amp;quot;, SYSFS{idProduct}==&amp;quot;1003&amp;quot;, SYSFS{idVendor}==&amp;quot;12d1&amp;quot;, RUN+=&amp;quot;/sbin/modprobe usbserial vendor=0x12d1 product=0x1003&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jetzt kann der UMTS-Stick eingesteckt werden und &lt;em&gt;dmesg&lt;/em&gt; müsste in etwa folgendes ausgeben:&lt;/p&gt;
+&lt;p&gt;Ausgabe von dmesg&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;option 2-2.5:1.0: GSM modem (1-port) converter detected
+usb 2-2.5: GSM modem (1-port) converter now attached to ttyUSB0
+option 2-2.5:1.1: GSM modem (1-port) converter detected
+usb 2-2.5: GSM modem (1-port) converter now attached to ttyUSB1
+scsi20 : SCSI emulation for USB Mass Storage devices
+usb-storage: device found at 33
+usb-storage: waiting for device to settle before scanning
+usb-storage: device scan complete
+scsi 20:0:0:0: CD-ROM            HUAWEI   Mass Storage     2.31 PQ: 0 ANSI: 2
+sr1: scsi-1 drive
+sr 20:0:0:0: Attached scsi CD-ROM sr1
+sr 20:0:0:0: Attached scsi generic sg0 type 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;aufbau-einer-verbindung&quot; tabindex=&quot;-1&quot;&gt;Aufbau einer Verbindung&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;pppd bringt alles mit um eine Verbindung aufzubauen&lt;/li&gt;
+&lt;li&gt;auch wvdial kann verwendet werden (nicht getestet)&lt;/li&gt;
+&lt;li&gt;gnome-ppp und auch umtsmon (siehe unten) können als GUI für den Desktop verwendet werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;pin-code-eingeben&quot; tabindex=&quot;-1&quot;&gt;PIN-Code eingeben&lt;/h3&gt;
+&lt;p&gt;Möchte man seinen PIN-code nicht in Skripten angeben kann man das auf de Kommandozeile mit&lt;br /&gt;
+echo &#39;AT+CPIN=&amp;quot;xxxx&amp;quot;&#39; &amp;gt; /dev/ttyUSB0&lt;/p&gt;
+&lt;p&gt;Besser ist es aber die PIN wie oben über über minicom einzugeben.&lt;/p&gt;
+&lt;h3 id=&quot;verbindung-mit-ppp&quot; tabindex=&quot;-1&quot;&gt;Verbindung mit ppp&lt;/h3&gt;
+&lt;p&gt;/etc/ppp/peers/umts&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;hide-password
+noauth
+connect &amp;quot;/usr/sbin/chat -v -f /etc/chatscripts/umts&amp;quot;
+debug
+/dev/ttyUSB0
+115200
+defaultroute
+noipdefault
+user &amp;quot;t-mobile&amp;quot;
+password &amp;quot;internet&amp;quot;
+usepeerdns
+ipcp-accept-remote
+ipcp-accept-local
+lock
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;/etc/chatscripts/umts&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;&#39;TIMEOUT&#39; &#39;10&#39;
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#abortstring&quot;&gt;#abortstring&lt;/a&gt;
+ABORT BUSY
+ABORT VOICE
+ABORT &#39;NO DIALTONE&#39;
+ABORT &#39;NO DIAL TONE&#39;
+ABORT &#39;NO ANSWER&#39;
+ABORT &#39;+CPIN: SIM PIN&#39;
+ABORT DELAYED
+# modeminit
+&#39;&#39; &#39;ATZ&#39;
+&#39;OK&#39; &#39;AT&amp;amp;F&#39;
+&#39;OK&#39; &#39;ATE1&#39;
+SAY &#39;Checking pin lock
+&#39;
+&#39;OK&#39; &#39;AT+CPIN?&#39;
+SAY &#39;Check Quality 
+&#39;
+&#39;OK&#39; &#39;AT+CSQ&#39;
+SAY &#39;Setting APN
+&#39;
+&#39;OK&#39; &#39;AT+CGDCONT=1,&amp;quot;IP&amp;quot;,&amp;quot;internet.t-mobile&amp;quot;&#39;
+# ispnumber
+&#39;OK&#39; &#39;ATDT*99#&#39;
+# ispconnect
+&#39;CONNECT&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nach dem die PIN eingegeben wurde, kann mittels &lt;em&gt;pon umts&lt;/em&gt; eine Verbindung aufgebaut werden. Um die PIN-Abfrage dauerhaft zu deaktivieren kann eines der AT-Kommandos verwendet werden (siehe nächster Abschnitt).&lt;/p&gt;
+&lt;h2 id=&quot;weitere-informationen&quot; tabindex=&quot;-1&quot;&gt;weitere Informationen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Einige &lt;a href=&quot;http://de.gentoo-wiki.com/GPRS/UMTS#Konfiguration_des_Modems&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;hilfreiche AT-Befehle&lt;/a&gt; zum Anfragen von Daten des UMTS-Modems  aus dem Gentoo-wiki&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://umtsmon.sourceforge.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;umtsmon&lt;/a&gt; - eine GUI((basiert auf Qt)) für UMTS-Verbindungen&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./linux/umts/"/>
+  </entry><entry>
+    <title>Referenzkarte Netzwerk</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./linux/referenzkarte_netzwerk/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#lpi&quot;&gt;#lpi&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unvollständig&quot;&gt;#unvollständig&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;abstract&quot; tabindex=&quot;-1&quot;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Eine Schnellreferenz-Karte für tägliche Netzwerkaufgaben.  Syntax&lt;br /&gt;
+cmd notwendiger_Parameter [optionaler Parameter]&lt;/p&gt;
+&lt;h2 id=&quot;grundlagen&quot; tabindex=&quot;-1&quot;&gt;Grundlagen&lt;/h2&gt;
+&lt;h3 id=&quot;cidr&quot; tabindex=&quot;-1&quot;&gt;CIDR&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;00000000.00000000.00000000.00000000 = 32
+|-------|--------|--------|--------|
+    8       8        8          8      
+&amp;lt;- Leseweise 128 64 32 16 8 4 2 1 . 128 64 ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;255.255.255.0 /24 253 IP Adresse (255 - Netzwerkadresse .0 - Broadcast .255 = 253&lt;/li&gt;
+&lt;li&gt;zum Umrechnen kann &lt;a href=&quot;http://jodies.de/ipcalc&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ipcalc&lt;/a&gt; hinzugezogen werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;klasse-a&quot; tabindex=&quot;-1&quot;&gt;Klasse A&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;255.0.0.0 /8, also 8 Netzwerk-Bits und 24 Host-Bits (32 - 8 = 24)&lt;/li&gt;
+&lt;li&gt;128 Netzwerke, 2 sind reseviert (0.0.0.0 Default-Route, 127.0.0.1 Loop-Device mit 127.0.0.1 Localhost)&lt;/li&gt;
+&lt;li&gt;2hoch 24 - 2 (netzwerkadresse und Broadcast) Host möglich.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;klasse-b&quot; tabindex=&quot;-1&quot;&gt;Klasse B&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;begint binaer mit 10  ( == 128 siehe oben))&lt;/li&gt;
+&lt;li&gt;Adressbereich von 128.0.0.0 bis 191.255.255.255&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;klasse-c&quot; tabindex=&quot;-1&quot;&gt;Klasse C&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;beginnt mit 110 ( 128 + 64 = 192, siehe oben)&lt;/li&gt;
+&lt;li&gt;Adressbereich von 192.0.0.0 bis 223.255.255.255&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;klasse-d-und-e&quot; tabindex=&quot;-1&quot;&gt;Klasse D und E&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;sehr selten, experimentell, reserviert als Multicast für Rechnergruppen und haben keinen Netzwerkanteil&lt;/li&gt;
+&lt;li&gt;beginnt mit 1110 ( 128 + 64 + 32 = 224, siehe oben)&lt;/li&gt;
+&lt;li&gt;Adressbereich 224.0.0.0 bis 238.255.255.255.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;private-adressbereiche&quot; tabindex=&quot;-1&quot;&gt;Private Adressbereiche&lt;/h3&gt;
+&lt;p&gt;Außerhalb des Internets&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Klasse A  10.0.0.0, Netzwerkmaske /8 bzw. 255.0.0.0
+&lt;ul&gt;
+&lt;li&gt;nur ein netz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Klasse B 172.16.0.0 bis 172.31.255.255, Netzwerkmaske /16 bzw. 255.255.0.0
+&lt;ul&gt;
+&lt;li&gt;insgesamt 16 Netze&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Klasse C 192.168.0.0 bis 192.168.255.255, Netzwerkmaske /8 bzw. 255.255.255.0
+&lt;ul&gt;
+&lt;li&gt;insgesamt 256 Netze ( 2 * 128 = 256)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;interfaces&quot; tabindex=&quot;-1&quot;&gt;Interfaces&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ifconfig [interface] [adresse] [[optionen]]&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;ip link [show|list|ls] [device]&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;beispiele&quot; tabindex=&quot;-1&quot;&gt;Beispiele&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Rosetta Stone ifconfig / ip&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Aktion&lt;/th&gt;
+&lt;th&gt;ip&lt;/th&gt;
+&lt;th&gt;ifconfig / traditionell&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Interface ein- oder ausschalten&lt;/td&gt;
+&lt;td&gt;ifconfig [device] up&#39;&#39;&lt;/td&gt;
+&lt;td&gt;&#39;&#39;down&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Setzen einer IP-Adresse 192.168.3.1 Netzmaske 255.255.255.0  und Boadcast (wird in beiden Fällen automatisch zugewiesen)  für das Interface eth0&lt;/td&gt;
+&lt;td&gt;ip addr add 192.168.3.1/24 dev eth0 brd +&lt;/td&gt;
+&lt;td&gt;ifconfig eth0 192.168.3.1 netmask 255.255.255.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Erzeugen eines virtuellen Interfaces&lt;/td&gt;
+&lt;td&gt;ip addr add 192.168.3.1/24 dev eth0:0 brd + label eth0:1 ((die Anweisung &lt;em&gt;label&lt;/em&gt; ist nur zur Kompatilität mit ifconfig))&lt;/td&gt;
+&lt;td&gt;ifconfig eth0:0 192.168.3.1 netmask 255.255.255.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Löschen eines virtuellen Interfaces&lt;/td&gt;
+&lt;td&gt;ip addr del 192.168.3.1/24 dev eth0:0&lt;/td&gt;
+&lt;td&gt;ifconfig eth0:0 del 192.168.3.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Routing&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;---&lt;/td&gt;
+&lt;td&gt;---&lt;/td&gt;
+&lt;td&gt;---&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Routing-Tabelle anzeigen&lt;/td&gt;
+&lt;td&gt;ip route&lt;/td&gt;
+&lt;td&gt;route -n &#39;&#39;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ein Standard-Gateway hinzufügen&lt;/td&gt;
+&lt;td&gt;ip route add default via [host IP&#39;&#39;&lt;/td&gt;
+&lt;td&gt;&#39;&#39;name]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eine Standard-Gateway löschen&lt;/td&gt;
+&lt;td&gt;ip route del default&lt;/td&gt;
+&lt;td&gt;route del default&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eine Route in ein Netz hinzufügen&lt;/td&gt;
+&lt;td&gt;ip route add [network]/[CIDR] via [gateway]&lt;/td&gt;
+&lt;td&gt;route add -net [network IP] [netmask] [device]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eine Route in ein Netz löschen&lt;/td&gt;
+&lt;td&gt;ip route del [network]/[CIDR] via [gateway]&lt;/td&gt;
+&lt;td&gt;route del -net [network IP] [netmask] [device]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;low-level&quot; tabindex=&quot;-1&quot;&gt;LowLevel&lt;/h3&gt;
+&lt;p&gt;Cache der ARP Tabelle ausgeben, die Option -n verhindert die Namensauflösung.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;cat /proc/net/arp
+arp -n
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Einträge bearbeiten:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;arp -d IP
+arp -s IP MAC
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;geschwindigkeit-pruefen-und-einstellen&quot; tabindex=&quot;-1&quot;&gt;Geschwindigkeit prüfen und einstellen&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;mii-tool eth0
+ethtool eth0
+
+mii-tool -F 100baseTx-FD
+mii-tool -F 10baseT-HD
+
+ethtool -s eth0 speed 100 duplex full
+ethtool -s eth0 speed 10 duplex half
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;wireles-lan&quot; tabindex=&quot;-1&quot;&gt;Wireles LAN&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;wlanconfig
+watch -n1 &#39;cat /proc/net/wireless&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;dns&quot; tabindex=&quot;-1&quot;&gt;DNS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Abfrage Hostname zu IP&lt;/p&gt;
+&lt;p&gt;host hostname [IP des Nameservers anstatt resolv.conf]&lt;br /&gt;
+nslookup hostname [IP des Nameservers anstatt resolv.conf]&lt;br /&gt;
+dig [@IP des Nameservers anstatt resolv.conf] [-t type] hostname&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abfrage IP zu Hostname&lt;/p&gt;
+&lt;p&gt;host IP [IP des Nameservers anstatt resolv.conf]&lt;br /&gt;
+nslookup IP [IP des Nameservers anstatt resolv.conf]&lt;br /&gt;
+nslookup [@IP des Nameservers anstatt resolv.conf] -x IP&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;, whois &lt;s&gt;nsquery&lt;/s&gt;&lt;/p&gt;
+&lt;h2 id=&quot;bridging&quot; tabindex=&quot;-1&quot;&gt;Bridging&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.linuxfoundation.org/en/Net%3ABridge&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Dokumentation&lt;/a&gt;, siehe auch &#39;&#39;/usr/share/doc/bridge-utils&#39;&#39;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;brctl addbr br0
+brctl addif br0 eth0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Anschließend die IP-Adresse von eth0 auf br0 übertragen, eth0 auf 0.0.0.0 promisc setzen.&lt;/p&gt;
+&lt;h2 id=&quot;ip-tables&quot; tabindex=&quot;-1&quot;&gt;IP-Tables&lt;/h2&gt;
+&lt;p&gt;Eine einfache Regel für NAT&lt;br /&gt;
+iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -o eth0 -j MASQUERADE&lt;br /&gt;
+&lt;note&gt;&lt;br /&gt;
+Das Kommando&lt;br /&gt;
+echo 1 &amp;gt; /proc/sys/net/ipv4/ip_forward&lt;br /&gt;
+aktiviert das Weiterleiten von IP-Verkehr. Feste Einstellung ist über /etc/sysctl.conf oder bei Debian &lt;em&gt;/etc/network/options&lt;/em&gt; &lt;em&gt;ip_forward=yes&lt;/em&gt; möglich&lt;br /&gt;
+&lt;/note&gt;&lt;/p&gt;
+&lt;h2 id=&quot;monitoring&quot; tabindex=&quot;-1&quot;&gt;Monitoring&lt;/h2&gt;
+&lt;p&gt;Alle lokalen TCP- und UDP-Dienste des Hosts anzeigen, &lt;em&gt;-c&lt;/em&gt; für aktualisierende Anzeige (continuous, 1sec), &lt;em&gt;n&lt;/em&gt; zeigt numerische Werte statt Namen&lt;br /&gt;
+&lt;code&gt;netstat -ltu[c][n]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;oder eine schönere Ausgabe&lt;br /&gt;
+&lt;code&gt;watch -n0,5 &#39;netstat -ltu[n]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Aktuele Verbindungen und die zugehörigen Programme anzeigen((root-Rechte erforderlich))&lt;br /&gt;
+&lt;code&gt;watch -n0,5 &#39;netstat -ptu[n]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Geöffnete Dateien von Netzwerkverbindungen anzeigen (IPv4 und IPv6) ((zeigt nur eigene Verbindungen an, sonst mit root-Rechten aufrufen))&lt;br /&gt;
+&lt;code&gt;lsof -i&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Netzwerkverkehr ansehen, optional Einfärben mit ccze&lt;br /&gt;
+&lt;code&gt;tcpdump -vvv [| ccze]&lt;/code&gt;&lt;br /&gt;
+oder mit dem Programm &lt;em&gt;multitail&lt;/em&gt;. Die Option -A zeigt de Inhalt von Paketen an.&lt;/p&gt;
+&lt;h2 id=&quot;testen&quot; tabindex=&quot;-1&quot;&gt;Testen&lt;/h2&gt;
+&lt;h3 id=&quot;simple-chat&quot; tabindex=&quot;-1&quot;&gt;Simple Chat&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;netcat -l -p 1234&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;auf der anderen Seite &lt;code&gt;netcat [ip|hostname] 1234&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;dateiuebertragung&quot; tabindex=&quot;-1&quot;&gt;Dateiübertragung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat [file] | netcat -l -p 1234&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;auf der anderen Seite &lt;code&gt;netcat [ip|hostname] 1234 &amp;gt; [file]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;sicherheit&quot; tabindex=&quot;-1&quot;&gt;Sicherheit&lt;/h2&gt;
+&lt;p&gt;Überwachung der Kombination IP- und MAC-Adresse.&lt;br /&gt;
+&lt;code&gt;aprwatch&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;ssh&quot; tabindex=&quot;-1&quot;&gt;SSH&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./linux/ssh/&quot;&gt;ssh&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;open-vpn&quot; tabindex=&quot;-1&quot;&gt;OpenVPN&lt;/h3&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+</content>
+    <link href="https://www./linux/referenzkarte_netzwerk/"/>
+  </entry><entry>
+    <title>Programme und Tipps für die Konsole</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./linux/console/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.linux.com/feature/44366&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;linux.com: Top 10 Linux console applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;z-shell-zsh&quot; tabindex=&quot;-1&quot;&gt;Z-Shell (zsh)&lt;/h2&gt;
+&lt;p&gt;Die Z-Shell ist eine sehr leistungsfähige Alternative zur Standard-Shell vieler Distributionen, der Bash. Jedoch zeigt sich die &lt;em&gt;zsh&lt;/em&gt; nach der Installation nicht sehr &#39;kooperativ&#39;. Ein guter Anfang können die Konfigurationsdateien der Distribution &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;Grml&lt;/a&gt; sein ((Da grml eine Debian-basierte Distribution ist, sind einige Debian-spezifische Fuktionen enthalten. Die angesprochenen Fuktionen werdenauf anderen Systemen nicht weiter stören, da sie einfach nicht funktionieren werden.)):&lt;/p&gt;
+&lt;p&gt;wget -O .zshrc &lt;a href=&quot;http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Die Fuktionen sind auf der &lt;a href=&quot;http://grml.org/zsh/grml-zsh-refcard.pdf&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;grml-zsh-refcard (PDF)&lt;/a&gt; gut dokumentiert, ausdrucken lohnt sich.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://grml.org/zsh/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://grml.org/zsh/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Folgende Zeile - vorzugsweise in der ~/.zshrc.local - zeigt in der &lt;em&gt;killall [tab-completition]&lt;/em&gt; alle Prozesse des Benutzers an, auch der X-Sitzung.&lt;br /&gt;
+zstyle &#39;:completion:*:processes-names&#39; command &#39;ps c -u ${USER} -o command | uniq&#39;&lt;/p&gt;
+&lt;h2 id=&quot;screen&quot; tabindex=&quot;-1&quot;&gt;Screen&lt;/h2&gt;
+&lt;p&gt;Auf für &lt;em&gt;Screen&lt;/em&gt; hält &lt;em&gt;grml&lt;/em&gt; eine durchaus sinnvolle Konfiguration bereit:&lt;br /&gt;
+wget -O ~/.screenrc     &#39;&lt;a href=&quot;http://git.grml.org/?p=grml-etc-core.git;a=blob_plain;f=etc/grml/screenrc;hb=HEAD&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://git.grml.org/?p=grml-etc-core.git;a=blob_plain;f=etc/grml/screenrc;hb=HEAD&lt;/a&gt;&#39;&lt;br /&gt;
+Allerdings sollte man folgende Zeilen auskommentieren, sofern man nicht die Programme &lt;em&gt;cpu-screen&lt;/em&gt; und &lt;em&gt;ip-screen&lt;/em&gt; aus von &lt;em&gt;grml&lt;/em&gt; auf dem System hat((oder installieren via .deb Paket von &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;http://deb.grml.org/pool/main/g/grml-scripts/&lt;/a&gt;)):&lt;br /&gt;
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#backtick&quot;&gt;#backtick&lt;/a&gt; 1 0 60   /usr/bin/cpu-screen&lt;br /&gt;
+&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#backtick&quot;&gt;#backtick&lt;/a&gt; 2 0 60   /usr/bin/ip-screen&lt;/p&gt;
+&lt;h2 id=&quot;diverses&quot; tabindex=&quot;-1&quot;&gt;Diverses&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Calc &lt;a href=&quot;http://home3.inet.tele.dk/frda/src/calc_tip.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://home3.inet.tele.dk/frda/src/calc_tip.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pimpmyshell.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.pimpmyshell.de/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;kalender&quot; tabindex=&quot;-1&quot;&gt;Kalender&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.eecs.umich.edu/~pelzlpj/wyrd/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Wyrd&lt;/a&gt; -  Ein grafisches Frontend für reminder
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.43folders.com/index.php/ICal2Rem&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;iCal2rem&lt;/a&gt; - Ein Tool zu konvertieren vom iCal- zum reminder-Format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;kommunikation&quot; tabindex=&quot;-1&quot;&gt;Kommunikation&lt;/h2&gt;
+&lt;h3 id=&quot;mutt&quot; tabindex=&quot;-1&quot;&gt;Mutt&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mutt Info&#39;s und Hacks, auch nntp &lt;a href=&quot;http://www.michael-prokop.at/computer/tools_mutt.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.michael-prokop.at/computer/tools_mutt.html&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.fefe.de/muttfaq/faq.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.fefe.de/muttfaq/faq.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.mutt.org/index.cgi?MuttWiki&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://wiki.mutt.org/index.cgi?MuttWiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.muttrcbuilder.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.muttrcbuilder.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.footils.org/cms/show/59&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GTD mit mutt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://auriga.wearlab.de/~alb/other/mutt-labels/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;E-Mails mit mutt &#39;Verschlagworten&#39;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://castrojo.wordpress.com/2009/01/28/gmail-contacts-with-mutt/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;goobook: Google Kontakte in mutt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;dokumentation&quot; tabindex=&quot;-1&quot;&gt;Dokumentation&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.uni-koeln.de/rrzk/mail/software/mutt/doc/manual-de/manual-de.html#toc1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Dokumentation&lt;/a&gt; vom RRZ der Uni Köln&lt;/li&gt;
+&lt;li&gt;hilfreiche &lt;a href=&quot;http://firmen-links.net/index.php/SSMTP&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Hinweise&lt;/a&gt; über die Konfiguration SSMTP((simple SMTP))&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;newsreader-and-amp-rss&quot; tabindex=&quot;-1&quot;&gt;Newsreader &amp;amp; RSS&lt;/h3&gt;
+&lt;h4 id=&quot;newsreader&quot; tabindex=&quot;-1&quot;&gt;Newsreader&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;srln oder gepatchter mutt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;slrn&quot; tabindex=&quot;-1&quot;&gt;slrn&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.slrn.org/manual/slrn-manual.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Offizielle Dokumentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://alfie.ist.org/projects/slrn/quick.de.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Deutsche Einführung&lt;/a&gt; von Alfie, auch mit weiteren Ressourcen((&lt;a href=&quot;http://alfie.ist.org/projects/slrn/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://alfie.ist.org/projects/slrn/&lt;/a&gt;)).&lt;/li&gt;
+&lt;li&gt;HOWTO kompakt &lt;a href=&quot;http://ugweb.cs.ualberta.ca/howtos/slrn.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://ugweb.cs.ualberta.ca/howtos/slrn.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.michael-prokop.at/computer/tools_slrn.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Ressourcen&lt;/a&gt; von Michael Prokop (grml Projekt)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://strcat.de/eigenes/slrnpull.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;slrnpull&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://alcor.concordia.ca/topics/netnews/slrn/intro/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introduction to Usenet News and the slrn Newsreader&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;slrn: Problem mit Umplauten, vim und UTF-8 / iso-8859-(1|15)
+&lt;ul&gt;
+&lt;li&gt;eine &lt;a href=&quot;http://malison.org/archives/899-slrn-%2B-vim-%2B-utf-8.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Lösung&lt;/a&gt; von Carsten Müller (tut es bei mit nicht)&lt;/li&gt;
+&lt;li&gt;über luit, siehe &lt;a href=&quot;http://de.gentoo-wiki.com/Utf8&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://de.gentoo-wiki.com/Utf8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;rss&quot; tabindex=&quot;-1&quot;&gt;RSS&lt;/h4&gt;
+&lt;p&gt;* &lt;a href=&quot;http://kiza.kcore.de/software/snownews/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Snownews&lt;/a&gt;&lt;br /&gt;
+* &lt;a href=&quot;http://synflood.at/newsbeuter.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Newsbeuter&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;instant-messaging&quot; tabindex=&quot;-1&quot;&gt;Instant Messaging&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bitlbee Multi IM Gateway &lt;a href=&quot;http://www.bitlbee.org/main.php/intro.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.bitlbee.org/main.php/intro.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Scripts für irssi und bitlbee &lt;a href=&quot;http://the-timing.nl/stuff/irssi-bitlbee&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://the-timing.nl/stuff/irssi-bitlbee&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;ssh&quot; tabindex=&quot;-1&quot;&gt;SSH&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.unixwiz.net/techtips/ssh-agent-forwarding.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Steve Friedl: An Illustrated Guide to SSH Agent Forwarding&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;editoren&quot; tabindex=&quot;-1&quot;&gt;Editoren&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;VI-VIM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;sys-admin-s-tools&quot; tabindex=&quot;-1&quot;&gt;Sys-Admin&#39;s Tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;multitail, ccze - Logfiles übersichtlich&lt;br /&gt;
+&lt;note tip=&quot;&quot;&gt;&lt;br /&gt;
+ccze &amp;amp; less&lt;br /&gt;
+[output cames from here] | ccze -A | less -R&lt;br /&gt;
+&lt;/note&gt;&lt;/li&gt;
+&lt;li&gt;colordiff - Unterschiede in Dateien farbig darstellen&lt;br /&gt;
+&amp;lt;box round 98%| aliases e.g. .profile &amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;# nice functions for VCS 
+# usage: (hg|svn|cvs)diff [file or dir]
+# or     diffless [file1] [file2]
+
+if [ -x &amp;quot;$(which colordiff)&amp;quot; ] ; then 
+        if [ -x &amp;quot;$(which less)&amp;quot; ] ; then
+                lessdiff () { diff -ruN $1 $2 | colordiff | less -R }
+        fi
+
+        if [ -x &amp;quot;$(which cvs)&amp;quot; ] ; then
+                cvsdiff () { cvs diff -uN &amp;quot;${@}&amp;quot; | colordiff | less -R }
+        fi
+
+        if [ -x &amp;quot;$(which svn)&amp;quot; ] ; then
+                svndiff () { svn diff &amp;quot;${@}&amp;quot; | colordiff | less -R }
+        fi
+
+        if [ -x &amp;quot;$(which hg)&amp;quot; ] ; then
+                hgdiff () { hg diff &amp;quot;${@}&amp;quot; | colordiff | less -R }
+        fi
+fi
+```&amp;lt;/box&amp;gt;
+* iftop - Monitoring von Netzwerktraffic
+* ncdu - &#39;grafische&#39; Oberfläche für du (ab Debian lenny)
+* pwgen - sichere Passwörter, alternativ
+&amp;lt;html&amp;gt;head -c12 /dev/random | uuencode -m - | sed -n &#39;2s/=*$//;2p&#39;&amp;lt;/html&amp;gt;
+* [colored man pages](http://nion.modprobe.de/blog/archives/569-colored-manpages.html)
+* tree - Verzeichnissinhalte als Baum
+
+##  Grafik / PDF 
+* [fbi/fbgs](http://linux.bytesex.org/fbida/) - Pixelgrafiken und PDF auf der Konsole ansehen (nicht unter X-Terminals, nur echte tty&#39;s)
+    * [Debian Pakete](http://packages.debian.org/search?suite=default&amp;amp;section=all&amp;amp;arch=any&amp;amp;searchon=names&amp;amp;keywords=fbi)
+* für andere Terminals (X, SSH)
+
+  pdftotext pdf-file.pdf - | less
+  oder 
+  lesspipe
+
+##  Linux Logo 
+* http://www.linux-user.de/ausgabe/2007/08/086-zubefehl/index.html?print=y
+* http://www.deater.net/weave/vmwprod/linux_logo/USAGE
+Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen durchgeführt werden:
+&amp;lt;box 98% round|Änderungen für Anzeige über MOTD&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;index-etc-init-d-bootmisc-sh&quot; tabindex=&quot;-1&quot;&gt;Index: /etc/init.d/bootmisc.sh&lt;/h1&gt;
+&lt;p&gt;--- /etc/init.d/bootmisc.sh     (Revision 24)&lt;br /&gt;
++++ /etc/init.d/bootmisc.sh     (Arbeitskopie)&lt;br /&gt;
+@@ -40,7 +40,7 @@&lt;br /&gt;
+fi&lt;/p&gt;
+&lt;p&gt;# Update motd&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;uname -snrvm &amp;gt; /var/run/motd&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;/usr/bin/linux_logo &amp;gt; /var/run/motd&lt;br /&gt;
+[ -f /etc/motd.tail ] &amp;amp;&amp;amp; cat /etc/motd.tail &amp;gt;&amp;gt; /var/run/motd&lt;/p&gt;
+&lt;p&gt;# Save kernel messages in /var/log/dmesg&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-&amp;lt;/box&amp;gt;&quot;&gt;##  Werkzeugkiste 
+* mit sed - Stream Editor rekursiv Suchen und ersetzen
+
+  find . -type f -exec sed -i &#39;s/search/replace/g&#39; {} +
+
+* Lange, umgebrochene dn&#39;s in einer langen Zeile darstellen ((http://www.computing.net/answers/linux/remove-leading-space-and-join-previous-line/31227.html))
+
+  sed -e :a -e &#39;$!N;s/n //;ta&#39; -e &#39;P;D&#39; file.ldif
+
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    <link href="https://www./linux/console/"/>
+  </entry><entry>
+    <title>Linux Professional Institute (LPI)</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./linux/zertifizierung/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;vorbereitungsmoeglichkeiten&quot; tabindex=&quot;-1&quot;&gt;Vorbereitungsmöglichkeiten&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;webbasierte Prüfungssimulation, Study Guides für die einzelnen Prüfungen und Themen
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.lpi-test.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.lpi-test.de/&lt;/a&gt; ((derzeit keine Vorbereitungsmöglichkeiten für LPIC-2, Stand 05.09.2006))&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Prüfungssimulator lpisim, Handhabung mit tclkit ist recht umständlich, zumindest auf Debian oder Ubuntu. Die Fragen kommen auch bei &lt;a href=&quot;http://www.lpi-test.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.lpi-test.de/&lt;/a&gt; zum Einsatz
+&lt;ul&gt;
+&lt;li&gt;lipsim &lt;a href=&quot;http://lpi-buch.linupfront.de/simulator.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://lpi-buch.linupfront.de/simulator.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Sehr gutes Schulungsmaterial von IBM (&#39;Big Blue&#39;), man merkt das die Jungs bei Unix zu Hause sind. Zu den Themen gibt es jeweils praxisnahe Übungen.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www-128.ibm.com/developerworks/linux/lpi/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www-128.ibm.com/developerworks/linux/lpi/index.html&lt;/a&gt; ((Registrierung notwendig))&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;freie Online-Ausgabe von &#39;Wie werde ich UNIX-Guru?&#39; von Arnold Willemer, vieles ist unmittelbar auf Linux anwendbar.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.galileocomputing.de/openbook/unix_guru/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.galileocomputing.de/openbook/unix_guru/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SelfLinux eignet sich ebenso hervorragend um einzelne Themenbereiche zu festigen. Besonderes Augenmerk sollte auf die Herleitung Netzmaske zu IP-Adressenbereich gerichtet werden.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.selflinux.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.selflinux.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;verschiedene Links rund um das LPI
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://linuxwiki.org/LPI&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://linuxwiki.org/LPI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LPI-Acadamy: Prüfungssimulation von Anselm Lingnau
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;http://www.lpi-academy.de/wiki/home/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;empfehlung&quot; tabindex=&quot;-1&quot;&gt;Empfehlung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bücher
+&lt;ul&gt;
+&lt;li&gt;Open Source Press Verlag &lt;a href=&quot;http://www.amazon.de/gp/redirect.html?link_code=ur2&amp;amp;tag=polyformal-21&amp;amp;camp=1638&amp;amp;creative=6742&amp;amp;location=%2FLPIC-1-Vorbereitung-Pr%25fcfung-Professional-Institute%2Fdp%2F393751421X%2Fsr%3D8-1%2Fqid%3D1157457221%2Fref%3Dpd_ka_1%3Fie%3DUTF8%26s%3Dgateway&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;LPIC-1&lt;/a&gt;, &lt;a href=&quot;http://www.amazon.de/gp/redirect.html?link_code=ur2&amp;amp;tag=polyformal-21&amp;amp;camp=1638&amp;amp;creative=6742&amp;amp;location=%2FLPIC-2-Vorbereitung-Pr%25fcfung-Professional-Institute%2Fdp%2F3937514201%2Fsr%3D8-1%2Fqid%3D1157457315%2Fref%3Dpd_ka_1%3Fie%3DUTF8%26s%3Dgateway&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;LPIC-2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Wer Debian, Ubuntu oder andere &#39;Nicht-RPM&#39;-Distributionen verwendet, für den ist es zum Vorbereiten recht hilfreich z.B. über &lt;s&gt;VMWare Player&lt;/s&gt; VirtualBox ein OpenSUSE((wenn schon rpm Distribution dann besser CentOS, das nahezu 100% kompatibel zu Red Hat (lpisim nicht getestet) )) einzusetzen, zumal dort der lpisim recht unproblematisch funktioniert.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.vmware.com/products/player/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.vmware.com/products/player/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;KDE on SUSE prebuild appliance for VMWare Player &lt;a href=&quot;http://developer.kde.org/~binner/vmware/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://developer.kde.org/~binner/vmware/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Moderne Distributionen setzten in der Regel auf &lt;a href=&quot;http://x.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;X.org&lt;/a&gt;, Prüfungsstoff ist jedoch XFree86. Zu empfehlen für 101 X-Windows ist Debian Sarge.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;abnahme-der-pruefung&quot; tabindex=&quot;-1&quot;&gt;Abnahme der Prüfung&lt;/h3&gt;
+&lt;p&gt;Die Prüfung kann in Köln zum Beispiel im &lt;a href=&quot;http://www.com-training.com/de/zertifizierungen/linux.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Com Center&lt;/a&gt; abgelegt werden.&lt;/p&gt;
+&lt;h2 id=&quot;lpic-2&quot; tabindex=&quot;-1&quot;&gt;LPIC-2&lt;/h2&gt;
+&lt;h3 id=&quot;201&quot; tabindex=&quot;-1&quot;&gt;201&lt;/h3&gt;
+&lt;h4 id=&quot;213&quot; tabindex=&quot;-1&quot;&gt;213&lt;/h4&gt;
+&lt;h5 id=&quot;1-automating-tasks-using-scripts&quot; tabindex=&quot;-1&quot;&gt;1) Automating tasks using scripts&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;awk
+&lt;ul&gt;
+&lt;li&gt;IBM developers: &lt;a href=&quot;http://www.ibm.com/developerworks/linux/library/l-awk1.html?ca=drs-&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Awk by example, Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./linux/zertifizierung/"/>
+  </entry><entry>
+    <title>Informationen zu Linux</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./linux/informationen/</id>
+    <content type="html">&lt;h2 id=&quot;geschichte&quot; tabindex=&quot;-1&quot;&gt;Geschichte&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Unix Stammbaum, 1969 bis heute &lt;a href=&quot;http://www.levenez.com/unix/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.levenez.com/unix/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Linux Stammbaum &lt;a href=&quot;http://linuxhelp.blogspot.com/2006/04/mind-map-of-linux-distributions.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://linuxhelp.blogspot.com/2006/04/mind-map-of-linux-distributions.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kurz und prägnant auf deutsch von &lt;a href=&quot;http://www.selflinux.org/selflinux/html/linux_geschichte.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Self Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wikipedia über &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;LINUX&lt;/a&gt; und &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://www./404&quot; target=&quot;&quot;&gt;wpde&amp;gt;UNIX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rosetta Stone for Unix, Vergleichsmatrix für Befehle von Unix(e), Linux(e), MacOsX, Solaris, BSD, etc.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://bhami.com/rosetta.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://bhami.com/rosetta.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;dokumentation&quot; tabindex=&quot;-1&quot;&gt;Dokumentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.oreilly.de/german/freebooks/rlinux3ger/linux_wegIVZ.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;O`Reilly: Linux - Wegweiser zur Installation &amp;amp; Konfiguration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://de.wikibooks.org/wiki/Linux-Kompendium&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;wikibooks: Linux-Kompendium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.selflinux.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://www.selflinux.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;sonsiges&quot; tabindex=&quot;-1&quot;&gt;Sonsiges&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;IBM developerWorks&lt;/a&gt;: &lt;a href=&quot;http://www.ibm.com/developerworks/library/l-linuxvirt/index.html?ca=drs-&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Virtual Linux&lt;/a&gt;, eine Übersicht von Virtualisierungstechniken für Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
+</content>
+    <link href="https://www./linux/informationen/"/>
+  </entry><entry>
+    <title>GNOME</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./linux/gnome/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#laptop&quot;&gt;#laptop&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;dual-head-setup&quot; tabindex=&quot;-1&quot;&gt;Dual Head Setup&lt;/h2&gt;
+&lt;p&gt;Falls &lt;a href=&quot;http://x.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;X.org&lt;/a&gt; auf 2 Bildschirme konfiguriert ist, GNOME aber nur im Clone-Modus erscheint (auf beiden Bildschirmen das gleiche), dann könnte es an den gespeicherten Session Daten liegen. Abhilfe schafft das löschen folgender Dateien&lt;br /&gt;
+rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
+&lt;h2 id=&quot;gnome-power-manager&quot; tabindex=&quot;-1&quot;&gt;gnome-power-manager&lt;/h2&gt;
+&lt;p&gt;Für die korrekte Arbeitsweise unter Debian muss der Benutzer Mitglied der Gruppe &lt;em&gt;powedev&lt;/em&gt; sein((siehe /usr/share/doc/gnome-power-manager/README.Debian])).&lt;/p&gt;
+&lt;p&gt;Der gnome-power-manager ist unter anderem für das Abdunkeln des Bildschirms im Batteriebetrieb, sowie das Konfigurieren von Aktionen beim schließen des Deckels bei Laptops zuständig.&lt;/p&gt;
+</content>
+    <link href="https://www./linux/gnome/"/>
+  </entry><entry>
+    <title>Impressum</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./impressum/</id>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;polyformal System- &amp;amp; Formarbeit&lt;/li&gt;
+&lt;li&gt;Inhaber Stefan Pampel&lt;/li&gt;
+&lt;li&gt;Lichpfad 6&lt;/li&gt;
+&lt;li&gt;51145 Köln, NRW&lt;/li&gt;
+&lt;li&gt;Deutschland&lt;/li&gt;
+&lt;li&gt;Phone: +49 221 2919 9069&lt;/li&gt;
+&lt;li&gt;Email: formbureau-[ät]-polyformal.de&lt;/li&gt;
+&lt;li&gt;Internet: &lt;a href=&quot;http://www.polyformal.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;www.polyformal.de&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Steuernummer 218/5185/2603&lt;/p&gt;
+&lt;p&gt;Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE236718756&lt;/p&gt;
+&lt;p&gt;IANA PEN: 34466&lt;/p&gt;
+&lt;p&gt;Inhaltlich Verantwortlicher gemäß § 18 Abs. 2 MStV: Stefan Pampel (Anschrift wie oben)&lt;/p&gt;
+&lt;p&gt;Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernimmt polyformal keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt; · &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./en/privacy/&quot;&gt;Privacy Policy (English)&lt;/a&gt;&lt;/p&gt;
+</content>
+    <link href="https://www./impressum/"/>
+  </entry><entry>
+    <title>wiki driven by Obsidian</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./en/software/wiki-driven-by-obsidian/</id>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;Obsidian Digital Graden
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/foxblock/digitalgarden_gh-pages?tab=readme-ov-file&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;self-hosted with github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./en/software/wiki-driven-by-obsidian/"/>
+  </entry><entry>
+    <title>imagemagick</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./en/software/imagemagick/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;tiff&quot; tabindex=&quot;-1&quot;&gt;TIFF&lt;/h3&gt;
+&lt;p&gt;Convert a multipage TIFF-file into single TIFF-files:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;convert multipage-file.tiff singlepage-split-%d.tiff&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Convert single TIFF-files into a multipage TIFF-file:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;convert singlepage-split-*.tiff -adjoin multipage-file.tiff&lt;/code&gt;&lt;/p&gt;
+</content>
+    <link href="https://www./en/software/imagemagick/"/>
+  </entry><entry>
+    <title>asciidoc</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./software/asciidoc/</id>
+    <content type="html">&lt;h2 id=&quot;backends&quot; tabindex=&quot;-1&quot;&gt;backends&lt;/h2&gt;
+&lt;h3 id=&quot;slidy&quot; tabindex=&quot;-1&quot;&gt;slidy&lt;/h3&gt;
+&lt;p&gt;Nice HTML presentations with slidy / slidy2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;slidy2 gives some advantages &lt;a href=&quot;http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://csrp.iut-blagnac.fr/jmiwebsite/slidy2/slidy2_doc.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ditaa - &lt;a href=&quot;http://ditaa.sourceforge.net/#usage&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;DIagrams Through Ascii Art&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;deckjs&quot; tabindex=&quot;-1&quot;&gt;deckjs&lt;/h4&gt;
+&lt;p&gt;Another backend for nice HTML presentations with &lt;a href=&quot;http://houqp.github.com/asciidoc-deckjs/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;deckjs&lt;/a&gt; backend&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info]&lt;br /&gt;
+deckjs backend requires title attribute for images&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;regular image
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;image::foo.img[title=&amp;quot;mytitle&amp;quot;]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ditaa requires
+&lt;ul&gt;
+&lt;li&gt;.My Title above &#39;[ditaa]&#39; section&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./software/asciidoc/"/>
+  </entry><entry>
+    <title>Stalwart Migration 0.15 to 1.0</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./en/software/stalwart-migration/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Field report: migrating a small Stalwart mail server from 0.15.5 to 1.0.3. The setup: Docker Compose, RocksDB, OpenLDAP as the directory, a reverse proxy in front, fewer than 10 accounts, about 13 GB of data.&lt;/p&gt;
+&lt;p&gt;The migration took place in November 2026 using &lt;code&gt;stalwart:v0.16.27&lt;/code&gt;, &lt;code&gt;stalwart-migrate:1.0.6&lt;/code&gt;, &lt;code&gt;stalwart:v1.0.3&lt;/code&gt; and &lt;code&gt;stalwart-cli&lt;/code&gt; 1.0.14. Object and field names may change in later versions. All names are placeholders (&lt;code&gt;example.com&lt;/code&gt;, &lt;code&gt;&amp;lt;...&amp;gt;&lt;/code&gt;). The official upgrade documentation takes precedence over this page.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./software/stalwart-migration/&quot;&gt;Stalwart Migration 0.15 auf 1.0&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;key-points&quot; tabindex=&quot;-1&quot;&gt;Key points&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no direct path: 0.15 → 0.16 → &lt;code&gt;stalwart-migrate&lt;/code&gt; → 1.0.&lt;/li&gt;
+&lt;li&gt;The first start of 0.16 changes the data irreversibly. Settings and directory records are wiped. Work on a copy only, and take a dump first.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:latest&lt;/code&gt; now points to 1.0. Pin the old image before you begin, otherwise an accidental pull starts the wrong version on the old data.&lt;/li&gt;
+&lt;li&gt;The migration itself went smoothly. The problems came afterwards and involved roles, IP bans, logging and certificates. The checklist below covers them.&lt;/li&gt;
+&lt;li&gt;A rehearsal on a copy is well worth it, but only if it ends with real logins. Ours did not, so the worst bug only showed up in production.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;result&quot; tabindex=&quot;-1&quot;&gt;Result&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Phase&lt;/th&gt;
+&lt;th&gt;Duration&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Copying 13 GB of data&lt;/td&gt;
+&lt;td&gt;2 minutes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Starting 0.16, importing the configuration&lt;/td&gt;
+&lt;td&gt;1 minute&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;stalwart-migrate&lt;/code&gt; including full verification&lt;/td&gt;
+&lt;td&gt;5 minutes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total outage until 1.0 was public&lt;/td&gt;
+&lt;td&gt;9 minutes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Logins disrupted afterwards&lt;/td&gt;
+&lt;td&gt;about 13 minutes, one admin account about 25 minutes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;verify --full&lt;/code&gt; reported all accounts without a mismatch. The login disruption would have been avoidable with the checklist below.&lt;/p&gt;
+&lt;h2 id=&quot;preparation&quot; tabindex=&quot;-1&quot;&gt;Preparation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Pin the image and set &lt;code&gt;pull_policy: never&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;image: stalwart-local:pre-upgrade-0.15.5   # local tag of the running image
+pull_policy: never
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Run a rehearsal on a copy of the data. Keep the copy isolated (&lt;code&gt;docker network create --internal&lt;/code&gt;) so it cannot deliver mail.&lt;/li&gt;
+&lt;li&gt;Check which services use the mail server internally. Webmail may reach ports that are not published at all, such as 465 and 4190.&lt;/li&gt;
+&lt;li&gt;Compare content: message count and total size per account via JMAP. The quota counter is no use for this. In 0.15 ours was too low by more than a factor of 2, while the real total matched to the byte after migration.&lt;/li&gt;
+&lt;li&gt;Decide who will be admin. With LDAP active, local accounts cannot have credentials. Without LDAP, &lt;code&gt;STALWART_RECOVERY_ADMIN&lt;/code&gt; is the only emergency access.&lt;/li&gt;
+&lt;li&gt;Tell your users. OAuth clients must sign in again, and CalDAV, CardDAV and WebDAV clients fetch their data again.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;procedure&quot; tabindex=&quot;-1&quot;&gt;Procedure&lt;/h2&gt;
+&lt;h3 id=&quot;1-dump-from-0-15&quot; tabindex=&quot;-1&quot;&gt;1. Dump from 0.15&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;migrate_v016.py&lt;/code&gt; script from the upgrade documentation exports settings and principals through the API. This works while the server is running:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;python migrate_v016.py dump --url https://mail.example.com --username admin &#92;
+  --settings settings.json --principals principals.json
+
+python migrate_v016.py convert --settings settings.json --principals principals.json &#92;
+  --config config.json --output export.json &#92;
+  --patch-paths /opt/stalwart=/var/lib/stalwart --unmigrated-output unmigrated.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Review &lt;code&gt;unmigrated.txt&lt;/code&gt;. In our case most keys were not carried over, including the many automatically created IP bans. That is normal, but the list is worth a look.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;export.json&lt;/code&gt; is NDJSON. Obsolete domains, DKIM keys or aliases can be filtered out before the import. Afterwards, make sure no references such as &lt;code&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#create-N&quot;&gt;#create-N&lt;/a&gt;&lt;/code&gt; are left dangling.&lt;/p&gt;
+&lt;h3 id=&quot;2-stop-and-copy&quot; tabindex=&quot;-1&quot;&gt;2. Stop and copy&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;docker stop -t 60 mailserver
+cp -a &amp;lt;0.15-data&amp;gt; &amp;lt;work016&amp;gt;
+chown -R 2000:2000 &amp;lt;work016&amp;gt;     # newer images run as UID 2000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The original data stays untouched and serves as the rollback.&lt;/p&gt;
+&lt;h3 id=&quot;3-0-16-in-recovery-mode&quot; tabindex=&quot;-1&quot;&gt;3. 0.16 in recovery mode&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;config.json&lt;/code&gt; for 0.16:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{ &amp;quot;@type&amp;quot;: &amp;quot;RocksDb&amp;quot;, &amp;quot;path&amp;quot;: &amp;quot;/var/lib/stalwart/data&amp;quot; }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;docker run -d --name stalwart-016 --network &amp;lt;internal-network&amp;gt; &#92;
+  -e STALWART_RECOVERY_ADMIN=admin:&amp;lt;password&amp;gt; -e STALWART_RECOVERY_MODE=1 &#92;
+  -v &amp;lt;c016&amp;gt;:/etc/stalwart -v &amp;lt;work016&amp;gt;:/var/lib/stalwart/data &#92;
+  stalwartlabs/stalwart:v0.16.27
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The CLI runs in the container&#39;s network namespace:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;docker run --rm --network container:stalwart-016 &#92;
+  -e STALWART_URL=http://127.0.0.1:8080 -e STALWART_USER=admin -e STALWART_PASSWORD=&amp;lt;password&amp;gt; &#92;
+  -v &amp;lt;folder&amp;gt;:/d:ro ghcr.io/stalwartlabs/cli:latest apply --file /d/export.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;4-create-the-ldap-directory&quot; tabindex=&quot;-1&quot;&gt;4. Create the LDAP directory&lt;/h3&gt;
+&lt;p&gt;Set fields are objects, not lists, so use &lt;code&gt;{&amp;quot;mail&amp;quot;: true}&lt;/code&gt; rather than &lt;code&gt;[&amp;quot;mail&amp;quot;]&lt;/code&gt;. Lists fail with &lt;code&gt;invalidPatch&lt;/code&gt; or &lt;code&gt;invalid value object&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+  &amp;quot;description&amp;quot;: &amp;quot;LDAP&amp;quot;,
+  &amp;quot;url&amp;quot;: &amp;quot;ldap://ldap.example.internal:1389&amp;quot;,
+  &amp;quot;baseDn&amp;quot;: &amp;quot;dc=example,dc=com&amp;quot;,
+  &amp;quot;bindDn&amp;quot;: &amp;quot;cn=admin,dc=example,dc=com&amp;quot;,
+  &amp;quot;bindSecret&amp;quot;: &amp;quot;&amp;lt;secret&amp;gt;&amp;quot;,
+  &amp;quot;bindAuthentication&amp;quot;: false,
+  &amp;quot;filterLogin&amp;quot;: &amp;quot;(&amp;amp;(objectClass=inetOrgPerson)(|(mail=?)(uid=?)))&amp;quot;,
+  &amp;quot;filterMailbox&amp;quot;: &amp;quot;(&amp;amp;(objectClass=inetOrgPerson)(|(mail=?)(mailLocalAddress=?)))&amp;quot;,
+  &amp;quot;attrClass&amp;quot;: {&amp;quot;objectClass&amp;quot;: true},
+  &amp;quot;attrEmail&amp;quot;: {&amp;quot;mail&amp;quot;: true},
+  &amp;quot;attrEmailAlias&amp;quot;: {&amp;quot;mailLocalAddress&amp;quot;: true}
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli create Directory/Ldap --stdin &amp;lt; directory.json
+stalwart-cli update Authentication singleton --field directoryId=&amp;lt;id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bindAuthentication: false&lt;/code&gt; means hash comparison, which worked with &lt;code&gt;{SSHA}&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Neither 0.16.27 nor 1.0.3 appends the default domain to LDAP logins. For logins without a domain to keep working, &lt;code&gt;filterLogin&lt;/code&gt; must also cover &lt;code&gt;uid&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filterMailbox&lt;/code&gt; from 0.16 becomes &lt;code&gt;filterRecipient&lt;/code&gt; in 1.0. &lt;code&gt;stalwart-migrate&lt;/code&gt; converts it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;5-stalwart-migrate&quot; tabindex=&quot;-1&quot;&gt;5. stalwart-migrate&lt;/h3&gt;
+&lt;p&gt;Stop 0.16. Target configuration for 1.0:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{ &amp;quot;@type&amp;quot;: &amp;quot;RocksDb&amp;quot;, &amp;quot;path&amp;quot;: &amp;quot;/var/lib/stalwart-v1/&amp;quot; }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;A=&amp;quot;--source /etc/stalwart/config.json --target /etc/stalwart-v1/config.json --state /var/lib/stalwart-migrate&amp;quot;
+migrate prepare --non-interactive --source /etc/stalwart/config.json --state /var/lib/stalwart-migrate
+migrate run $A
+migrate run $A --final --yes
+migrate verify --full $A
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;migrate&lt;/code&gt; stands for &lt;code&gt;docker run --rm -it --ulimit nofile=65536:65536 --network none&lt;/code&gt; with the matching volumes and &lt;code&gt;stalwartlabs/stalwart-migrate:1.0.6&lt;/code&gt;. The tool needs a TTY, so run the chain inside &lt;code&gt;screen&lt;/code&gt;. For &lt;code&gt;--non-interactive&lt;/code&gt;, &lt;code&gt;answers.toml&lt;/code&gt; must be in the state folder. &lt;code&gt;prepare&lt;/code&gt; writes this file itself, so you can reuse the one from the rehearsal.&lt;/p&gt;
+&lt;h3 id=&quot;6-set-up-1-0-in-isolation-first&quot; tabindex=&quot;-1&quot;&gt;6. Set up 1.0 in isolation first&lt;/h3&gt;
+&lt;p&gt;This step is the main departure from the obvious route. Start 1.0 without published ports, configure everything and only then make it public. That way the server is never online half configured.&lt;/p&gt;
+&lt;p&gt;Do the first start once with &lt;code&gt;STALWART_UPDATE_ROLE_PERMISSIONS=true&lt;/code&gt;, then remove the variable. The individual settings are in the checklist.&lt;/p&gt;
+&lt;h3 id=&quot;7-switch-over&quot; tabindex=&quot;-1&quot;&gt;7. Switch over&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;mailserver:
+  image: stalwartlabs/stalwart:v1.0.3
+  environment:
+    - STALWART_PUBLIC_URL=https://mail.example.com
+  volumes:
+    - ./v1/config:/etc/stalwart:ro
+    - ./v1/data:/var/lib/stalwart-v1
+    - ./v1/logs:/var/log/stalwart
+    - ./certs:/data/certs:ro
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;checklist-before-going-public&quot; tabindex=&quot;-1&quot;&gt;Checklist before going public&lt;/h2&gt;
+&lt;p&gt;Each of these was missing or caused trouble in our migration.&lt;/p&gt;
+&lt;h3 id=&quot;set-the-default-roles&quot; tabindex=&quot;-1&quot;&gt;Set the default roles&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;This was the worst bug.&lt;/strong&gt; After the migration all &lt;code&gt;Default Roles&lt;/code&gt; were empty. Accounts with &lt;code&gt;{&amp;quot;@type&amp;quot;:&amp;quot;User&amp;quot;}&lt;/code&gt; therefore had no permissions at all.&lt;/p&gt;
+&lt;p&gt;Symptom: the log shows &lt;code&gt;Authentication successful&lt;/code&gt;, immediately followed by &lt;code&gt;Unauthorized access&lt;/code&gt; with &lt;code&gt;reason = &amp;quot;authenticate&amp;quot;&lt;/code&gt;. Clients just report a failed login. It looks like a password or LDAP problem, but it is neither.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli query Role --fields id,description
+stalwart-cli update Authentication singleton &#92;
+  --field &#39;defaultUserRoleIds={&amp;quot;&amp;lt;user&amp;gt;&amp;quot;:true}&#39; &#92;
+  --field &#39;defaultGroupRoleIds={&amp;quot;&amp;lt;group&amp;gt;&amp;quot;:true}&#39; &#92;
+  --field &#39;defaultTenantRoleIds={&amp;quot;&amp;lt;tenant&amp;gt;&amp;quot;:true}&#39; &#92;
+  --field &#39;defaultAdminRoleIds={&amp;quot;&amp;lt;admin&amp;gt;&amp;quot;:true,&amp;quot;&amp;lt;user&amp;gt;&amp;quot;:true}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Role IDs differ between installations. We did not find out why the fields were empty. Check them before going public, because without roles the &lt;code&gt;emailReceive&lt;/code&gt; permission is missing too. Port 25 still accepted mail, but whether it was delivered during that time could not be established because of the missing log.&lt;/p&gt;
+&lt;h3 id=&quot;admins-need-two-roles&quot; tabindex=&quot;-1&quot;&gt;Admins need two roles&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;System Administrator&lt;/code&gt; role has no IMAP permissions. An admin account can reach the management interface but not its mailbox. The log shows &lt;code&gt;Unauthorized access&lt;/code&gt; with &lt;code&gt;imapAuthenticate&lt;/code&gt;. That is why &lt;code&gt;defaultAdminRoleIds&lt;/code&gt; above lists both roles. Then give the account the role:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli update Account &amp;lt;id&amp;gt; --field &#39;roles={&amp;quot;@type&amp;quot;:&amp;quot;Admin&amp;quot;}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;exempt-the-reverse-proxy-from-automatic-bans&quot; tabindex=&quot;-1&quot;&gt;Exempt the reverse proxy from automatic bans&lt;/h3&gt;
+&lt;p&gt;Web access suddenly returned HTTP 502, while the container itself correctly answered 401. The cause: bots request paths such as &lt;code&gt;*.php&lt;/code&gt; or &lt;code&gt;*/wp-*&lt;/code&gt;, the scan detection only sees the proxy as the source and bans it, with no expiry. In our case this happened within minutes of starting.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli query BlockedIp --fields id,address,reason
+stalwart-cli create AllowedIp --json &#39;{&amp;quot;address&amp;quot;:&amp;quot;&amp;lt;internal-subnet&amp;gt;&amp;quot;,&amp;quot;reason&amp;quot;:&amp;quot;Reverse proxy&amp;quot;}&#39;
+stalwart-cli delete BlockedIp --ids &amp;lt;id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Restart afterwards, otherwise the ban stayed active from the cache. A subnet is more robust than a single IP because container IPs can change when containers are recreated.&lt;/p&gt;
+&lt;h3 id=&quot;check-the-listeners&quot; tabindex=&quot;-1&quot;&gt;Check the listeners&lt;/h3&gt;
+&lt;p&gt;After the migration we were missing &lt;code&gt;imap&lt;/code&gt; (143) and &lt;code&gt;submission&lt;/code&gt; (587). The others were present:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli query NetworkListener --fields id,name,bind,protocol
+stalwart-cli create NetworkListener --json &#39;{&amp;quot;name&amp;quot;:&amp;quot;imap&amp;quot;,&amp;quot;bind&amp;quot;:{&amp;quot;[::]:143&amp;quot;:true},&amp;quot;protocol&amp;quot;:&amp;quot;imap&amp;quot;}&#39;
+stalwart-cli create NetworkListener --json &#39;{&amp;quot;name&amp;quot;:&amp;quot;submission&amp;quot;,&amp;quot;bind&amp;quot;:{&amp;quot;[::]:587&amp;quot;:true},&amp;quot;protocol&amp;quot;:&amp;quot;smtp&amp;quot;}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;certificate&quot; tabindex=&quot;-1&quot;&gt;Certificate&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli create Certificate --json &#39;{&amp;quot;certificate&amp;quot;:{&amp;quot;@type&amp;quot;:&amp;quot;File&amp;quot;,&amp;quot;filePath&amp;quot;:&amp;quot;/data/certs/mail.example.com/cert.pem&amp;quot;},&amp;quot;privateKey&amp;quot;:{&amp;quot;@type&amp;quot;:&amp;quot;File&amp;quot;,&amp;quot;filePath&amp;quot;:&amp;quot;/data/certs/mail.example.com/key.pem&amp;quot;}}&#39;
+stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;lt;id&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;The new image runs as UID 2000. A &lt;code&gt;key.pem&lt;/code&gt; with &lt;code&gt;root:root 600&lt;/code&gt; is unreadable and TLS fails.&lt;/li&gt;
+&lt;li&gt;If you use &lt;code&gt;traefik-certs-dumper&lt;/code&gt;: &lt;code&gt;OVERRIDE_UID=2000&lt;/code&gt; and &lt;code&gt;OVERRIDE_GID=2000&lt;/code&gt; have no effect on existing, unchanged files. Set the ownership once yourself and check again after the next renewal. We have not been able to do the latter yet.&lt;/li&gt;
+&lt;li&gt;Certificate files are only re-read at startup or via &lt;code&gt;stalwart-cli create Action/ReloadTlsCertificates&lt;/code&gt;. We restart the container once a week via cron, which avoids keeping a password on the server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;check-the-logging&quot; tabindex=&quot;-1&quot;&gt;Check the logging&lt;/h3&gt;
+&lt;p&gt;After the migration &lt;code&gt;docker logs&lt;/code&gt; stayed completely empty, and the migrated tracer wrote to &lt;code&gt;/var/log/stalwart&lt;/code&gt;, which does not exist in the container. So an empty log does not mean there are no errors. The fix: mount that folder as a volume, owned by UID 2000.&lt;/p&gt;
+&lt;p&gt;For troubleshooting, a temporary console tracer helps. It takes effect after a restart:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;stalwart-cli create Tracer/Stdout --json &#39;{&amp;quot;enable&amp;quot;:true,&amp;quot;level&amp;quot;:&amp;quot;debug&amp;quot;,&amp;quot;eventsPolicy&amp;quot;:&amp;quot;exclude&amp;quot;,&amp;quot;events&amp;quot;:{}}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;keep-the-cli-current&quot; tabindex=&quot;-1&quot;&gt;Keep the CLI current&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;stalwart-cli&lt;/code&gt; 1.0.13 could not read the 1.0.3 schema; only 1.0.14 worked. Pull the CLI image again before the window.&lt;/p&gt;
+&lt;h2 id=&quot;tests-after-going-live&quot; tabindex=&quot;-1&quot;&gt;Tests after going live&lt;/h2&gt;
+&lt;p&gt;Test from outside, not just on the container:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ports 25, 143, 465, 587, 993, and 4190 depending on your setup&lt;/li&gt;
+&lt;li&gt;Login with short name and with full address, via IMAP and SMTP&lt;/li&gt;
+&lt;li&gt;Webmail, also after every further restart or role change&lt;/li&gt;
+&lt;li&gt;Admin interface, as well as the admin account&#39;s mailbox&lt;/li&gt;
+&lt;li&gt;Mail in both directions, with a DKIM check at the receiving end&lt;/li&gt;
+&lt;li&gt;Unknown addresses and removed domains must be rejected&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A test with a deliberately wrong password quickly shows whether the web path is right: 401 is correct, 502 is not.&lt;/p&gt;
+&lt;h2 id=&quot;rollback&quot; tabindex=&quot;-1&quot;&gt;Rollback&lt;/h2&gt;
+&lt;p&gt;As long as 1.0 has not accepted new mail: point Compose back to the pinned image and the old volumes. The 0.15 data stays unchanged for this purpose. Mail received later would have to be carried over by hand, so decide early if there are problems.&lt;/p&gt;
+&lt;p&gt;The 0.16 working copy can go once 1.0 is confirmed working. We kept the 0.15 data for about another week.&lt;/p&gt;
+&lt;h2 id=&quot;other-observations&quot; tabindex=&quot;-1&quot;&gt;Other observations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The spam training samples were gone after 0.16, which was expected. 1.0 loaded a spam model at startup. We did not check whether it matches the old one.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;answers.toml&lt;/code&gt; contains secrets in clear text if any were requested. Dumps and &lt;code&gt;export.json&lt;/code&gt; also contain hashes and DKIM keys. Store such files with mode &lt;code&gt;600&lt;/code&gt; and delete them after the migration.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;STALWART_RECOVERY_ADMIN&lt;/code&gt; also works in normal operation with LDAP down. Remove it after use.&lt;/li&gt;
+&lt;li&gt;In shell scripts, &lt;code&gt;docker run -i&lt;/code&gt; swallows the rest of the script if it runs via stdin. Append &lt;code&gt;&amp;lt;/dev/null&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Never delete Account objects, they hold the link to the mailboxes.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://www./en/software/stalwart-migration/"/>
+  </entry><entry>
+    <title>Privacy Policy</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./en/privacy/</id>
+    <content type="html">&lt;h1 id=&quot;privacy-policy&quot; tabindex=&quot;-1&quot;&gt;Privacy Policy&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a translation for convenience. In case of doubt, the German version applies.&lt;/p&gt;
+&lt;h2 id=&quot;controller&quot; tabindex=&quot;-1&quot;&gt;Controller&lt;/h2&gt;
+&lt;p&gt;Stefan Pampel, polyformal System- &amp;amp; Formarbeit, Lichpfad 6, 51145 Köln (Cologne), Germany&lt;br /&gt;
+Email: formbureau-[at]-polyformal.de, phone: +49 221 2919 9069&lt;br /&gt;
+For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./impressum/&quot;&gt;Impressum&lt;/a&gt; (legal notice).&lt;/p&gt;
+&lt;h2 id=&quot;hosting-via-git-hub-pages&quot; tabindex=&quot;-1&quot;&gt;Hosting via GitHub Pages&lt;/h2&gt;
+&lt;p&gt;This wiki is served via GitHub Pages, a service of GitHub Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA. When you access the pages, GitHub processes technically necessary data, in particular your IP address, date and time of access, the page requested and your browser&#39;s user agent, in order to deliver the pages and keep the service secure. This may involve a transfer to the USA. GitHub is certified under the EU-US Data Privacy Framework. The legal basis is our legitimate interest in reliably providing this website (Art. 6(1)(f) GDPR). More information: &lt;a href=&quot;https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;external-scripts-and-libraries&quot; tabindex=&quot;-1&quot;&gt;External scripts and libraries&lt;/h2&gt;
+&lt;p&gt;For display and features (e.g. syntax highlighting, graph view, interface elements), this website loads program libraries from the content delivery networks jsDelivr (&lt;a href=&quot;http://cdn.jsdelivr.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;cdn.jsdelivr.net&lt;/a&gt;, &lt;a href=&quot;http://fastly.jsdelivr.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;fastly.jsdelivr.net&lt;/a&gt;) and cdnjs (&lt;a href=&quot;http://cdnjs.cloudflare.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;cdnjs.cloudflare.com&lt;/a&gt;). Your IP address is transmitted to the respective provider, which is technically necessary to deliver the files. The providers may use servers outside the EU. The legal basis is our legitimate interest in a functional and fast-loading website (Art. 6(1)(f) GDPR).&lt;/p&gt;
+&lt;h2 id=&quot;web-analytics-with-umami&quot; tabindex=&quot;-1&quot;&gt;Web analytics with Umami&lt;/h2&gt;
+&lt;p&gt;This website uses Umami, an open-source tool for measuring reach, which runs on our own server in Germany (&lt;a href=&quot;http://stats.polyformal.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;stats.polyformal.de&lt;/a&gt;). No cookies are set, no data is stored in your browser and no IP addresses are stored.&lt;/p&gt;
+&lt;p&gt;We record the page visited, the referring page, browser, operating system, device type, screen size, language and the approximate country or region. To distinguish visits, an anonymous identifier is derived from your IP address and user agent. It changes every month and cannot be traced back to you. No data is passed on to third parties.&lt;/p&gt;
+&lt;p&gt;The legal basis is our legitimate interest in analysing how our website is used (Art. 6(1)(f) GDPR).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Opt-out:&lt;/strong&gt; If your browser sends the &amp;quot;Do Not Track&amp;quot; signal, no data is recorded. You can enable it in your browser&#39;s privacy settings.&lt;/p&gt;
+&lt;h2 id=&quot;your-rights&quot; tabindex=&quot;-1&quot;&gt;Your rights&lt;/h2&gt;
+&lt;p&gt;You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and the right to object to processing based on legitimate interests (Art. 21 GDPR). Please contact us at the address above.&lt;/p&gt;
+&lt;p&gt;You also have the right to lodge a complaint with a data protection supervisory authority. The competent authority is the State Commissioner for Data Protection and Freedom of Information of North Rhine-Westphalia (LDI NRW), &lt;a href=&quot;https://www.ldi.nrw.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ldi.nrw.de&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Last updated: November 2026&lt;/p&gt;
+</content>
+    <link href="https://www./en/privacy/"/>
+  </entry><entry>
+    <title>Emu E4XT Ultra</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./en/notizen/e4xt_ultra/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#music&quot;&gt;#music&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#sampler&quot;&gt;#sampler&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#emulator&quot;&gt;#emulator&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;internal-ssd&quot; tabindex=&quot;-1&quot;&gt;Internal SSD&lt;/h2&gt;
+&lt;p&gt;Bases on a tip in a &lt;a href=&quot;http://www.sequencer.de/synthesizer/viewtopic.php?f=3&amp;amp;t=79915#p866249&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;forum&lt;/a&gt;, it is possible to replace the internal noisy 3,5&amp;quot; HD with a silent SSD.&lt;/p&gt;
+&lt;h2 id=&quot;shopping-list&quot; tabindex=&quot;-1&quot;&gt;Shopping List&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.wintech-computer.de/wt_de_product_detail.php?anr=81319&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Wintech SAK-65&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.raidsonic.de/de/products/mobile-racks.php?we_objectID=7700&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Raidsonic IB-2216StS 2.5&amp;quot; Mobile Rack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://duckduckgo.com/?q=Samsung%20MZ-7TE120BW%20Serie%20840&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Samsung MZ-7TE120BW Serie 840&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;replacement&quot; tabindex=&quot;-1&quot;&gt;Replacement&lt;/h2&gt;
+&lt;p&gt;The replacement is straight forward. Just remove cable and unmount the old drive. Mount the mobile rack with the two screws towards backside within the original holes, for the two screws towards fron you need selfthreading screws. On the SAK-65 Adapter a missing hole has to be drilled, see image:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/pisco_cgn/13494599864/in/photostream/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.flickr.com/photos/pisco_cgn/13494599864/in/photostream/&lt;/a&gt;&lt;/p&gt;
+</content>
+    <link href="https://www./en/notizen/e4xt_ultra/"/>
+  </entry><entry>
+    <title>ollama</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./en/ai/ollama/</id>
+    <content type="html">&lt;p&gt;load a Hugging Face model into ollama&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ollama run hf.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF:latest
+# or M3 24GB
+ollama run hf.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF:latest
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    <link href="https://www./en/ai/ollama/"/>
+  </entry><entry>
+    <title>Datenschutz</title>
+    <updated>2026-11-09T19:51:34Z</updated>
+    <id>https://www./datenschutz/</id>
+    <content type="html">&lt;h1 id=&quot;datenschutzerklaerung&quot; tabindex=&quot;-1&quot;&gt;Datenschutzerklärung&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./en/privacy/&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;verantwortlicher&quot; tabindex=&quot;-1&quot;&gt;Verantwortlicher&lt;/h2&gt;
+&lt;p&gt;Stefan Pampel, polyformal System- &amp;amp; Formarbeit, Lichpfad 6, 51145 Köln, Deutschland&lt;br /&gt;
+E-Mail: formbureau-[ät]-polyformal.de, Telefon: +49 221 2919 9069&lt;br /&gt;
+Weitere Angaben siehe &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://www./impressum/&quot;&gt;Impressum&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;hosting-ueber-git-hub-pages&quot; tabindex=&quot;-1&quot;&gt;Hosting über GitHub Pages&lt;/h2&gt;
+&lt;p&gt;Dieses Wiki wird über GitHub Pages bereitgestellt, einen Dienst der GitHub Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA. Beim Aufruf der Seiten verarbeitet GitHub technisch notwendige Daten, insbesondere Ihre IP-Adresse, Datum und Uhrzeit des Abrufs, die aufgerufene Seite und die Browserkennung, um die Seiten auszuliefern und die Sicherheit des Dienstes zu gewährleisten. Dabei kann eine Übermittlung in die USA stattfinden. GitHub ist unter dem EU-US Data Privacy Framework zertifiziert. Rechtsgrundlage ist unser berechtigtes Interesse an einer zuverlässigen Bereitstellung dieser Website (Art. 6 Abs. 1 lit. f DSGVO). Weitere Informationen: &lt;a href=&quot;https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;externe-skripte-und-bibliotheken&quot; tabindex=&quot;-1&quot;&gt;Externe Skripte und Bibliotheken&lt;/h2&gt;
+&lt;p&gt;Für Darstellung und Funktionen (z. B. Syntaxhervorhebung, Graph-Ansicht, Bedienelemente) lädt diese Website Programmbibliotheken von den Content-Delivery-Netzwerken jsDelivr (&lt;a href=&quot;http://cdn.jsdelivr.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;cdn.jsdelivr.net&lt;/a&gt;, &lt;a href=&quot;http://fastly.jsdelivr.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;fastly.jsdelivr.net&lt;/a&gt;) und cdnjs (&lt;a href=&quot;http://cdnjs.cloudflare.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;cdnjs.cloudflare.com&lt;/a&gt;). Dabei wird Ihre IP-Adresse an den jeweiligen Anbieter übermittelt, was technisch notwendig ist, um die Dateien auszuliefern. Die Anbieter können Server außerhalb der EU nutzen. Rechtsgrundlage ist unser berechtigtes Interesse an einer funktionsfähigen und schnell ladenden Website (Art. 6 Abs. 1 lit. f DSGVO).&lt;/p&gt;
+&lt;h2 id=&quot;webanalyse-mit-umami&quot; tabindex=&quot;-1&quot;&gt;Webanalyse mit Umami&lt;/h2&gt;
+&lt;p&gt;Diese Website nutzt Umami, eine quelloffene Software zur Reichweitenmessung, die auf unserem eigenen Server in Deutschland (&lt;a href=&quot;http://stats.polyformal.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;stats.polyformal.de&lt;/a&gt;) betrieben wird. Es werden keine Cookies gesetzt, keine Daten in Ihrem Browser gespeichert und keine IP-Adressen gespeichert.&lt;/p&gt;
+&lt;p&gt;Erfasst werden die aufgerufene Seite, die verweisende Seite, Browser, Betriebssystem, Gerätetyp, Bildschirmgröße, Sprache sowie das ungefähre Land bzw. die ungefähre Region. Zur Unterscheidung von Besuchen wird aus IP-Adresse und Browserkennung eine anonyme Kennung gebildet, die monatlich wechselt und keinen Rückschluss auf Ihre Person zulässt. Eine Weitergabe an Dritte findet nicht statt.&lt;/p&gt;
+&lt;p&gt;Rechtsgrundlage ist unser berechtigtes Interesse an der Auswertung der Nutzung unseres Angebots (Art. 6 Abs. 1 lit. f DSGVO).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Widerspruch:&lt;/strong&gt; Wenn Ihr Browser das „Do Not Track“-Signal sendet, findet keine Erfassung statt. Sie können es in den Datenschutzeinstellungen Ihres Browsers aktivieren.&lt;/p&gt;
+&lt;h2 id=&quot;ihre-rechte&quot; tabindex=&quot;-1&quot;&gt;Ihre Rechte&lt;/h2&gt;
+&lt;p&gt;Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie das Recht, der Verarbeitung auf Grundlage berechtigter Interessen zu widersprechen (Art. 21 DSGVO). Wenden Sie sich dazu an die oben genannte Adresse.&lt;/p&gt;
+&lt;p&gt;Sie haben außerdem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, &lt;a href=&quot;https://www.ldi.nrw.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ldi.nrw.de&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stand: November 2026&lt;/p&gt;
+</content>
+    <link href="https://www./datenschutz/"/>
+  </entry></feed>
 
