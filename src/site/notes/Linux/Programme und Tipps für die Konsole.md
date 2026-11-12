@@ -80,8 +80,8 @@ ccze & less
   [output cames from here] | ccze -A | less -R
 </note>
 * colordiff - Unterschiede in Dateien farbig darstellen
-<box round 98%| aliases e.g. .profile >
-```
+
+```bash
 # nice functions for VCS 
 # usage: (hg|svn|cvs)diff [file or dir]
 # or     diffless [file1] [file2]
@@ -103,7 +103,8 @@ if [ -x "$(which colordiff)" ] ; then
                 hgdiff () { hg diff "${@}" | colordiff | less -R }
         fi
 fi
-```</box>
+```
+
 * iftop - Monitoring von Netzwerktraffic
 * ncdu - 'grafische' Oberfläche für du (ab Debian lenny)
 * pwgen - sichere Passwörter, alternativ
@@ -124,8 +125,8 @@ fi
 * http://www.linux-user.de/ausgabe/2007/08/086-zubefehl/index.html?print=y
 * http://www.deater.net/weave/vmwprod/linux_logo/USAGE
 Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen durchgeführt werden:
-<box 98% round|Änderungen für Anzeige über MOTD>
-```
+
+```diff
 Index: /etc/init.d/bootmisc.sh
 ===================================================================
 --- /etc/init.d/bootmisc.sh     (Revision 24)
@@ -139,7 +140,7 @@ Index: /etc/init.d/bootmisc.sh
         [ -f /etc/motd.tail ] && cat /etc/motd.tail >> /var/run/motd
 
         # Save kernel messages in /var/log/dmesg
-```</box>
+```
 ##  Werkzeugkiste 
 * mit sed - Stream Editor rekursiv Suchen und ersetzen
 
