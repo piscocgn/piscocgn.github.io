@@ -3,10 +3,10 @@
   <title>polyformal wiki</title>
   <link href="https://wiki.polyformal.de/feed.xml" rel="self"/>
   <link href="https://wiki.polyformal.de"/>
-  <updated>2026-11-12T21:32:54Z</updated>
+  <updated>2026-11-15T20:48:37Z</updated>
   <id>https://wiki.polyformal.de</id><entry>
     <title>Werkzeuge für Desktop Publishing</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/</id>
     <content type="html">&lt;p&gt;Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.&lt;/p&gt;
 &lt;p&gt;Beinhaltet: u.a. GIMP, Inkscape, Scribus, gThumb, Schriften allgemein, FontyPython, FONTPage&lt;/p&gt;
@@ -26,7 +26,7 @@
     <link href="https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/"/>
   </entry><entry>
     <title>remind - ein anspruchsvolles Kalender- und Alarm-Programm</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/software/remind/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.roaringpenguin.com/products/remind&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Homepage&lt;/a&gt;&lt;/li&gt;
@@ -124,7 +124,7 @@ wget -qO $TMP_FILE RTM_URL &amp;amp;&amp;amp; ical2rem.pl $TMP_FILE  &amp;gt; ~/
     <link href="https://wiki.polyformal.de/software/remind/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 auf 1.0</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/software/stalwart-migration/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Erfahrungsbericht: Migration eines kleinen Stalwart-Mailservers von 0.15.5 auf 1.0.3. Das Setup: Docker Compose, RocksDB, OpenLDAP als Verzeichnis, Reverse Proxy davor, weniger als 10 Konten, rund 13 GB Daten.&lt;/p&gt;
@@ -337,7 +337,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/stalwart-migration/"/>
   </entry><entry>
     <title>Samba</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/software/samba/</id>
     <content type="html">&lt;h2 id=&quot;time-machine&quot; tabindex=&quot;-1&quot;&gt;TimeMachine&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&lt;/a&gt;&lt;/p&gt;
@@ -345,7 +345,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/samba/"/>
   </entry><entry>
     <title>Mail User Agents</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/software/mua/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#mua&quot;&gt;#mua&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#thunderbird&quot;&gt;#thunderbird&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#evolution&quot;&gt;#evolution&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hier eine Auflistung von persönlichen Erfahrungen mit E-Mailprogrammen.&lt;/p&gt;
@@ -391,7 +391,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/mua/"/>
   </entry><entry>
     <title>Apache2</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/software/apache2/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://vimeo.com/1076588&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Entwicklungsgeschichte&lt;/a&gt; des Apache Webservers dargestellt mit &lt;a href=&quot;http://code.google.com/p/codeswarm/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;codeswarm&lt;/a&gt;&lt;/li&gt;
@@ -405,7 +405,7 @@ AllowOverride FileInfo Limit
     <link href="https://wiki.polyformal.de/software/apache2/"/>
   </entry><entry>
     <title>Home Assistant</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/smart-home/home-assistant/</id>
     <content type="html">&lt;h2 id=&quot;data-retention&quot; tabindex=&quot;-1&quot;&gt;Data Retention&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&lt;/a&gt;&lt;/p&gt;
@@ -413,7 +413,7 @@ AllowOverride FileInfo Limit
     <link href="https://wiki.polyformal.de/smart-home/home-assistant/"/>
   </entry><entry>
     <title>apt repositories debian &amp; ubuntu</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/os/repositories/</id>
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;[!warning]&lt;br /&gt;
@@ -475,7 +475,7 @@ deb http://www.bolzchristian.de/debian ./
     <link href="https://wiki.polyformal.de/os/repositories/"/>
   </entry><entry>
     <title>Solaris</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/os/solaris/</id>
     <content type="html">&lt;h2 id=&quot;zusaetzliche-software&quot; tabindex=&quot;-1&quot;&gt;zusätzliche Software&lt;/h2&gt;
 &lt;p&gt;Oracle (ehem. Sun) bietet eine CD mit Freeware an, welche einiges an Open Source Software enthält. Die Programme sind aber recht alt (Stand 02/2011)&lt;/p&gt;
@@ -543,7 +543,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/solaris/"/>
   </entry><entry>
     <title>Plan 9</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/os/plan9/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 from Bell Labs&lt;/a&gt;, &lt;a href=&quot;https://de.wikipedia.org/wiki/Plan_9_(Betriebssystem)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 (Betriebssystem)&lt;/a&gt;&lt;/li&gt;
@@ -579,7 +579,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/plan9/"/>
   </entry><entry>
     <title>OpenBSD</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/os/openbsd/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -628,7 +628,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/openbsd/"/>
   </entry><entry>
     <title>FreeBSD</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/os/freebsd/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -703,7 +703,7 @@ chsh -s /usr/sbin/nologin gdm
     <link href="https://wiki.polyformal.de/os/freebsd/"/>
   </entry><entry>
     <title>Fedora</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/os/fedora/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#fedora&quot;&gt;#fedora&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;informationen&quot; tabindex=&quot;-1&quot;&gt;Informationen&lt;/h2&gt;
@@ -778,7 +778,7 @@ setsysfonf
     <link href="https://wiki.polyformal.de/os/fedora/"/>
   </entry><entry>
     <title>Debian GNU-Linux</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/os/debian/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;packaging-and-amp-repository&quot; tabindex=&quot;-1&quot;&gt;Packaging &amp;amp; Repository&lt;/h2&gt;
@@ -833,7 +833,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/os/debian/"/>
   </entry><entry>
     <title>Ricoh GR IV Tips</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/</id>
     <content type="html">&lt;p&gt;How to store Image Control / Bildsteuerung&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&lt;/a&gt;&lt;/p&gt;
@@ -849,7 +849,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/"/>
   </entry><entry>
     <title>Phillipinen</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/notizen/reisen/phillipinen/</id>
     <content type="html">&lt;h2 id=&quot;zahlung&quot; tabindex=&quot;-1&quot;&gt;Zahlung&lt;/h2&gt;
 &lt;p&gt;Als Nicht-US Ausländer sind GCash oder Maya wegen der Verifizierung nicht möglich gewesen (Stand 08/2026).&lt;br /&gt;
@@ -870,7 +870,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/notizen/reisen/phillipinen/"/>
   </entry><entry>
     <title>Open Source Software DTP</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/notizen/oos-dtp/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;bildbearbeitung-raster&quot; tabindex=&quot;-1&quot;&gt;Bildbearbeitung (Raster)&lt;/h2&gt;
@@ -1024,7 +1024,7 @@ Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemw
     <link href="https://wiki.polyformal.de/notizen/oos-dtp/"/>
   </entry><entry>
     <title>KI Infos</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/notizen/ki/ki-infos/</id>
     <content type="html">&lt;h1 id=&quot;hermes&quot; tabindex=&quot;-1&quot;&gt;Hermes&lt;/h1&gt;
 &lt;ul&gt;
@@ -1048,7 +1048,7 @@ Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemw
     <link href="https://wiki.polyformal.de/notizen/ki/ki-infos/"/>
   </entry><entry>
     <title>ChatGPT über agent-os</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/notizen/ki/chat-gpt-ueber-agent-os/</id>
     <content type="html">&lt;table&gt;
 &lt;thead&gt;
@@ -1255,7 +1255,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/notizen/ki/chat-gpt-ueber-agent-os/"/>
   </entry><entry>
     <title>ssh</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/linux/ssh/</id>
     <content type="html">&lt;h2 id=&quot;ssh-tunnel&quot; tabindex=&quot;-1&quot;&gt;SSH-Tunnel&lt;/h2&gt;
 &lt;p&gt;Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner &lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt; Port 3306 (MySql Server) erstellen:&lt;/p&gt;
@@ -1277,7 +1277,7 @@ Natürlich kann sich die Gegenstelle auch den Port 12345 von &lt;a href=&quot;ht
     <link href="https://wiki.polyformal.de/linux/ssh/"/>
   </entry><entry>
     <title>Diverse Tipps und Tricks zu Xfce</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/linux/xfce/notizen/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#xfce&quot;&gt;#xfce&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;xorg-composite-effekte-fuer-xfce&quot; tabindex=&quot;-1&quot;&gt;Xorg - Composite-Effekte für Xfce&lt;/h2&gt;
@@ -1325,7 +1325,7 @@ Für Debian muss das Paket &lt;em&gt;libgnomevfs2-bin&lt;/em&gt; installiert sei
     <link href="https://wiki.polyformal.de/linux/xfce/notizen/"/>
   </entry><entry>
     <title>UMTS unter Linux</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/linux/umts/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://de.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;UMTS&lt;/a&gt;&lt;/li&gt;
@@ -1456,7 +1456,7 @@ SAY &#39;Setting APN
     <link href="https://wiki.polyformal.de/linux/umts/"/>
   </entry><entry>
     <title>Referenzkarte Netzwerk</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/linux/referenzkarte_netzwerk/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#lpi&quot;&gt;#lpi&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unvollständig&quot;&gt;#unvollständig&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;abstract&quot; tabindex=&quot;-1&quot;&gt;Abstract&lt;/h2&gt;
@@ -1678,7 +1678,7 @@ oder mit dem Programm &lt;em&gt;multitail&lt;/em&gt;. Die Option -A zeigt de Inh
     <link href="https://wiki.polyformal.de/linux/referenzkarte_netzwerk/"/>
   </entry><entry>
     <title>Programme und Tipps für die Konsole</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/linux/console/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1856,7 +1856,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/console/"/>
   </entry><entry>
     <title>Linux Professional Institute (LPI)</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/linux/zertifizierung/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;vorbereitungsmoeglichkeiten&quot; tabindex=&quot;-1&quot;&gt;Vorbereitungsmöglichkeiten&lt;/h2&gt;
@@ -1929,7 +1929,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/zertifizierung/"/>
   </entry><entry>
     <title>Informationen zu Linux</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/linux/informationen/</id>
     <content type="html">&lt;h2 id=&quot;geschichte&quot; tabindex=&quot;-1&quot;&gt;Geschichte&lt;/h2&gt;
 &lt;ul&gt;
@@ -1958,7 +1958,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/informationen/"/>
   </entry><entry>
     <title>GNOME</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/linux/gnome/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#laptop&quot;&gt;#laptop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;dual-head-setup&quot; tabindex=&quot;-1&quot;&gt;Dual Head Setup&lt;/h2&gt;
@@ -1970,8 +1970,629 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
 </content>
     <link href="https://wiki.polyformal.de/linux/gnome/"/>
   </entry><entry>
+    <title>Modellnamen lesen</title>
+    <updated>2026-11-15T20:48:26Z</updated>
+    <id>https://wiki.polyformal.de/ki/modellnamen/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ki&quot;&gt;#ki&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#huggingface&quot;&gt;#huggingface&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#lokal&quot;&gt;#lokal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ein Name wie &lt;code&gt;Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL&lt;/code&gt; sagt fast alles, was man vor dem Download wissen muss: Hersteller, Größe, Bauart, Zweck, Dateiformat und Kompression. Diese Seite zeigt, wie man die Teile liest und was sie für Speicher, Tempo und Einsatz bedeuten.&lt;/p&gt;
+&lt;p&gt;Stand November 2026. Faustregeln und Bit-Werte sind gerundete Richtwerte. Die Messungen stammen von einem MacBook Air M3 mit 24 GB und Ollama 0.40.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/ai/model-names/&quot;&gt;Reading model names&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;die-bausteine&quot; tabindex=&quot;-1&quot;&gt;Die Bausteine&lt;/h2&gt;
+&lt;p&gt;Die Reihenfolge schwankt je nach Hersteller, die Bausteine sind fast immer dieselben.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Baustein&lt;/th&gt;
+&lt;th&gt;Beispiel&lt;/th&gt;
+&lt;th&gt;Bedeutung&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Uploader&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;unsloth/&lt;/code&gt;, &lt;code&gt;Qwen/&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Vor dem Schrägstrich: Hersteller oder Umverpacker&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Familie&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Qwen&lt;/code&gt;, &lt;code&gt;gemma&lt;/code&gt;, &lt;code&gt;Llama&lt;/code&gt;, &lt;code&gt;gpt-oss&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Modellreihe des Herstellers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Generation&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3.6&lt;/code&gt;, &lt;code&gt;4&lt;/code&gt;, &lt;code&gt;3.3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Höher ist neuer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Größe&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;27B&lt;/code&gt;, &lt;code&gt;360M&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Parameter in Milliarden (B) oder Millionen (M)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Aktive Parameter&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;A3B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Mixture of Experts: rechnet je Wort nur mit einem Teil&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Variante&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Instruct&lt;/code&gt;, &lt;code&gt;it&lt;/code&gt;, &lt;code&gt;Thinking&lt;/code&gt;, &lt;code&gt;Coder&lt;/code&gt;, &lt;code&gt;VL&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Wofür das Modell trainiert ist&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Stand&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;2507&lt;/code&gt;, &lt;code&gt;0528&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Juli 2025 (JJMM) oder 28. Mai (MMTT)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Format&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;GGUF&lt;/code&gt;, &lt;code&gt;MLX&lt;/code&gt;, &lt;code&gt;AWQ&lt;/code&gt;, &lt;code&gt;FP8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Bestimmt, welche Software es lesen kann&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quantisierung&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Q4_K_M&lt;/code&gt;, &lt;code&gt;Q8_0&lt;/code&gt;, &lt;code&gt;4bit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Wie stark die Gewichte komprimiert sind&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Kontext&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;64k&lt;/code&gt;, &lt;code&gt;128k&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Bei Ollama-Namen meist selbst vergeben&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ollama-Tag&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;:latest&lt;/code&gt;, &lt;code&gt;:27b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Hinter dem Doppelpunkt: welche Variante&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cloud&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-cloud&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Läuft nicht lokal, für private Daten tabu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;drei-namen-zerlegt&quot; tabindex=&quot;-1&quot;&gt;Drei Namen zerlegt&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;unsloth/Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;unsloth/&lt;/code&gt;: bekannter Umverpacker, das Original stammt von Alibaba&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Qwen&lt;/code&gt; &lt;code&gt;3.6&lt;/code&gt;: Familie Qwen, Generation 3.6&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;35B-A3B&lt;/code&gt;: Mixture of Experts mit 35 Mrd. Parametern, davon 3 Mrd. aktiv&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GGUF&lt;/code&gt;: Format für Ollama, llama.cpp und LM Studio&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UD-Q4_K_XL&lt;/code&gt;: rund 5 Bit je Gewicht, wichtige Schichten genauer („Unsloth Dynamic“)&lt;/li&gt;
+&lt;li&gt;Ergebnis: rund 24 GB Datei, für einen Mac mit 24 GB zu groß&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Qwen/Qwen3-235B-A22B-Thinking-2507&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Qwen/&lt;/code&gt;: Upload des Herstellers selbst&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;235B-A22B&lt;/code&gt;: sehr großes MoE-Modell, 22 Mrd. aktiv&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Thinking&lt;/code&gt;: denkt vor der Antwort ausführlich nach&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2507&lt;/code&gt;: Versionsstand Juli 2025&lt;/li&gt;
+&lt;li&gt;Keine Formatangabe: Originalgewichte für Server-GPUs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;deepseek-ai/DeepSeek-R1-Distill-Qwen-7B&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DeepSeek-R1&lt;/code&gt;: Reasoning-Serie von DeepSeek&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Distill-Qwen-7B&lt;/code&gt;: eigentlich ein Qwen 7B, das von R1 gelernt hat. Der Name nach &lt;code&gt;Distill&lt;/code&gt; ist das Grundmodell.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;groesse-und-bauart&quot; tabindex=&quot;-1&quot;&gt;Größe und Bauart&lt;/h2&gt;
+&lt;p&gt;Die Zahl vor dem B ist der wichtigste Wert im Namen. Sie bestimmt Speicherbedarf, Tempo und grob auch die Fähigkeiten.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Schreibweise&lt;/th&gt;
+&lt;th&gt;Bedeutung&lt;/th&gt;
+&lt;th&gt;Praktisch&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;27B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Dichtes Modell mit 27 Mrd. Parametern&lt;/td&gt;
+&lt;td&gt;Jedes erzeugte Wort liest alle Gewichte. Speicher und Tempo hängen direkt an der Zahl.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;35B-A3B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Mixture of Experts: 35 Mrd. gesamt, 3 Mrd. aktiv&lt;/td&gt;
+&lt;td&gt;Braucht Speicher für 35B, rechnet aber fast so schnell wie ein 3B-Modell. Auf Macs oft die beste Wahl, wenn es passt.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;8x7B&lt;/code&gt;, &lt;code&gt;17B-16E&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Ältere MoE-Schreibweise: 8 Experten zu 7B, oder 16 Experten&lt;/td&gt;
+&lt;td&gt;Gesamtgröße kleiner als das Produkt, Mixtral 8x7B hat rund 47B.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;e4b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;„Effective“ 4B, eine Gemma-Eigenheit&lt;/td&gt;
+&lt;td&gt;Rechnet wie 4B, die Datei ist durch Zusatzteile größer.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;360M&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Millionen statt Milliarden&lt;/td&gt;
+&lt;td&gt;Winzlinge für Handy, Autovervollständigung oder Klassifizierung.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;varianten&quot; tabindex=&quot;-1&quot;&gt;Varianten&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Kürzel&lt;/th&gt;
+&lt;th&gt;Bedeutung&lt;/th&gt;
+&lt;th&gt;Einsatz&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Instruct&lt;/code&gt;, &lt;code&gt;it&lt;/code&gt;, &lt;code&gt;Chat&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Auf Anweisungen und Gespräche trainiert&lt;/td&gt;
+&lt;td&gt;Das, was man fast immer will. &lt;code&gt;it&lt;/code&gt; ist Googles Kürzel.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Base&lt;/code&gt;, &lt;code&gt;pt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Rohes Grundmodell ohne Chat-Training&lt;/td&gt;
+&lt;td&gt;Nur als Ausgangspunkt für eigenes Feintuning.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Thinking&lt;/code&gt;, &lt;code&gt;Reasoning&lt;/code&gt;, &lt;code&gt;R1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Denkt vor der Antwort ausführlich nach&lt;/td&gt;
+&lt;td&gt;Genauer bei Logik und Rechnen, dafür langsamer.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Coder&lt;/code&gt;, &lt;code&gt;Code&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Auf Programmieren spezialisiert&lt;/td&gt;
+&lt;td&gt;Code schreiben und prüfen.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VL&lt;/code&gt;, &lt;code&gt;Vision&lt;/code&gt;, &lt;code&gt;Omni&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Versteht Bilder, Omni auch Audio&lt;/td&gt;
+&lt;td&gt;Belege, Screenshots, Fotos.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Embedding&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Wandelt Text in Zahlenvektoren&lt;/td&gt;
+&lt;td&gt;Suche über eigene Dokumente (RAG). Kein Chatmodell.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Guard&lt;/code&gt;, &lt;code&gt;safeguard&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Prüft Inhalte auf Richtlinien&lt;/td&gt;
+&lt;td&gt;Filter vor oder nach einem Chatmodell.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Distill&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Kleines Modell, das von einem großen gelernt hat&lt;/td&gt;
+&lt;td&gt;Der Name dahinter ist das Grundmodell.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Flash&lt;/code&gt;, &lt;code&gt;Mini&lt;/code&gt;, &lt;code&gt;Small&lt;/code&gt;, &lt;code&gt;Pro&lt;/code&gt;, &lt;code&gt;Max&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Stufe innerhalb einer Serie&lt;/td&gt;
+&lt;td&gt;Nur innerhalb der Familie vergleichbar.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;abliterated&lt;/code&gt;, &lt;code&gt;uncensored&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Community-Version ohne Schutzfilter&lt;/td&gt;
+&lt;td&gt;Herkunft oft unklar, für ernsthafte Arbeit meiden.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;formate&quot; tabindex=&quot;-1&quot;&gt;Formate&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Format&lt;/th&gt;
+&lt;th&gt;Läuft mit&lt;/th&gt;
+&lt;th&gt;Hinweis&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;safetensors&lt;/code&gt; (ohne Zusatz)&lt;/td&gt;
+&lt;td&gt;Transformers, vLLM, Server-GPUs&lt;/td&gt;
+&lt;td&gt;Originalgewichte in voller Präzision. Für den Laptop meist zu groß.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;GGUF&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Ollama, llama.cpp, LM Studio&lt;/td&gt;
+&lt;td&gt;Standard für lokale Nutzung. Ein Repo enthält oft viele Quantisierungsstufen.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MLX&lt;/code&gt;, &lt;code&gt;-mlx&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Apple Silicon (LM Studio, mlx-lm, neuere Ollama-Versionen)&lt;/td&gt;
+&lt;td&gt;Für Macs gebaut. Ob es schneller ist als GGUF, hängt vom Modell ab.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;AWQ&lt;/code&gt;, &lt;code&gt;GPTQ&lt;/code&gt;, &lt;code&gt;EXL2/3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Nvidia-GPUs&lt;/td&gt;
+&lt;td&gt;Auf dem Mac nicht nutzbar.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;FP8&lt;/code&gt;, &lt;code&gt;NVFP4&lt;/code&gt;, &lt;code&gt;MXFP4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Neuere Nvidia-Rechenzentrumskarten&lt;/td&gt;
+&lt;td&gt;NVFP4 braucht Blackwell-GPUs. MXFP4 ist das Originalformat von gpt-oss.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;quantisierung&quot; tabindex=&quot;-1&quot;&gt;Quantisierung&lt;/h2&gt;
+&lt;p&gt;Die Gewichte werden von 16 Bit auf weniger Bit gerundet. Das spart Speicher und macht das Modell schneller, kostet aber etwas Qualität. Die Bit-Werte sind Durchschnitte inklusive Verwaltungsdaten.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Stufe&lt;/th&gt;
+&lt;th&gt;Bit je Gewicht&lt;/th&gt;
+&lt;th&gt;GB je Mrd. Parameter&lt;/th&gt;
+&lt;th&gt;Qualität&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BF16&lt;/code&gt;, &lt;code&gt;F16&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;≈ 2,0&lt;/td&gt;
+&lt;td&gt;Original, Referenz&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q8_0&lt;/code&gt;, &lt;code&gt;8bit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 8,5&lt;/td&gt;
+&lt;td&gt;≈ 1,1&lt;/td&gt;
+&lt;td&gt;Praktisch verlustfrei&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q6_K&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 6,6&lt;/td&gt;
+&lt;td&gt;≈ 0,8&lt;/td&gt;
+&lt;td&gt;Sehr gut&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q5_K_M&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 5,7&lt;/td&gt;
+&lt;td&gt;≈ 0,7&lt;/td&gt;
+&lt;td&gt;Gut, kaum Unterschied zum Original&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q4_K_M&lt;/code&gt;, &lt;code&gt;4bit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 4,5–4,9&lt;/td&gt;
+&lt;td&gt;≈ 0,6&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Der übliche Kompromiss&lt;/strong&gt;, Ollamas Standard&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;IQ4_XS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 4,3&lt;/td&gt;
+&lt;td&gt;≈ 0,55&lt;/td&gt;
+&lt;td&gt;Fast wie Q4_K_M, etwas kleiner&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q3_K_M&lt;/code&gt;, &lt;code&gt;IQ3_XXS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 3,1–3,9&lt;/td&gt;
+&lt;td&gt;≈ 0,45&lt;/td&gt;
+&lt;td&gt;Merklicher Verlust, Notlösung&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q2_K&lt;/code&gt;, &lt;code&gt;IQ2_XXS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 2,1–3,0&lt;/td&gt;
+&lt;td&gt;≈ 0,35&lt;/td&gt;
+&lt;td&gt;Stark beschädigt, nur zum Ausprobieren&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;K&lt;/code&gt; steht für das k-quant-Verfahren, &lt;code&gt;S&lt;/code&gt;/&lt;code&gt;M&lt;/code&gt;/&lt;code&gt;L&lt;/code&gt;/&lt;code&gt;XL&lt;/code&gt; für den Anteil höher aufgelöster Schichten.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;I&lt;/code&gt; vorne (&lt;code&gt;IQ3&lt;/code&gt;) oder &lt;code&gt;i1&lt;/code&gt;, &lt;code&gt;imatrix&lt;/code&gt;: mit Wichtigkeitsmatrix quantisiert, bei niedrigen Stufen besser.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UD&lt;/code&gt;: „Unsloth Dynamic“, wichtige Schichten bleiben genauer. Etwas größer als die gleichnamige Normalstufe.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;QAT&lt;/code&gt;: Der Hersteller hat das Modell auf die Kompression vorbereitet. Verliert bei 4 Bit am wenigsten.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;woher-es-kommt&quot; tabindex=&quot;-1&quot;&gt;Woher es kommt&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Ollama:&lt;/strong&gt; &lt;code&gt;name:tag&lt;/code&gt;. Ohne Schrägstrich stammt das Modell aus der kuratierten Ollama-Bibliothek, mit &lt;code&gt;konto/name&lt;/code&gt; von einem Community-Konto.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:latest&lt;/code&gt; ist die Standardvariante, nicht unbedingt die neueste oder größte.&lt;/li&gt;
+&lt;li&gt;Tags wählen Größe und Kompression: &lt;code&gt;:27b&lt;/code&gt;, &lt;code&gt;:27b-q8_0&lt;/code&gt;, &lt;code&gt;:26b-mlx&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-cloud&lt;/code&gt; läuft auf Ollamas Servern. Für private Daten ausschließen.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hf.co/konto/repo:Q4_K_M&lt;/code&gt; lädt eine GGUF-Datei direkt von Hugging Face.&lt;/li&gt;
+&lt;li&gt;Ein Kontext im Namen wie &lt;code&gt;-64k&lt;/code&gt; ist meist selbst angelegt. Ollama startet sonst mit 4k Kontext. Eigene Varianten entstehen per Modelfile mit &lt;code&gt;PARAMETER num_ctx&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hugging Face:&lt;/strong&gt; &lt;code&gt;konto/repo&lt;/code&gt;. Der Teil vor dem Schrägstrich sagt, wer die Datei hochgeladen hat.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hersteller: &lt;code&gt;Qwen&lt;/code&gt;, &lt;code&gt;google&lt;/code&gt;, &lt;code&gt;meta-llama&lt;/code&gt;, &lt;code&gt;openai&lt;/code&gt;, &lt;code&gt;mistralai&lt;/code&gt;, &lt;code&gt;deepseek-ai&lt;/code&gt;, &lt;code&gt;microsoft&lt;/code&gt;, &lt;code&gt;nvidia&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Bekannte Umverpacker: &lt;code&gt;unsloth&lt;/code&gt;, &lt;code&gt;bartowski&lt;/code&gt;, &lt;code&gt;lmstudio-community&lt;/code&gt;, &lt;code&gt;mlx-community&lt;/code&gt;. Sie liefern GGUF- und MLX-Fassungen der Herstellermodelle.&lt;/li&gt;
+&lt;li&gt;Repo-Endungen wie &lt;code&gt;-GGUF&lt;/code&gt;, &lt;code&gt;-MLX&lt;/code&gt;, &lt;code&gt;-AWQ&lt;/code&gt;, &lt;code&gt;-FP8&lt;/code&gt; nennen das Format. Die Stufe steht dann im Dateinamen.&lt;/li&gt;
+&lt;li&gt;Lizenz, Grundmodell und empfohlene Einstellungen stehen auf der Modellkarte, nicht im Namen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;faustregeln-fuer-speicher-und-tempo&quot; tabindex=&quot;-1&quot;&gt;Faustregeln für Speicher und Tempo&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Passt es in den Speicher?&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;GB ≈ Parameter (Mrd.) × Bit ÷ 8 × 1,1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Dazu kommen 1 bis 3 GB für den Kontext und bei Bildmodellen ein Bild-Encoder. Ein Mac gibt der Grafikeinheit von sich aus nur einen Teil des Arbeitsspeichers. Als Richtwert gelten etwa 70 %, bei 24 GB also rund 16 bis 17 GB für Modell und Kontext.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wie schnell schreibt es?&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Tokens/s ≈ Speicherbandbreite ÷ (aktive Parameter × Bit ÷ 8) × 0,75
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jedes Wort liest alle aktiven Gewichte einmal. Deshalb entscheidet die Bandbreite, nicht die Rechenleistung. Bei MoE-Modellen liegt der Faktor eher bei 0,4. Ein MacBook Air M3 hat 100 GB/s, ein M4 Pro 273 GB/s, ein M4 Max bis 546 GB/s. Ab etwa 8 Tokens pro Sekunde liest sich eine Antwort flüssig.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Gegenprobe&lt;/strong&gt; auf einem MacBook Air M3 mit 24 GB, Ollama, kurze Eingabe:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Modell&lt;/th&gt;
+&lt;th&gt;Im Speicher&lt;/th&gt;
+&lt;th&gt;Gemessen&lt;/th&gt;
+&lt;th&gt;Laut Faustregel&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;qwen3:4b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;2,9 GB&lt;/td&gt;
+&lt;td&gt;23 Tokens/s&lt;/td&gt;
+&lt;td&gt;≈ 31&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;qwen3.5:4b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;3,1 GB&lt;/td&gt;
+&lt;td&gt;21 Tokens/s&lt;/td&gt;
+&lt;td&gt;≈ 31&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;qwen3.5&lt;/code&gt; 9B (Q4_K_M)&lt;/td&gt;
+&lt;td&gt;6,9 GB&lt;/td&gt;
+&lt;td&gt;14–16 Tokens/s&lt;/td&gt;
+&lt;td&gt;≈ 14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;gemma4:12b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;7,7 GB&lt;/td&gt;
+&lt;td&gt;11 Tokens/s&lt;/td&gt;
+&lt;td&gt;≈ 10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;gpt-oss:20b&lt;/code&gt; (MoE, 3,6B aktiv)&lt;/td&gt;
+&lt;td&gt;12 GB&lt;/td&gt;
+&lt;td&gt;19 Tokens/s&lt;/td&gt;
+&lt;td&gt;≈ 21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Kleine Modelle bleiben unter der Schätzung, weil fester Aufwand je Wort stärker ins Gewicht fällt. Das Einlesen langer Eingaben ist ein eigener Engpass: Rund 13.000 Tokens brauchten auf demselben Rechner zweieinhalb bis drei Minuten.&lt;/p&gt;
+&lt;h2 id=&quot;pruefliste-vor-dem-einsatz&quot; tabindex=&quot;-1&quot;&gt;Prüfliste vor dem Einsatz&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Herkunft:&lt;/strong&gt; Kommt die Datei vom Hersteller oder von einem bekannten Umverpacker? Unbekannte Konten und „uncensored“-Varianten meiden.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lizenz:&lt;/strong&gt; auf der Modellkarte prüfen. Apache 2.0 und MIT sind frei nutzbar. Llama, Gemma und einige Mistral-Modelle haben eigene Bedingungen. „Research only“ oder „non-commercial“ schließt kommerzielle Arbeit aus.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Datenschutz:&lt;/strong&gt; Läuft es wirklich lokal? Kein &lt;code&gt;-cloud&lt;/code&gt;-Tag, keine API-Schlüssel externer Anbieter, Websuche im Werkzeug abgeschaltet.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; Dateigröße plus Kontext unter etwa 70 % des Arbeitsspeichers (Mac) oder des Grafikspeichers (PC).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Passende Variante:&lt;/strong&gt; Instruct für Chat, Coder für Code, Embedding für Suche. Für Agenten muss das Modell Werkzeuge aufrufen können. Ollama zeigt das als Fähigkeit „tools“.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aktualität:&lt;/strong&gt; Generation und Datum vergleichen. Ein neues 9B schlägt oft ein altes 30B.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Selbst testen:&lt;/strong&gt; Herstellerbenchmarks sind Werbung. Drei bis fünf echte Aufgaben aus dem eigenen Alltag reichen, um die Kandidaten zu trennen.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    <link href="https://wiki.polyformal.de/ki/modellnamen/"/>
+  </entry><entry>
+    <title>KI Infos</title>
+    <updated>2026-11-15T20:48:26Z</updated>
+    <id>https://wiki.polyformal.de/ki/ki-infos/</id>
+    <content type="html">&lt;h1 id=&quot;hermes&quot; tabindex=&quot;-1&quot;&gt;Hermes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://agentos.guide/free-models-hermes&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://agentos.guide/free-models-hermes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/ki/chat-gpt-ueber-agent-os/&quot;&gt;ChatGPT über agent-os&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;install&quot; tabindex=&quot;-1&quot;&gt;Install&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://hermes-agent.nousresearch.com/docs/user-guide/docker/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;plugins&quot; tabindex=&quot;-1&quot;&gt;plugins&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/GoSlowPoke168/hermes-openrouter-free-rotator&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;hermes-openrouter-free-rotator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/robertlmann02/nextcloud-talk-hermes-bridge&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nextcloud-talk-herms-bridgle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;skill&quot; tabindex=&quot;-1&quot;&gt;skill&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/adnw-vinc/hermes-nextcloud&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nextcloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://wiki.polyformal.de/ki/ki-infos/"/>
+  </entry><entry>
+    <title>ChatGPT über agent-os</title>
+    <updated>2026-11-15T20:48:26Z</updated>
+    <id>https://wiki.polyformal.de/ki/chat-gpt-ueber-agent-os/</id>
+    <content type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;framerslab/agentos&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;earthwalker17/agent-os&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;use-agent-os/agent-os&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Fas ist der Unterschied zwischen &lt;a href=&quot;https://github.com/framerslab/agentos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/framerslab/agentos&lt;/a&gt; und &lt;a href=&quot;https://github.com/earthwalker17/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/earthwalker17/agent-os?utm_source=chatgpt.com&lt;/a&gt; und &lt;a href=&quot;https://github.com/use-agent-os/agent-os&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/use-agent-os/agent-os&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ja – jetzt lässt sich das sauber auseinanderhalten. &lt;strong&gt;Die drei Projekte sind eigenständige Projekte und nicht drei Varianten desselben AgentOS.&lt;/strong&gt; Der gemeinsame Name „AgentOS“ ist hier tatsächlich ziemlich verwirrend.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Projekt&lt;/th&gt;
+&lt;th&gt;Was ist es?&lt;/th&gt;
+&lt;th&gt;Schwerpunkt&lt;/th&gt;
+&lt;th&gt;Technik&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;framerslab/agentos&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;KI-Agent-Framework als Bibliothek&lt;/td&gt;
+&lt;td&gt;Memory, Tools, Multi-Agenten&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;TypeScript / Node.js&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;earthwalker17/agent-os&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;komplette Coding-Agent-Umgebung&lt;/td&gt;
+&lt;td&gt;Softwareprojekte planen → programmieren → testen → deployen&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Python + FastAPI + React&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;use-agent-os/agent-os&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;kompletter persönlicher Agent&lt;/td&gt;
+&lt;td&gt;Chat, Tools, Memory, Subagents, Scheduling, Provider-Routing, Trading&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Python&lt;/strong&gt;, Web/Desktop/CLI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;1-framers-lab-agent-os&quot; tabindex=&quot;-1&quot;&gt;1. FramersLab AgentOS&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/framerslab/agentos?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;framerslab/agentos auf GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Das ist am ehesten ein &lt;strong&gt;Framework für Entwickler&lt;/strong&gt;, aus dem man einen eigenen Agenten baut.&lt;/p&gt;
+&lt;p&gt;Das Besondere ist beispielsweise:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;persistentes „cognitive memory“&lt;/li&gt;
+&lt;li&gt;mehrere Agenten&lt;/li&gt;
+&lt;li&gt;11 LLM-Provider&lt;/li&gt;
+&lt;li&gt;Agenten können &lt;strong&gt;zur Laufzeit eigene Tools erzeugen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Tool-Ausführung in einer Sandbox&lt;/li&gt;
+&lt;li&gt;Sessions und langfristiger Kontext&lt;/li&gt;
+&lt;li&gt;optionale „Personality“ über HEXACO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Man benutzt es beispielsweise als Node/TypeScript-Bibliothek:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;deine Anwendung
+      │
+      ▼
+  AgentOS Framework
+      │
+ ┌────┼─────┐
+ ▼    ▼     ▼
+LLM  Memory Tools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Es ist &lt;strong&gt;nicht primär ein fertiges Programm&lt;/strong&gt;, das du installierst und dann wie Hermes benutzt. &lt;a href=&quot;https://github.com/framerslab/agentos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;2-earthwalker-agent-os&quot; tabindex=&quot;-1&quot;&gt;2. Earthwalker Agent OS&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/earthwalker17/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;earthwalker17/agent-os auf GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Das ist konzeptionell etwas völlig anderes.&lt;/p&gt;
+&lt;p&gt;Hier geht es speziell darum:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;„Ich möchte ein KI-Modell meine Softwareprojekte bauen lassen, aber mit einer kontrollierten Umgebung darum herum.“&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Die zentrale Idee ist tatsächlich:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;             LLM
+              │
+              ▼
+        ┌───────────┐
+        │ Agent OS  │
+        │  Harness  │
+        └─────┬─────┘
+              │
+      ┌───────┼────────┐
+      ▼       ▼        ▼
+    Plan    Code     Verify
+                       │
+                       ▼
+                    Deploy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Es gibt bewusst zwei Agenten:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Main Agent&lt;/strong&gt; = plant, verwaltet Memory und entscheidet&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coding Agent&lt;/strong&gt; = darf tatsächlich Dateien ändern und Shell-Kommandos ausführen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dazu kommen Sandbox, Git, Tests, Browser-Checks, Recovery usw. &lt;a href=&quot;https://github.com/earthwalker17/agent-os/blob/main/ARCHITECTURE.md?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Das ist daher eher ein &lt;strong&gt;„Claude Code/Codex/OpenCode mit Sicherheits- und Projektmanagement-Schicht“&lt;/strong&gt; als ein allgemeiner persönlicher Assistent.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;3-code-use-agent-os-agent-os-code&quot; tabindex=&quot;-1&quot;&gt;3. &lt;code&gt;use-agent-os/agent-os&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/use-agent-os/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;use-agent-os/agent-os auf GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Das ist dasjenige, das zu deiner vorherigen Hermes-Frage passt.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Es ist ein fertiger &lt;strong&gt;lokaler General-Purpose-Agent&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;                 AgentOS
+                    │
+      ┌─────────────┼─────────────┐
+      ▼             ▼             ▼
+    Web UI         CLI          Telegram
+      │             │             │
+      └─────────────┼─────────────┘
+                    ▼
+              Agent / Tools
+                    │
+        ┌───────────┼───────────┐
+        ▼           ▼           ▼
+      Memory     Sandbox       Web
+                    │
+             Pilot Router
+                    │
+       ┌────────────┼────────────┐
+       ▼            ▼            ▼
+    OpenRouter    Ollama       OpenAI
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Es kann unter anderem:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lokal laufen&lt;/li&gt;
+&lt;li&gt;Memory speichern&lt;/li&gt;
+&lt;li&gt;Tools verwenden&lt;/li&gt;
+&lt;li&gt;Subagents starten&lt;/li&gt;
+&lt;li&gt;Webzugriff verwenden&lt;/li&gt;
+&lt;li&gt;geplante Jobs ausführen&lt;/li&gt;
+&lt;li&gt;Telegram/Discord/Slack anbinden&lt;/li&gt;
+&lt;li&gt;verschiedene LLM-Provider benutzen&lt;/li&gt;
+&lt;li&gt;lokale Modelle über &lt;strong&gt;Ollama&lt;/strong&gt; verwenden&lt;/li&gt;
+&lt;li&gt;einen lokalen Router benutzen, der Aufgaben auf unterschiedliche Modelle verteilt. &lt;a href=&quot;https://github.com/use-agent-os/agent-os&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Und für deine ursprüngliche Frage besonders interessant:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Es kann Daten aus Hermes übernehmen.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Das Repository enthält ausdrücklich:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;agentos migrate hermes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;und auch eine Migration von OpenClaw. Das ist ein ziemlich deutlicher Hinweis darauf, dass dieses AgentOS als &lt;strong&gt;Nachfolger/Alternative für bestehende Hermes/OpenClaw-Installationen&lt;/strong&gt; gedacht ist. &lt;a href=&quot;https://github.com/use-agent-os/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;der-entscheidende-unterschied&quot; tabindex=&quot;-1&quot;&gt;Der entscheidende Unterschied&lt;/h2&gt;
+&lt;p&gt;Wenn ich die drei auf &lt;strong&gt;deine Anwendung&lt;/strong&gt; herunterbreche:&lt;/p&gt;
+&lt;h3 id=&quot;du-willst-selbst-einen-agenten-programmieren&quot; tabindex=&quot;-1&quot;&gt;Du willst selbst einen Agenten programmieren&lt;/h3&gt;
+&lt;p&gt;→ &lt;strong&gt;FramersLab AgentOS&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;TypeScript
+    ↓
+@framers/agentos
+    ↓
+dein eigener Agent
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;du-willst-hauptsaechlich-software-entwickeln-lassen&quot; tabindex=&quot;-1&quot;&gt;Du willst hauptsächlich Software entwickeln lassen&lt;/h3&gt;
+&lt;p&gt;→ &lt;strong&gt;earthwalker17/agent-os&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Chat
+ ↓
+Plan
+ ↓
+Coding Agent
+ ↓
+Test
+ ↓
+Review
+ ↓
+Git / Deploy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;du-willst-einen-fertigen-persoenlichen-lokalen-agenten&quot; tabindex=&quot;-1&quot;&gt;Du willst einen fertigen persönlichen lokalen Agenten&lt;/h3&gt;
+&lt;p&gt;→ &lt;strong&gt;use-agent-os/agent-os&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Telegram / Web / CLI
+          ↓
+       AgentOS
+          ↓
+   Memory + Tools
+          ↓
+  Ollama / OpenRouter /
+  Claude / GPT / usw.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;und-wo-steht-hermes-dabei&quot; tabindex=&quot;-1&quot;&gt;Und wo steht Hermes dabei?&lt;/h3&gt;
+&lt;p&gt;Das ist jetzt der interessante Teil:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;                 ┌── FramersLab AgentOS
+                 │      Framework
+                 │
+LLM ─────────────┼── Earthwalker Agent OS
+                 │      Coding-Harness
+                 │
+                 ├── use-agent-os AgentOS
+                 │      General-purpose Agent
+                 │
+                 └── Hermes
+                        General-purpose Agent
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Hermes und &lt;code&gt;use-agent-os/agent-os&lt;/code&gt; sind also tatsächlich die beiden, die du sinnvoll direkt vergleichen kannst.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Das &lt;code&gt;use-agent-os&lt;/code&gt;-Projekt bezeichnet sich selbst als von &lt;strong&gt;OpenClaw und Hermes Agent beeinflusst&lt;/strong&gt; und bietet sogar eine direkte Hermes-Migration an. &lt;a href=&quot;https://github.com/use-agent-os/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Und &lt;strong&gt;Earthwalker Agent OS ist eine ganz andere Idee&lt;/strong&gt;: dort steht das Coding von Softwareprojekten im Mittelpunkt. &lt;a href=&quot;https://github.com/earthwalker17/agent-os/blob/main/BLUEPRINT.md?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Für deinen konkreten Fall – M3 Mac, 24 GB RAM, Ollama/Qwen und Programmierhilfe – würde ich deshalb vor allem &lt;code&gt;Hermes&lt;/code&gt; vs. &lt;code&gt;use-agent-os/agent-os&lt;/code&gt; vs. &lt;code&gt;earthwalker17/agent-os&lt;/code&gt; vergleichen.&lt;/strong&gt; Das wäre deutlich aussagekräftiger als die drei unter dem gemeinsamen Namen „AgentOS“ zu betrachten.&lt;/p&gt;
+</content>
+    <link href="https://wiki.polyformal.de/ki/chat-gpt-ueber-agent-os/"/>
+  </entry><entry>
     <title>Impressum</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/impressum/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;polyformal System- &amp;amp; Formarbeit&lt;/li&gt;
@@ -1993,7 +2614,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/impressum/"/>
   </entry><entry>
     <title>wiki driven by Obsidian</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;Obsidian Digital Graden
@@ -2006,7 +2627,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/"/>
   </entry><entry>
     <title>imagemagick</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/en/software/imagemagick/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;tiff&quot; tabindex=&quot;-1&quot;&gt;TIFF&lt;/h3&gt;
@@ -2018,7 +2639,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/en/software/imagemagick/"/>
   </entry><entry>
     <title>asciidoc</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/software/asciidoc/</id>
     <content type="html">&lt;h2 id=&quot;backends&quot; tabindex=&quot;-1&quot;&gt;backends&lt;/h2&gt;
 &lt;h3 id=&quot;slidy&quot; tabindex=&quot;-1&quot;&gt;slidy&lt;/h3&gt;
@@ -2049,7 +2670,7 @@ deckjs backend requires title attribute for images&lt;/p&gt;
     <link href="https://wiki.polyformal.de/software/asciidoc/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 to 1.0</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/en/software/stalwart-migration/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Field report: migrating a small Stalwart mail server from 0.15.5 to 1.0.3. The setup: Docker Compose, RocksDB, OpenLDAP as the directory, a reverse proxy in front, fewer than 10 accounts, about 13 GB of data.&lt;/p&gt;
@@ -2262,7 +2883,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/en/software/stalwart-migration/"/>
   </entry><entry>
     <title>Privacy Policy</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/en/privacy/</id>
     <content type="html">&lt;h1 id=&quot;privacy-policy&quot; tabindex=&quot;-1&quot;&gt;Privacy Policy&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt;&lt;/p&gt;
@@ -2288,7 +2909,7 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
     <link href="https://wiki.polyformal.de/en/privacy/"/>
   </entry><entry>
     <title>Emu E4XT Ultra</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/en/notizen/e4xt_ultra/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#music&quot;&gt;#music&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#sampler&quot;&gt;#sampler&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#emulator&quot;&gt;#emulator&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;internal-ssd&quot; tabindex=&quot;-1&quot;&gt;Internal SSD&lt;/h2&gt;
@@ -2306,7 +2927,7 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
     <link href="https://wiki.polyformal.de/en/notizen/e4xt_ultra/"/>
   </entry><entry>
     <title>ollama</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/en/ai/ollama/</id>
     <content type="html">&lt;p&gt;load a Hugging Face model into ollama&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ollama run hf.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF:latest
@@ -2316,8 +2937,398 @@ ollama run hf.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF:latest
 </content>
     <link href="https://wiki.polyformal.de/en/ai/ollama/"/>
   </entry><entry>
+    <title>Reading model names</title>
+    <updated>2026-11-15T20:48:26Z</updated>
+    <id>https://wiki.polyformal.de/en/ai/model-names/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#huggingface&quot;&gt;#huggingface&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#local&quot;&gt;#local&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A name like &lt;code&gt;Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL&lt;/code&gt; tells you almost everything you need to know before downloading: maker, size, architecture, purpose, file format and compression. This page shows how to read the parts and what they mean for memory, speed and use.&lt;/p&gt;
+&lt;p&gt;As of November 2026. Rules of thumb and bit values are rounded estimates. The measurements come from a MacBook Air M3 with 24 GB and Ollama 0.40.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deutsche Version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/ki/modellnamen/&quot;&gt;Modellnamen lesen&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;the-building-blocks&quot; tabindex=&quot;-1&quot;&gt;The building blocks&lt;/h2&gt;
+&lt;p&gt;The order varies by maker, but the building blocks are almost always the same.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Block&lt;/th&gt;
+&lt;th&gt;Example&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Uploader&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;unsloth/&lt;/code&gt;, &lt;code&gt;Qwen/&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Before the slash: the maker or a repackager&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Family&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Qwen&lt;/code&gt;, &lt;code&gt;gemma&lt;/code&gt;, &lt;code&gt;Llama&lt;/code&gt;, &lt;code&gt;gpt-oss&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The maker&#39;s model line&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Generation&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3.6&lt;/code&gt;, &lt;code&gt;4&lt;/code&gt;, &lt;code&gt;3.3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Higher is newer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Size&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;27B&lt;/code&gt;, &lt;code&gt;360M&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Parameters in billions (B) or millions (M)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Active parameters&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;A3B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Mixture of experts: only part of the model works per word&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Variant&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Instruct&lt;/code&gt;, &lt;code&gt;it&lt;/code&gt;, &lt;code&gt;Thinking&lt;/code&gt;, &lt;code&gt;Coder&lt;/code&gt;, &lt;code&gt;VL&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;What the model was trained for&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;2507&lt;/code&gt;, &lt;code&gt;0528&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;July 2025 (YYMM) or 28 May (MMDD)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Format&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;GGUF&lt;/code&gt;, &lt;code&gt;MLX&lt;/code&gt;, &lt;code&gt;AWQ&lt;/code&gt;, &lt;code&gt;FP8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Decides which software can read it&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quantization&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Q4_K_M&lt;/code&gt;, &lt;code&gt;Q8_0&lt;/code&gt;, &lt;code&gt;4bit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;How strongly the weights are compressed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Context&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;64k&lt;/code&gt;, &lt;code&gt;128k&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;In Ollama names usually self-made&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ollama tag&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;:latest&lt;/code&gt;, &lt;code&gt;:27b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;After the colon: which variant&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cloud&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-cloud&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Does not run locally, off limits for private data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;three-names-taken-apart&quot; tabindex=&quot;-1&quot;&gt;Three names taken apart&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;unsloth/Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;unsloth/&lt;/code&gt;: a well-known repackager, the original comes from Alibaba&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Qwen&lt;/code&gt; &lt;code&gt;3.6&lt;/code&gt;: Qwen family, generation 3.6&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;35B-A3B&lt;/code&gt;: mixture of experts with 35 billion parameters, 3 billion active&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GGUF&lt;/code&gt;: format for Ollama, llama.cpp and LM Studio&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UD-Q4_K_XL&lt;/code&gt;: about 5 bits per weight, important layers kept more precise (&amp;quot;Unsloth Dynamic&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Result: a file of about 24 GB, too big for a Mac with 24 GB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Qwen/Qwen3-235B-A22B-Thinking-2507&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Qwen/&lt;/code&gt;: uploaded by the maker itself&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;235B-A22B&lt;/code&gt;: a very large MoE model, 22 billion active&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Thinking&lt;/code&gt;: reasons at length before answering&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2507&lt;/code&gt;: version from July 2025&lt;/li&gt;
+&lt;li&gt;No format given: original weights for server GPUs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;deepseek-ai/DeepSeek-R1-Distill-Qwen-7B&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DeepSeek-R1&lt;/code&gt;: DeepSeek&#39;s reasoning series&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Distill-Qwen-7B&lt;/code&gt;: actually a Qwen 7B that learned from R1. The name after &lt;code&gt;Distill&lt;/code&gt; is the base model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;size-and-architecture&quot; tabindex=&quot;-1&quot;&gt;Size and architecture&lt;/h2&gt;
+&lt;p&gt;The number before the B is the most important value in the name. It sets memory needs, speed and, roughly, capability.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Notation&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;th&gt;In practice&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;27B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Dense model with 27 billion parameters&lt;/td&gt;
+&lt;td&gt;Every generated word reads all weights. Memory and speed follow the number directly.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;35B-A3B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Mixture of experts: 35 billion total, 3 billion active&lt;/td&gt;
+&lt;td&gt;Needs memory for 35B but runs almost as fast as a 3B model. Often the best choice on Macs if it fits.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;8x7B&lt;/code&gt;, &lt;code&gt;17B-16E&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Older MoE notation: 8 experts of 7B, or 16 experts&lt;/td&gt;
+&lt;td&gt;Total size is smaller than the product; Mixtral 8x7B has about 47B.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;e4b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&amp;quot;Effective&amp;quot; 4B, a Gemma quirk&lt;/td&gt;
+&lt;td&gt;Runs like 4B, but the file is bigger because of extra parts.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;360M&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Millions instead of billions&lt;/td&gt;
+&lt;td&gt;Tiny models for phones, autocomplete or classification.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;variants&quot; tabindex=&quot;-1&quot;&gt;Variants&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Suffix&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;th&gt;Use&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Instruct&lt;/code&gt;, &lt;code&gt;it&lt;/code&gt;, &lt;code&gt;Chat&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Trained for instructions and conversation&lt;/td&gt;
+&lt;td&gt;What you want almost every time. &lt;code&gt;it&lt;/code&gt; is Google&#39;s suffix.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Base&lt;/code&gt;, &lt;code&gt;pt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Raw base model without chat training&lt;/td&gt;
+&lt;td&gt;Only as a starting point for your own fine-tuning.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Thinking&lt;/code&gt;, &lt;code&gt;Reasoning&lt;/code&gt;, &lt;code&gt;R1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Reasons at length before answering&lt;/td&gt;
+&lt;td&gt;More accurate at logic and arithmetic, but slower.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Coder&lt;/code&gt;, &lt;code&gt;Code&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Specialized in programming&lt;/td&gt;
+&lt;td&gt;Writing and reviewing code.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VL&lt;/code&gt;, &lt;code&gt;Vision&lt;/code&gt;, &lt;code&gt;Omni&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Understands images, Omni also audio&lt;/td&gt;
+&lt;td&gt;Receipts, screenshots, photos.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Embedding&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Turns text into number vectors&lt;/td&gt;
+&lt;td&gt;Search over your own documents (RAG). Not a chat model.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Guard&lt;/code&gt;, &lt;code&gt;safeguard&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Checks content against policies&lt;/td&gt;
+&lt;td&gt;Filter before or after a chat model.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Distill&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Small model that learned from a big one&lt;/td&gt;
+&lt;td&gt;The name after it is the base model.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Flash&lt;/code&gt;, &lt;code&gt;Mini&lt;/code&gt;, &lt;code&gt;Small&lt;/code&gt;, &lt;code&gt;Pro&lt;/code&gt;, &lt;code&gt;Max&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Tier within a series&lt;/td&gt;
+&lt;td&gt;Only comparable within the family.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;abliterated&lt;/code&gt;, &lt;code&gt;uncensored&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Community version with safety filters removed&lt;/td&gt;
+&lt;td&gt;Origin often unclear, avoid for serious work.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;formats&quot; tabindex=&quot;-1&quot;&gt;Formats&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Format&lt;/th&gt;
+&lt;th&gt;Runs with&lt;/th&gt;
+&lt;th&gt;Note&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;safetensors&lt;/code&gt; (no suffix)&lt;/td&gt;
+&lt;td&gt;Transformers, vLLM, server GPUs&lt;/td&gt;
+&lt;td&gt;Original weights at full precision. Usually too big for a laptop.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;GGUF&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Ollama, llama.cpp, LM Studio&lt;/td&gt;
+&lt;td&gt;The standard for local use. One repo often holds many quantization levels.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;MLX&lt;/code&gt;, &lt;code&gt;-mlx&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Apple Silicon (LM Studio, mlx-lm, newer Ollama versions)&lt;/td&gt;
+&lt;td&gt;Built for Macs. Whether it beats GGUF depends on the model.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;AWQ&lt;/code&gt;, &lt;code&gt;GPTQ&lt;/code&gt;, &lt;code&gt;EXL2/3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Nvidia GPUs&lt;/td&gt;
+&lt;td&gt;Not usable on a Mac.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;FP8&lt;/code&gt;, &lt;code&gt;NVFP4&lt;/code&gt;, &lt;code&gt;MXFP4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Newer Nvidia data center cards&lt;/td&gt;
+&lt;td&gt;NVFP4 needs Blackwell GPUs. MXFP4 is gpt-oss&#39;s native format.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;quantization&quot; tabindex=&quot;-1&quot;&gt;Quantization&lt;/h2&gt;
+&lt;p&gt;The weights are rounded from 16 bits to fewer bits. That saves memory and makes the model faster, but costs some quality. Bit values are averages including overhead.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Level&lt;/th&gt;
+&lt;th&gt;Bits per weight&lt;/th&gt;
+&lt;th&gt;GB per billion parameters&lt;/th&gt;
+&lt;th&gt;Quality&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BF16&lt;/code&gt;, &lt;code&gt;F16&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;≈ 2.0&lt;/td&gt;
+&lt;td&gt;Original, the reference&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q8_0&lt;/code&gt;, &lt;code&gt;8bit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 8.5&lt;/td&gt;
+&lt;td&gt;≈ 1.1&lt;/td&gt;
+&lt;td&gt;Practically lossless&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q6_K&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 6.6&lt;/td&gt;
+&lt;td&gt;≈ 0.8&lt;/td&gt;
+&lt;td&gt;Very good&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q5_K_M&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 5.7&lt;/td&gt;
+&lt;td&gt;≈ 0.7&lt;/td&gt;
+&lt;td&gt;Good, hardly different from the original&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q4_K_M&lt;/code&gt;, &lt;code&gt;4bit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 4.5–4.9&lt;/td&gt;
+&lt;td&gt;≈ 0.6&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;The usual compromise&lt;/strong&gt;, Ollama&#39;s default&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;IQ4_XS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 4.3&lt;/td&gt;
+&lt;td&gt;≈ 0.55&lt;/td&gt;
+&lt;td&gt;Almost like Q4_K_M, a bit smaller&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q3_K_M&lt;/code&gt;, &lt;code&gt;IQ3_XXS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 3.1–3.9&lt;/td&gt;
+&lt;td&gt;≈ 0.45&lt;/td&gt;
+&lt;td&gt;Noticeable loss, a stopgap&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Q2_K&lt;/code&gt;, &lt;code&gt;IQ2_XXS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;≈ 2.1–3.0&lt;/td&gt;
+&lt;td&gt;≈ 0.35&lt;/td&gt;
+&lt;td&gt;Badly damaged, only for trying things out&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;K&lt;/code&gt; stands for the k-quant method, &lt;code&gt;S&lt;/code&gt;/&lt;code&gt;M&lt;/code&gt;/&lt;code&gt;L&lt;/code&gt;/&lt;code&gt;XL&lt;/code&gt; for the share of higher-precision layers.&lt;/li&gt;
+&lt;li&gt;A leading &lt;code&gt;I&lt;/code&gt; (&lt;code&gt;IQ3&lt;/code&gt;) or &lt;code&gt;i1&lt;/code&gt;, &lt;code&gt;imatrix&lt;/code&gt;: quantized with an importance matrix, better at low levels.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UD&lt;/code&gt;: &amp;quot;Unsloth Dynamic&amp;quot;, important layers stay more precise. Slightly bigger than the plain level of the same name.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;QAT&lt;/code&gt;: the maker prepared the model for compression. Loses the least at 4 bits.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;where-it-comes-from&quot; tabindex=&quot;-1&quot;&gt;Where it comes from&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Ollama:&lt;/strong&gt; &lt;code&gt;name:tag&lt;/code&gt;. Without a slash the model comes from Ollama&#39;s curated library; &lt;code&gt;account/name&lt;/code&gt; comes from a community account.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:latest&lt;/code&gt; is the default variant, not necessarily the newest or largest.&lt;/li&gt;
+&lt;li&gt;Tags pick size and compression: &lt;code&gt;:27b&lt;/code&gt;, &lt;code&gt;:27b-q8_0&lt;/code&gt;, &lt;code&gt;:26b-mlx&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-cloud&lt;/code&gt; runs on Ollama&#39;s servers. Exclude it for private data.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hf.co/account/repo:Q4_K_M&lt;/code&gt; loads a GGUF file straight from Hugging Face.&lt;/li&gt;
+&lt;li&gt;A context in the name such as &lt;code&gt;-64k&lt;/code&gt; is usually self-made. Otherwise Ollama starts with a 4k context. Custom variants come from a Modelfile with &lt;code&gt;PARAMETER num_ctx&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hugging Face:&lt;/strong&gt; &lt;code&gt;account/repo&lt;/code&gt;. The part before the slash tells you who uploaded the file.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Makers: &lt;code&gt;Qwen&lt;/code&gt;, &lt;code&gt;google&lt;/code&gt;, &lt;code&gt;meta-llama&lt;/code&gt;, &lt;code&gt;openai&lt;/code&gt;, &lt;code&gt;mistralai&lt;/code&gt;, &lt;code&gt;deepseek-ai&lt;/code&gt;, &lt;code&gt;microsoft&lt;/code&gt;, &lt;code&gt;nvidia&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Well-known repackagers: &lt;code&gt;unsloth&lt;/code&gt;, &lt;code&gt;bartowski&lt;/code&gt;, &lt;code&gt;lmstudio-community&lt;/code&gt;, &lt;code&gt;mlx-community&lt;/code&gt;. They provide GGUF and MLX versions of the makers&#39; models.&lt;/li&gt;
+&lt;li&gt;Repo suffixes such as &lt;code&gt;-GGUF&lt;/code&gt;, &lt;code&gt;-MLX&lt;/code&gt;, &lt;code&gt;-AWQ&lt;/code&gt;, &lt;code&gt;-FP8&lt;/code&gt; name the format. The level is then in the file name.&lt;/li&gt;
+&lt;li&gt;License, base model and recommended settings are on the model card, not in the name.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;rules-of-thumb-for-memory-and-speed&quot; tabindex=&quot;-1&quot;&gt;Rules of thumb for memory and speed&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Does it fit in memory?&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;GB ≈ parameters (billions) × bits ÷ 8 × 1.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add 1 to 3 GB for the context and, for image models, an image encoder. By default a Mac gives the GPU only part of its memory. As a guide, about 70 %, so roughly 16 to 17 GB for model and context on a 24 GB machine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How fast does it write?&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tokens/s ≈ memory bandwidth ÷ (active parameters × bits ÷ 8) × 0.75
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Every word reads all active weights once, so bandwidth matters, not compute. For MoE models the factor is closer to 0.4. A MacBook Air M3 has 100 GB/s, an M4 Pro 273 GB/s, an M4 Max up to 546 GB/s. From about 8 tokens per second an answer reads smoothly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cross-check&lt;/strong&gt; on a MacBook Air M3 with 24 GB, Ollama, short prompt:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th&gt;In memory&lt;/th&gt;
+&lt;th&gt;Measured&lt;/th&gt;
+&lt;th&gt;Rule of thumb&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;qwen3:4b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;2.9 GB&lt;/td&gt;
+&lt;td&gt;23 tokens/s&lt;/td&gt;
+&lt;td&gt;≈ 31&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;qwen3.5:4b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;3.1 GB&lt;/td&gt;
+&lt;td&gt;21 tokens/s&lt;/td&gt;
+&lt;td&gt;≈ 31&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;qwen3.5&lt;/code&gt; 9B (Q4_K_M)&lt;/td&gt;
+&lt;td&gt;6.9 GB&lt;/td&gt;
+&lt;td&gt;14–16 tokens/s&lt;/td&gt;
+&lt;td&gt;≈ 14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;gemma4:12b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;7.7 GB&lt;/td&gt;
+&lt;td&gt;11 tokens/s&lt;/td&gt;
+&lt;td&gt;≈ 10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;gpt-oss:20b&lt;/code&gt; (MoE, 3.6B active)&lt;/td&gt;
+&lt;td&gt;12 GB&lt;/td&gt;
+&lt;td&gt;19 tokens/s&lt;/td&gt;
+&lt;td&gt;≈ 21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Small models stay below the estimate because fixed per-word overhead weighs more. Reading long prompts is a separate bottleneck: about 13,000 tokens took two and a half to three minutes on the same machine.&lt;/p&gt;
+&lt;h2 id=&quot;checklist-before-use&quot; tabindex=&quot;-1&quot;&gt;Checklist before use&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Origin:&lt;/strong&gt; Does the file come from the maker or a well-known repackager? Avoid unknown accounts and &amp;quot;uncensored&amp;quot; variants.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;License:&lt;/strong&gt; check the model card. Apache 2.0 and MIT are free to use. Llama, Gemma and some Mistral models have their own terms. &amp;quot;Research only&amp;quot; or &amp;quot;non-commercial&amp;quot; rules out commercial work.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy:&lt;/strong&gt; Does it really run locally? No &lt;code&gt;-cloud&lt;/code&gt; tag, no API keys for outside providers, web search switched off in the tool.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; file size plus context below about 70 % of memory (Mac) or GPU memory (PC).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Right variant:&lt;/strong&gt; Instruct for chat, Coder for code, Embedding for search. For agents the model must be able to call tools; Ollama shows this as the &amp;quot;tools&amp;quot; capability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recency:&lt;/strong&gt; compare generation and date. A new 9B often beats an old 30B.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Test it yourself:&lt;/strong&gt; maker benchmarks are marketing. Three to five real tasks from your own work are enough to separate the candidates.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    <link href="https://wiki.polyformal.de/en/ai/model-names/"/>
+  </entry><entry>
     <title>Datenschutz</title>
-    <updated>2026-11-12T21:32:42Z</updated>
+    <updated>2026-11-15T20:48:26Z</updated>
     <id>https://wiki.polyformal.de/datenschutz/</id>
     <content type="html">&lt;h1 id=&quot;datenschutzerklaerung&quot; tabindex=&quot;-1&quot;&gt;Datenschutzerklärung&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/privacy/&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
