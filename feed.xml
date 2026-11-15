@@ -3,10 +3,10 @@
   <title>polyformal wiki</title>
   <link href="https://wiki.polyformal.de/feed.xml" rel="self"/>
   <link href="https://wiki.polyformal.de"/>
-  <updated>2026-11-15T20:48:37Z</updated>
+  <updated>2026-11-15T20:49:03Z</updated>
   <id>https://wiki.polyformal.de</id><entry>
     <title>Werkzeuge für Desktop Publishing</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/</id>
     <content type="html">&lt;p&gt;Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.&lt;/p&gt;
 &lt;p&gt;Beinhaltet: u.a. GIMP, Inkscape, Scribus, gThumb, Schriften allgemein, FontyPython, FONTPage&lt;/p&gt;
@@ -26,7 +26,7 @@
     <link href="https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/"/>
   </entry><entry>
     <title>remind - ein anspruchsvolles Kalender- und Alarm-Programm</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/software/remind/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.roaringpenguin.com/products/remind&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Homepage&lt;/a&gt;&lt;/li&gt;
@@ -124,7 +124,7 @@ wget -qO $TMP_FILE RTM_URL &amp;amp;&amp;amp; ical2rem.pl $TMP_FILE  &amp;gt; ~/
     <link href="https://wiki.polyformal.de/software/remind/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 auf 1.0</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/software/stalwart-migration/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Erfahrungsbericht: Migration eines kleinen Stalwart-Mailservers von 0.15.5 auf 1.0.3. Das Setup: Docker Compose, RocksDB, OpenLDAP als Verzeichnis, Reverse Proxy davor, weniger als 10 Konten, rund 13 GB Daten.&lt;/p&gt;
@@ -337,7 +337,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/stalwart-migration/"/>
   </entry><entry>
     <title>Samba</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/software/samba/</id>
     <content type="html">&lt;h2 id=&quot;time-machine&quot; tabindex=&quot;-1&quot;&gt;TimeMachine&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&lt;/a&gt;&lt;/p&gt;
@@ -345,7 +345,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/samba/"/>
   </entry><entry>
     <title>Mail User Agents</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/software/mua/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#mua&quot;&gt;#mua&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#thunderbird&quot;&gt;#thunderbird&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#evolution&quot;&gt;#evolution&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hier eine Auflistung von persönlichen Erfahrungen mit E-Mailprogrammen.&lt;/p&gt;
@@ -391,7 +391,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/mua/"/>
   </entry><entry>
     <title>Apache2</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/software/apache2/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://vimeo.com/1076588&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Entwicklungsgeschichte&lt;/a&gt; des Apache Webservers dargestellt mit &lt;a href=&quot;http://code.google.com/p/codeswarm/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;codeswarm&lt;/a&gt;&lt;/li&gt;
@@ -405,7 +405,7 @@ AllowOverride FileInfo Limit
     <link href="https://wiki.polyformal.de/software/apache2/"/>
   </entry><entry>
     <title>Home Assistant</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/smart-home/home-assistant/</id>
     <content type="html">&lt;h2 id=&quot;data-retention&quot; tabindex=&quot;-1&quot;&gt;Data Retention&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&lt;/a&gt;&lt;/p&gt;
@@ -413,7 +413,7 @@ AllowOverride FileInfo Limit
     <link href="https://wiki.polyformal.de/smart-home/home-assistant/"/>
   </entry><entry>
     <title>apt repositories debian &amp; ubuntu</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/os/repositories/</id>
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;[!warning]&lt;br /&gt;
@@ -475,7 +475,7 @@ deb http://www.bolzchristian.de/debian ./
     <link href="https://wiki.polyformal.de/os/repositories/"/>
   </entry><entry>
     <title>Solaris</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/os/solaris/</id>
     <content type="html">&lt;h2 id=&quot;zusaetzliche-software&quot; tabindex=&quot;-1&quot;&gt;zusätzliche Software&lt;/h2&gt;
 &lt;p&gt;Oracle (ehem. Sun) bietet eine CD mit Freeware an, welche einiges an Open Source Software enthält. Die Programme sind aber recht alt (Stand 02/2011)&lt;/p&gt;
@@ -543,7 +543,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/solaris/"/>
   </entry><entry>
     <title>Plan 9</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/os/plan9/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 from Bell Labs&lt;/a&gt;, &lt;a href=&quot;https://de.wikipedia.org/wiki/Plan_9_(Betriebssystem)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 (Betriebssystem)&lt;/a&gt;&lt;/li&gt;
@@ -579,7 +579,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/plan9/"/>
   </entry><entry>
     <title>OpenBSD</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/os/openbsd/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -628,7 +628,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/openbsd/"/>
   </entry><entry>
     <title>FreeBSD</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/os/freebsd/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -703,7 +703,7 @@ chsh -s /usr/sbin/nologin gdm
     <link href="https://wiki.polyformal.de/os/freebsd/"/>
   </entry><entry>
     <title>Fedora</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/os/fedora/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#fedora&quot;&gt;#fedora&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;informationen&quot; tabindex=&quot;-1&quot;&gt;Informationen&lt;/h2&gt;
@@ -778,7 +778,7 @@ setsysfonf
     <link href="https://wiki.polyformal.de/os/fedora/"/>
   </entry><entry>
     <title>Debian GNU-Linux</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/os/debian/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;packaging-and-amp-repository&quot; tabindex=&quot;-1&quot;&gt;Packaging &amp;amp; Repository&lt;/h2&gt;
@@ -833,7 +833,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/os/debian/"/>
   </entry><entry>
     <title>Ricoh GR IV Tips</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/</id>
     <content type="html">&lt;p&gt;How to store Image Control / Bildsteuerung&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&lt;/a&gt;&lt;/p&gt;
@@ -849,7 +849,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/"/>
   </entry><entry>
     <title>Phillipinen</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/notizen/reisen/phillipinen/</id>
     <content type="html">&lt;h2 id=&quot;zahlung&quot; tabindex=&quot;-1&quot;&gt;Zahlung&lt;/h2&gt;
 &lt;p&gt;Als Nicht-US Ausländer sind GCash oder Maya wegen der Verifizierung nicht möglich gewesen (Stand 08/2026).&lt;br /&gt;
@@ -870,7 +870,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/notizen/reisen/phillipinen/"/>
   </entry><entry>
     <title>Open Source Software DTP</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/notizen/oos-dtp/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;bildbearbeitung-raster&quot; tabindex=&quot;-1&quot;&gt;Bildbearbeitung (Raster)&lt;/h2&gt;
@@ -1023,239 +1023,8 @@ Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemw
 </content>
     <link href="https://wiki.polyformal.de/notizen/oos-dtp/"/>
   </entry><entry>
-    <title>KI Infos</title>
-    <updated>2026-11-15T20:48:26Z</updated>
-    <id>https://wiki.polyformal.de/notizen/ki/ki-infos/</id>
-    <content type="html">&lt;h1 id=&quot;hermes&quot; tabindex=&quot;-1&quot;&gt;Hermes&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://agentos.guide/free-models-hermes&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://agentos.guide/free-models-hermes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/notizen/ki/chat-gpt-ueber-agent-os/&quot;&gt;ChatGPT über agent-os&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;install&quot; tabindex=&quot;-1&quot;&gt;Install&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://hermes-agent.nousresearch.com/docs/user-guide/docker/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Docker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;plugins&quot; tabindex=&quot;-1&quot;&gt;plugins&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/GoSlowPoke168/hermes-openrouter-free-rotator&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;hermes-openrouter-free-rotator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/robertlmann02/nextcloud-talk-hermes-bridge&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nextcloud-talk-herms-bridgle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;skill&quot; tabindex=&quot;-1&quot;&gt;skill&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/adnw-vinc/hermes-nextcloud&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;nextcloud&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    <link href="https://wiki.polyformal.de/notizen/ki/ki-infos/"/>
-  </entry><entry>
-    <title>ChatGPT über agent-os</title>
-    <updated>2026-11-15T20:48:26Z</updated>
-    <id>https://wiki.polyformal.de/notizen/ki/chat-gpt-ueber-agent-os/</id>
-    <content type="html">&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;framerslab/agentos&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;earthwalker17/agent-os&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;use-agent-os/agent-os&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Fas ist der Unterschied zwischen &lt;a href=&quot;https://github.com/framerslab/agentos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/framerslab/agentos&lt;/a&gt; und &lt;a href=&quot;https://github.com/earthwalker17/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/earthwalker17/agent-os?utm_source=chatgpt.com&lt;/a&gt; und &lt;a href=&quot;https://github.com/use-agent-os/agent-os&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/use-agent-os/agent-os&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Ja – jetzt lässt sich das sauber auseinanderhalten. &lt;strong&gt;Die drei Projekte sind eigenständige Projekte und nicht drei Varianten desselben AgentOS.&lt;/strong&gt; Der gemeinsame Name „AgentOS“ ist hier tatsächlich ziemlich verwirrend.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Projekt&lt;/th&gt;
-&lt;th&gt;Was ist es?&lt;/th&gt;
-&lt;th&gt;Schwerpunkt&lt;/th&gt;
-&lt;th&gt;Technik&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;framerslab/agentos&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;KI-Agent-Framework als Bibliothek&lt;/td&gt;
-&lt;td&gt;Memory, Tools, Multi-Agenten&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;TypeScript / Node.js&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;earthwalker17/agent-os&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;komplette Coding-Agent-Umgebung&lt;/td&gt;
-&lt;td&gt;Softwareprojekte planen → programmieren → testen → deployen&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;Python + FastAPI + React&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;use-agent-os/agent-os&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;kompletter persönlicher Agent&lt;/td&gt;
-&lt;td&gt;Chat, Tools, Memory, Subagents, Scheduling, Provider-Routing, Trading&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;Python&lt;/strong&gt;, Web/Desktop/CLI&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&quot;1-framers-lab-agent-os&quot; tabindex=&quot;-1&quot;&gt;1. FramersLab AgentOS&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/framerslab/agentos?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;framerslab/agentos auf GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Das ist am ehesten ein &lt;strong&gt;Framework für Entwickler&lt;/strong&gt;, aus dem man einen eigenen Agenten baut.&lt;/p&gt;
-&lt;p&gt;Das Besondere ist beispielsweise:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;persistentes „cognitive memory“&lt;/li&gt;
-&lt;li&gt;mehrere Agenten&lt;/li&gt;
-&lt;li&gt;11 LLM-Provider&lt;/li&gt;
-&lt;li&gt;Agenten können &lt;strong&gt;zur Laufzeit eigene Tools erzeugen&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Tool-Ausführung in einer Sandbox&lt;/li&gt;
-&lt;li&gt;Sessions und langfristiger Kontext&lt;/li&gt;
-&lt;li&gt;optionale „Personality“ über HEXACO&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Man benutzt es beispielsweise als Node/TypeScript-Bibliothek:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;deine Anwendung
-      │
-      ▼
-  AgentOS Framework
-      │
- ┌────┼─────┐
- ▼    ▼     ▼
-LLM  Memory Tools
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Es ist &lt;strong&gt;nicht primär ein fertiges Programm&lt;/strong&gt;, das du installierst und dann wie Hermes benutzt. &lt;a href=&quot;https://github.com/framerslab/agentos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id=&quot;2-earthwalker-agent-os&quot; tabindex=&quot;-1&quot;&gt;2. Earthwalker Agent OS&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/earthwalker17/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;earthwalker17/agent-os auf GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Das ist konzeptionell etwas völlig anderes.&lt;/p&gt;
-&lt;p&gt;Hier geht es speziell darum:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;„Ich möchte ein KI-Modell meine Softwareprojekte bauen lassen, aber mit einer kontrollierten Umgebung darum herum.“&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Die zentrale Idee ist tatsächlich:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;             LLM
-              │
-              ▼
-        ┌───────────┐
-        │ Agent OS  │
-        │  Harness  │
-        └─────┬─────┘
-              │
-      ┌───────┼────────┐
-      ▼       ▼        ▼
-    Plan    Code     Verify
-                       │
-                       ▼
-                    Deploy
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Es gibt bewusst zwei Agenten:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Main Agent&lt;/strong&gt; = plant, verwaltet Memory und entscheidet&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Coding Agent&lt;/strong&gt; = darf tatsächlich Dateien ändern und Shell-Kommandos ausführen&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Dazu kommen Sandbox, Git, Tests, Browser-Checks, Recovery usw. &lt;a href=&quot;https://github.com/earthwalker17/agent-os/blob/main/ARCHITECTURE.md?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Das ist daher eher ein &lt;strong&gt;„Claude Code/Codex/OpenCode mit Sicherheits- und Projektmanagement-Schicht“&lt;/strong&gt; als ein allgemeiner persönlicher Assistent.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id=&quot;3-code-use-agent-os-agent-os-code&quot; tabindex=&quot;-1&quot;&gt;3. &lt;code&gt;use-agent-os/agent-os&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/use-agent-os/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;use-agent-os/agent-os auf GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Das ist dasjenige, das zu deiner vorherigen Hermes-Frage passt.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Es ist ein fertiger &lt;strong&gt;lokaler General-Purpose-Agent&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;                 AgentOS
-                    │
-      ┌─────────────┼─────────────┐
-      ▼             ▼             ▼
-    Web UI         CLI          Telegram
-      │             │             │
-      └─────────────┼─────────────┘
-                    ▼
-              Agent / Tools
-                    │
-        ┌───────────┼───────────┐
-        ▼           ▼           ▼
-      Memory     Sandbox       Web
-                    │
-             Pilot Router
-                    │
-       ┌────────────┼────────────┐
-       ▼            ▼            ▼
-    OpenRouter    Ollama       OpenAI
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Es kann unter anderem:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;lokal laufen&lt;/li&gt;
-&lt;li&gt;Memory speichern&lt;/li&gt;
-&lt;li&gt;Tools verwenden&lt;/li&gt;
-&lt;li&gt;Subagents starten&lt;/li&gt;
-&lt;li&gt;Webzugriff verwenden&lt;/li&gt;
-&lt;li&gt;geplante Jobs ausführen&lt;/li&gt;
-&lt;li&gt;Telegram/Discord/Slack anbinden&lt;/li&gt;
-&lt;li&gt;verschiedene LLM-Provider benutzen&lt;/li&gt;
-&lt;li&gt;lokale Modelle über &lt;strong&gt;Ollama&lt;/strong&gt; verwenden&lt;/li&gt;
-&lt;li&gt;einen lokalen Router benutzen, der Aufgaben auf unterschiedliche Modelle verteilt. &lt;a href=&quot;https://github.com/use-agent-os/agent-os&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Und für deine ursprüngliche Frage besonders interessant:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Es kann Daten aus Hermes übernehmen.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Das Repository enthält ausdrücklich:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;agentos migrate hermes
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;und auch eine Migration von OpenClaw. Das ist ein ziemlich deutlicher Hinweis darauf, dass dieses AgentOS als &lt;strong&gt;Nachfolger/Alternative für bestehende Hermes/OpenClaw-Installationen&lt;/strong&gt; gedacht ist. &lt;a href=&quot;https://github.com/use-agent-os/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id=&quot;der-entscheidende-unterschied&quot; tabindex=&quot;-1&quot;&gt;Der entscheidende Unterschied&lt;/h2&gt;
-&lt;p&gt;Wenn ich die drei auf &lt;strong&gt;deine Anwendung&lt;/strong&gt; herunterbreche:&lt;/p&gt;
-&lt;h3 id=&quot;du-willst-selbst-einen-agenten-programmieren&quot; tabindex=&quot;-1&quot;&gt;Du willst selbst einen Agenten programmieren&lt;/h3&gt;
-&lt;p&gt;→ &lt;strong&gt;FramersLab AgentOS&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;TypeScript
-    ↓
-@framers/agentos
-    ↓
-dein eigener Agent
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;du-willst-hauptsaechlich-software-entwickeln-lassen&quot; tabindex=&quot;-1&quot;&gt;Du willst hauptsächlich Software entwickeln lassen&lt;/h3&gt;
-&lt;p&gt;→ &lt;strong&gt;earthwalker17/agent-os&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Chat
- ↓
-Plan
- ↓
-Coding Agent
- ↓
-Test
- ↓
-Review
- ↓
-Git / Deploy
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;du-willst-einen-fertigen-persoenlichen-lokalen-agenten&quot; tabindex=&quot;-1&quot;&gt;Du willst einen fertigen persönlichen lokalen Agenten&lt;/h3&gt;
-&lt;p&gt;→ &lt;strong&gt;use-agent-os/agent-os&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Telegram / Web / CLI
-          ↓
-       AgentOS
-          ↓
-   Memory + Tools
-          ↓
-  Ollama / OpenRouter /
-  Claude / GPT / usw.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id=&quot;und-wo-steht-hermes-dabei&quot; tabindex=&quot;-1&quot;&gt;Und wo steht Hermes dabei?&lt;/h3&gt;
-&lt;p&gt;Das ist jetzt der interessante Teil:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;                 ┌── FramersLab AgentOS
-                 │      Framework
-                 │
-LLM ─────────────┼── Earthwalker Agent OS
-                 │      Coding-Harness
-                 │
-                 ├── use-agent-os AgentOS
-                 │      General-purpose Agent
-                 │
-                 └── Hermes
-                        General-purpose Agent
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Hermes und &lt;code&gt;use-agent-os/agent-os&lt;/code&gt; sind also tatsächlich die beiden, die du sinnvoll direkt vergleichen kannst.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Das &lt;code&gt;use-agent-os&lt;/code&gt;-Projekt bezeichnet sich selbst als von &lt;strong&gt;OpenClaw und Hermes Agent beeinflusst&lt;/strong&gt; und bietet sogar eine direkte Hermes-Migration an. &lt;a href=&quot;https://github.com/use-agent-os/agent-os?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Und &lt;strong&gt;Earthwalker Agent OS ist eine ganz andere Idee&lt;/strong&gt;: dort steht das Coding von Softwareprojekten im Mittelpunkt. &lt;a href=&quot;https://github.com/earthwalker17/agent-os/blob/main/BLUEPRINT.md?utm_source=chatgpt.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Für deinen konkreten Fall – M3 Mac, 24 GB RAM, Ollama/Qwen und Programmierhilfe – würde ich deshalb vor allem &lt;code&gt;Hermes&lt;/code&gt; vs. &lt;code&gt;use-agent-os/agent-os&lt;/code&gt; vs. &lt;code&gt;earthwalker17/agent-os&lt;/code&gt; vergleichen.&lt;/strong&gt; Das wäre deutlich aussagekräftiger als die drei unter dem gemeinsamen Namen „AgentOS“ zu betrachten.&lt;/p&gt;
-</content>
-    <link href="https://wiki.polyformal.de/notizen/ki/chat-gpt-ueber-agent-os/"/>
-  </entry><entry>
     <title>ssh</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/linux/ssh/</id>
     <content type="html">&lt;h2 id=&quot;ssh-tunnel&quot; tabindex=&quot;-1&quot;&gt;SSH-Tunnel&lt;/h2&gt;
 &lt;p&gt;Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner &lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt; Port 3306 (MySql Server) erstellen:&lt;/p&gt;
@@ -1277,7 +1046,7 @@ Natürlich kann sich die Gegenstelle auch den Port 12345 von &lt;a href=&quot;ht
     <link href="https://wiki.polyformal.de/linux/ssh/"/>
   </entry><entry>
     <title>Diverse Tipps und Tricks zu Xfce</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/linux/xfce/notizen/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#xfce&quot;&gt;#xfce&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;xorg-composite-effekte-fuer-xfce&quot; tabindex=&quot;-1&quot;&gt;Xorg - Composite-Effekte für Xfce&lt;/h2&gt;
@@ -1325,7 +1094,7 @@ Für Debian muss das Paket &lt;em&gt;libgnomevfs2-bin&lt;/em&gt; installiert sei
     <link href="https://wiki.polyformal.de/linux/xfce/notizen/"/>
   </entry><entry>
     <title>UMTS unter Linux</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/linux/umts/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://de.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;UMTS&lt;/a&gt;&lt;/li&gt;
@@ -1456,7 +1225,7 @@ SAY &#39;Setting APN
     <link href="https://wiki.polyformal.de/linux/umts/"/>
   </entry><entry>
     <title>Referenzkarte Netzwerk</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/linux/referenzkarte_netzwerk/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#lpi&quot;&gt;#lpi&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unvollständig&quot;&gt;#unvollständig&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;abstract&quot; tabindex=&quot;-1&quot;&gt;Abstract&lt;/h2&gt;
@@ -1678,7 +1447,7 @@ oder mit dem Programm &lt;em&gt;multitail&lt;/em&gt;. Die Option -A zeigt de Inh
     <link href="https://wiki.polyformal.de/linux/referenzkarte_netzwerk/"/>
   </entry><entry>
     <title>Programme und Tipps für die Konsole</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/linux/console/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1856,7 +1625,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/console/"/>
   </entry><entry>
     <title>Linux Professional Institute (LPI)</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/linux/zertifizierung/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;vorbereitungsmoeglichkeiten&quot; tabindex=&quot;-1&quot;&gt;Vorbereitungsmöglichkeiten&lt;/h2&gt;
@@ -1929,7 +1698,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/zertifizierung/"/>
   </entry><entry>
     <title>Informationen zu Linux</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/linux/informationen/</id>
     <content type="html">&lt;h2 id=&quot;geschichte&quot; tabindex=&quot;-1&quot;&gt;Geschichte&lt;/h2&gt;
 &lt;ul&gt;
@@ -1958,7 +1727,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/informationen/"/>
   </entry><entry>
     <title>GNOME</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/linux/gnome/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#laptop&quot;&gt;#laptop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;dual-head-setup&quot; tabindex=&quot;-1&quot;&gt;Dual Head Setup&lt;/h2&gt;
@@ -1971,7 +1740,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/linux/gnome/"/>
   </entry><entry>
     <title>Modellnamen lesen</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/ki/modellnamen/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ki&quot;&gt;#ki&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#huggingface&quot;&gt;#huggingface&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#lokal&quot;&gt;#lokal&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ein Name wie &lt;code&gt;Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL&lt;/code&gt; sagt fast alles, was man vor dem Download wissen muss: Hersteller, Größe, Bauart, Zweck, Dateiformat und Kompression. Diese Seite zeigt, wie man die Teile liest und was sie für Speicher, Tempo und Einsatz bedeuten.&lt;/p&gt;
@@ -2361,7 +2130,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/ki/modellnamen/"/>
   </entry><entry>
     <title>KI Infos</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/ki/ki-infos/</id>
     <content type="html">&lt;h1 id=&quot;hermes&quot; tabindex=&quot;-1&quot;&gt;Hermes&lt;/h1&gt;
 &lt;ul&gt;
@@ -2385,7 +2154,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/ki/ki-infos/"/>
   </entry><entry>
     <title>ChatGPT über agent-os</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/ki/chat-gpt-ueber-agent-os/</id>
     <content type="html">&lt;table&gt;
 &lt;thead&gt;
@@ -2592,7 +2361,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/ki/chat-gpt-ueber-agent-os/"/>
   </entry><entry>
     <title>Impressum</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/impressum/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;polyformal System- &amp;amp; Formarbeit&lt;/li&gt;
@@ -2614,7 +2383,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/impressum/"/>
   </entry><entry>
     <title>wiki driven by Obsidian</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;Obsidian Digital Graden
@@ -2627,7 +2396,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/"/>
   </entry><entry>
     <title>imagemagick</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/en/software/imagemagick/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;tiff&quot; tabindex=&quot;-1&quot;&gt;TIFF&lt;/h3&gt;
@@ -2639,7 +2408,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/en/software/imagemagick/"/>
   </entry><entry>
     <title>asciidoc</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/software/asciidoc/</id>
     <content type="html">&lt;h2 id=&quot;backends&quot; tabindex=&quot;-1&quot;&gt;backends&lt;/h2&gt;
 &lt;h3 id=&quot;slidy&quot; tabindex=&quot;-1&quot;&gt;slidy&lt;/h3&gt;
@@ -2670,7 +2439,7 @@ deckjs backend requires title attribute for images&lt;/p&gt;
     <link href="https://wiki.polyformal.de/software/asciidoc/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 to 1.0</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/en/software/stalwart-migration/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Field report: migrating a small Stalwart mail server from 0.15.5 to 1.0.3. The setup: Docker Compose, RocksDB, OpenLDAP as the directory, a reverse proxy in front, fewer than 10 accounts, about 13 GB of data.&lt;/p&gt;
@@ -2883,7 +2652,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/en/software/stalwart-migration/"/>
   </entry><entry>
     <title>Privacy Policy</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/en/privacy/</id>
     <content type="html">&lt;h1 id=&quot;privacy-policy&quot; tabindex=&quot;-1&quot;&gt;Privacy Policy&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt;&lt;/p&gt;
@@ -2909,7 +2678,7 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
     <link href="https://wiki.polyformal.de/en/privacy/"/>
   </entry><entry>
     <title>Emu E4XT Ultra</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/en/notizen/e4xt_ultra/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#music&quot;&gt;#music&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#sampler&quot;&gt;#sampler&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#emulator&quot;&gt;#emulator&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;internal-ssd&quot; tabindex=&quot;-1&quot;&gt;Internal SSD&lt;/h2&gt;
@@ -2927,7 +2696,7 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
     <link href="https://wiki.polyformal.de/en/notizen/e4xt_ultra/"/>
   </entry><entry>
     <title>ollama</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/en/ai/ollama/</id>
     <content type="html">&lt;p&gt;load a Hugging Face model into ollama&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ollama run hf.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF:latest
@@ -2938,7 +2707,7 @@ ollama run hf.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF:latest
     <link href="https://wiki.polyformal.de/en/ai/ollama/"/>
   </entry><entry>
     <title>Reading model names</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/en/ai/model-names/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#huggingface&quot;&gt;#huggingface&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#local&quot;&gt;#local&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A name like &lt;code&gt;Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL&lt;/code&gt; tells you almost everything you need to know before downloading: maker, size, architecture, purpose, file format and compression. This page shows how to read the parts and what they mean for memory, speed and use.&lt;/p&gt;
@@ -3328,7 +3097,7 @@ ollama run hf.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF:latest
     <link href="https://wiki.polyformal.de/en/ai/model-names/"/>
   </entry><entry>
     <title>Datenschutz</title>
-    <updated>2026-11-15T20:48:26Z</updated>
+    <updated>2026-11-15T20:48:50Z</updated>
     <id>https://wiki.polyformal.de/datenschutz/</id>
     <content type="html">&lt;h1 id=&quot;datenschutzerklaerung&quot; tabindex=&quot;-1&quot;&gt;Datenschutzerklärung&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/privacy/&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
