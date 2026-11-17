@@ -3,10 +3,10 @@
   <title>polyformal wiki</title>
   <link href="https://wiki.polyformal.de/feed.xml" rel="self"/>
   <link href="https://wiki.polyformal.de"/>
-  <updated>2026-11-15T20:49:03Z</updated>
+  <updated>2026-11-17T19:35:34Z</updated>
   <id>https://wiki.polyformal.de</id><entry>
     <title>Werkzeuge für Desktop Publishing</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/</id>
     <content type="html">&lt;p&gt;Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.&lt;/p&gt;
 &lt;p&gt;Beinhaltet: u.a. GIMP, Inkscape, Scribus, gThumb, Schriften allgemein, FontyPython, FONTPage&lt;/p&gt;
@@ -26,7 +26,7 @@
     <link href="https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/"/>
   </entry><entry>
     <title>remind - ein anspruchsvolles Kalender- und Alarm-Programm</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/software/remind/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.roaringpenguin.com/products/remind&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Homepage&lt;/a&gt;&lt;/li&gt;
@@ -124,7 +124,7 @@ wget -qO $TMP_FILE RTM_URL &amp;amp;&amp;amp; ical2rem.pl $TMP_FILE  &amp;gt; ~/
     <link href="https://wiki.polyformal.de/software/remind/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 auf 1.0</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/software/stalwart-migration/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Erfahrungsbericht: Migration eines kleinen Stalwart-Mailservers von 0.15.5 auf 1.0.3. Das Setup: Docker Compose, RocksDB, OpenLDAP als Verzeichnis, Reverse Proxy davor, weniger als 10 Konten, rund 13 GB Daten.&lt;/p&gt;
@@ -337,7 +337,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/stalwart-migration/"/>
   </entry><entry>
     <title>Samba</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/software/samba/</id>
     <content type="html">&lt;h2 id=&quot;time-machine&quot; tabindex=&quot;-1&quot;&gt;TimeMachine&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&lt;/a&gt;&lt;/p&gt;
@@ -345,7 +345,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/samba/"/>
   </entry><entry>
     <title>Mail User Agents</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/software/mua/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#mua&quot;&gt;#mua&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#thunderbird&quot;&gt;#thunderbird&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#evolution&quot;&gt;#evolution&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hier eine Auflistung von persönlichen Erfahrungen mit E-Mailprogrammen.&lt;/p&gt;
@@ -391,7 +391,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/mua/"/>
   </entry><entry>
     <title>Apache2</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/software/apache2/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://vimeo.com/1076588&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Entwicklungsgeschichte&lt;/a&gt; des Apache Webservers dargestellt mit &lt;a href=&quot;http://code.google.com/p/codeswarm/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;codeswarm&lt;/a&gt;&lt;/li&gt;
@@ -405,7 +405,7 @@ AllowOverride FileInfo Limit
     <link href="https://wiki.polyformal.de/software/apache2/"/>
   </entry><entry>
     <title>Home Assistant</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/smart-home/home-assistant/</id>
     <content type="html">&lt;h2 id=&quot;data-retention&quot; tabindex=&quot;-1&quot;&gt;Data Retention&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&lt;/a&gt;&lt;/p&gt;
@@ -413,7 +413,7 @@ AllowOverride FileInfo Limit
     <link href="https://wiki.polyformal.de/smart-home/home-assistant/"/>
   </entry><entry>
     <title>apt repositories debian &amp; ubuntu</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/os/repositories/</id>
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;[!warning]&lt;br /&gt;
@@ -475,7 +475,7 @@ deb http://www.bolzchristian.de/debian ./
     <link href="https://wiki.polyformal.de/os/repositories/"/>
   </entry><entry>
     <title>Solaris</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/os/solaris/</id>
     <content type="html">&lt;h2 id=&quot;zusaetzliche-software&quot; tabindex=&quot;-1&quot;&gt;zusätzliche Software&lt;/h2&gt;
 &lt;p&gt;Oracle (ehem. Sun) bietet eine CD mit Freeware an, welche einiges an Open Source Software enthält. Die Programme sind aber recht alt (Stand 02/2011)&lt;/p&gt;
@@ -543,7 +543,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/solaris/"/>
   </entry><entry>
     <title>Plan 9</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/os/plan9/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 from Bell Labs&lt;/a&gt;, &lt;a href=&quot;https://de.wikipedia.org/wiki/Plan_9_(Betriebssystem)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 (Betriebssystem)&lt;/a&gt;&lt;/li&gt;
@@ -579,7 +579,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/plan9/"/>
   </entry><entry>
     <title>OpenBSD</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/os/openbsd/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -628,7 +628,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/openbsd/"/>
   </entry><entry>
     <title>FreeBSD</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/os/freebsd/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -703,7 +703,7 @@ chsh -s /usr/sbin/nologin gdm
     <link href="https://wiki.polyformal.de/os/freebsd/"/>
   </entry><entry>
     <title>Fedora</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/os/fedora/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#fedora&quot;&gt;#fedora&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;informationen&quot; tabindex=&quot;-1&quot;&gt;Informationen&lt;/h2&gt;
@@ -778,7 +778,7 @@ setsysfonf
     <link href="https://wiki.polyformal.de/os/fedora/"/>
   </entry><entry>
     <title>Debian GNU-Linux</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/os/debian/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;packaging-and-amp-repository&quot; tabindex=&quot;-1&quot;&gt;Packaging &amp;amp; Repository&lt;/h2&gt;
@@ -833,7 +833,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/os/debian/"/>
   </entry><entry>
     <title>Ricoh GR IV Tips</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/</id>
     <content type="html">&lt;p&gt;How to store Image Control / Bildsteuerung&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&lt;/a&gt;&lt;/p&gt;
@@ -849,7 +849,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/"/>
   </entry><entry>
     <title>Phillipinen</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/notizen/reisen/phillipinen/</id>
     <content type="html">&lt;h2 id=&quot;zahlung&quot; tabindex=&quot;-1&quot;&gt;Zahlung&lt;/h2&gt;
 &lt;p&gt;Als Nicht-US Ausländer sind GCash oder Maya wegen der Verifizierung nicht möglich gewesen (Stand 08/2026).&lt;br /&gt;
@@ -870,7 +870,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/notizen/reisen/phillipinen/"/>
   </entry><entry>
     <title>Open Source Software DTP</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/notizen/oos-dtp/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;bildbearbeitung-raster&quot; tabindex=&quot;-1&quot;&gt;Bildbearbeitung (Raster)&lt;/h2&gt;
@@ -1024,7 +1024,7 @@ Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemw
     <link href="https://wiki.polyformal.de/notizen/oos-dtp/"/>
   </entry><entry>
     <title>ssh</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/linux/ssh/</id>
     <content type="html">&lt;h2 id=&quot;ssh-tunnel&quot; tabindex=&quot;-1&quot;&gt;SSH-Tunnel&lt;/h2&gt;
 &lt;p&gt;Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner &lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt; Port 3306 (MySql Server) erstellen:&lt;/p&gt;
@@ -1046,7 +1046,7 @@ Natürlich kann sich die Gegenstelle auch den Port 12345 von &lt;a href=&quot;ht
     <link href="https://wiki.polyformal.de/linux/ssh/"/>
   </entry><entry>
     <title>Diverse Tipps und Tricks zu Xfce</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/linux/xfce/notizen/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#xfce&quot;&gt;#xfce&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;xorg-composite-effekte-fuer-xfce&quot; tabindex=&quot;-1&quot;&gt;Xorg - Composite-Effekte für Xfce&lt;/h2&gt;
@@ -1094,7 +1094,7 @@ Für Debian muss das Paket &lt;em&gt;libgnomevfs2-bin&lt;/em&gt; installiert sei
     <link href="https://wiki.polyformal.de/linux/xfce/notizen/"/>
   </entry><entry>
     <title>UMTS unter Linux</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/linux/umts/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://de.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;UMTS&lt;/a&gt;&lt;/li&gt;
@@ -1225,7 +1225,7 @@ SAY &#39;Setting APN
     <link href="https://wiki.polyformal.de/linux/umts/"/>
   </entry><entry>
     <title>Referenzkarte Netzwerk</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/linux/referenzkarte_netzwerk/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#lpi&quot;&gt;#lpi&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unvollständig&quot;&gt;#unvollständig&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;abstract&quot; tabindex=&quot;-1&quot;&gt;Abstract&lt;/h2&gt;
@@ -1447,7 +1447,7 @@ oder mit dem Programm &lt;em&gt;multitail&lt;/em&gt;. Die Option -A zeigt de Inh
     <link href="https://wiki.polyformal.de/linux/referenzkarte_netzwerk/"/>
   </entry><entry>
     <title>Programme und Tipps für die Konsole</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/linux/console/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1625,7 +1625,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/console/"/>
   </entry><entry>
     <title>Linux Professional Institute (LPI)</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/linux/zertifizierung/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;vorbereitungsmoeglichkeiten&quot; tabindex=&quot;-1&quot;&gt;Vorbereitungsmöglichkeiten&lt;/h2&gt;
@@ -1698,7 +1698,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/zertifizierung/"/>
   </entry><entry>
     <title>Informationen zu Linux</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/linux/informationen/</id>
     <content type="html">&lt;h2 id=&quot;geschichte&quot; tabindex=&quot;-1&quot;&gt;Geschichte&lt;/h2&gt;
 &lt;ul&gt;
@@ -1727,7 +1727,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/informationen/"/>
   </entry><entry>
     <title>GNOME</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/linux/gnome/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#laptop&quot;&gt;#laptop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;dual-head-setup&quot; tabindex=&quot;-1&quot;&gt;Dual Head Setup&lt;/h2&gt;
@@ -1739,8 +1739,213 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
 </content>
     <link href="https://wiki.polyformal.de/linux/gnome/"/>
   </entry><entry>
+    <title>paperless-ai mit Ollama auf dem Raspberry Pi 5</title>
+    <updated>2026-11-17T19:35:20Z</updated>
+    <id>https://wiki.polyformal.de/ki/paperless-ai-raspberry-pi/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ki&quot;&gt;#ki&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#paperless&quot;&gt;#paperless&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#raspberrypi&quot;&gt;#raspberrypi&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Erfahrungsbericht: paperless-ngx verschlagwortet Dokumente mit Hilfe von paperless-ai, und das Sprachmodell läuft lokal über Ollama auf demselben Raspberry Pi 5 mit 8 GB. Kein Dokument verlässt das eigene Netz.&lt;/p&gt;
+&lt;p&gt;Stand November 2026 mit paperless-ngx 3.5.0, paperless-ai 4.1.0 und Ollama auf Raspberry Pi OS (Debian 12, Kernel 6.12), alles in Docker Compose. Hostnamen und Pfade sind Platzhalter (&lt;code&gt;&amp;lt;pi&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;...&amp;gt;&lt;/code&gt;). Einstellungsnamen können sich in neueren Versionen ändern.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/ai/paperless-ai-raspberry-pi/&quot;&gt;paperless-ai with Ollama on a Raspberry Pi 5&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;das-wichtigste-vorab&quot; tabindex=&quot;-1&quot;&gt;Das Wichtigste vorab&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Es funktioniert, aber langsam: Ein Dokument braucht mit einem 4B-Modell rund eine Minute. Für die laufende Post reicht das, für einen Altbestand von Tausenden Dokumenten nicht.&lt;/li&gt;
+&lt;li&gt;Das „Nachdenken“ des Modells muss aus sein. Sonst läuft fast jede Anfrage in den Timeout.&lt;/li&gt;
+&lt;li&gt;Raspberry Pi OS schaltet die Speicherkontrolle für Container ab. Ein &lt;code&gt;mem_limit&lt;/code&gt; in Docker Compose wirkt deshalb erst nach einer Änderung an den Startparametern.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;qwen3.5:4b&lt;/code&gt; ist auf dem Pi der beste Kompromiss. Kleinere Modelle sind schneller, erfinden aber massenhaft Tags.&lt;/li&gt;
+&lt;li&gt;paperless-ngx verändert die Originaldateien nie. Kleine Dateien entstehen beim Scannen, nicht in paperless.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;aufbau&quot; tabindex=&quot;-1&quot;&gt;Aufbau&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Dienst&lt;/th&gt;
+&lt;th&gt;Aufgabe&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;paperless-ngx (Webserver, PostgreSQL, Redis)&lt;/td&gt;
+&lt;td&gt;Dokumente einlesen, Texterkennung, Ablage&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;paperless-ai&lt;/td&gt;
+&lt;td&gt;Holt neue Dokumente über die API, fragt das Sprachmodell, schreibt Titel, Tags, Korrespondent, Typ und Datum zurück&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ollama&lt;/td&gt;
+&lt;td&gt;Führt das Sprachmodell aus, auf dem Pi rein über die CPU&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Open WebUI (optional)&lt;/td&gt;
+&lt;td&gt;Chat-Oberfläche für dieselben Modelle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;paperless-ai verarbeitet nur Dokumente mit einem Auslöser-Tag (hier &lt;code&gt;neu&lt;/code&gt;) und markiert sie danach mit &lt;code&gt;ai-processed&lt;/code&gt;. Es prüft alle zehn Minuten auf neue Dokumente.&lt;/p&gt;
+&lt;h2 id=&quot;modellwahl&quot; tabindex=&quot;-1&quot;&gt;Modellwahl&lt;/h2&gt;
+&lt;p&gt;Getestet mit 15 echten Dokumenten. Verglichen wurde exakt mit den von Hand gepflegten Werten, mit einem eigenen Prompt und höchstens vier Tags.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;qwen3.5:4b&lt;/th&gt;
+&lt;th&gt;qwen2.5:3b&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Tags getroffen&lt;/td&gt;
+&lt;td&gt;33 von 74&lt;/td&gt;
+&lt;td&gt;12 von 77&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tags frei erfunden&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;40&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Korrespondent&lt;/td&gt;
+&lt;td&gt;14 von 14&lt;/td&gt;
+&lt;td&gt;9 von 15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Dokumenttyp&lt;/td&gt;
+&lt;td&gt;8 von 14&lt;/td&gt;
+&lt;td&gt;2 von 14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Datum&lt;/td&gt;
+&lt;td&gt;10 von 14&lt;/td&gt;
+&lt;td&gt;10 von 15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Zeit je Dokument&lt;/td&gt;
+&lt;td&gt;ca. 90 s&lt;/td&gt;
+&lt;td&gt;ca. 50 s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Das kleinere Modell spart etwas Zeit, legt aber so viele neue Tags an, dass die Tag-Liste schnell unbrauchbar wird. Größere Modelle als 4B passen kaum neben die übrigen Dienste in 8 GB und wären noch langsamer.&lt;/p&gt;
+&lt;h2 id=&quot;tempo-auf-dem-pi-5&quot; tabindex=&quot;-1&quot;&gt;Tempo auf dem Pi 5&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ausgabe: etwa &lt;strong&gt;2,2 Tokens pro Sekunde&lt;/strong&gt; mit &lt;code&gt;qwen3.5:4b&lt;/code&gt; auf der CPU.&lt;/li&gt;
+&lt;li&gt;Eine typische Anfrage von paperless-ai hat 2.000 bis 2.400 Tokens.&lt;/li&gt;
+&lt;li&gt;Mit abgeschaltetem Nachdenken dauerte ein Dokument im Betrieb &lt;strong&gt;55 Sekunden&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Ollama arbeitet Anfragen nacheinander ab. Chattet jemand parallel in Open WebUI, wartet paperless-ai.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;einstellungen-in-paperless-ai&quot; tabindex=&quot;-1&quot;&gt;Einstellungen in paperless-ai&lt;/h2&gt;
+&lt;p&gt;paperless-ai 4.x speichert seine Einstellungen in &lt;code&gt;/app/data/config.json&lt;/code&gt; im Container. Die wichtigen Werte für den Pi:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;&amp;quot;ollama&amp;quot;: {
+  &amp;quot;url&amp;quot;: &amp;quot;http://&amp;lt;pi&amp;gt;:11434&amp;quot;,
+  &amp;quot;model&amp;quot;: &amp;quot;qwen3.5:4b&amp;quot;,
+  &amp;quot;contextSize&amp;quot;: 8192,
+  &amp;quot;think&amp;quot;: &amp;quot;off&amp;quot;
+},
+&amp;quot;timeoutSeconds&amp;quot;: 900
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;think: &amp;quot;off&amp;quot;&lt;/code&gt;:&lt;/strong&gt; Mit &lt;code&gt;auto&lt;/code&gt; denkt &lt;code&gt;qwen3.5&lt;/code&gt; vor der Antwort ausführlich nach. Bei 2,2 Tokens pro Sekunde lief jede Anfrage in das Standard-Zeitlimit von 300 Sekunden. Erlaubt sind &lt;code&gt;&amp;quot;auto&amp;quot;&lt;/code&gt; und &lt;code&gt;&amp;quot;off&amp;quot;&lt;/code&gt;. Ein JSON-&lt;code&gt;false&lt;/code&gt; verwirft paperless-ai mit einer Warnung im Log.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;timeoutSeconds: 900&lt;/code&gt;:&lt;/strong&gt; Luft für lange Dokumente.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;contextSize: 8192&lt;/code&gt;:&lt;/strong&gt; reicht für die Anfragen und spart Speicher. 16k brachten keinen Vorteil.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Weitere Einstellungen, die sich lohnen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Auslöser-Tag entfernen:&lt;/strong&gt; Der Tag &lt;code&gt;neu&lt;/code&gt; verschwindet nach der Verarbeitung. So sieht man in paperless-ngx sofort, was noch offen ist.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nur vorhandene Tags, Korrespondenten und Typen erlauben:&lt;/strong&gt; Sonst legt das Modell bei jedem Dokument Neues an.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Passende Dokumenttypen vorgeben:&lt;/strong&gt; Fehlt ein Typ „Kontoauszug“, ordnet das Modell einen Kontoauszug zum Beispiel als „Rechnung“ ein.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;fallstrick-config-json-wird-still-ignoriert&quot; tabindex=&quot;-1&quot;&gt;Fallstrick: config.json wird still ignoriert&lt;/h2&gt;
+&lt;p&gt;Der paperless-ai-Container läuft mit &lt;code&gt;cap_drop: ALL&lt;/code&gt;. Auch root darf darin keine fremden Dateien lesen oder Besitzer ändern. Gehört &lt;code&gt;config.json&lt;/code&gt; nach einer Bearbeitung einem anderen Benutzer, meldet paperless-ai nur &lt;code&gt;EACCES&lt;/code&gt; im Log und lädt &lt;strong&gt;still &lt;code&gt;config.json.bak&lt;/code&gt;&lt;/strong&gt;. Die neuen Werte gelten dann nicht.&lt;/p&gt;
+&lt;p&gt;Die Datei muss &lt;code&gt;root:root&lt;/code&gt; mit Rechten &lt;code&gt;600&lt;/code&gt; gehören. Am sichersten bearbeitet man sie über das Datenvolume mit einem Hilfscontainer:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker run --rm -u 0 --entrypoint sed &#92;
+  -v &amp;lt;paperless-ai-volume&amp;gt;:/app/data clusterzx/paperless-ai &#92;
+  -i &#39;s/&amp;quot;think&amp;quot;: &amp;quot;auto&amp;quot;/&amp;quot;think&amp;quot;: &amp;quot;off&amp;quot;/&#39; /app/data/config.json
+docker restart paperless-ai
+docker logs --since 1m paperless-ai | grep -E &amp;quot;config|WARN|ERROR&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Danach im Log prüfen, dass weder &lt;code&gt;EACCES&lt;/code&gt; noch „Ignored invalid configuration values“ auftaucht.&lt;/p&gt;
+&lt;h2 id=&quot;fallstrick-speicherlimit-wirkt-nicht&quot; tabindex=&quot;-1&quot;&gt;Fallstrick: Speicherlimit wirkt nicht&lt;/h2&gt;
+&lt;p&gt;Ollama wächst während der Arbeit. In einem Test stieg &lt;code&gt;llama-server&lt;/code&gt; von 4,3 auf 6,45 GB, bis der Kernel ihn wegen Speichermangels beendete. Auf einem Pi, auf dem auch andere Dienste laufen, kann es genauso gut die anderen treffen.&lt;/p&gt;
+&lt;p&gt;Das naheliegende Speicherlimit in Docker Compose:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;services:
+  ollama:
+    image: ollama/ollama:&amp;lt;version&amp;gt;
+    ports: [&amp;quot;11434:11434&amp;quot;]
+    volumes: [ollama:/root/.ollama]
+    restart: unless-stopped
+    mem_limit: 5g
+    memswap_limit: 5g
+    oom_score_adj: 1000
+volumes:
+  ollama: {}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Auf Raspberry Pi OS wird &lt;code&gt;mem_limit&lt;/code&gt; aber &lt;strong&gt;ignoriert&lt;/strong&gt;. Der Kernel startet mit &lt;code&gt;cgroup_disable=memory&lt;/code&gt;. Zu erkennen ist das an &lt;code&gt;docker info&lt;/code&gt; mit „WARNING: No memory limit support“ und an &lt;code&gt;docker stats&lt;/code&gt;, das für alle Container 0 B anzeigt.&lt;/p&gt;
+&lt;p&gt;Abhilfe: in &lt;code&gt;/boot/firmware/cmdline.txt&lt;/code&gt; am Ende der einzigen Zeile anhängen und neu starten:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cgroup_enable=memory cgroup_memory=1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Die Datei muss eine einzige Zeile bleiben. Vorher eine Kopie anlegen, damit man sie notfalls über die SD-Karte zurückspielen kann. Danach den Container neu erstellen:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker compose up -d --no-deps --pull never --force-recreate ollama
+docker inspect ollama --format &#39;{{.HostConfig.Memory}}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;--pull never&lt;/code&gt; verhindert, dass dabei ungewollt ein neues Image geladen wird, falls in der Compose-Datei &lt;code&gt;pull_policy: always&lt;/code&gt; steht. Mit 8k Kontext belegt &lt;code&gt;qwen3.5:4b&lt;/code&gt; rund 4,2 von 5 GiB. Wird es mehr, trifft der Kernel nur noch den Ollama-Container, und paperless-ai versucht es später erneut. &lt;code&gt;oom_score_adj: 1000&lt;/code&gt; sorgt zusätzlich dafür, dass Ollama bei Speichermangel als Erstes beendet wird.&lt;/p&gt;
+&lt;h2 id=&quot;open-web-ui-zaehmen&quot; tabindex=&quot;-1&quot;&gt;Open WebUI zähmen&lt;/h2&gt;
+&lt;p&gt;Läuft Open WebUI auf denselben Modellen, erzeugt es im Hintergrund zusätzliche Anfragen: Chat-Titel, Tags, Folgefragen und Suchanfragen. Auf dem Pi blockiert jede davon das Modell für paperless-ai. In den Admin-Einstellungen unter „Interface“ lassen sich diese Aufgaben abschalten.&lt;/p&gt;
+&lt;p&gt;Außerdem gehört Port 11434 nicht ins Internet. Ollama hat keine Anmeldung. Wer kann, hängt paperless-ai und Ollama an dasselbe Docker-Netz und veröffentlicht den Port gar nicht.&lt;/p&gt;
+&lt;h2 id=&quot;dateigroesse-in-paperless-ngx&quot; tabindex=&quot;-1&quot;&gt;Dateigröße in paperless-ngx&lt;/h2&gt;
+&lt;p&gt;paperless-ngx speichert das Original unverändert und legt bei Bedarf zusätzlich eine Archivfassung (PDF/A mit Textebene) an. Verkleinern lässt sich nur die Archivfassung:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PAPERLESS_OCR_USER_ARGS={&amp;quot;optimize&amp;quot;: 3}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Das nutzt &lt;code&gt;jbig2enc&lt;/code&gt; und &lt;code&gt;pngquant&lt;/code&gt;, die im offiziellen Image enthalten sind. In paperless-ngx 3.x hat &lt;code&gt;PAPERLESS_OCR_SKIP_ARCHIVE_FILE&lt;/code&gt; keine Wirkung mehr. Der Nachfolger &lt;code&gt;PAPERLESS_ARCHIVE_FILE_GENERATION=auto&lt;/code&gt; (Standard) legt für PDFs, die schon Text enthalten, keine Archivfassung an.&lt;/p&gt;
+&lt;p&gt;Kleine Originale entstehen nur beim Scannen. Grobe Erfahrungswerte je A4-Seite:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Einstellung&lt;/th&gt;
+&lt;th&gt;Größe&lt;/th&gt;
+&lt;th&gt;Texterkennung&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;150 dpi Graustufen&lt;/td&gt;
+&lt;td&gt;ca. 100–200 KB&lt;/td&gt;
+&lt;td&gt;normaler Text gut, kleine Schrift schwach&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;200 dpi Graustufen&lt;/td&gt;
+&lt;td&gt;ca. 150–300 KB&lt;/td&gt;
+&lt;td&gt;gut&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;300 dpi Graustufen&lt;/td&gt;
+&lt;td&gt;ca. 400–700 KB&lt;/td&gt;
+&lt;td&gt;sehr gut&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;300 dpi Schwarzweiß&lt;/td&gt;
+&lt;td&gt;ca. 30–80 KB&lt;/td&gt;
+&lt;td&gt;sehr gut bei sauberem Text, schlecht bei blassem Druck&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Für normale Post ist 300 dpi Schwarzweiß meist die beste Wahl, für blassen Druck, Stempel oder farbige Formulare 200 dpi Graustufen. Die Qualität der Texterkennung bestimmt auch, was paperless-ai erkennen kann: Falsch gelesene Ziffern ergeben falsche Daten und Beträge.&lt;/p&gt;
+&lt;h2 id=&quot;checkliste&quot; tabindex=&quot;-1&quot;&gt;Checkliste&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;cgroup_enable=memory cgroup_memory=1&lt;/code&gt; in &lt;code&gt;cmdline.txt&lt;/code&gt;, Neustart, &lt;code&gt;docker info&lt;/code&gt; ohne Warnung.&lt;/li&gt;
+&lt;li&gt;Ollama mit &lt;code&gt;mem_limit&lt;/code&gt;, &lt;code&gt;memswap_limit&lt;/code&gt; und &lt;code&gt;oom_score_adj&lt;/code&gt;, neu erstellt mit &lt;code&gt;--pull never --force-recreate&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Modell &lt;code&gt;qwen3.5:4b&lt;/code&gt; laden, Port 11434 nicht nach außen öffnen.&lt;/li&gt;
+&lt;li&gt;paperless-ai: &lt;code&gt;think&lt;/code&gt; auf &lt;code&gt;&amp;quot;off&amp;quot;&lt;/code&gt;, Timeout 900 s, Kontext 8192, Auslöser-Tag festlegen.&lt;/li&gt;
+&lt;li&gt;Nach jeder Änderung an &lt;code&gt;config.json&lt;/code&gt; das Log auf &lt;code&gt;EACCES&lt;/code&gt; und „Ignored invalid configuration values“ prüfen.&lt;/li&gt;
+&lt;li&gt;Tags, Korrespondenten und Dokumenttypen vorab in paperless-ngx anlegen und paperless-ai auf vorhandene beschränken.&lt;/li&gt;
+&lt;li&gt;In Open WebUI die Hintergrundaufgaben abschalten.&lt;/li&gt;
+&lt;li&gt;Scanner auf 300 dpi Schwarzweiß oder 200 dpi Graustufen stellen.&lt;/li&gt;
+&lt;li&gt;Die ersten Dokumente von Hand kontrollieren, vor allem Datum und Dokumenttyp.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    <link href="https://wiki.polyformal.de/ki/paperless-ai-raspberry-pi/"/>
+  </entry><entry>
     <title>Modellnamen lesen</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/ki/modellnamen/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ki&quot;&gt;#ki&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#huggingface&quot;&gt;#huggingface&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#lokal&quot;&gt;#lokal&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ein Name wie &lt;code&gt;Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL&lt;/code&gt; sagt fast alles, was man vor dem Download wissen muss: Hersteller, Größe, Bauart, Zweck, Dateiformat und Kompression. Diese Seite zeigt, wie man die Teile liest und was sie für Speicher, Tempo und Einsatz bedeuten.&lt;/p&gt;
@@ -2130,7 +2335,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/ki/modellnamen/"/>
   </entry><entry>
     <title>KI Infos</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/ki/ki-infos/</id>
     <content type="html">&lt;h1 id=&quot;hermes&quot; tabindex=&quot;-1&quot;&gt;Hermes&lt;/h1&gt;
 &lt;ul&gt;
@@ -2154,7 +2359,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/ki/ki-infos/"/>
   </entry><entry>
     <title>ChatGPT über agent-os</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/ki/chat-gpt-ueber-agent-os/</id>
     <content type="html">&lt;table&gt;
 &lt;thead&gt;
@@ -2361,7 +2566,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/ki/chat-gpt-ueber-agent-os/"/>
   </entry><entry>
     <title>Impressum</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/impressum/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;polyformal System- &amp;amp; Formarbeit&lt;/li&gt;
@@ -2383,7 +2588,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/impressum/"/>
   </entry><entry>
     <title>wiki driven by Obsidian</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;Obsidian Digital Graden
@@ -2396,7 +2601,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/"/>
   </entry><entry>
     <title>imagemagick</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/en/software/imagemagick/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;tiff&quot; tabindex=&quot;-1&quot;&gt;TIFF&lt;/h3&gt;
@@ -2408,7 +2613,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/en/software/imagemagick/"/>
   </entry><entry>
     <title>asciidoc</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/software/asciidoc/</id>
     <content type="html">&lt;h2 id=&quot;backends&quot; tabindex=&quot;-1&quot;&gt;backends&lt;/h2&gt;
 &lt;h3 id=&quot;slidy&quot; tabindex=&quot;-1&quot;&gt;slidy&lt;/h3&gt;
@@ -2439,7 +2644,7 @@ deckjs backend requires title attribute for images&lt;/p&gt;
     <link href="https://wiki.polyformal.de/software/asciidoc/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 to 1.0</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/en/software/stalwart-migration/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Field report: migrating a small Stalwart mail server from 0.15.5 to 1.0.3. The setup: Docker Compose, RocksDB, OpenLDAP as the directory, a reverse proxy in front, fewer than 10 accounts, about 13 GB of data.&lt;/p&gt;
@@ -2652,7 +2857,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/en/software/stalwart-migration/"/>
   </entry><entry>
     <title>Privacy Policy</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/en/privacy/</id>
     <content type="html">&lt;h1 id=&quot;privacy-policy&quot; tabindex=&quot;-1&quot;&gt;Privacy Policy&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt;&lt;/p&gt;
@@ -2678,7 +2883,7 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
     <link href="https://wiki.polyformal.de/en/privacy/"/>
   </entry><entry>
     <title>Emu E4XT Ultra</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/en/notizen/e4xt_ultra/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#music&quot;&gt;#music&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#sampler&quot;&gt;#sampler&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#emulator&quot;&gt;#emulator&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;internal-ssd&quot; tabindex=&quot;-1&quot;&gt;Internal SSD&lt;/h2&gt;
@@ -2695,8 +2900,213 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
 </content>
     <link href="https://wiki.polyformal.de/en/notizen/e4xt_ultra/"/>
   </entry><entry>
+    <title>paperless-ai with Ollama on a Raspberry Pi 5</title>
+    <updated>2026-11-17T19:35:20Z</updated>
+    <id>https://wiki.polyformal.de/en/ai/paperless-ai-raspberry-pi/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#paperless&quot;&gt;#paperless&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#raspberrypi&quot;&gt;#raspberrypi&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Field report: paperless-ngx tags documents with the help of paperless-ai, and the language model runs locally through Ollama on the same Raspberry Pi 5 with 8 GB. No document leaves the local network.&lt;/p&gt;
+&lt;p&gt;As of November 2026 with paperless-ngx 3.5.0, paperless-ai 4.1.0 and Ollama on Raspberry Pi OS (Debian 12, kernel 6.12), all in Docker Compose. Host names and paths are placeholders (&lt;code&gt;&amp;lt;pi&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;...&amp;gt;&lt;/code&gt;). Setting names may change in later versions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deutsche Version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/ki/paperless-ai-raspberry-pi/&quot;&gt;paperless-ai mit Ollama auf dem Raspberry Pi 5&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;key-points&quot; tabindex=&quot;-1&quot;&gt;Key points&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;It works, but slowly: one document takes about a minute with a 4B model. Fine for incoming mail, not for a backlog of thousands of documents.&lt;/li&gt;
+&lt;li&gt;The model&#39;s &amp;quot;thinking&amp;quot; must be off. Otherwise almost every request runs into the timeout.&lt;/li&gt;
+&lt;li&gt;Raspberry Pi OS disables memory control for containers. A &lt;code&gt;mem_limit&lt;/code&gt; in Docker Compose only takes effect after changing the boot parameters.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;qwen3.5:4b&lt;/code&gt; is the best compromise on the Pi. Smaller models are faster but invent tags by the dozen.&lt;/li&gt;
+&lt;li&gt;paperless-ngx never changes the original files. Small files come from the scanner, not from paperless.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;setup&quot; tabindex=&quot;-1&quot;&gt;Setup&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Service&lt;/th&gt;
+&lt;th&gt;Job&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;paperless-ngx (web server, PostgreSQL, Redis)&lt;/td&gt;
+&lt;td&gt;Ingest documents, OCR, storage&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;paperless-ai&lt;/td&gt;
+&lt;td&gt;Fetches new documents through the API, asks the language model, writes back title, tags, correspondent, type and date&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ollama&lt;/td&gt;
+&lt;td&gt;Runs the language model, CPU only on the Pi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Open WebUI (optional)&lt;/td&gt;
+&lt;td&gt;Chat interface for the same models&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;paperless-ai only processes documents with a trigger tag (here &lt;code&gt;neu&lt;/code&gt;, German for &amp;quot;new&amp;quot;) and marks them with &lt;code&gt;ai-processed&lt;/code&gt; afterwards. It checks for new documents every ten minutes.&lt;/p&gt;
+&lt;h2 id=&quot;choosing-a-model&quot; tabindex=&quot;-1&quot;&gt;Choosing a model&lt;/h2&gt;
+&lt;p&gt;Tested with 15 real documents, compared exactly against hand-maintained values, using a custom prompt and at most four tags.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;qwen3.5:4b&lt;/th&gt;
+&lt;th&gt;qwen2.5:3b&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Tags matched&lt;/td&gt;
+&lt;td&gt;33 of 74&lt;/td&gt;
+&lt;td&gt;12 of 77&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tags invented&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;40&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Correspondent&lt;/td&gt;
+&lt;td&gt;14 of 14&lt;/td&gt;
+&lt;td&gt;9 of 15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Document type&lt;/td&gt;
+&lt;td&gt;8 of 14&lt;/td&gt;
+&lt;td&gt;2 of 14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;10 of 14&lt;/td&gt;
+&lt;td&gt;10 of 15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Time per document&lt;/td&gt;
+&lt;td&gt;approx. 90 s&lt;/td&gt;
+&lt;td&gt;approx. 50 s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The smaller model saves some time but creates so many new tags that the tag list quickly becomes useless. Models larger than 4B barely fit into 8 GB next to the other services and would be even slower.&lt;/p&gt;
+&lt;h2 id=&quot;speed-on-the-pi-5&quot; tabindex=&quot;-1&quot;&gt;Speed on the Pi 5&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Output: about &lt;strong&gt;2.2 tokens per second&lt;/strong&gt; with &lt;code&gt;qwen3.5:4b&lt;/code&gt; on the CPU.&lt;/li&gt;
+&lt;li&gt;A typical paperless-ai request has 2,000 to 2,400 tokens.&lt;/li&gt;
+&lt;li&gt;With thinking switched off, one document took &lt;strong&gt;55 seconds&lt;/strong&gt; in production.&lt;/li&gt;
+&lt;li&gt;Ollama handles requests one after another. If someone chats in Open WebUI at the same time, paperless-ai waits.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;paperless-ai-settings&quot; tabindex=&quot;-1&quot;&gt;paperless-ai settings&lt;/h2&gt;
+&lt;p&gt;paperless-ai 4.x stores its settings in &lt;code&gt;/app/data/config.json&lt;/code&gt; inside the container. The important values for the Pi:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;&amp;quot;ollama&amp;quot;: {
+  &amp;quot;url&amp;quot;: &amp;quot;http://&amp;lt;pi&amp;gt;:11434&amp;quot;,
+  &amp;quot;model&amp;quot;: &amp;quot;qwen3.5:4b&amp;quot;,
+  &amp;quot;contextSize&amp;quot;: 8192,
+  &amp;quot;think&amp;quot;: &amp;quot;off&amp;quot;
+},
+&amp;quot;timeoutSeconds&amp;quot;: 900
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;think: &amp;quot;off&amp;quot;&lt;/code&gt;:&lt;/strong&gt; With &lt;code&gt;auto&lt;/code&gt;, &lt;code&gt;qwen3.5&lt;/code&gt; reasons at length before answering. At 2.2 tokens per second every request hit the default timeout of 300 seconds. Allowed values are &lt;code&gt;&amp;quot;auto&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;off&amp;quot;&lt;/code&gt;; a JSON &lt;code&gt;false&lt;/code&gt; is dropped with a warning in the log.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;timeoutSeconds: 900&lt;/code&gt;:&lt;/strong&gt; headroom for long documents.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;contextSize: 8192&lt;/code&gt;:&lt;/strong&gt; enough for the requests and saves memory. 16k brought no benefit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other settings worth changing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Remove the trigger tag:&lt;/strong&gt; the &lt;code&gt;neu&lt;/code&gt; tag disappears after processing, so paperless-ngx shows at a glance what is still pending.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Allow only existing tags, correspondents and types:&lt;/strong&gt; otherwise the model creates new ones with every document.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provide suitable document types:&lt;/strong&gt; without a &amp;quot;bank statement&amp;quot; type the model files a bank statement as an &amp;quot;invoice&amp;quot;, for example.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;pitfall-config-json-silently-ignored&quot; tabindex=&quot;-1&quot;&gt;Pitfall: config.json silently ignored&lt;/h2&gt;
+&lt;p&gt;The paperless-ai container runs with &lt;code&gt;cap_drop: ALL&lt;/code&gt;. Even root cannot read other users&#39; files or change owners inside it. If &lt;code&gt;config.json&lt;/code&gt; belongs to another user after an edit, paperless-ai only logs &lt;code&gt;EACCES&lt;/code&gt; and &lt;strong&gt;silently loads &lt;code&gt;config.json.bak&lt;/code&gt;&lt;/strong&gt;. The new values then do not apply.&lt;/p&gt;
+&lt;p&gt;The file must belong to &lt;code&gt;root:root&lt;/code&gt; with mode &lt;code&gt;600&lt;/code&gt;. The safest way to edit it is through the data volume with a helper container:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker run --rm -u 0 --entrypoint sed &#92;
+  -v &amp;lt;paperless-ai-volume&amp;gt;:/app/data clusterzx/paperless-ai &#92;
+  -i &#39;s/&amp;quot;think&amp;quot;: &amp;quot;auto&amp;quot;/&amp;quot;think&amp;quot;: &amp;quot;off&amp;quot;/&#39; /app/data/config.json
+docker restart paperless-ai
+docker logs --since 1m paperless-ai | grep -E &amp;quot;config|WARN|ERROR&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then check that the log shows neither &lt;code&gt;EACCES&lt;/code&gt; nor &amp;quot;Ignored invalid configuration values&amp;quot;.&lt;/p&gt;
+&lt;h2 id=&quot;pitfall-the-memory-limit-has-no-effect&quot; tabindex=&quot;-1&quot;&gt;Pitfall: the memory limit has no effect&lt;/h2&gt;
+&lt;p&gt;Ollama grows while working. In one test &lt;code&gt;llama-server&lt;/code&gt; went from 4.3 to 6.45 GB until the kernel killed it for lack of memory. On a Pi that runs other services too, it could just as well hit those.&lt;/p&gt;
+&lt;p&gt;The obvious memory limit in Docker Compose:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;services:
+  ollama:
+    image: ollama/ollama:&amp;lt;version&amp;gt;
+    ports: [&amp;quot;11434:11434&amp;quot;]
+    volumes: [ollama:/root/.ollama]
+    restart: unless-stopped
+    mem_limit: 5g
+    memswap_limit: 5g
+    oom_score_adj: 1000
+volumes:
+  ollama: {}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Raspberry Pi OS, however, &lt;code&gt;mem_limit&lt;/code&gt; is &lt;strong&gt;ignored&lt;/strong&gt;. The kernel boots with &lt;code&gt;cgroup_disable=memory&lt;/code&gt;. You can tell from &lt;code&gt;docker info&lt;/code&gt; showing &amp;quot;WARNING: No memory limit support&amp;quot; and from &lt;code&gt;docker stats&lt;/code&gt; showing 0 B for every container.&lt;/p&gt;
+&lt;p&gt;Fix: append to the end of the single line in &lt;code&gt;/boot/firmware/cmdline.txt&lt;/code&gt; and reboot:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cgroup_enable=memory cgroup_memory=1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The file must stay a single line. Make a copy first so you can restore it from the SD card if needed. Then recreate the container:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker compose up -d --no-deps --pull never --force-recreate ollama
+docker inspect ollama --format &#39;{{.HostConfig.Memory}}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;--pull never&lt;/code&gt; prevents an unwanted new image from being pulled if the compose file says &lt;code&gt;pull_policy: always&lt;/code&gt;. With an 8k context &lt;code&gt;qwen3.5:4b&lt;/code&gt; uses about 4.2 of 5 GiB. If it grows beyond that, the kernel only hits the Ollama container and paperless-ai retries later. &lt;code&gt;oom_score_adj: 1000&lt;/code&gt; additionally makes Ollama the first process to go when memory runs out.&lt;/p&gt;
+&lt;h2 id=&quot;taming-open-web-ui&quot; tabindex=&quot;-1&quot;&gt;Taming Open WebUI&lt;/h2&gt;
+&lt;p&gt;If Open WebUI uses the same models, it creates extra background requests: chat titles, tags, follow-up questions and search queries. On the Pi each of these blocks the model for paperless-ai. They can be switched off in the admin settings under &amp;quot;Interface&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Port 11434 also does not belong on the internet. Ollama has no authentication. If possible, attach paperless-ai and Ollama to the same Docker network and do not publish the port at all.&lt;/p&gt;
+&lt;h2 id=&quot;file-size-in-paperless-ngx&quot; tabindex=&quot;-1&quot;&gt;File size in paperless-ngx&lt;/h2&gt;
+&lt;p&gt;paperless-ngx keeps the original unchanged and, where needed, adds an archive version (PDF/A with a text layer). Only the archive version can be made smaller:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PAPERLESS_OCR_USER_ARGS={&amp;quot;optimize&amp;quot;: 3}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This uses &lt;code&gt;jbig2enc&lt;/code&gt; and &lt;code&gt;pngquant&lt;/code&gt;, which ship with the official image. In paperless-ngx 3.x &lt;code&gt;PAPERLESS_OCR_SKIP_ARCHIVE_FILE&lt;/code&gt; no longer has any effect. Its successor &lt;code&gt;PAPERLESS_ARCHIVE_FILE_GENERATION=auto&lt;/code&gt; (the default) creates no archive version for PDFs that already contain text.&lt;/p&gt;
+&lt;p&gt;Small originals only come from the scanner. Rough values per A4 page:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Setting&lt;/th&gt;
+&lt;th&gt;Size&lt;/th&gt;
+&lt;th&gt;OCR&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;150 dpi grayscale&lt;/td&gt;
+&lt;td&gt;approx. 100–200 KB&lt;/td&gt;
+&lt;td&gt;normal text fine, small print weak&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;200 dpi grayscale&lt;/td&gt;
+&lt;td&gt;approx. 150–300 KB&lt;/td&gt;
+&lt;td&gt;good&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;300 dpi grayscale&lt;/td&gt;
+&lt;td&gt;approx. 400–700 KB&lt;/td&gt;
+&lt;td&gt;very good&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;300 dpi black and white&lt;/td&gt;
+&lt;td&gt;approx. 30–80 KB&lt;/td&gt;
+&lt;td&gt;very good on clean text, poor on faint print&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For normal mail 300 dpi black and white is usually the best choice; for faint print, stamps or colored forms use 200 dpi grayscale. OCR quality also limits what paperless-ai can recognize: misread digits lead to wrong dates and amounts.&lt;/p&gt;
+&lt;h2 id=&quot;checklist&quot; tabindex=&quot;-1&quot;&gt;Checklist&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;cgroup_enable=memory cgroup_memory=1&lt;/code&gt; in &lt;code&gt;cmdline.txt&lt;/code&gt;, reboot, &lt;code&gt;docker info&lt;/code&gt; without warnings.&lt;/li&gt;
+&lt;li&gt;Ollama with &lt;code&gt;mem_limit&lt;/code&gt;, &lt;code&gt;memswap_limit&lt;/code&gt; and &lt;code&gt;oom_score_adj&lt;/code&gt;, recreated with &lt;code&gt;--pull never --force-recreate&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Pull &lt;code&gt;qwen3.5:4b&lt;/code&gt;, do not expose port 11434.&lt;/li&gt;
+&lt;li&gt;paperless-ai: &lt;code&gt;think&lt;/code&gt; set to &lt;code&gt;&amp;quot;off&amp;quot;&lt;/code&gt;, timeout 900 s, context 8192, trigger tag defined.&lt;/li&gt;
+&lt;li&gt;After every change to &lt;code&gt;config.json&lt;/code&gt;, check the log for &lt;code&gt;EACCES&lt;/code&gt; and &amp;quot;Ignored invalid configuration values&amp;quot;.&lt;/li&gt;
+&lt;li&gt;Create tags, correspondents and document types in paperless-ngx beforehand and restrict paperless-ai to existing ones.&lt;/li&gt;
+&lt;li&gt;Switch off the background tasks in Open WebUI.&lt;/li&gt;
+&lt;li&gt;Set the scanner to 300 dpi black and white or 200 dpi grayscale.&lt;/li&gt;
+&lt;li&gt;Check the first documents by hand, especially date and document type.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    <link href="https://wiki.polyformal.de/en/ai/paperless-ai-raspberry-pi/"/>
+  </entry><entry>
     <title>ollama</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/en/ai/ollama/</id>
     <content type="html">&lt;p&gt;load a Hugging Face model into ollama&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ollama run hf.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF:latest
@@ -2707,7 +3117,7 @@ ollama run hf.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF:latest
     <link href="https://wiki.polyformal.de/en/ai/ollama/"/>
   </entry><entry>
     <title>Reading model names</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/en/ai/model-names/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#huggingface&quot;&gt;#huggingface&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#local&quot;&gt;#local&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A name like &lt;code&gt;Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL&lt;/code&gt; tells you almost everything you need to know before downloading: maker, size, architecture, purpose, file format and compression. This page shows how to read the parts and what they mean for memory, speed and use.&lt;/p&gt;
@@ -3097,7 +3507,7 @@ ollama run hf.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF:latest
     <link href="https://wiki.polyformal.de/en/ai/model-names/"/>
   </entry><entry>
     <title>Datenschutz</title>
-    <updated>2026-11-15T20:48:50Z</updated>
+    <updated>2026-11-17T19:35:20Z</updated>
     <id>https://wiki.polyformal.de/datenschutz/</id>
     <content type="html">&lt;h1 id=&quot;datenschutzerklaerung&quot; tabindex=&quot;-1&quot;&gt;Datenschutzerklärung&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/privacy/&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
