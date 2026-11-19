@@ -198,6 +198,25 @@ body {
   a, .internal-link, .external-link { text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
   a:hover { text-decoration-thickness: 2px; }
 
+  /* Affiliate-Links: <a class="affiliate" rel="sponsored noopener" title="..."> bekommen ein Werbung-Etikett */
+  a.affiliate::after {
+    content: "Werbung";
+    display: inline-block; /* sonst erbt das Etikett die Link-Unterstreichung */
+    margin-left: 0.35em;
+    padding: 0.05em 0.5em;
+    border: 1px solid var(--pf-mark);
+    border-radius: 1em;
+    color: var(--pf-mark);
+    font-family: var(--pf-display);
+    font-size: 0.68em;
+    font-weight: 640;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    vertical-align: 0.15em;
+    white-space: nowrap;
+  }
+
   .tag {
     border-radius: 2px;
     font-size: 0.88em;
