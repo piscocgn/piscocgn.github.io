@@ -3,10 +3,10 @@
   <title>polyformal wiki</title>
   <link href="https://wiki.polyformal.de/feed.xml" rel="self"/>
   <link href="https://wiki.polyformal.de"/>
-  <updated>2026-11-19T13:29:51Z</updated>
+  <updated>2026-11-23T19:38:57Z</updated>
   <id>https://wiki.polyformal.de</id><entry>
     <title>Werkzeuge für Desktop Publishing</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/</id>
     <content type="html">&lt;p&gt;Ein Überblick über Desktop Publishing Werkzeuge aus der Open Source Welt. Vorgestellt werden Programme für Raster- und Vektorbildbearbeitung, Satz (Layout) sowie Tipps zur Installation und Verwaltung von Schriften und Werkzeuge zur Modifikation von Dokumenten im PDF-Format.&lt;/p&gt;
 &lt;p&gt;Beinhaltet: u.a. GIMP, Inkscape, Scribus, gThumb, Schriften allgemein, FontyPython, FONTPage&lt;/p&gt;
@@ -26,7 +26,7 @@
     <link href="https://wiki.polyformal.de/vortraege/werkzeuge_fuer_desktop_publishing/"/>
   </entry><entry>
     <title>remind - ein anspruchsvolles Kalender- und Alarm-Programm</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/software/remind/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.roaringpenguin.com/products/remind&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Homepage&lt;/a&gt;&lt;/li&gt;
@@ -123,8 +123,228 @@ wget -qO $TMP_FILE RTM_URL &amp;amp;&amp;amp; ical2rem.pl $TMP_FILE  &amp;gt; ~/
 </content>
     <link href="https://wiki.polyformal.de/software/remind/"/>
   </entry><entry>
+    <title>Stalwart Relay mit Brevo</title>
+    <updated>2026-11-23T19:38:43Z</updated>
+    <id>https://wiki.polyformal.de/software/stalwart-brevo-relay/</id>
+    <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#smtp&quot;&gt;#smtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#relay&quot;&gt;#relay&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#brevo&quot;&gt;#brevo&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#microsoft&quot;&gt;#microsoft&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Erfahrungsbericht: Ein kleiner selbst betriebener Stalwart-Mailserver auf einem VPS wird von Microsoft abgelehnt. Statt auf eine Freigabe zu warten, gehen Mails an Microsoft- und Telekom-Adressen jetzt über das Gratis-SMTP-Relay von Brevo. Alle anderen Ziele stellt Stalwart weiter direkt zu.&lt;/p&gt;
+&lt;p&gt;Stand November 2026 mit &lt;code&gt;stalwart:v1.0.3&lt;/code&gt; und dem Gratis-Tarif von Brevo. Alle Namen sind Platzhalter (&lt;code&gt;example.com&lt;/code&gt;, &lt;code&gt;&amp;lt;...&amp;gt;&lt;/code&gt;). Die offizielle Dokumentation von &lt;a href=&quot;https://stalw.art/docs/mta/outbound/routing/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Stalwart&lt;/a&gt; und Brevo hat Vorrang vor dieser Seite.&lt;/p&gt;
+&lt;p&gt;Der mit „Werbung“ markierte Link zu Brevo ist ein Affiliate-Link. Die Bewertung auf dieser Seite ist davon unabhängig und nennt auch die Schwächen.&lt;/p&gt;
+&lt;h2 id=&quot;das-wichtigste-vorab&quot; tabindex=&quot;-1&quot;&gt;Das Wichtigste vorab&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft sperrt ganze Adressbereiche von VPS-Hostern (Fehler S3140). Eine saubere Konfiguration mit Reverse DNS, SPF, DKIM und DMARC hilft dann nicht, eine Freigabe dauert oder kommt nie.&lt;/li&gt;
+&lt;li&gt;Stalwart kann pro Empfängerdomain ein anderes Ziel wählen. Ein Relay nur für die betroffenen Domains reicht, der Rest bleibt unverändert.&lt;/li&gt;
+&lt;li&gt;Brevo ist im Gratis-Tarif mit 300 Mails pro Tag für diesen Zweck mehr als ausreichend.&lt;/li&gt;
+&lt;li&gt;Port 587 mit &lt;code&gt;implicitTls&lt;/code&gt; an funktioniert nicht. Entweder 587 ohne &lt;code&gt;implicitTls&lt;/code&gt; oder 465 mit.&lt;/li&gt;
+&lt;li&gt;Brevo deaktiviert SMTP-Schlüssel nach 90 Tagen ohne Versand. Wer selten an Microsoft-Adressen schreibt, braucht eine regelmäßige Testmail.&lt;/li&gt;
+&lt;li&gt;Die erste Testmail landete trotz bestandenem SPF, DKIM und DMARC im Junk-Ordner von &lt;a href=&quot;http://outlook.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Outlook.com&lt;/a&gt;. Das Relay löst also das Ablehnen, nicht automatisch die Spam-Einstufung.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;ausgangslage&quot; tabindex=&quot;-1&quot;&gt;Ausgangslage&lt;/h2&gt;
+&lt;p&gt;Mails an eine &lt;code&gt;live.de&lt;/code&gt;-Adresse kamen mit diesem Fehler zurück:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;550 5.7.1 Unfortunately, messages from [&amp;lt;server-ip&amp;gt;] weren&#39;t sent. Please contact your Internet
+service provider since part of their network is on our block list (S3140).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;„Part of their network“ heißt: Gesperrt ist der Adressbereich des Hosters, nicht die eigene IP. Die IP stand auf keiner gängigen Blockliste (Spamhaus, Barracuda, SpamCop, SORBS, PSBL). Die Microsoft-Server für Consumer-Adressen (&lt;code&gt;eur.olc.protection.outlook.com&lt;/code&gt;) haben keine IPv6-Adresse, ein Ausweichen auf IPv6 hilft also auch nicht.&lt;/p&gt;
+&lt;p&gt;Ein Antrag auf Aufhebung über &lt;a href=&quot;https://olcsupport.office.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;olcsupport.office.com&lt;/a&gt; ist gestellt. Bei Bereichssperren ist er aber oft erfolglos.&lt;/p&gt;
+&lt;p&gt;Andere große Anbieter (Gmail, GMX, &lt;a href=&quot;http://web.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;web.de&lt;/a&gt;, Yahoo, iCloud) nahmen Mail vom selben Server problemlos an.&lt;/p&gt;
+&lt;h2 id=&quot;anbieterwahl&quot; tabindex=&quot;-1&quot;&gt;Anbieterwahl&lt;/h2&gt;
+&lt;p&gt;Verglichen wurden europäische Anbieter mit Gratis-Tarif und SMTP-Relay:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Anbieter&lt;/th&gt;
+&lt;th&gt;Sitz&lt;/th&gt;
+&lt;th&gt;Gratis&lt;/th&gt;
+&lt;th&gt;Bemerkung&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://get.brevo.com/gqsuz2jqufr9&quot; class=&quot;affiliate&quot; rel=&quot;sponsored noopener&quot; title=&quot;Affiliate-Link: Bei einer Anmeldung erhalte ich eine Provision. Für dich ändert sich nichts.&quot;&gt;Brevo&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Frankreich&lt;/td&gt;
+&lt;td&gt;300/Tag&lt;/td&gt;
+&lt;td&gt;großer Anbieter, Tracking standardmäßig an&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.mailjet.com/pricing/?currency=eur&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mailjet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Frankreich&lt;/td&gt;
+&lt;td&gt;200/Tag, 6.000/Monat&lt;/td&gt;
+&lt;td&gt;Mailjet-Logo in der Mail im Gratis-Tarif&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Scaleway TEM&lt;/td&gt;
+&lt;td&gt;Frankreich&lt;/td&gt;
+&lt;td&gt;300/Monat&lt;/td&gt;
+&lt;td&gt;danach 0,25 € je 1.000 Mails, laut Anbieter nur für Transaktionsmail&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://lettermint.co/pricing&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Lettermint&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Niederlande&lt;/td&gt;
+&lt;td&gt;300/Monat&lt;/td&gt;
+&lt;td&gt;klein und jung&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.sweego.io/pricing&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Sweego&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Frankreich&lt;/td&gt;
+&lt;td&gt;100/Tag&lt;/td&gt;
+&lt;td&gt;klein und jung&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Belastbare Zahlen zur Zustellbarkeit bei Microsoft gibt es für keinen dieser Anbieter. Alle senden im Gratis-Tarif über IP-Adressen, die sich viele Kunden teilen, und auch solche Pools sperrt Microsoft gelegentlich. Die Wahl fiel auf &lt;a href=&quot;https://get.brevo.com/gqsuz2jqufr9&quot; class=&quot;affiliate&quot; rel=&quot;sponsored noopener&quot; title=&quot;Affiliate-Link: Bei einer Anmeldung erhalte ich eine Provision. Für dich ändert sich nichts.&quot;&gt;Brevo&lt;/a&gt; wegen des größten Kontingents und der Größe des Anbieters. Scaleway TEM bleibt die Reserve.&lt;/p&gt;
+&lt;h2 id=&quot;einrichtung&quot; tabindex=&quot;-1&quot;&gt;Einrichtung&lt;/h2&gt;
+&lt;h3 id=&quot;brevo&quot; tabindex=&quot;-1&quot;&gt;Brevo&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Domain authentifizieren: &lt;em&gt;Senders, Domains &amp;amp; Dedicated IPs → Domains → Domain hinzufügen&lt;/em&gt;. Brevo nennt die DNS-Einträge:
+&lt;ul&gt;
+&lt;li&gt;TXT &lt;code&gt;brevo-code:...&lt;/code&gt; zur Bestätigung&lt;/li&gt;
+&lt;li&gt;DKIM als CNAME: &lt;code&gt;brevo1._domainkey&lt;/code&gt; und &lt;code&gt;brevo2._domainkey&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;SPF um &lt;code&gt;include:spf.brevo.com&lt;/code&gt; ergänzen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SMTP-Schlüssel erzeugen: &lt;em&gt;SMTP &amp;amp; API → SMTP&lt;/em&gt;. Server &lt;code&gt;smtp-relay.brevo.com&lt;/code&gt;, Login in der Form &lt;code&gt;&amp;lt;id&amp;gt;@smtp-brevo.com&lt;/code&gt;, Passwort ist der Schlüssel.&lt;/li&gt;
+&lt;li&gt;Unter &lt;em&gt;Transactional → Settings&lt;/em&gt; prüfen, ob Öffnungs- und Klick-Tracking an sind. Für persönliche Mail besser abschalten.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Die eigene DKIM-Signatur von Stalwart und der bestehende DMARC-Eintrag bleiben unverändert.&lt;/p&gt;
+&lt;h3 id=&quot;stalwart-route&quot; tabindex=&quot;-1&quot;&gt;Stalwart: Route&lt;/h3&gt;
+&lt;p&gt;WebUI &lt;em&gt;Settings → MTA → Outbound → Routes&lt;/em&gt;, neue Route vom Typ &lt;strong&gt;Relay&lt;/strong&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Feld&lt;/th&gt;
+&lt;th&gt;Wert&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;brevo&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;host&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;smtp-relay.brevo.com&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;port&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;587&lt;/code&gt; (dann &lt;code&gt;implicitTls&lt;/code&gt; aus) oder &lt;code&gt;465&lt;/code&gt; (dann &lt;code&gt;implicitTls&lt;/code&gt; an)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;protocol&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;smtp&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;authUsername&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;id&amp;gt;@smtp-brevo.com&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;authSecret&lt;/td&gt;
+&lt;td&gt;Typ &lt;code&gt;Value&lt;/code&gt; oder &lt;code&gt;EnvironmentVariable&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Stalwart meldet sich nur an, wenn &lt;code&gt;authUsername&lt;/code&gt; und &lt;code&gt;authSecret&lt;/code&gt; beide gesetzt sind.&lt;/p&gt;
+&lt;h3 id=&quot;stalwart-strategie&quot; tabindex=&quot;-1&quot;&gt;Stalwart: Strategie&lt;/h3&gt;
+&lt;p&gt;WebUI &lt;em&gt;Settings → MTA → Outbound → Strategy&lt;/em&gt;, Feld &lt;code&gt;route&lt;/code&gt;. Die Regel für lokale Domains bleibt an erster Stelle:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Eintrag&lt;/th&gt;
+&lt;th&gt;if&lt;/th&gt;
+&lt;th&gt;then&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;match 0&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;is_local_domain(rcpt_domain)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&#39;local&#39;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;match 1&lt;/td&gt;
+&lt;td&gt;siehe unten&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&#39;brevo&#39;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;else&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&#39;mx&#39;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Bedingung für match 1 in einer Zeile:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rcpt_domain == &#39;outlook.com&#39; || rcpt_domain == &#39;outlook.de&#39; || rcpt_domain == &#39;hotmail.com&#39; || rcpt_domain == &#39;hotmail.de&#39; || rcpt_domain == &#39;live.com&#39; || rcpt_domain == &#39;live.de&#39; || rcpt_domain == &#39;msn.com&#39; || rcpt_domain == &#39;windowslive.com&#39; || rcpt_domain == &#39;t-online.de&#39; || rcpt_domain == &#39;magenta.de&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Weitere Länderdomains von Microsoft (&lt;code&gt;hotmail.fr&lt;/code&gt;, &lt;code&gt;live.at&lt;/code&gt; usw.) bei Bedarf ergänzen. Danach die Konfiguration neu laden.&lt;/p&gt;
+&lt;h2 id=&quot;fallstricke&quot; tabindex=&quot;-1&quot;&gt;Fallstricke&lt;/h2&gt;
+&lt;h3 id=&quot;tls-fehler-invalid-content-type&quot; tabindex=&quot;-1&quot;&gt;TLS-Fehler „InvalidContentType“&lt;/h3&gt;
+&lt;p&gt;Mit Port 587 und &lt;code&gt;implicitTls&lt;/code&gt; an steht im Log:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Implicit TLS error (delivery.implicit-tls-error) ... hostname = &amp;quot;smtp-relay.brevo.com&amp;quot;,
+reason = ... &amp;quot;TLS Error&amp;quot;, reason = &amp;quot;received corrupt message of type InvalidContentType&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Port 587 erwartet erst Klartext und dann STARTTLS, Stalwart beginnt aber sofort mit TLS. Lösung: &lt;code&gt;implicitTls&lt;/code&gt; aus, oder Port 465.&lt;/p&gt;
+&lt;h3 id=&quot;aenderung-greift-nicht-sofort&quot; tabindex=&quot;-1&quot;&gt;Änderung greift nicht sofort&lt;/h3&gt;
+&lt;p&gt;Nach dem Umstellen der Route lief der nächste Zustellversuch noch mit der alten Einstellung. Erst nach einem Reload der Konfiguration und einem erneuten Anstoßen der Nachricht in der Queue ging die Mail raus.&lt;/p&gt;
+&lt;h3 id=&quot;routenname-muss-stimmen&quot; tabindex=&quot;-1&quot;&gt;Routenname muss stimmen&lt;/h3&gt;
+&lt;p&gt;Gibt die Strategie einen Namen zurück, zu dem es keine Route gibt, meldet Stalwart &lt;code&gt;smtp.id-not-found&lt;/code&gt; und stellt direkt zu. Die Mail wird dann wieder von Microsoft abgelehnt, ohne dass es auffällt.&lt;/p&gt;
+&lt;h3 id=&quot;kaputte-dkim-signatur-von-stalwart&quot; tabindex=&quot;-1&quot;&gt;Kaputte DKIM-Signatur von Stalwart&lt;/h3&gt;
+&lt;p&gt;Bei Microsoft kam an:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dkim=pass header.d=example.com (Brevo-Schlüssel brevo1)
+dkim=fail (signature syntax error) header.d=none
+dmarc=pass
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Brevo signiert neu und gültig. Die ursprüngliche Ed25519-Signatur von Stalwart hat Brevo dabei aber verunstaltet: Aus &lt;code&gt;a=ed25519&lt;/code&gt; wurde &lt;code&gt;aí25519&lt;/code&gt;, offenbar wurde &lt;code&gt;=ed&lt;/code&gt; als Quoted-Printable gelesen. Für DMARC ist das egal, weil die Brevo-Signatur zur Absenderdomain passt.&lt;/p&gt;
+&lt;h3 id=&quot;junk-trotz-bestandener-pruefungen&quot; tabindex=&quot;-1&quot;&gt;Junk trotz bestandener Prüfungen&lt;/h3&gt;
+&lt;p&gt;Die erste Testmail an ein Outlook.com-Postfach bekam &lt;code&gt;SCL 5&lt;/code&gt; und landete im Junk-Ordner. Wahrscheinliche Gründe: neuer Absender ohne Vorgeschichte, geteilte Brevo-IPs, und Brevo fügt &lt;code&gt;List-Unsubscribe&lt;/code&gt;, &lt;code&gt;X-CSA-Complaints&lt;/code&gt; und eine Feedback-ID ein, was nach Newsletter aussieht. Eine reine Testmail mit zwei Zeilen Text hilft auch nicht. Empfänger, die die Mail als „Kein Junk“ markieren, verbessern das für ihr Postfach.&lt;/p&gt;
+&lt;h3 id=&quot;oeffnungs-tracking&quot; tabindex=&quot;-1&quot;&gt;Öffnungs-Tracking&lt;/h3&gt;
+&lt;p&gt;Zeigt Brevo bei einer Mail das Ereignis „first opening“, wurde das eingebaute Zählbild geladen. Das spricht für eine gelesene Mail, ist aber kein Beweis: Apple Mail lädt Bilder vorab, Virenscanner auch, und wer Bilder blockiert, wird nie als „geöffnet“ gezählt. Außerdem zeigt das Ereignis, dass Brevo die eigenen Mails verändert. Wer das nicht will, schaltet das Tracking ab.&lt;/p&gt;
+&lt;h3 id=&quot;schluessel-laeuft-bei-inaktivitaet-ab&quot; tabindex=&quot;-1&quot;&gt;Schlüssel läuft bei Inaktivität ab&lt;/h3&gt;
+&lt;p&gt;Brevo deaktiviert einen SMTP-Schlüssel nach 90 Tagen ohne erfolgreichen Versand, auch wenn er als „läuft nie ab“ angelegt wurde (&lt;a href=&quot;https://help.brevo.com/hc/en-us/articles/7959631848850&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Brevo-Hilfe&lt;/a&gt;). Danach bleiben Mails an Microsoft-Adressen in der Queue hängen und kommen nach einigen Tagen als unzustellbar zurück.&lt;/p&gt;
+&lt;p&gt;Abhilfe: Ein Cronjob schickt einmal im Monat eine Testmail an ein eigenes Outlook.com-Postfach und prüft fünf Minuten später im Stalwart-Log, ob sie an Brevo übergeben wurde. Wenn nicht, geht eine Warnung an root. Die Warnung läuft nicht über Brevo und kommt deshalb auch bei abgelaufenem Schlüssel an.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;#!/bin/sh
+# Monthly test mail to an Outlook.com mailbox via the Brevo relay route in Stalwart.
+set -eu
+
+RCPT=&amp;quot;&amp;lt;test&amp;gt;@outlook.com&amp;quot;
+LOG=&amp;quot;/path/to/stalwart/logs/stalwart.log&amp;quot;
+WAIT=300
+
+START=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+printf &#39;To: %s&#92;nSubject: Brevo relay test %s&#92;n&#92;nMonthly test via the Brevo relay.&#92;n&#39; &#92;
+    &amp;quot;$RCPT&amp;quot; &amp;quot;$(date +%F)&amp;quot; | /usr/sbin/sendmail &amp;quot;$RCPT&amp;quot;
+
+sleep &amp;quot;$WAIT&amp;quot;
+
+if awk -v start=&amp;quot;$START&amp;quot; -v rcpt=&amp;quot;$RCPT&amp;quot; &#39;
+    $1 &amp;gt;= start &amp;amp;&amp;amp; /delivery&#92;.delivered/ &amp;amp;&amp;amp; /smtp-relay&#92;.brevo&#92;.com/ &amp;amp;&amp;amp; index($0, &amp;quot;to = &#92;&amp;quot;&amp;quot; rcpt &amp;quot;&#92;&amp;quot;&amp;quot;) { found = 1 }
+    END { exit !found }&#39; &amp;quot;$LOG&amp;quot;; then
+    exit 0
+fi
+
+{
+    printf &#39;Subject: Brevo relay test FAILED&#92;n&#92;n&#39;
+    grep -F &amp;quot;$RCPT&amp;quot; &amp;quot;$LOG&amp;quot; | tail -5
+} | /usr/sbin/sendmail root
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;# /etc/cron.d/brevo-relay-test
+23 9 1 * * root /path/to/brevo-relay-test.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ein eigenes Outlook.com-Postfach bekommt man, indem man im Microsoft-Konto unter &lt;em&gt;Anmeldung bei Microsoft verwalten&lt;/em&gt; eine neue Adresse als Alias anlegt. Im Postfach sollte man den Absender als sicher markieren und die Testmails in einen eigenen Ordner sortieren, aber nicht automatisch löschen. Sonst fällt nicht auf, wenn sie ausbleiben.&lt;/p&gt;
+&lt;h2 id=&quot;t-online&quot; tabindex=&quot;-1&quot;&gt;T-Online&lt;/h2&gt;
+&lt;p&gt;T-Online hat hier noch nichts abgelehnt, steht aber vorsorglich mit auf der Liste. Die Telekom verlangt, dass der Hostname des Mailservers auf eine Website mit Impressum und Kontaktmöglichkeit führt. Für Cloud-Systeme empfiehlt sie ausdrücklich ein Relay, und auf Freigabelisten setzt sie niemanden (&lt;a href=&quot;https://postmaster.t-online.de/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;postmaster.t-online.de&lt;/a&gt;, Abschnitte 4.1 und 4.11). Wer direkt zustellen will, braucht ein Impressum unter dem Hostnamen des Mailservers und schreibt dann an die Adresse aus der Fehlermeldung.&lt;/p&gt;
+&lt;h2 id=&quot;ergebnis&quot; tabindex=&quot;-1&quot;&gt;Ergebnis&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mails an &lt;code&gt;live.de&lt;/code&gt; und &lt;code&gt;outlook.com&lt;/code&gt; kommen seit der Umstellung an: die Testmail im eigenen Postfach, die &lt;code&gt;live.de&lt;/code&gt;-Mail laut Brevo-Ereignis „first opening“. Stalwart braucht für die Übergabe an Brevo rund 20 bis 50 Millisekunden.&lt;/li&gt;
+&lt;li&gt;SPF, DKIM und DMARC bestehen bei Microsoft.&lt;/li&gt;
+&lt;li&gt;Die Spam-Einstufung bei Microsoft bleibt ein Thema und hängt vom Empfänger ab.&lt;/li&gt;
+&lt;li&gt;Wird die Sperre bei Microsoft aufgehoben, reicht es, match 1 in der Strategie wieder zu entfernen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Siehe auch:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/software/stalwart-migration/&quot;&gt;Stalwart Migration 0.15 auf 1.0&lt;/a&gt;&lt;/p&gt;
+</content>
+    <link href="https://wiki.polyformal.de/software/stalwart-brevo-relay/"/>
+  </entry><entry>
     <title>Stalwart Migration 0.15 auf 1.0</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/software/stalwart-migration/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Erfahrungsbericht: Migration eines kleinen Stalwart-Mailservers von 0.15.5 auf 1.0.3. Das Setup: Docker Compose, RocksDB, OpenLDAP als Verzeichnis, Reverse Proxy davor, weniger als 10 Konten, rund 13 GB Daten.&lt;/p&gt;
@@ -337,7 +557,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/stalwart-migration/"/>
   </entry><entry>
     <title>Samba</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/software/samba/</id>
     <content type="html">&lt;h2 id=&quot;time-machine&quot; tabindex=&quot;-1&quot;&gt;TimeMachine&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://oneuptime.com/blog/post/2026-03-02-how-to-configure-samba-for-macos-time-machine-backups-on-ubuntu/view&lt;/a&gt;&lt;/p&gt;
@@ -345,7 +565,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/samba/"/>
   </entry><entry>
     <title>Mail User Agents</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/software/mua/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#mua&quot;&gt;#mua&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#thunderbird&quot;&gt;#thunderbird&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#evolution&quot;&gt;#evolution&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hier eine Auflistung von persönlichen Erfahrungen mit E-Mailprogrammen.&lt;/p&gt;
@@ -391,7 +611,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/software/mua/"/>
   </entry><entry>
     <title>Apache2</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/software/apache2/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://vimeo.com/1076588&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Entwicklungsgeschichte&lt;/a&gt; des Apache Webservers dargestellt mit &lt;a href=&quot;http://code.google.com/p/codeswarm/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;codeswarm&lt;/a&gt;&lt;/li&gt;
@@ -405,7 +625,7 @@ AllowOverride FileInfo Limit
     <link href="https://wiki.polyformal.de/software/apache2/"/>
   </entry><entry>
     <title>Home Assistant</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/smart-home/home-assistant/</id>
     <content type="html">&lt;h2 id=&quot;data-retention&quot; tabindex=&quot;-1&quot;&gt;Data Retention&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://thehomesmarthome.com/optimizing-home-assistant-database-data-retention/&lt;/a&gt;&lt;/p&gt;
@@ -413,7 +633,7 @@ AllowOverride FileInfo Limit
     <link href="https://wiki.polyformal.de/smart-home/home-assistant/"/>
   </entry><entry>
     <title>apt repositories debian &amp; ubuntu</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/os/repositories/</id>
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;[!warning]&lt;br /&gt;
@@ -475,7 +695,7 @@ deb http://www.bolzchristian.de/debian ./
     <link href="https://wiki.polyformal.de/os/repositories/"/>
   </entry><entry>
     <title>Solaris</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/os/solaris/</id>
     <content type="html">&lt;h2 id=&quot;zusaetzliche-software&quot; tabindex=&quot;-1&quot;&gt;zusätzliche Software&lt;/h2&gt;
 &lt;p&gt;Oracle (ehem. Sun) bietet eine CD mit Freeware an, welche einiges an Open Source Software enthält. Die Programme sind aber recht alt (Stand 02/2011)&lt;/p&gt;
@@ -543,7 +763,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/solaris/"/>
   </entry><entry>
     <title>Plan 9</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/os/plan9/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 from Bell Labs&lt;/a&gt;, &lt;a href=&quot;https://de.wikipedia.org/wiki/Plan_9_(Betriebssystem)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plan 9 (Betriebssystem)&lt;/a&gt;&lt;/li&gt;
@@ -579,7 +799,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/plan9/"/>
   </entry><entry>
     <title>OpenBSD</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/os/openbsd/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -628,7 +848,7 @@ Der Bildschirmschoner ist in dieser Sitzung nicht verfügbar.&lt;/p&gt;
     <link href="https://wiki.polyformal.de/os/openbsd/"/>
   </entry><entry>
     <title>FreeBSD</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/os/freebsd/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unix&quot;&gt;#unix&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -703,7 +923,7 @@ chsh -s /usr/sbin/nologin gdm
     <link href="https://wiki.polyformal.de/os/freebsd/"/>
   </entry><entry>
     <title>Fedora</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/os/fedora/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#fedora&quot;&gt;#fedora&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;informationen&quot; tabindex=&quot;-1&quot;&gt;Informationen&lt;/h2&gt;
@@ -778,7 +998,7 @@ setsysfonf
     <link href="https://wiki.polyformal.de/os/fedora/"/>
   </entry><entry>
     <title>Debian GNU-Linux</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/os/debian/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#debian&quot;&gt;#debian&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;packaging-and-amp-repository&quot; tabindex=&quot;-1&quot;&gt;Packaging &amp;amp; Repository&lt;/h2&gt;
@@ -833,7 +1053,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/os/debian/"/>
   </entry><entry>
     <title>Ricoh GR IV Tips</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/</id>
     <content type="html">&lt;p&gt;How to store Image Control / Bildsteuerung&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.ricoh-imaging.co.jp/english/products/app/gr-world/imagecontrol/&lt;/a&gt;&lt;/p&gt;
@@ -849,7 +1069,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/notizen/ricoh-gr-iv-tips/"/>
   </entry><entry>
     <title>Phillipinen</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/notizen/reisen/phillipinen/</id>
     <content type="html">&lt;h2 id=&quot;zahlung&quot; tabindex=&quot;-1&quot;&gt;Zahlung&lt;/h2&gt;
 &lt;p&gt;Als Nicht-US Ausländer sind GCash oder Maya wegen der Verifizierung nicht möglich gewesen (Stand 08/2026).&lt;br /&gt;
@@ -870,7 +1090,7 @@ aticonfig --intial --input /etc/X11/xorg.conf
     <link href="https://wiki.polyformal.de/notizen/reisen/phillipinen/"/>
   </entry><entry>
     <title>Open Source Software DTP</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/notizen/oos-dtp/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;bildbearbeitung-raster&quot; tabindex=&quot;-1&quot;&gt;Bildbearbeitung (Raster)&lt;/h2&gt;
@@ -1024,7 +1244,7 @@ Falls die Schriften nicht angezeigt werden nachdem sie als Benutzer oder systemw
     <link href="https://wiki.polyformal.de/notizen/oos-dtp/"/>
   </entry><entry>
     <title>ssh</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/linux/ssh/</id>
     <content type="html">&lt;h2 id=&quot;ssh-tunnel&quot; tabindex=&quot;-1&quot;&gt;SSH-Tunnel&lt;/h2&gt;
 &lt;p&gt;Beispiel für eine MySQL-Verbindung: einen SSH-Tunnel auf den lokalen Port 3307 vom entferneten Rechner &lt;a href=&quot;http://host.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;host.example.com&lt;/a&gt; Port 3306 (MySql Server) erstellen:&lt;/p&gt;
@@ -1046,7 +1266,7 @@ Natürlich kann sich die Gegenstelle auch den Port 12345 von &lt;a href=&quot;ht
     <link href="https://wiki.polyformal.de/linux/ssh/"/>
   </entry><entry>
     <title>Diverse Tipps und Tricks zu Xfce</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/linux/xfce/notizen/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#xfce&quot;&gt;#xfce&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;xorg-composite-effekte-fuer-xfce&quot; tabindex=&quot;-1&quot;&gt;Xorg - Composite-Effekte für Xfce&lt;/h2&gt;
@@ -1094,7 +1314,7 @@ Für Debian muss das Paket &lt;em&gt;libgnomevfs2-bin&lt;/em&gt; installiert sei
     <link href="https://wiki.polyformal.de/linux/xfce/notizen/"/>
   </entry><entry>
     <title>UMTS unter Linux</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/linux/umts/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://de.wikipedia.org/wiki/Universal_Mobile_Telecommunications_System&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;UMTS&lt;/a&gt;&lt;/li&gt;
@@ -1225,7 +1445,7 @@ SAY &#39;Setting APN
     <link href="https://wiki.polyformal.de/linux/umts/"/>
   </entry><entry>
     <title>Referenzkarte Netzwerk</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/linux/referenzkarte_netzwerk/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#lpi&quot;&gt;#lpi&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#netzwerk&quot;&gt;#netzwerk&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#unvollständig&quot;&gt;#unvollständig&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;abstract&quot; tabindex=&quot;-1&quot;&gt;Abstract&lt;/h2&gt;
@@ -1447,7 +1667,7 @@ oder mit dem Programm &lt;em&gt;multitail&lt;/em&gt;. Die Option -A zeigt de Inh
     <link href="https://wiki.polyformal.de/linux/referenzkarte_netzwerk/"/>
   </entry><entry>
     <title>Programme und Tipps für die Konsole</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/linux/console/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1625,7 +1845,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/console/"/>
   </entry><entry>
     <title>Linux Professional Institute (LPI)</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/linux/zertifizierung/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;vorbereitungsmoeglichkeiten&quot; tabindex=&quot;-1&quot;&gt;Vorbereitungsmöglichkeiten&lt;/h2&gt;
@@ -1698,7 +1918,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/zertifizierung/"/>
   </entry><entry>
     <title>Informationen zu Linux</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/linux/informationen/</id>
     <content type="html">&lt;h2 id=&quot;geschichte&quot; tabindex=&quot;-1&quot;&gt;Geschichte&lt;/h2&gt;
 &lt;ul&gt;
@@ -1727,7 +1947,7 @@ Um das Logo über MOTD anzuzeigen müssen bei Debian noch folgende Änderungen d
     <link href="https://wiki.polyformal.de/linux/informationen/"/>
   </entry><entry>
     <title>GNOME</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/linux/gnome/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#gnome&quot;&gt;#gnome&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#desktop&quot;&gt;#desktop&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#laptop&quot;&gt;#laptop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;dual-head-setup&quot; tabindex=&quot;-1&quot;&gt;Dual Head Setup&lt;/h2&gt;
@@ -1740,7 +1960,7 @@ rm -fr ~/.gconf/desktop/gnome/screen/&lt;/p&gt;
     <link href="https://wiki.polyformal.de/linux/gnome/"/>
   </entry><entry>
     <title>paperless-ai mit Ollama auf dem Raspberry Pi 5</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/ki/paperless-ai-raspberry-pi/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ki&quot;&gt;#ki&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#paperless&quot;&gt;#paperless&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#raspberrypi&quot;&gt;#raspberrypi&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Erfahrungsbericht: paperless-ngx verschlagwortet Dokumente mit Hilfe von paperless-ai, und das Sprachmodell läuft lokal über Ollama auf demselben Raspberry Pi 5 mit 8 GB. Kein Dokument verlässt das eigene Netz.&lt;/p&gt;
@@ -1945,7 +2165,7 @@ docker inspect ollama --format &#39;{{.HostConfig.Memory}}&#39;
     <link href="https://wiki.polyformal.de/ki/paperless-ai-raspberry-pi/"/>
   </entry><entry>
     <title>Modellnamen lesen</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/ki/modellnamen/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ki&quot;&gt;#ki&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#huggingface&quot;&gt;#huggingface&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#lokal&quot;&gt;#lokal&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ein Name wie &lt;code&gt;Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL&lt;/code&gt; sagt fast alles, was man vor dem Download wissen muss: Hersteller, Größe, Bauart, Zweck, Dateiformat und Kompression. Diese Seite zeigt, wie man die Teile liest und was sie für Speicher, Tempo und Einsatz bedeuten.&lt;/p&gt;
@@ -2335,7 +2555,7 @@ docker inspect ollama --format &#39;{{.HostConfig.Memory}}&#39;
     <link href="https://wiki.polyformal.de/ki/modellnamen/"/>
   </entry><entry>
     <title>KI Infos</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/ki/ki-infos/</id>
     <content type="html">&lt;h1 id=&quot;hermes&quot; tabindex=&quot;-1&quot;&gt;Hermes&lt;/h1&gt;
 &lt;ul&gt;
@@ -2359,7 +2579,7 @@ docker inspect ollama --format &#39;{{.HostConfig.Memory}}&#39;
     <link href="https://wiki.polyformal.de/ki/ki-infos/"/>
   </entry><entry>
     <title>ChatGPT über agent-os</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/ki/chat-gpt-ueber-agent-os/</id>
     <content type="html">&lt;table&gt;
 &lt;thead&gt;
@@ -2566,7 +2786,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/ki/chat-gpt-ueber-agent-os/"/>
   </entry><entry>
     <title>Impressum</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/impressum/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;polyformal System- &amp;amp; Formarbeit&lt;/li&gt;
@@ -2588,7 +2808,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/impressum/"/>
   </entry><entry>
     <title>wiki driven by Obsidian</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/</id>
     <content type="html">&lt;ul&gt;
 &lt;li&gt;Obsidian Digital Graden
@@ -2601,7 +2821,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/en/software/wiki-driven-by-obsidian/"/>
   </entry><entry>
     <title>imagemagick</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/en/software/imagemagick/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#dtp&quot;&gt;#dtp&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#console&quot;&gt;#console&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;tiff&quot; tabindex=&quot;-1&quot;&gt;TIFF&lt;/h3&gt;
@@ -2613,7 +2833,7 @@ LLM ─────────────┼── Earthwalker Agent OS
     <link href="https://wiki.polyformal.de/en/software/imagemagick/"/>
   </entry><entry>
     <title>asciidoc</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/software/asciidoc/</id>
     <content type="html">&lt;h2 id=&quot;backends&quot; tabindex=&quot;-1&quot;&gt;backends&lt;/h2&gt;
 &lt;h3 id=&quot;slidy&quot; tabindex=&quot;-1&quot;&gt;slidy&lt;/h3&gt;
@@ -2644,7 +2864,7 @@ deckjs backend requires title attribute for images&lt;/p&gt;
     <link href="https://wiki.polyformal.de/software/asciidoc/"/>
   </entry><entry>
     <title>Stalwart Migration 0.15 to 1.0</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/en/software/stalwart-migration/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#stalwart&quot;&gt;#stalwart&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#mail&quot;&gt;#mail&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#migration&quot;&gt;#migration&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ldap&quot;&gt;#ldap&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Field report: migrating a small Stalwart mail server from 0.15.5 to 1.0.3. The setup: Docker Compose, RocksDB, OpenLDAP as the directory, a reverse proxy in front, fewer than 10 accounts, about 13 GB of data.&lt;/p&gt;
@@ -2857,7 +3077,7 @@ stalwart-cli update SystemSettings singleton --field defaultCertificateId=&amp;l
     <link href="https://wiki.polyformal.de/en/software/stalwart-migration/"/>
   </entry><entry>
     <title>Privacy Policy</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/en/privacy/</id>
     <content type="html">&lt;h1 id=&quot;privacy-policy&quot; tabindex=&quot;-1&quot;&gt;Privacy Policy&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Deutsche Fassung:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/datenschutz/&quot;&gt;Datenschutzerklärung&lt;/a&gt;&lt;/p&gt;
@@ -2883,7 +3103,7 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
     <link href="https://wiki.polyformal.de/en/privacy/"/>
   </entry><entry>
     <title>Emu E4XT Ultra</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/en/notizen/e4xt_ultra/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#music&quot;&gt;#music&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#sampler&quot;&gt;#sampler&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#emulator&quot;&gt;#emulator&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;internal-ssd&quot; tabindex=&quot;-1&quot;&gt;Internal SSD&lt;/h2&gt;
@@ -2901,7 +3121,7 @@ For further details see the &lt;a class=&quot;internal-link&quot; target=&quot;&
     <link href="https://wiki.polyformal.de/en/notizen/e4xt_ultra/"/>
   </entry><entry>
     <title>paperless-ai with Ollama on a Raspberry Pi 5</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/en/ai/paperless-ai-raspberry-pi/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#paperless&quot;&gt;#paperless&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#raspberrypi&quot;&gt;#raspberrypi&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#docker&quot;&gt;#docker&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Field report: paperless-ngx tags documents with the help of paperless-ai, and the language model runs locally through Ollama on the same Raspberry Pi 5 with 8 GB. No document leaves the local network.&lt;/p&gt;
@@ -3106,7 +3326,7 @@ docker inspect ollama --format &#39;{{.HostConfig.Memory}}&#39;
     <link href="https://wiki.polyformal.de/en/ai/paperless-ai-raspberry-pi/"/>
   </entry><entry>
     <title>ollama</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/en/ai/ollama/</id>
     <content type="html">&lt;p&gt;load a Hugging Face model into ollama&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ollama run hf.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF:latest
@@ -3117,7 +3337,7 @@ ollama run hf.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF:latest
     <link href="https://wiki.polyformal.de/en/ai/ollama/"/>
   </entry><entry>
     <title>Reading model names</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/en/ai/model-names/</id>
     <content type="html">&lt;p&gt;&lt;a class=&quot;tag&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#llm&quot;&gt;#llm&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#ollama&quot;&gt;#ollama&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#huggingface&quot;&gt;#huggingface&lt;/a&gt; &lt;a class=&quot;tag&quot; data-content=&quot;#local&quot;&gt;#local&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A name like &lt;code&gt;Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL&lt;/code&gt; tells you almost everything you need to know before downloading: maker, size, architecture, purpose, file format and compression. This page shows how to read the parts and what they mean for memory, speed and use.&lt;/p&gt;
@@ -3507,7 +3727,7 @@ ollama run hf.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF:latest
     <link href="https://wiki.polyformal.de/en/ai/model-names/"/>
   </entry><entry>
     <title>Datenschutz</title>
-    <updated>2026-11-19T13:29:39Z</updated>
+    <updated>2026-11-23T19:38:43Z</updated>
     <id>https://wiki.polyformal.de/datenschutz/</id>
     <content type="html">&lt;h1 id=&quot;datenschutzerklaerung&quot; tabindex=&quot;-1&quot;&gt;Datenschutzerklärung&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;English version:&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://wiki.polyformal.de/en/privacy/&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
